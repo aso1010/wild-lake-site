@@ -447,13 +447,13 @@
 .roster-intro p{margin:0;max-width:580px;font-size:clamp(17px,2vw,28px);line-height:1.32;letter-spacing:-.025em}
 .roster-entry{border-top:1px solid var(--rule-color);display:grid;grid-template-columns:55px minmax(0,1fr) 38%;gap:24px;padding:32px 0 44px;align-items:start}
 .entry-num,.entry-meta,.data-label{font:500 11px var(--font-mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted-color)}
-.entry-name{font-size:clamp(38px,6.6vw,112px);line-height:.92;letter-spacing:-.075em;font-weight:700;text-transform:uppercase;margin:0 0 30px}
+.entry-name{font-size:clamp(26px,6.6vw,112px);line-height:.92;letter-spacing:-.075em;font-weight:700;text-transform:uppercase;margin:0 0 30px}
 .entry-detail{font-size:clamp(15px,1.5vw,20px);line-height:1.5;color:var(--subtle-color);max-width:560px}
 .entry-link{display:inline-block;border-bottom:1px solid var(--text-color);padding:14px 0 8px;font:500 11px var(--font-mono);text-transform:uppercase;letter-spacing:.1em;margin-top:25px}
 .jordy-photo{width:100%;height:440px;max-height:60vw;object-fit:cover;object-position:center 24%;filter:grayscale(1);background:#222}
 .profile-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:8%;padding:70px 0 0 79px;border-top:1px solid var(--rule-color)}
 .profile-grid .eyebrow{letter-spacing:.09em}
-.profile-grid h2{font-size:clamp(36px,5vw,80px);line-height:1;letter-spacing:-.065em;margin:14px 0 30px;text-transform:uppercase}
+.profile-grid h2{font-size:clamp(24px,5vw,80px);line-height:1;letter-spacing:-.065em;margin:14px 0 30px;text-transform:uppercase}
 .profile-grid p{font-size:clamp(17px,1.6vw,23px);line-height:1.55;letter-spacing:-.02em;color:var(--subtle-color);max-width:760px}
 .data-row{display:grid;grid-template-columns:1fr 1fr;padding:16px 0;border-bottom:1px solid var(--rule-color);gap:12px}
 .data-value{font:500 13px var(--font-mono);text-align:right}
@@ -551,6 +551,22 @@
     padding-top: 12px;
     padding-left: 24px;
   }
+}
+
+/* Match the homepage focus-area headings, with a larger page title. */
+.roster-main h1,
+.roster-main h2,
+.roster-main h3 {
+  font-family: var(--font-sans);
+  font-weight: 900;
+  font-stretch: 125%;
+  font-variation-settings: 'wdth' 125, 'wght' 900;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+.roster-main h1 {
+  font-size: clamp(46px, 12vw, 200px);
+  line-height: 0.92;
 }
 </style>
 <link href="https://wild-lake.org/roster/" rel="canonical"/><script type="application/ld+json">{
