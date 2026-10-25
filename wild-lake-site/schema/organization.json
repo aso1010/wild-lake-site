@@ -1,0 +1,85 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://wild-lake.org/#organization",
+  "name": "Wild-Lake",
+  "legalName": "Wild-Lake LLC",
+  "alternateName": ["Wild Lake", "WILDLAKE"],
+  "url": "https://wild-lake.org/",
+  "description": "Wild-Lake is an existential mechanics studio and artists and repertoire (A&R) venture based in Los Angeles, California. We scout and develop artists, and we build the systems that shape identity, behavior, organizations, and human potential.",
+  "slogan": "Turning complexity into clarity.",
+  "foundingDate": "2026",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Los Angeles, California, United States"
+  },
+  "founder": { "@id": "https://argelysoriach.com/#person" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "location": {
+    "@type": "Place",
+    "name": "Los Angeles, CA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0522,
+      "longitude": -118.2437
+    }
+  },
+  "areaServed": "Worldwide",
+  "knowsAbout": [
+    "Existential mechanics",
+    "Artists and repertoire (A&R)",
+    "Artist scouting",
+    "Artist development",
+    "Behavioral systems",
+    "Organizational design",
+    "Human potential"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Existential Mechanics",
+        "description": "Mapping and decoding the underlying behavioral, structural, and cognitive dynamics that drive identity and decision-making.",
+        "provider": { "@id": "https://wild-lake.org/#organization" }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Commercial Lab",
+        "description": "Venture-focused systems engineering designed to scale transformative technologies and organizational models.",
+        "provider": { "@id": "https://wild-lake.org/#organization" }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Human Potential",
+        "description": "Designing infrastructure, tools, and environments that align institutional mechanics with human capability.",
+        "provider": { "@id": "https://wild-lake.org/#organization" }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Artists & Repertoire (A&R)",
+        "serviceType": "Artist scouting and development",
+        "description": "Scouting artists and developing their work.",
+        "provider": { "@id": "https://wild-lake.org/#organization" }
+      }
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/wildlake.la/"
+  ],
+  "mainEntityOfPage": { "@id": "https://wild-lake.org/#home" }
+}

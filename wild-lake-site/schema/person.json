@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://argelysoriach.com/#person",
+  "name": "Argelys Samuel Oriach",
+  "alternateName": "Argelys Oriach",
+  "givenName": "Argelys",
+  "additionalName": "Samuel",
+  "familyName": "Oriach",
+  "url": "https://argelysoriach.com/",
+  "jobTitle": "Founder and Chief Executive Officer",
+  "worksFor": { "@id": "https://wild-lake.org/#organization" },
+  "@reverse": {
+    "founder": [
+      { "@id": "https://wild-lake.org/#organization" }
+    ]
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Wesleyan University" },
+    { "@type": "HighSchool", "name": "Phillips Academy Andover" }
+  ],
+  "knowsAbout": [
+    "Content strategy",
+    "Organic growth",
+    "Artist development",
+    "Poetry"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/argelys-samuel-oriach/"
+  ]
+}

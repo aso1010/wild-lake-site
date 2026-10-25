@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://wild-lake.org/#website",
+  "url": "https://wild-lake.org/",
+  "name": "Wild-Lake",
+  "description": "Official website of Wild-Lake, an existential mechanics studio and A&R venture based in Los Angeles, California.",
+  "inLanguage": "en-US",
+  "publisher": {
+    "@id": "https://wild-lake.org/#organization"
+  },
+  "copyrightHolder": {
+    "@id": "https://wild-lake.org/#organization"
+  },
+  "copyrightYear": 2026,
+  "about": {
+    "@id": "https://wild-lake.org/#organization"
+  },
+  "hasPart": [
+    {
+      "@type": "WebPage",
+      "@id": "https://wild-lake.org/#home",
+      "url": "https://wild-lake.org/",
+      "name": "Wild-Lake — Existential Mechanics Studio",
+      "description": "Wild-Lake is an existential mechanics studio and A&R venture: we scout and develop artists and build the systems that shape identity, behavior, organizations, and human potential.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://wild-lake.org/#website"
+      },
+      "about": {
+        "@id": "https://wild-lake.org/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://wild-lake.org/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://wild-lake.org/schema/#page",
+      "url": "https://wild-lake.org/schema/",
+      "name": "Wild-Lake — Schema",
+      "description": "The machine-readable description of Wild-Lake: organization, website, and founder data, plus llms.txt.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://wild-lake.org/#website"
+      },
+      "about": {
+        "@id": "https://wild-lake.org/#organization"
+      }
+    }
+  ]
+}

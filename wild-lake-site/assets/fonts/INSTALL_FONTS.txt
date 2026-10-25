@@ -1,0 +1,4 @@
+Place these two files from your Archivo.zip > Archivo/ folder here:
+Archivo-VariableFont_wdth,wght.ttf
+Archivo-Italic-VariableFont_wdth,wght.ttf
+The CSS references the exact filenames. Typeface binaries are not distributed in this archive.
