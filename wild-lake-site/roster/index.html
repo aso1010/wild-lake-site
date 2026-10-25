@@ -532,7 +532,7 @@
 .profile-grid {margin-bottom:90px;scroll-margin-top:24px;}
 .roster-entry {scroll-margin-top:24px;}
 @media(max-width:800px){.roster-entry{grid-template-columns:35px minmax(0,1fr);gap:24px;padding-bottom:55px}.profile-grid{padding-left:59px;margin-bottom:76px}}
-@media(max-width:430px){.profile-grid{padding-left:0}.roster-entry{gap:15px;grid-template-columns:35px minmax(0,1fr)}}
+
 
 /* Group each individual under their own talent architecture entry. */
 .roster-person { margin: 0 0 76px; }
@@ -540,7 +540,18 @@
 .roster-person > .profile-grid { margin-bottom: 0; border-top: 0; padding-top: 20px; }
 .roster-person + .roster-person { border-top: 1px solid var(--rule-color); }
 .roster-person + .roster-person > .roster-entry { border-top: 0; }
-@media (max-width:800px) { .roster-person { margin-bottom: 64px; } .roster-person > .roster-entry { padding-bottom: 26px; } .roster-person > .profile-grid { padding-top: 12px; } }
+@media (max-width:800px) {
+  .roster-person { margin-bottom: 64px; }
+  .roster-person > .roster-entry {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding-bottom: 26px;
+  }
+  .roster-person > .profile-grid {
+    padding-top: 12px;
+    padding-left: 24px;
+  }
+}
 </style>
 <link href="https://wild-lake.org/roster/" rel="canonical"/><script type="application/ld+json">{
   "@context": "https://schema.org",
