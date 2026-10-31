@@ -310,5 +310,94 @@
 
 
 <script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"d1b765faa3374da18af41cafe6e7a94b","r":1,"spa":2}' integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" type="module"></script>
+<script>
+    /* WILD-LAKE moves like water. Each letter is its own float. A swell travels left to right under the
+       name; WILD and LAKE ride it one beat apart, so the second line follows the first. Every letter rises,
+       falls and leans with the slope of the water beneath it, with a smaller chop on top so it never repeats
+       exactly. On load the water wakes: the letters surface and the swell builds. Press the name and a ripple
+       spreads out from where you pressed. Nothing here sets a size: the letters sit in the same fitted
+       drawings as before, so the name still scales with the page. No motion at all if the system asks for less. */
+    (function () {
+      var svgs = document.querySelectorAll('.mark svg');
+      if (!svgs.length || !window.requestAnimationFrame) return;
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      var NS = 'http://www.w3.org/2000/svg', TAU = Math.PI * 2, letters = [], press = { t: -1, u: 0 }, t0 = 0;
+      function clamp(x) { return x < 0 ? 0 : x > 1 ? 1 : x; }
+      function smooth(x) { x = clamp(x); return x * x * (3 - 2 * x); }
+
+      /* One fitted line of type becomes one drawing per letter, each exactly where the line had it. */
+      function split(svg, line) {
+        var t = svg.querySelector('text');
+        if (!t || svg.querySelector('.ltr')) return;
+        var s = t.textContent, n = s.length, at = [], fit = 0, nat = 0, i;
+        try {
+          for (i = 0; i < n; i++) { at.push(t.getStartPositionOfChar(i).x); fit += t.getEndPositionOfChar(i).x - at[i]; }
+          var len = t.getAttribute('textLength'), adj = t.getAttribute('lengthAdjust');
+          t.removeAttribute('textLength'); t.removeAttribute('lengthAdjust');
+          for (i = 0; i < n; i++) nat += t.getEndPositionOfChar(i).x - t.getStartPositionOfChar(i).x;
+          if (len) t.setAttribute('textLength', len);
+          if (adj) t.setAttribute('lengthAdjust', adj);
+        } catch (e) { return; }
+        var k = fit / nat;                          /* how far the fitted line stretches each glyph */
+        if (!isFinite(k) || k <= 0) return;
+        var made = [];
+        for (i = 0; i < n; i++) {
+          var g = document.createElementNS(NS, 'g'), c = document.createElementNS(NS, 'text');
+          g.setAttribute('class', 'ltr');
+          c.setAttribute('x', '0'); c.setAttribute('y', t.getAttribute('y')); c.setAttribute('font-size', t.getAttribute('font-size'));
+          c.setAttribute('transform', 'translate(' + at[i] + ' 0) scale(' + k + ' 1)');
+          c.textContent = s.charAt(i);
+          g.appendChild(c); svg.appendChild(g);
+          var box = { x: at[i], y: 0, width: 200 };
+          try { box = g.getBBox(); } catch (e) {}
+          /* lean about the middle of the ink, baseline to cap */
+          var base = parseFloat(t.getAttribute('y')) || 206, cap = (parseFloat(t.getAttribute('font-size')) || 279) * 0.686;
+          g.style.transformOrigin = (box.width / 2).toFixed(1) + 'px ' + (base - cap / 2 - (box.y || 0)).toFixed(1) + 'px';
+          made.push({ g: g, line: line, cx: box.x + box.width / 2, order: 0 });
+        }
+        t.style.display = 'none';
+        return made;
+      }
+
+      function render(t) {
+        var wake = smooth((t - 0.15) / 3.0);          /* the water wakes: calm, then swell */
+        for (var i = 0; i < letters.length; i++) {
+          var o = letters[i], u = o.cx / 1000;
+          var p1 = TAU * (0.6 * u - t / 9.5) + o.line * 0.9;      /* the long swell, travelling right */
+          var p2 = TAU * (1.5 * u - t / 5.7) + 1.3 + o.line;      /* the chop on top of it */
+          var y = wake * (7 * Math.sin(p1) + 2 * Math.sin(p2));
+          var r = wake * (1 * Math.cos(p1) + 0.25 * Math.cos(p2));
+          if (press.t >= 0) {                                      /* a ripple from where it was pressed */
+            var q = t - press.t - Math.abs(u - press.u) * 1.1;
+            if (q > 0) y += 10 * Math.exp(-2.4 * q) * Math.sin(TAU * 1.3 * q);
+          }
+          var a = smooth((t - o.delay) / 0.9);                      /* surface, one letter after another */
+          y += (1 - a) * 18;
+          o.g.style.opacity = a.toFixed(3);
+          o.g.style.transform = 'translate(0px,' + y.toFixed(2) + 'px) rotate(' + r.toFixed(2) + 'deg)';
+        }
+      }
+
+      function frame(now) { render((now - t0) / 1000); window.requestAnimationFrame(frame); }
+
+      function boot() {
+        Array.prototype.forEach.call(svgs, function (svg, line) {
+          var made = split(svg, line);
+          if (made) made.forEach(function (o, i) { o.delay = 0.15 + (line * 4 + i) * 0.12; letters.push(o); });
+        });
+        if (!letters.length) return;
+        var mark = document.querySelector('.mark');
+        if (mark) mark.addEventListener('pointerdown', function (e) {
+          var r = mark.getBoundingClientRect();
+          press = { t: (performance.now() - t0) / 1000, u: (e.clientX - r.left) / (r.width || 1) };
+        });
+        t0 = performance.now();
+        window.requestAnimationFrame(frame);
+      }
+
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(boot, boot); else boot();
+    })();
+  </script>
 </body>
 </html>

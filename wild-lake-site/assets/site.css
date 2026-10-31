@@ -63,3 +63,9 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
 @media(min-width:900px){.home .pillars,.home .who,.home .pitch,.home .contact{padding-top:89px;padding-bottom:34px}}
 @media(max-width:600px){.home .vectors-grid{grid-template-columns:1fr;gap:34px}.home .cap{gap:21px}.home .telemetry-bar{align-items:flex-start}.home .telemetry-bar>div:last-child{font-size:13px}.home .mark{max-width:377px}.home .statement-text{font-size:18px}.home .contact>p{font-size:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Keep the original full-width, expanded monolith as the brand anchor. */
+.home .cap{max-width:none;padding-inline:clamp(20px,3.2vw,56px)}
+.home .mark{width:100%;max-width:none;gap:clamp(2px,.5vw,8px)}
+.home .mark text{font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900}
+.home .mark .ltr{transform-box:fill-box;will-change:transform,opacity}
