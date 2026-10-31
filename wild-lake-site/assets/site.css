@@ -1,0 +1,65 @@
+/* One type family, a restrained hierarchy, and Fibonacci spacing. */
+@font-face{font-family:Archivo;src:url('/assets/fonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+:root{--font-sans:Archivo,Arial,sans-serif;--font-mono:var(--font-sans);--bg-color:#111310;--text-color:#f4f1e9;--subtle-color:#d1d0c7;--muted-color:#b0b3a6;--rule-color:#3a3f35;--s1:8px;--s2:13px;--s3:21px;--s4:34px;--s5:55px;--s6:89px;--s7:144px;--gutter:clamp(21px,5vw,55px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:34px}
+body.home,body.roster{margin:0;background:var(--bg-color);color:var(--text-color);font-family:var(--font-sans);font-size:18px;font-weight:400;font-stretch:100%;font-variation-settings:'wdth' 100;line-height:1.618;-webkit-font-smoothing:antialiased;display:block;overflow-x:visible}
+a{color:inherit;text-underline-offset:.25em;text-decoration-thickness:1px}
+a:hover{opacity:.8}
+a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+::selection{background:#d6dec4;color:#111310}
+.home .cap,.home .roster-nav,.home .statement-block,.home .pillars,.home .who,.home .pitch,.home .contact,.home .base{width:100%;max-width:987px;margin-inline:auto;padding-inline:var(--gutter)}
+.home .cap{padding-top:34px;display:grid;gap:34px}
+.telemetry-bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:13px;font-size:13px;color:var(--muted-color)}
+.glyph-badge{display:flex;align-items:center;gap:13px}
+.glyph-box{width:34px;height:34px}
+.glyph-box svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:3}
+.home .mark{width:min(100%,610px);display:grid;gap:8px;padding:0}
+.home .mark svg{width:100%;height:auto;display:block;overflow:visible}
+.home .mark text{font-family:var(--font-sans);font-weight:700;fill:var(--text-color);font-variation-settings:'wdth' 100,'wght' 700;letter-spacing:-.02em}
+.home h1,.home h2,.home h3,.roster .roster-main h1,.roster .roster-main h2,.roster .roster-main h3{font-family:var(--font-sans);font-weight:600;font-stretch:100%;font-variation-settings:'wdth' 100,'wght' 600;letter-spacing:-.025em;text-transform:none;text-wrap:balance;line-height:1.18}
+.home h1.subtitle-bar{font-size:clamp(34px,4vw,55px);margin:0;max-width:21ch}
+.home .roster-nav{display:flex;gap:34px;border:0;padding-top:21px;padding-bottom:21px;font-size:18px;font-weight:500;letter-spacing:0;text-transform:none}
+.home .roster-nav a{display:inline-flex;align-items:center;gap:13px;min-height:44px;padding:0;border:0;box-shadow:none;background:none;color:var(--text-color);text-decoration:none}
+.home .nav-arrow{font-size:18px}
+.home .statement-block{padding-top:21px;padding-bottom:55px}
+.home .statement-text{max-width:55ch;font-size:21px;line-height:1.618;margin:0;color:var(--subtle-color)}
+.home .pillars,.home .who,.home .pitch,.home .contact{padding-top:55px;padding-bottom:34px}
+.home .rule{height:1px;background:var(--rule-color);margin-bottom:34px}
+.home .vectors-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 55px}
+.home .vector-node{display:flex;flex-direction:column;gap:13px;min-width:0}
+.home .vector-head,.home .eyebrow{font:500 13px/1.618 var(--font-sans);letter-spacing:0;text-transform:none;color:var(--muted-color)}
+.home .vector-label{font-size:21px;line-height:1.3;font-weight:600;font-stretch:100%;font-variation-settings:'wdth' 100,'wght' 600;letter-spacing:-.015em;text-transform:none;margin:0}
+.home .vector-body,.home .who-body p{font-size:18px;line-height:1.618;color:var(--subtle-color);letter-spacing:0;margin:0;max-width:55ch}
+.home .who-grid{display:block}
+.home .who-label,.home .pitch-head{display:grid;gap:13px;margin-bottom:34px}
+.home .who-title,.home .pitch-title h2{font-size:clamp(34px,4vw,55px);margin:0;max-width:21ch}
+.home .pitch-title{max-width:none;container-type:normal}
+.home .pitch-title h2 span{display:inline;white-space:normal}
+.home .who-body{display:flex;flex-direction:column;gap:21px;max-width:610px}
+.home .pitch-body{margin:0;grid-column:auto}
+.home .who-body .who-lead{font-size:21px;line-height:1.618;color:var(--text-color);letter-spacing:-.01em}
+.home .terms{list-style:none;margin:13px 0 0;padding:0}
+.home .terms li{border-top:1px solid var(--rule-color);padding:34px 0;gap:13px}
+.home .terms li:last-child{padding-bottom:0}
+.home .who-body .pitch-close,.home .contact .pitch-close{border-top:0;padding-top:13px;margin:0;font-size:21px;font-weight:500;font-stretch:100%;font-variation-settings:'wdth' 100,'wght' 500;line-height:1.618;letter-spacing:0;text-transform:none}
+.home .pitch-close span{display:block}
+.home .contact{margin-top:34px;border-top:1px solid var(--rule-color);display:grid;gap:21px}
+.home .contact>p{margin:0;max-width:55ch;font-size:21px}
+.home .contact a{display:inline-block;padding-block:13px}
+.home .base{padding-top:55px;padding-bottom:34px}
+.home .quadrants{display:grid;grid-template-columns:1fr;gap:21px}
+.home .terminal,.home .secondary{font:400 13px/1.618 var(--font-sans);text-transform:none;letter-spacing:0;color:var(--muted-color);max-width:55ch;text-align:left;margin:0}
+.home .status-dot{display:none}
+/* Carry the same reading rhythm through the roster. */
+.roster .roster-main{max-width:987px;margin:auto;padding:55px var(--gutter) 89px}
+.roster .roster-main h1{font-size:clamp(55px,8vw,89px);line-height:1.05;margin:34px 0 55px}
+.roster .roster-main h2{font-size:clamp(26px,4vw,34px)}
+.roster .roster-intro p,.roster .entry-detail,.roster .profile-grid p{font-size:18px;line-height:1.618;letter-spacing:0;max-width:55ch}
+.roster .entry-num,.roster .entry-meta,.roster .eyebrow,.roster .data-label,.roster .entry-link{font-family:var(--font-sans);font-size:13px;letter-spacing:0;text-transform:none}
+.roster .data-value{font-family:var(--font-sans);font-size:13px;overflow-wrap:anywhere}
+.roster .profile-grid{gap:34px;padding-top:21px}
+.roster .profile-grid h2{margin:13px 0 21px}
+@media(min-width:900px){.home .pillars,.home .who,.home .pitch,.home .contact{padding-top:89px;padding-bottom:34px}}
+@media(max-width:600px){.home .vectors-grid{grid-template-columns:1fr;gap:34px}.home .cap{gap:21px}.home .telemetry-bar{align-items:flex-start}.home .telemetry-bar>div:last-child{font-size:13px}.home .mark{max-width:377px}.home .statement-text{font-size:18px}.home .contact>p{font-size:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
