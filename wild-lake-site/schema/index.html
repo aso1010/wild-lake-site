@@ -9,20 +9,221 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://wild-lake.org/schema/#page",
-  "url": "https://wild-lake.org/schema/",
-  "name": "Wild-Lake — Schema",
-  "description": "The machine-readable description of Wild-Lake: organization, website, and founder data, plus llms.txt.",
-  "inLanguage": "en-US",
-  "isPartOf": {
-    "@id": "https://wild-lake.org/#website"
-  },
-  "about": {
-    "@id": "https://wild-lake.org/#organization"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://wild-lake.org/#organization",
+      "name": "Wild-Lake",
+      "legalName": "Wild-Lake LLC",
+      "alternateName": [
+        "Wild Lake",
+        "WILDLAKE"
+      ],
+      "url": "https://wild-lake.org/",
+      "description": "Wild-Lake is an existential mechanics studio and A&R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+      "slogan": "For world-class creators.",
+      "foundingDate": "2026",
+      "founder": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "New York, NY",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.7128,
+          "longitude": -74.006
+        }
+      },
+      "areaServed": "Worldwide",
+      "knowsAbout": [
+        "Existential mechanics",
+        "Artists and repertoire (A&R)",
+        "Artist development",
+        "Creative infrastructure",
+        "Artist mentorship",
+        "Confidence coaching",
+        "Self love coaching"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Existential mechanics",
+            "description": "We examine the patterns, pressures, and structures shaping how you create and make decisions. Together, we map what supports the work and what needs to change.",
+            "provider": {
+              "@id": "https://wild-lake.org/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Artists & repertoire",
+            "description": "We scout talent and develop the creative work, its identity, and its direction. The artist’s long-term vision guides the practice.",
+            "provider": {
+              "@id": "https://wild-lake.org/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Infrastructure for independence",
+            "description": "We build the systems, workflows, and working structures around the artist so the practice can endure without giving away ownership.",
+            "provider": {
+              "@id": "https://wild-lake.org/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mentorship for artists",
+            "description": "Bring your creative work and the life around it. Explore long term creative and personal support through embodied practice, sustained attention, and room for becoming.",
+            "provider": {
+              "@id": "https://wild-lake.org/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Confidence coaching",
+            "description": "Practice building self trust through body based awareness and clear boundaries. Begin with what you notice, what you need, and the choices available to you.",
+            "provider": {
+              "@id": "https://wild-lake.org/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Self love coaching",
+            "description": "Explore practical repair and congruence between your choices and your values. Practice learning to inhabit your body, not operate it.",
+            "provider": {
+              "@id": "https://wild-lake.org/#organization"
+            }
+          }
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/wildlakewildlake/"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://wild-lake.org/#home"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://wild-lake.org/#website",
+      "url": "https://wild-lake.org/",
+      "name": "Wild-Lake",
+      "description": "Wild-Lake is an existential mechanics studio and A&R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://wild-lake.org/#organization"
+      },
+      "copyrightHolder": {
+        "@id": "https://wild-lake.org/#organization"
+      },
+      "copyrightYear": 2026,
+      "about": {
+        "@id": "https://wild-lake.org/#organization"
+      },
+      "hasPart": [
+        {
+          "@type": "WebPage",
+          "@id": "https://wild-lake.org/#home",
+          "url": "https://wild-lake.org/",
+          "name": "Wild-Lake — Existential Mechanics Studio & A&R Venture",
+          "description": "Wild-Lake is an existential mechanics studio and A&R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://wild-lake.org/#website"
+          },
+          "about": {
+            "@id": "https://wild-lake.org/#organization"
+          },
+          "mainEntity": {
+            "@id": "https://wild-lake.org/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://wild-lake.org/schema/#page",
+          "url": "https://wild-lake.org/schema/",
+          "name": "Wild-Lake — Schema",
+          "description": "The machine-readable description of Wild-Lake: organization, website, and founder data, plus llms.txt.",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://wild-lake.org/#website"
+          },
+          "about": {
+            "@id": "https://wild-lake.org/#organization"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://argelysoriach.com/#person",
+      "name": "Argelys Samuel Oriach",
+      "alternateName": "Argelys Oriach",
+      "givenName": "Argelys",
+      "additionalName": "Samuel",
+      "familyName": "Oriach",
+      "url": "https://argelysoriach.com/",
+      "jobTitle": [
+        "Founder",
+        "Actor",
+        "Writer"
+      ],
+      "worksFor": {
+        "@id": "https://wild-lake.org/#organization"
+      },
+      "@reverse": {
+        "founder": [
+          {
+            "@id": "https://wild-lake.org/#organization"
+          }
+        ]
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Wesleyan University"
+        },
+        {
+          "@type": "HighSchool",
+          "name": "Phillips Academy Andover"
+        }
+      ],
+      "knowsAbout": [
+        "Artist development",
+        "Acting",
+        "Writing",
+        "Artist mentorship"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/argelys-samuel-oriach/"
+      ]
+    }
+  ]
 }
-  </script>
+</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap" rel="stylesheet"/>
@@ -351,89 +552,121 @@
         <h2 class="vector-label">Organization</h2>
         <p class="vector-body">The entity: name, legal name, location, founder, and the four focus areas. <a href="organization.json">organization.json &rarr;</a></p>
         <pre tabindex="0" data-src="organization.json"><code>{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://wild-lake.org/#organization",
-  "name": "Wild-Lake",
-  "legalName": "Wild-Lake LLC",
-  "alternateName": ["Wild Lake", "WILDLAKE"],
-  "url": "https://wild-lake.org/",
-  "description": "Wild-Lake is an existential mechanics studio and artists and repertoire (A&amp;R) venture based in Los Angeles, California. We scout and develop artists, and we build the systems that shape identity, behavior, organizations, and human potential.",
-  "slogan": "Turning complexity into clarity.",
-  "foundingDate": "2026",
-  "foundingLocation": {
-    "@type": "Place",
-    "name": "Los Angeles, California, United States"
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Organization&quot;,
+  &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;,
+  &quot;name&quot;: &quot;Wild-Lake&quot;,
+  &quot;legalName&quot;: &quot;Wild-Lake LLC&quot;,
+  &quot;alternateName&quot;: [
+    &quot;Wild Lake&quot;,
+    &quot;WILDLAKE&quot;
+  ],
+  &quot;url&quot;: &quot;https://wild-lake.org/&quot;,
+  &quot;description&quot;: &quot;Wild-Lake is an existential mechanics studio and A&amp;R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.&quot;,
+  &quot;slogan&quot;: &quot;For world-class creators.&quot;,
+  &quot;foundingDate&quot;: &quot;2026&quot;,
+  &quot;founder&quot;: {
+    &quot;@id&quot;: &quot;https://argelysoriach.com/#person&quot;
   },
-  "founder": { "@id": "https://argelysoriach.com/#person" },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "addressCountry": "US"
+  &quot;address&quot;: {
+    &quot;@type&quot;: &quot;PostalAddress&quot;,
+    &quot;addressLocality&quot;: &quot;New York&quot;,
+    &quot;addressRegion&quot;: &quot;NY&quot;,
+    &quot;addressCountry&quot;: &quot;US&quot;
   },
-  "location": {
-    "@type": "Place",
-    "name": "Los Angeles, CA",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0522,
-      "longitude": -118.2437
+  &quot;location&quot;: {
+    &quot;@type&quot;: &quot;Place&quot;,
+    &quot;name&quot;: &quot;New York, NY&quot;,
+    &quot;geo&quot;: {
+      &quot;@type&quot;: &quot;GeoCoordinates&quot;,
+      &quot;latitude&quot;: 40.7128,
+      &quot;longitude&quot;: -74.006
     }
   },
-  "areaServed": "Worldwide",
-  "knowsAbout": [
-    "Existential mechanics",
-    "Artists and repertoire (A&amp;R)",
-    "Artist scouting",
-    "Artist development",
-    "Behavioral systems",
-    "Organizational design",
-    "Human potential"
+  &quot;areaServed&quot;: &quot;Worldwide&quot;,
+  &quot;knowsAbout&quot;: [
+    &quot;Existential mechanics&quot;,
+    &quot;Artists and repertoire (A&amp;R)&quot;,
+    &quot;Artist development&quot;,
+    &quot;Creative infrastructure&quot;,
+    &quot;Artist mentorship&quot;,
+    &quot;Confidence coaching&quot;,
+    &quot;Self love coaching&quot;
   ],
-  "makesOffer": [
+  &quot;makesOffer&quot;: [
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Existential Mechanics",
-        "description": "Mapping and decoding the underlying behavioral, structural, and cognitive dynamics that drive identity and decision-making.",
-        "provider": { "@id": "https://wild-lake.org/#organization" }
+      &quot;@type&quot;: &quot;Offer&quot;,
+      &quot;itemOffered&quot;: {
+        &quot;@type&quot;: &quot;Service&quot;,
+        &quot;name&quot;: &quot;Existential mechanics&quot;,
+        &quot;description&quot;: &quot;We examine the patterns, pressures, and structures shaping how you create and make decisions. Together, we map what supports the work and what needs to change.&quot;,
+        &quot;provider&quot;: {
+          &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
+        }
       }
     },
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Commercial Lab",
-        "description": "Venture-focused systems engineering designed to scale transformative technologies and organizational models.",
-        "provider": { "@id": "https://wild-lake.org/#organization" }
+      &quot;@type&quot;: &quot;Offer&quot;,
+      &quot;itemOffered&quot;: {
+        &quot;@type&quot;: &quot;Service&quot;,
+        &quot;name&quot;: &quot;Artists &amp; repertoire&quot;,
+        &quot;description&quot;: &quot;We scout talent and develop the creative work, its identity, and its direction. The artist’s long-term vision guides the practice.&quot;,
+        &quot;provider&quot;: {
+          &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
+        }
       }
     },
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Human Potential",
-        "description": "Designing infrastructure, tools, and environments that align institutional mechanics with human capability.",
-        "provider": { "@id": "https://wild-lake.org/#organization" }
+      &quot;@type&quot;: &quot;Offer&quot;,
+      &quot;itemOffered&quot;: {
+        &quot;@type&quot;: &quot;Service&quot;,
+        &quot;name&quot;: &quot;Infrastructure for independence&quot;,
+        &quot;description&quot;: &quot;We build the systems, workflows, and working structures around the artist so the practice can endure without giving away ownership.&quot;,
+        &quot;provider&quot;: {
+          &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
+        }
       }
     },
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Artists &amp; Repertoire (A&amp;R)",
-        "serviceType": "Artist scouting and development",
-        "description": "Scouting artists and developing their work.",
-        "provider": { "@id": "https://wild-lake.org/#organization" }
+      &quot;@type&quot;: &quot;Offer&quot;,
+      &quot;itemOffered&quot;: {
+        &quot;@type&quot;: &quot;Service&quot;,
+        &quot;name&quot;: &quot;Mentorship for artists&quot;,
+        &quot;description&quot;: &quot;Bring your creative work and the life around it. Explore long term creative and personal support through embodied practice, sustained attention, and room for becoming.&quot;,
+        &quot;provider&quot;: {
+          &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
+        }
+      }
+    },
+    {
+      &quot;@type&quot;: &quot;Offer&quot;,
+      &quot;itemOffered&quot;: {
+        &quot;@type&quot;: &quot;Service&quot;,
+        &quot;name&quot;: &quot;Confidence coaching&quot;,
+        &quot;description&quot;: &quot;Practice building self trust through body based awareness and clear boundaries. Begin with what you notice, what you need, and the choices available to you.&quot;,
+        &quot;provider&quot;: {
+          &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
+        }
+      }
+    },
+    {
+      &quot;@type&quot;: &quot;Offer&quot;,
+      &quot;itemOffered&quot;: {
+        &quot;@type&quot;: &quot;Service&quot;,
+        &quot;name&quot;: &quot;Self love coaching&quot;,
+        &quot;description&quot;: &quot;Explore practical repair and congruence between your choices and your values. Practice learning to inhabit your body, not operate it.&quot;,
+        &quot;provider&quot;: {
+          &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
+        }
       }
     }
   ],
-  "sameAs": [
-    "https://www.instagram.com/wildlake.la/"
+  &quot;sameAs&quot;: [
+    &quot;https://www.instagram.com/wildlakewildlake/&quot;
   ],
-  "mainEntityOfPage": { "@id": "https://wild-lake.org/#home" }
+  &quot;mainEntityOfPage&quot;: {
+    &quot;@id&quot;: &quot;https://wild-lake.org/#home&quot;
+  }
 }</code></pre>
       </article>
 
@@ -442,53 +675,53 @@
         <h2 class="vector-label">Website</h2>
         <p class="vector-body">The site and its pages, and who publishes them. <a href="website.json">website.json &rarr;</a></p>
         <pre tabindex="0" data-src="website.json"><code>{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": "https://wild-lake.org/#website",
-  "url": "https://wild-lake.org/",
-  "name": "Wild-Lake",
-  "description": "Official website of Wild-Lake, an existential mechanics studio and A&amp;R venture based in Los Angeles, California.",
-  "inLanguage": "en-US",
-  "publisher": {
-    "@id": "https://wild-lake.org/#organization"
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;WebSite&quot;,
+  &quot;@id&quot;: &quot;https://wild-lake.org/#website&quot;,
+  &quot;url&quot;: &quot;https://wild-lake.org/&quot;,
+  &quot;name&quot;: &quot;Wild-Lake&quot;,
+  &quot;description&quot;: &quot;Wild-Lake is an existential mechanics studio and A&amp;R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.&quot;,
+  &quot;inLanguage&quot;: &quot;en-US&quot;,
+  &quot;publisher&quot;: {
+    &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
   },
-  "copyrightHolder": {
-    "@id": "https://wild-lake.org/#organization"
+  &quot;copyrightHolder&quot;: {
+    &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
   },
-  "copyrightYear": 2026,
-  "about": {
-    "@id": "https://wild-lake.org/#organization"
+  &quot;copyrightYear&quot;: 2026,
+  &quot;about&quot;: {
+    &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
   },
-  "hasPart": [
+  &quot;hasPart&quot;: [
     {
-      "@type": "WebPage",
-      "@id": "https://wild-lake.org/#home",
-      "url": "https://wild-lake.org/",
-      "name": "Wild-Lake — Existential Mechanics Studio",
-      "description": "Wild-Lake is an existential mechanics studio and A&amp;R venture: we scout and develop artists and build the systems that shape identity, behavior, organizations, and human potential.",
-      "inLanguage": "en-US",
-      "isPartOf": {
-        "@id": "https://wild-lake.org/#website"
+      &quot;@type&quot;: &quot;WebPage&quot;,
+      &quot;@id&quot;: &quot;https://wild-lake.org/#home&quot;,
+      &quot;url&quot;: &quot;https://wild-lake.org/&quot;,
+      &quot;name&quot;: &quot;Wild-Lake — Existential Mechanics Studio &amp; A&amp;R Venture&quot;,
+      &quot;description&quot;: &quot;Wild-Lake is an existential mechanics studio and A&amp;R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.&quot;,
+      &quot;inLanguage&quot;: &quot;en-US&quot;,
+      &quot;isPartOf&quot;: {
+        &quot;@id&quot;: &quot;https://wild-lake.org/#website&quot;
       },
-      "about": {
-        "@id": "https://wild-lake.org/#organization"
+      &quot;about&quot;: {
+        &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
       },
-      "mainEntity": {
-        "@id": "https://wild-lake.org/#organization"
+      &quot;mainEntity&quot;: {
+        &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
       }
     },
     {
-      "@type": "WebPage",
-      "@id": "https://wild-lake.org/schema/#page",
-      "url": "https://wild-lake.org/schema/",
-      "name": "Wild-Lake — Schema",
-      "description": "The machine-readable description of Wild-Lake: organization, website, and founder data, plus llms.txt.",
-      "inLanguage": "en-US",
-      "isPartOf": {
-        "@id": "https://wild-lake.org/#website"
+      &quot;@type&quot;: &quot;WebPage&quot;,
+      &quot;@id&quot;: &quot;https://wild-lake.org/schema/#page&quot;,
+      &quot;url&quot;: &quot;https://wild-lake.org/schema/&quot;,
+      &quot;name&quot;: &quot;Wild-Lake — Schema&quot;,
+      &quot;description&quot;: &quot;The machine-readable description of Wild-Lake: organization, website, and founder data, plus llms.txt.&quot;,
+      &quot;inLanguage&quot;: &quot;en-US&quot;,
+      &quot;isPartOf&quot;: {
+        &quot;@id&quot;: &quot;https://wild-lake.org/#website&quot;
       },
-      "about": {
-        "@id": "https://wild-lake.org/#organization"
+      &quot;about&quot;: {
+        &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
       }
     }
   ]
@@ -500,34 +733,48 @@
         <h2 class="vector-label">Founder</h2>
         <p class="vector-body">The founder and chief executive officer. <a href="person.json">person.json &rarr;</a></p>
         <pre tabindex="0" data-src="person.json"><code>{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://argelysoriach.com/#person",
-  "name": "Argelys Samuel Oriach",
-  "alternateName": "Argelys Oriach",
-  "givenName": "Argelys",
-  "additionalName": "Samuel",
-  "familyName": "Oriach",
-  "url": "https://argelysoriach.com/",
-  "jobTitle": "Founder and Chief Executive Officer",
-  "worksFor": { "@id": "https://wild-lake.org/#organization" },
-  "@reverse": {
-    "founder": [
-      { "@id": "https://wild-lake.org/#organization" }
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Person&quot;,
+  &quot;@id&quot;: &quot;https://argelysoriach.com/#person&quot;,
+  &quot;name&quot;: &quot;Argelys Samuel Oriach&quot;,
+  &quot;alternateName&quot;: &quot;Argelys Oriach&quot;,
+  &quot;givenName&quot;: &quot;Argelys&quot;,
+  &quot;additionalName&quot;: &quot;Samuel&quot;,
+  &quot;familyName&quot;: &quot;Oriach&quot;,
+  &quot;url&quot;: &quot;https://argelysoriach.com/&quot;,
+  &quot;jobTitle&quot;: [
+    &quot;Founder&quot;,
+    &quot;Actor&quot;,
+    &quot;Writer&quot;
+  ],
+  &quot;worksFor&quot;: {
+    &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
+  },
+  &quot;@reverse&quot;: {
+    &quot;founder&quot;: [
+      {
+        &quot;@id&quot;: &quot;https://wild-lake.org/#organization&quot;
+      }
     ]
   },
-  "alumniOf": [
-    { "@type": "CollegeOrUniversity", "name": "Wesleyan University" },
-    { "@type": "HighSchool", "name": "Phillips Academy Andover" }
+  &quot;alumniOf&quot;: [
+    {
+      &quot;@type&quot;: &quot;CollegeOrUniversity&quot;,
+      &quot;name&quot;: &quot;Wesleyan University&quot;
+    },
+    {
+      &quot;@type&quot;: &quot;HighSchool&quot;,
+      &quot;name&quot;: &quot;Phillips Academy Andover&quot;
+    }
   ],
-  "knowsAbout": [
-    "Content strategy",
-    "Organic growth",
-    "Artist development",
-    "Poetry"
+  &quot;knowsAbout&quot;: [
+    &quot;Artist development&quot;,
+    &quot;Acting&quot;,
+    &quot;Writing&quot;,
+    &quot;Artist mentorship&quot;
   ],
-  "sameAs": [
-    "https://www.linkedin.com/in/argelys-samuel-oriach/"
+  &quot;sameAs&quot;: [
+    &quot;https://www.linkedin.com/in/argelys-samuel-oriach/&quot;
   ]
 }</code></pre>
       </article>

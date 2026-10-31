@@ -4,82 +4,114 @@
   "@id": "https://wild-lake.org/#organization",
   "name": "Wild-Lake",
   "legalName": "Wild-Lake LLC",
-  "alternateName": ["Wild Lake", "WILDLAKE"],
+  "alternateName": [
+    "Wild Lake",
+    "WILDLAKE"
+  ],
   "url": "https://wild-lake.org/",
-  "description": "Wild-Lake is an existential mechanics studio and artists and repertoire (A&R) venture based in Los Angeles, California. We scout and develop artists, and we build the systems that shape identity, behavior, organizations, and human potential.",
-  "slogan": "Turning complexity into clarity.",
+  "description": "Wild-Lake is an existential mechanics studio and A&R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+  "slogan": "For world-class creators.",
   "foundingDate": "2026",
-  "foundingLocation": {
-    "@type": "Place",
-    "name": "Los Angeles, California, United States"
+  "founder": {
+    "@id": "https://argelysoriach.com/#person"
   },
-  "founder": { "@id": "https://argelysoriach.com/#person" },
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
     "addressCountry": "US"
   },
   "location": {
     "@type": "Place",
-    "name": "Los Angeles, CA",
+    "name": "New York, NY",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 34.0522,
-      "longitude": -118.2437
+      "latitude": 40.7128,
+      "longitude": -74.006
     }
   },
   "areaServed": "Worldwide",
   "knowsAbout": [
     "Existential mechanics",
     "Artists and repertoire (A&R)",
-    "Artist scouting",
     "Artist development",
-    "Behavioral systems",
-    "Organizational design",
-    "Human potential"
+    "Creative infrastructure",
+    "Artist mentorship",
+    "Confidence coaching",
+    "Self love coaching"
   ],
   "makesOffer": [
     {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Existential Mechanics",
-        "description": "Mapping and decoding the underlying behavioral, structural, and cognitive dynamics that drive identity and decision-making.",
-        "provider": { "@id": "https://wild-lake.org/#organization" }
+        "name": "Existential mechanics",
+        "description": "We examine the patterns, pressures, and structures shaping how you create and make decisions. Together, we map what supports the work and what needs to change.",
+        "provider": {
+          "@id": "https://wild-lake.org/#organization"
+        }
       }
     },
     {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Commercial Lab",
-        "description": "Venture-focused systems engineering designed to scale transformative technologies and organizational models.",
-        "provider": { "@id": "https://wild-lake.org/#organization" }
+        "name": "Artists & repertoire",
+        "description": "We scout talent and develop the creative work, its identity, and its direction. The artist’s long-term vision guides the practice.",
+        "provider": {
+          "@id": "https://wild-lake.org/#organization"
+        }
       }
     },
     {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Human Potential",
-        "description": "Designing infrastructure, tools, and environments that align institutional mechanics with human capability.",
-        "provider": { "@id": "https://wild-lake.org/#organization" }
+        "name": "Infrastructure for independence",
+        "description": "We build the systems, workflows, and working structures around the artist so the practice can endure without giving away ownership.",
+        "provider": {
+          "@id": "https://wild-lake.org/#organization"
+        }
       }
     },
     {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Artists & Repertoire (A&R)",
-        "serviceType": "Artist scouting and development",
-        "description": "Scouting artists and developing their work.",
-        "provider": { "@id": "https://wild-lake.org/#organization" }
+        "name": "Mentorship for artists",
+        "description": "Bring your creative work and the life around it. Explore long term creative and personal support through embodied practice, sustained attention, and room for becoming.",
+        "provider": {
+          "@id": "https://wild-lake.org/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Confidence coaching",
+        "description": "Practice building self trust through body based awareness and clear boundaries. Begin with what you notice, what you need, and the choices available to you.",
+        "provider": {
+          "@id": "https://wild-lake.org/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Self love coaching",
+        "description": "Explore practical repair and congruence between your choices and your values. Practice learning to inhabit your body, not operate it.",
+        "provider": {
+          "@id": "https://wild-lake.org/#organization"
+        }
       }
     }
   ],
   "sameAs": [
-    "https://www.instagram.com/wildlake.la/"
+    "https://www.instagram.com/wildlakewildlake/"
   ],
-  "mainEntityOfPage": { "@id": "https://wild-lake.org/#home" }
+  "mainEntityOfPage": {
+    "@id": "https://wild-lake.org/#home"
+  }
 }
