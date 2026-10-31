@@ -229,6 +229,31 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/assets/site.css"/>
+<script>
+  /* Choose a fresh header on each full load, before first paint. */
+  (function () {
+    var P_LOG = 0.5;
+    var v = 'a';
+    try {
+      var q = /[?&]header=(a|b)(?:&|$)/.exec(location.search);
+      if (q) { v = q[1]; } else {
+        var r = new Uint32Array(1);
+        crypto.getRandomValues(r);
+        if (r[0] / 4294967296 < P_LOG) v = 'b';
+      }
+    } catch (e) {}
+    document.documentElement.setAttribute('data-header', v);
+  })();
+</script>
+<style>
+.home .mark-a { display: grid; gap: clamp(2px,.5vw,8px); }
+.home .mark-b { display: none; position: relative; aspect-ratio: 1000 / 416; margin-bottom: clamp(2px,.5vw,8px); }
+html[data-header="b"] .mark-a { display: none; }
+html[data-header="b"] .mark-b { display: block; }
+.home .mark-b canvas { position: absolute; top: 0; left: calc(-1 * clamp(20px,3.2vw,56px)); width: calc(100% + 2 * clamp(20px,3.2vw,56px)); height: 100%; opacity: 0; transition: opacity 600ms ease; }
+.home .mark-b canvas.is-ready { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .home .mark-b canvas { transition: none; } }
+</style>
 </head>
 <body class="home">
 <header class="cap">
@@ -248,12 +273,15 @@
 <div>New York · Working worldwide</div>
 </div>
 <div aria-label="Wild Lake" class="mark" role="img">
+<div class="mark-a" aria-hidden="true">
 <svg viewbox="0 0 1000 208">
 <text font-size="279" lengthadjust="spacingAndGlyphs" textlength="1000" x="0" y="206">WILD</text>
 </svg>
 <svg viewbox="0 0 1000 208">
 <text font-size="279" lengthadjust="spacingAndGlyphs" textlength="1000" x="0" y="206">LAKE</text>
 </svg>
+</div>
+<div class="mark-b" aria-hidden="true"><canvas></canvas></div>
 </div>
 <h1 class="subtitle-bar">
       For world-class creators.
@@ -347,7 +375,8 @@
        spreads out from where you pressed. Nothing here sets a size: the letters sit in the same fitted
        drawings as before, so the name still scales with the page. No motion at all if the system asks for less. */
     (function () {
-      var svgs = document.querySelectorAll('.mark svg');
+      if (document.documentElement.getAttribute('data-header') === 'b') return;
+      var svgs = document.querySelectorAll('.mark-a svg');
       if (!svgs.length || !window.requestAnimationFrame) return;
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
@@ -428,5 +457,137 @@
       if (document.fonts && document.fonts.ready) document.fonts.ready.then(boot, boot); else boot();
     })();
   </script>
+<script>
+(function () {
+  if (document.documentElement.getAttribute('data-header') !== 'b') return;
+  var box = document.querySelector('.mark-b');
+  var canvas = box.querySelector('canvas');
+  var PERIOD = 8, WATER_FRAC = 0.58, RING_START = 0.4, T_STILL = 1.6, DPR_MAX = 2;
+  var colors = getComputedStyle(document.body);
+  var BACKGROUND = colors.backgroundColor;
+  var INK = colors.color.match(/[\d.]+/g).slice(0, 3).join(',');
+var MARK = { d: 'M207 0 5 -688H257L339 -383Q346 -359 351 -336Q356 -313 360 -294.5Q364 -276 366 -265H373Q375 -276 378 -291Q381 -306 384 -322Q387 -338 391 -354Q395 -370 398 -383L476 -688H777L854 -383Q859 -365 863.5 -343.5Q868 -322 872 -301Q876 -280 879 -265H886Q888 -277 891.5 -292Q895 -307 898.5 -323Q902 -339 906 -354.5Q910 -370 913 -383L996 -688H1225L1023 0H739L640 -387Q636 -404 631.5 -421Q627 -438 624 -452Q621 -466 619 -474H612Q609 -462 605 -446Q601 -430 597.5 -414.5Q594 -399 591 -387L491 0ZM1292 0V-688H1539V0ZM1675 0V-688H1922V-189H2368V0ZM2449 0V-688H2849Q2977 -688 3070 -648Q3163 -608 3213 -531Q3263 -454 3263 -344Q3263 -234 3213 -157Q3163 -80 3070 -40Q2977 0 2849 0ZM2696 -171H2834Q2875 -171 2907 -183Q2939 -195 2962 -216.5Q2985 -238 2997 -267.5Q3009 -297 3009 -333V-357Q3009 -393 2997 -422Q2985 -451 2962 -472.5Q2939 -494 2907 -505.5Q2875 -517 2834 -517H2696ZM3346 -189V-361H3662V-189ZM3774 0V-688H4021V-189H4467V0ZM4482 0 4815 -688H5087L5420 0H5155L5114 -91H4777L4737 0ZM4852 -262H5039L4991 -378Q4988 -386 4983 -399.5Q4978 -413 4972 -430Q4966 -447 4960.5 -464Q4955 -481 4950 -495H4943Q4937 -478 4929 -456Q4921 -434 4913.5 -413Q4906 -392 4900 -378ZM5490 0V-688H5737V-384L6070 -688H6376L6072 -407L6384 0H6083L5890 -259L5737 -135V0ZM6466 0V-688H7201V-517H6714V-428H7134V-266H6714V-171H7209V0Z', x0: 5, y0: -688, w: 7204, h: 688 };
+
+  var path = new Path2D(MARK.d);
+  var TAU = Math.PI * 2;
+  var scratch = null;
+  var smooth = function (a, b, x) { x = Math.min(1, Math.max(0, (x - a) / (b - a))); return x * x * (3 - 2 * x); };
+  function draw(ctx, W, H, t, o) {
+    o = o || {};
+    var logFrac = o.logFrac || 0.74, waterFrac = o.waterFrac || 0.6;
+    var s = (W * logFrac) / MARK.w, lw = MARK.w * s, lh = MARK.h * s;
+    var water = Math.round(H * waterFrac);
+    var phase = (t % PERIOD) / PERIOD;
+    var bob = Math.sin(phase * TAU * 2) * lh * 0.045;
+    var tilt = Math.sin(phase * TAU * 2 + 1.05) * 0.0055;
+    var cx = W / 2;
+    // log rests with about a tenth of its body under water; the waterline is fixed, the log heaves through it
+    var top = water - lh * 0.9 + bob;
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = BACKGROUND;
+    ctx.fillRect(0, 0, W, H);
+
+    // the log, drawn tilted about its centre, then cut flat at the waterline
+    var src = scratch || (scratch = document.createElement('canvas'));
+    if (src.width !== W || src.height !== H) { src.width = W; src.height = H; }
+    var sc = src.getContext('2d');
+    sc.globalCompositeOperation = 'source-over';
+    sc.setTransform(1, 0, 0, 1, 0, 0);
+    sc.clearRect(0, 0, W, H);
+    sc.fillStyle = 'rgb(' + INK + ')';
+    sc.translate(cx, top + lh / 2); sc.rotate(tilt); sc.translate(-cx, -(top + lh / 2));
+    sc.translate(cx - lw / 2 - MARK.x0 * s, top - MARK.y0 * s);
+    sc.scale(s, s); sc.fill(path);
+    sc.setTransform(1, 0, 0, 1, 0, 0);
+    sc.globalCompositeOperation = 'destination-in';
+    sc.fillStyle = '#000'; sc.fillRect(0, 0, W, water);
+
+    // rings: four per loop, flat on the surface, spreading from where the log meets the water
+    var rings = 4;
+    ctx.lineWidth = Math.max(1, W / 1280);
+    for (var k = 0; k < rings; k++) {
+      var a = ((t / PERIOD) * 1 + k / rings) % 1;
+      var rx = lw * RING_START + a * W * 0.62;
+      var ry = Math.max(2, rx * 0.045);
+      var alpha = 0.34 * Math.pow(1 - a, 1.6) * smooth(0, 0.08, a);
+      if (alpha < 0.004) continue;
+      ctx.strokeStyle = 'rgba(' + INK + ',' + alpha.toFixed(4) + ')';
+      ctx.beginPath(); ctx.ellipse(cx, water + ry * 0.35, rx, ry, 0, 0, TAU); ctx.stroke();
+    }
+
+    // reflection: the cut log mirrored about the waterline, sliced into rows that sway and fade with depth
+    var depth = H - water, row = 2;
+    for (var y = 0; y < depth; y += row) {
+      var d = y + 1;
+      var amp = 0.8 + 11 * smooth(0, depth, d) * (W / 1920);
+      var wl = 26 + d * 0.16;
+      var dx = Math.sin(d / wl * TAU - phase * TAU * 2) * amp + Math.sin(d / (wl * 2.3) * TAU + phase * TAU) * amp * 0.45;
+      var sy = water - d - row;
+      if (sy < 0) break;
+      ctx.globalAlpha = 0.44 * Math.exp(-d / (H * 0.17));
+      ctx.save();
+      ctx.translate(0, water + y + row); ctx.scale(1, -1);
+      ctx.drawImage(src, 0, sy, W, row, dx, 0, W, row);
+      ctx.restore();
+    }
+    ctx.globalAlpha = 1;
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.drawImage(src, 0, 0);
+
+    // the surface: one hairline, fading toward the edges
+    var g = ctx.createLinearGradient(0, 0, W, 0);
+    g.addColorStop(0, 'rgba(' + INK + ',0)'); g.addColorStop(0.18, 'rgba(' + INK + ',0.2)');
+    g.addColorStop(0.82, 'rgba(' + INK + ',0.2)'); g.addColorStop(1, 'rgba(' + INK + ',0)');
+    ctx.fillStyle = g; ctx.fillRect(0, water, W, Math.max(1, Math.round(W / 1920)));
+  }
+
+
+  var ctx = canvas.getContext('2d');
+  if (!ctx) { document.documentElement.setAttribute('data-header', 'a'); return; }
+  var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var visible = false, elapsed = 0, last = null, raf = 0;
+  var options = { waterFrac: WATER_FRAC, logFrac: 1 };
+  function paint() {
+    draw(ctx, canvas.width, canvas.height, motion.matches ? T_STILL : elapsed, options);
+    canvas.classList.add('is-ready');
+  }
+  function stop() { if (raf) cancelAnimationFrame(raf); raf = 0; last = null; }
+  function frame(now) {
+    raf = 0;
+    if (!visible || motion.matches || document.hidden) { last = null; return; }
+    if (last !== null) elapsed += (now - last) / 1000;
+    last = now;
+    paint();
+    raf = requestAnimationFrame(frame);
+  }
+  function play() {
+    if (visible && !motion.matches && !document.hidden && !raf) { last = null; raf = requestAnimationFrame(frame); }
+  }
+  function fit() {
+    var r = canvas.getBoundingClientRect();
+    var dpr = Math.min(DPR_MAX, window.devicePixelRatio || 1);
+    if (!r.width || !r.height) return;
+    canvas.width = Math.round(r.width * dpr);
+    canvas.height = Math.round(r.height * dpr);
+    options.logFrac = box.clientWidth / r.width;
+    paint();
+  }
+  fit();
+  if (window.ResizeObserver) { new ResizeObserver(fit).observe(box); }
+  else { window.addEventListener('resize', fit); }
+  if (window.IntersectionObserver) {
+    new IntersectionObserver(function (entries) {
+      visible = entries[0].isIntersecting;
+      if (visible) play(); else stop();
+    }).observe(box);
+  } else { visible = true; play(); }
+  function motionChanged() { stop(); paint(); play(); }
+  if (motion.addEventListener) motion.addEventListener('change', motionChanged);
+  else motion.addListener(motionChanged);
+  document.addEventListener('visibilitychange', function () { if (document.hidden) stop(); else play(); });
+})();
+</script>
 </body>
 </html>
