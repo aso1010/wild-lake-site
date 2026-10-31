@@ -69,3 +69,25 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
 .home .mark{width:100%;max-width:none;gap:clamp(2px,.5vw,8px)}
 .home .mark text{font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900}
 .home .mark .ltr{transform-box:fill-box;will-change:transform,opacity}
+/* Shared navigation and contact, following the same spacing rhythm. */
+.site-nav{width:100%;max-width:987px;margin:21px auto 0;padding:13px var(--gutter);display:flex;flex-wrap:wrap;align-items:center;gap:8px 21px;font:500 16px/1.618 var(--font-sans);border-block:1px solid var(--rule-color)}
+.site-nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.site-nav a[aria-current=page]{text-decoration:underline;text-underline-offset:8px}
+.site-nav .begin-link{margin-left:auto}
+.glyph-box{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none}
+.contact-header{max-width:987px;margin:0 auto;padding:34px var(--gutter) 13px;display:flex;gap:13px;align-items:center}
+.contact-main{max-width:987px;margin:auto;padding:55px var(--gutter)}
+.contact-main h1{font-size:clamp(34px,5vw,55px);margin:0 0 34px}
+.contact-main p{max-width:55ch;color:var(--subtle-color);margin:0 0 21px;overflow-wrap:anywhere}
+.contact-main .email-link{font-size:clamp(16px,2.5vw,21px);color:var(--text-color)}
+.intake{max-width:610px;margin-top:55px;padding-top:34px;border-top:1px solid var(--rule-color)}
+.intake h2{font-size:34px;margin:0 0 21px}
+.intake form{display:grid;gap:13px}
+.intake label{margin-top:13px;font-size:18px}
+.intake label span{color:var(--muted-color);font-size:13px}
+.intake input,.intake select,.intake textarea,.intake button{font:inherit;color:var(--text-color);background:var(--bg-color);border:1px solid var(--muted-color);border-radius:5px;padding:13px;width:100%;min-width:0;min-height:48px}
+.intake textarea{resize:vertical}
+.intake button{margin-top:21px;width:fit-content;padding-inline:21px;cursor:pointer;background:var(--text-color);color:var(--bg-color);font-weight:600}
+.intake :is(input,select,textarea,button):focus-visible{outline:2px solid var(--text-color);outline-offset:3px}
+.intake #intake-status{font-size:16px;margin-top:8px}
+@media(max-width:375px){.site-nav{gap:8px 13px;font-size:15px}}
