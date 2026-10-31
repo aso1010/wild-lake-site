@@ -91,3 +91,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
 .intake :is(input,select,textarea,button):focus-visible{outline:2px solid var(--text-color);outline-offset:3px}
 .intake #intake-status{font-size:16px;margin-top:8px}
 @media(max-width:375px){.site-nav{gap:8px 13px;font-size:15px}}
+/* Give the homepage opening distinct pauses between each reading level. */
+.home .cap{row-gap:clamp(55px,6vw,89px)}
+.home .cap + .site-nav{margin-top:clamp(55px,6vw,89px);padding-block:21px}
+.home .cap ~ .statement-block{padding-top:clamp(55px,6vw,89px)}
