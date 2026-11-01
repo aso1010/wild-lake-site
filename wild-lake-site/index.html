@@ -609,14 +609,16 @@ var MARK = { d: 'M207 0 5 -688H257L339 -383Q346 -359 351 -336Q356 -313 360 -294.
     var descent = motion.matches ? 1 : smooth(0, 4.5, t);
     var sway = Math.sin(t * 0.48) * W * 0.0018 * descent;
     var targetY = logTop * 0.68 + Math.sin(t * 0.63) * H * 0.004;
-    var sx = W * 0.545 + sway, sy = -size * 5 + (targetY + size * 5) * descent;
+    // Align the silk and spider to the K in the outlined wordmark at every viewport size.
+    var kCenter = (W - W * options.logFrac) / 2 + W * options.logFrac * (5937 - MARK.x0) / MARK.w;
+    var sx = kCenter + sway, sy = -size * 5 + (targetY + size * 5) * descent;
     ctx.strokeStyle = 'rgba(' + INK + ',0.21)';
-    ctx.beginPath(); ctx.moveTo(W * 0.545, 0); ctx.lineTo(sx, sy); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(kCenter, 0); ctx.lineTo(sx, sy); ctx.stroke();
     ctx.translate(sx, sy);
     ctx.rotate(Math.sin(t * 0.48) * 0.035);
     ctx.lineWidth = Math.max(0.65, W / 2000);
-    ctx.strokeStyle = 'rgba(180,148,112,0.65)';
-    ctx.fillStyle = '#211a13';
+    ctx.strokeStyle = 'rgba(' + INK + ',0.34)';
+    ctx.fillStyle = '#000000';
     for (var side = -1; side <= 1; side += 2) {
       for (i = 0; i < 4; i++) {
         var startY = size * (0.65 + i * 0.2);
@@ -630,6 +632,12 @@ var MARK = { d: 'M207 0 5 -688H257L339 -383Q346 -359 351 -336Q356 -313 360 -294.
     }
     ctx.beginPath(); ctx.ellipse(0, -size * 0.35, size * 0.7, size * 1.05, 0, 0, TAU); ctx.fill(); ctx.stroke();
     ctx.beginPath(); ctx.ellipse(0, size * 1.1, size * 0.46, size * 0.6, 0, 0, TAU); ctx.fill(); ctx.stroke();
+    // Small broken highlights reveal the black body without turning it silver.
+    ctx.strokeStyle = 'rgba(' + INK + ',0.65)';
+    ctx.lineWidth = Math.max(0.5, W / 2600);
+    ctx.beginPath(); ctx.ellipse(-size * 0.05, -size * 0.35, size * 0.6, size * 0.94, -0.1, Math.PI, Math.PI * 1.65); ctx.stroke();
+    ctx.strokeStyle = 'rgba(' + INK + ',0.45)';
+    ctx.beginPath(); ctx.ellipse(-size * 0.03, size * 1.1, size * 0.37, size * 0.51, 0, Math.PI * 1.05, Math.PI * 1.65); ctx.stroke();
     ctx.restore();
   }
 
