@@ -232,14 +232,13 @@
 <script>
   /* Choose a fresh header on each full load, before first paint. */
   (function () {
-    var P_LOG = 0.5;
     var v = 'a';
     try {
-      var q = /[?&]header=(a|b)(?:&|$)/.exec(location.search);
+      var q = /[?&]header=(a|b|c)(?:&|$)/.exec(location.search);
       if (q) { v = q[1]; } else {
         var r = new Uint32Array(1);
         crypto.getRandomValues(r);
-        if (r[0] / 4294967296 < P_LOG) v = 'b';
+        v = ['a', 'b', 'c'][Math.floor(r[0] / 4294967296 * 3)];
       }
     } catch (e) {}
     document.documentElement.setAttribute('data-header', v);
@@ -248,8 +247,8 @@
 <style>
 .home .mark-a { display: grid; gap: clamp(2px,.5vw,8px); }
 .home .mark-b { display: none; position: relative; aspect-ratio: 1000 / 416; margin-bottom: clamp(2px,.5vw,8px); }
-html[data-header="b"] .mark-a { display: none; }
-html[data-header="b"] .mark-b { display: block; }
+html[data-header="b"] .mark-a, html[data-header="c"] .mark-a { display: none; }
+html[data-header="b"] .mark-b, html[data-header="c"] .mark-b { display: block; }
 .home .mark-b canvas { position: absolute; top: 0; left: calc(-1 * clamp(20px,3.2vw,56px)); width: calc(100% + 2 * clamp(20px,3.2vw,56px)); height: 100%; opacity: 0; transition: opacity 600ms ease; }
 .home .mark-b canvas.is-ready { opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .home .mark-b canvas { transition: none; } }
@@ -375,7 +374,7 @@ html[data-header="b"] .mark-b { display: block; }
        spreads out from where you pressed. Nothing here sets a size: the letters sit in the same fitted
        drawings as before, so the name still scales with the page. No motion at all if the system asks for less. */
     (function () {
-      if (document.documentElement.getAttribute('data-header') === 'b') return;
+      if (document.documentElement.getAttribute('data-header') !== 'a' && document.documentElement.hasAttribute('data-header')) return;
       var svgs = document.querySelectorAll('.mark-a svg');
       if (!svgs.length || !window.requestAnimationFrame) return;
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -459,7 +458,8 @@ html[data-header="b"] .mark-b { display: block; }
   </script>
 <script>
 (function () {
-  if (document.documentElement.getAttribute('data-header') !== 'b') return;
+  var variant = document.documentElement.getAttribute('data-header');
+  if (variant !== 'b' && variant !== 'c') return;
   var box = document.querySelector('.mark-b');
   var canvas = box.querySelector('canvas');
   var PERIOD = 8, WATER_FRAC = 0.58, RING_START = 0.4, T_STILL = 1.6, DPR_MAX = 2;
@@ -544,13 +544,79 @@ var MARK = { d: 'M207 0 5 -688H257L339 -383Q346 -359 351 -336Q356 -313 360 -294.
   }
 
 
+  // A fine orb web and a dark, warm-edged spider, only in variant C.
+  function drawWeb(ctx, W, H, t) {
+    var water = Math.round(H * WATER_FRAC);
+    var logHeight = W * options.logFrac * MARK.h / MARK.w;
+    var logTop = water - logHeight * 0.9 + Math.sin(t / PERIOD * TAU * 2) * logHeight * 0.045;
+    var cx = W * 0.78, cy = H * 0.025;
+    var rx = W * 0.24, ry = Math.max(H * 0.2, logTop - cy);
+    var spokes = 16, points = [], i, j;
+    ctx.save();
+    ctx.lineWidth = Math.max(0.5, W / 2400);
+    for (i = 0; i < spokes; i++) {
+      var angle = i / spokes * TAU;
+      var irregular = 1 + Math.sin(i * 2.7) * 0.055;
+      points.push({ x: cx + Math.cos(angle) * rx * irregular, y: cy + Math.sin(angle) * ry * irregular });
+    }
+    ctx.strokeStyle = 'rgba(' + INK + ',0.24)';
+    for (i = 0; i < spokes; i++) {
+      ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(points[i].x, points[i].y); ctx.stroke();
+    }
+    for (j = 1; j <= 9; j++) {
+      var fraction = Math.pow(j / 9, 1.2);
+      ctx.strokeStyle = 'rgba(' + INK + ',' + (0.13 + j * 0.009) + ')';
+      ctx.beginPath();
+      for (i = 0; i <= spokes; i++) {
+        var a = points[i % spokes], b = points[(i + 1) % spokes];
+        var x = cx + (a.x - cx) * fraction, y = cy + (a.y - cy) * fraction;
+        if (i === 0) ctx.moveTo(x, y);
+        if (i < spokes) {
+          var nx = cx + (b.x - cx) * fraction, ny = cy + (b.y - cy) * fraction;
+          ctx.quadraticCurveTo((x + nx) / 2, (y + ny) / 2 + H * 0.006 * fraction, nx, ny);
+        }
+      }
+      ctx.stroke();
+    }
+    // Attach the lower silk to the floating letter without obscuring its face.
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(W * 0.78, logTop); ctx.stroke();
+    var size = W * 0.0035;
+    var descent = motion.matches ? 1 : smooth(0, 4.5, t);
+    var sway = Math.sin(t * 0.48) * W * 0.0018 * descent;
+    var targetY = logTop * 0.68 + Math.sin(t * 0.63) * H * 0.004;
+    var sx = W * 0.545 + sway, sy = -size * 5 + (targetY + size * 5) * descent;
+    ctx.strokeStyle = 'rgba(' + INK + ',0.21)';
+    ctx.beginPath(); ctx.moveTo(W * 0.545, 0); ctx.lineTo(sx, sy); ctx.stroke();
+    ctx.translate(sx, sy);
+    ctx.rotate(Math.sin(t * 0.48) * 0.035);
+    ctx.lineWidth = Math.max(0.65, W / 2000);
+    ctx.strokeStyle = 'rgba(180,148,112,0.65)';
+    ctx.fillStyle = '#211a13';
+    for (var side = -1; side <= 1; side += 2) {
+      for (i = 0; i < 4; i++) {
+        var startY = size * (0.65 + i * 0.2);
+        var kneeY = size * (-1.6 + i * 1.25) + Math.sin(t * 7 + i * 1.5 + side) * size * 0.2 * (1 - descent);
+        var tipY = size * (-3.1 + i * 2.05);
+        ctx.beginPath(); ctx.moveTo(side * size * 0.4, startY);
+        ctx.quadraticCurveTo(side * size * 1.3, startY, side * size * 1.8, kneeY);
+        ctx.quadraticCurveTo(side * size * 2.35, kneeY + size * 0.3, side * size * 2.65, tipY);
+        ctx.stroke();
+      }
+    }
+    ctx.beginPath(); ctx.ellipse(0, -size * 0.35, size * 0.7, size * 1.05, 0, 0, TAU); ctx.fill(); ctx.stroke();
+    ctx.beginPath(); ctx.ellipse(0, size * 1.1, size * 0.46, size * 0.6, 0, 0, TAU); ctx.fill(); ctx.stroke();
+    ctx.restore();
+  }
+
   var ctx = canvas.getContext('2d');
   if (!ctx) { document.documentElement.setAttribute('data-header', 'a'); return; }
   var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var visible = false, elapsed = 0, last = null, raf = 0;
   var options = { waterFrac: WATER_FRAC, logFrac: 1 };
   function paint() {
-    draw(ctx, canvas.width, canvas.height, motion.matches ? T_STILL : elapsed, options);
+    var time = motion.matches ? T_STILL : elapsed;
+    draw(ctx, canvas.width, canvas.height, time, options);
+    if (variant === 'c') drawWeb(ctx, canvas.width, canvas.height, time);
     canvas.classList.add('is-ready');
   }
   function stop() { if (raf) cancelAnimationFrame(raf); raf = 0; last = null; }
