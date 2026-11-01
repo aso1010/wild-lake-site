@@ -549,37 +549,61 @@ var MARK = { d: 'M207 0 5 -688H257L339 -383Q346 -359 351 -336Q356 -313 360 -294.
     var water = Math.round(H * WATER_FRAC);
     var logHeight = W * options.logFrac * MARK.h / MARK.w;
     var logTop = water - logHeight * 0.9 + Math.sin(t / PERIOD * TAU * 2) * logHeight * 0.045;
-    var cx = W * 0.78, cy = H * 0.025;
-    var rx = W * 0.24, ry = Math.max(H * 0.2, logTop - cy);
-    var spokes = 16, points = [], i, j;
+    var cx = W * 0.79, cy = H * 0.035;
+    var rx = W * 0.245, ry = Math.max(H * 0.22, logTop - cy);
+    var spokes = 27, points = [], i, j;
+    // Fixed variation gives silk a natural structure without flickering each frame.
+    function noise(n) { var value = Math.sin(n * 127.1 + 311.7) * 43758.5453; return value - Math.floor(value); }
+    function strandPoint(index, turn) {
+      var spoke = points[index % spokes];
+      var radius = Math.pow(turn / 19, 1.18);
+      radius += Math.sin(index * 0.9 + turn * 0.47) * radius * 0.055;
+      radius += (noise(index * 31 + turn) - 0.5) * 0.025;
+      return { x: cx + (spoke.x - cx) * radius, y: cy + (spoke.y - cy) * radius };
+    }
     ctx.save();
-    ctx.lineWidth = Math.max(0.5, W / 2400);
+    ctx.lineWidth = Math.max(0.4, W / 2800);
     for (i = 0; i < spokes; i++) {
-      var angle = i / spokes * TAU;
-      var irregular = 1 + Math.sin(i * 2.7) * 0.055;
-      points.push({ x: cx + Math.cos(angle) * rx * irregular, y: cy + Math.sin(angle) * ry * irregular });
+      var angle = (i + (noise(i) - 0.5) * 0.6) / spokes * TAU;
+      var irregular = 0.81 + noise(i + 80) * 0.34;
+      var px = cx + Math.cos(angle) * rx * irregular;
+      var py = cy + Math.sin(angle) * ry * irregular;
+      // Lower frame threads find different footholds along the letter tops.
+      if (py > logTop) py = logTop - H * noise(i + 90) * 0.018;
+      points.push({ x: px, y: py });
     }
-    ctx.strokeStyle = 'rgba(' + INK + ',0.24)';
     for (i = 0; i < spokes; i++) {
-      ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(points[i].x, points[i].y); ctx.stroke();
-    }
-    for (j = 1; j <= 9; j++) {
-      var fraction = Math.pow(j / 9, 1.2);
-      ctx.strokeStyle = 'rgba(' + INK + ',' + (0.13 + j * 0.009) + ')';
-      ctx.beginPath();
-      for (i = 0; i <= spokes; i++) {
-        var a = points[i % spokes], b = points[(i + 1) % spokes];
-        var x = cx + (a.x - cx) * fraction, y = cy + (a.y - cy) * fraction;
-        if (i === 0) ctx.moveTo(x, y);
-        if (i < spokes) {
-          var nx = cx + (b.x - cx) * fraction, ny = cy + (b.y - cy) * fraction;
-          ctx.quadraticCurveTo((x + nx) / 2, (y + ny) / 2 + H * 0.006 * fraction, nx, ny);
-        }
-      }
+      var end = points[i];
+      ctx.strokeStyle = 'rgba(' + INK + ',' + (0.12 + noise(i + 120) * 0.16) + ')';
+      ctx.beginPath(); ctx.moveTo(cx, cy);
+      ctx.quadraticCurveTo((cx + end.x) / 2 + W * (noise(i + 140) - 0.5) * 0.005,
+        (cy + end.y) / 2 + H * 0.008, end.x, end.y);
       ctx.stroke();
     }
-    // Attach the lower silk to the floating letter without obscuring its face.
-    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(W * 0.78, logTop); ctx.stroke();
+    // Uneven capture threads sag toward the hub, with occasional broken sections.
+    for (j = 1; j <= 19; j++) {
+      for (i = 0; i < spokes; i++) {
+        if (j > 8 && noise(i * 41 + j * 7) < 0.075) continue;
+        var a = strandPoint(i, j), b = strandPoint((i + 1) % spokes, j);
+        var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+        var tension = 0.008 + noise(i * 11 + j) * 0.018;
+        ctx.lineWidth = Math.max(0.35, W / 3000) * (0.65 + noise(i + j * 13) * 0.6);
+        ctx.strokeStyle = 'rgba(' + INK + ',' + (0.1 + noise(i * 19 + j) * 0.15) + ')';
+        ctx.beginPath(); ctx.moveTo(a.x, a.y);
+        ctx.quadraticCurveTo(mx + (cx - mx) * tension, my + (cy - my) * tension, b.x, b.y);
+        ctx.stroke();
+      }
+    }
+    // Sparse support silk reaches beyond the orb rather than forming a perfect rim.
+    ctx.lineWidth = Math.max(0.4, W / 2600);
+    ctx.strokeStyle = 'rgba(' + INK + ',0.17)';
+    var anchors = [[0.58, 0, 12], [0.96, logTop / H, 2], [0.78, logTop / H, 7]];
+    for (i = 0; i < anchors.length; i++) {
+      var anchor = anchors[i], outer = points[anchor[2]];
+      ctx.beginPath(); ctx.moveTo(outer.x, outer.y);
+      ctx.quadraticCurveTo((outer.x + W * anchor[0]) / 2, (outer.y + H * anchor[1]) / 2 + H * 0.015,
+        W * anchor[0], H * anchor[1]); ctx.stroke();
+    }
     var size = W * 0.0035;
     var descent = motion.matches ? 1 : smooth(0, 4.5, t);
     var sway = Math.sin(t * 0.48) * W * 0.0018 * descent;
