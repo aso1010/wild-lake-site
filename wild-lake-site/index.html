@@ -549,8 +549,9 @@ var MARK = { d: 'M207 0 5 -688H257L339 -383Q346 -359 351 -336Q356 -313 360 -294.
     var water = Math.round(H * WATER_FRAC);
     var logHeight = W * options.logFrac * MARK.h / MARK.w;
     var logTop = water - logHeight * 0.9 + Math.sin(t / PERIOD * TAU * 2) * logHeight * 0.045;
-    var cx = W * 0.79, cy = H * 0.035;
-    var rx = W * 0.245, ry = Math.max(H * 0.22, logTop - cy);
+    // The hub sits outside the frame; only a small, uneven lower-left quarter is visible.
+    var cx = W * 1.025, cy = -H * 0.07;
+    var rx = W * 0.235, ry = H * 0.39;
     var spokes = 27, points = [], i, j;
     // Fixed variation gives silk a natural structure without flickering each frame.
     function noise(n) { var value = Math.sin(n * 127.1 + 311.7) * 43758.5453; return value - Math.floor(value); }
@@ -565,7 +566,7 @@ var MARK = { d: 'M207 0 5 -688H257L339 -383Q346 -359 351 -336Q356 -313 360 -294.
     ctx.lineWidth = Math.max(0.4, W / 2800);
     for (i = 0; i < spokes; i++) {
       var angle = (i + (noise(i) - 0.5) * 0.6) / spokes * TAU;
-      var irregular = 0.81 + noise(i + 80) * 0.34;
+      var irregular = 0.72 + noise(i + 80) * 0.43 + Math.sin(i * 1.7) * 0.06;
       var px = cx + Math.cos(angle) * rx * irregular;
       var py = cy + Math.sin(angle) * ry * irregular;
       // Lower frame threads find different footholds along the letter tops.
@@ -597,7 +598,7 @@ var MARK = { d: 'M207 0 5 -688H257L339 -383Q346 -359 351 -336Q356 -313 360 -294.
     // Sparse support silk reaches beyond the orb rather than forming a perfect rim.
     ctx.lineWidth = Math.max(0.4, W / 2600);
     ctx.strokeStyle = 'rgba(' + INK + ',0.17)';
-    var anchors = [[0.58, 0, 12], [0.96, logTop / H, 2], [0.78, logTop / H, 7]];
+    var anchors = [[0.83, 0, 12], [0.97, logTop / H, 7]];
     for (i = 0; i < anchors.length; i++) {
       var anchor = anchors[i], outer = points[anchor[2]];
       ctx.beginPath(); ctx.moveTo(outer.x, outer.y);
