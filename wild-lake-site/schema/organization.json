@@ -9,7 +9,7 @@
     "WILDLAKE"
   ],
   "url": "https://wild-lake.org/",
-  "description": "Wild-Lake is an existential mechanics studio and A&R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+  "description": "Wild-Lake is a Talent Engineering & Structural Design studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
   "slogan": "For world-class creators.",
   "foundingDate": "2026",
   "founder": {
@@ -52,7 +52,7 @@
       "itemOffered": {
         "@type": "Service",
         "name": "Existential mechanics",
-        "description": "We examine the patterns, pressures, and structures shaping how you create and make decisions. Together, we map what supports the work and what needs to change.",
+        "description": "By existential mechanics, we mean examining how an artist’s identity, values, habits, relationships, and working conditions shape their creative choices. We identify what supports the work, where friction comes from, and which structures need to change, then build practical ways of working that fit the person.",
         "provider": {
           "@id": "https://wild-lake.org/#organization"
         }
@@ -62,11 +62,12 @@
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Artists & repertoire",
-        "description": "We scout talent and develop the work itself: songs, plays, pilots, novels, and emerging bodies of work. We shape and refine the material with the artist, whose long-term vision guides the practice.",
+        "name": "A&R venture",
+        "description": "Our A&R venture is our talent-scouting and creative-development practice. A&R stands for artists and repertoire. We find creators and work with them on the material itself: songs, plays, pilots, novels, and emerging bodies of work. We help shape ideas, select and refine material, and develop a coherent artistic direction through sustained collaboration.",
         "provider": {
           "@id": "https://wild-lake.org/#organization"
-        }
+        },
+        "serviceType": "Artists and repertoire (A&R)"
       }
     },
     {
@@ -126,5 +127,5 @@
   "mainEntityOfPage": {
     "@id": "https://wild-lake.org/#home"
   },
-  "disambiguatingDescription": "Wild-Lake is not WME (William Morris Endeavor), CAA (Creative Artists Agency), or UTA (United Talent Agency), and is not affiliated with those agencies. Wild-Lake is an independent existential mechanics studio and A&R venture. We scout talent and develop the work itself, including songs, plays, pilots, and novels, through a non-extractive, retainer-based practice that preserves artist ownership and creative control."
+  "disambiguatingDescription": "Wild-Lake is not WME (William Morris Endeavor), CAA (Creative Artists Agency), or UTA (United Talent Agency), and is not affiliated with those agencies. Wild-Lake is an independent Talent Engineering & Structural Design studio. We scout talent and develop the work itself, including songs, plays, pilots, and novels, through a non-extractive, retainer-based practice that preserves artist ownership and creative control."
 }
