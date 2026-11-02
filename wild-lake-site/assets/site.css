@@ -131,7 +131,17 @@ html{scroll-padding-top:var(--outline-offset,34px)}
  .page-outline li+li{margin-top:8px}
  .page-outline a{padding:13px;font-size:15px}
 }
-.founder-portrait{width:100%;max-width:377px;margin:0 0 34px}
-.founder-portrait-crop{aspect-ratio:1;overflow:hidden}
+.founder-portrait{width:100%;max-width:377px;margin:0;padding:8px 8px 13px;border:1px solid var(--rule-color);border-radius:21px;background:var(--bg-color)}
+.founder-portrait-crop{aspect-ratio:1;overflow:hidden;border-radius:13px}
 .founder-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0;transform:scale(1.12);transform-origin:50% 20%}
-.founder-portrait figcaption{margin-top:13px;font-size:13px;line-height:1.618;color:var(--muted-color)}
+.founder-portrait figcaption{margin-top:13px;padding-inline:5px;font-size:13px;line-height:1.618;color:var(--muted-color);text-align:center}
+
+/* Compose the portrait and biography as one editorial introduction. */
+.founder-layout{display:flex;flex-direction:column;gap:34px;align-items:stretch}
+.founder-layout .founder-portrait{align-self:center;max-width:320px}
+.founder-intro-copy p:last-child{margin-bottom:0}
+@media(min-width:900px){
+ .founder-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:55px;align-items:center}
+ .founder-layout .founder-portrait{grid-column:2;grid-row:1;max-width:377px;justify-self:end}
+ .founder-intro-copy{grid-column:1;grid-row:1;min-width:0}
+}
