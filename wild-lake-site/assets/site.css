@@ -95,3 +95,15 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
 .home .cap{row-gap:clamp(55px,6vw,89px)}
 .home .cap + .site-nav{margin-top:clamp(55px,6vw,89px);padding-block:21px}
 .home .cap ~ .statement-block{padding-top:clamp(55px,6vw,89px)}
+/* Founder narrative: the same type family and Fibonacci reading rhythm. */
+.founder-main{max-width:987px;margin:auto;padding:55px var(--gutter) 34px}
+.founder-main h1{font-size:clamp(30px,4.8vw,55px);margin:13px 0 34px;overflow-wrap:anywhere}
+.founder-main h2{font-size:clamp(26px,3.4vw,34px);margin:0 0 21px}
+.founder-main p{max-width:55ch;color:var(--subtle-color);margin:0 0 21px}
+.founder-main .founder-lead{font-size:21px;color:var(--text-color)}
+.founder-main section{max-width:610px;margin-top:55px;padding-top:34px;border-top:1px solid var(--rule-color)}
+.founder-principles{margin:34px 0 0}
+.founder-principles>div{margin-top:21px}
+.founder-principles dt{font-weight:600;color:var(--text-color)}
+.founder-principles dd{margin:8px 0 0;color:var(--subtle-color)}
+@media(max-width:600px){.site-nav{column-gap:13px;font-size:15px}}

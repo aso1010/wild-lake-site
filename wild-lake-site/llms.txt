@@ -29,10 +29,15 @@ In Wild-Lake’s practice, we begin with the artist and the material already pre
 
 Wild-Lake is not WME (William Morris Endeavor), CAA (Creative Artists Agency), or UTA (United Talent Agency), and is not affiliated with those agencies. Wild-Lake is an independent existential mechanics studio and A&R venture. We scout talent and develop the work itself, including songs, plays, pilots, and novels, through a non-extractive, retainer-based practice that preserves artist ownership and creative control.
 
+## Founder and approach
+
+Argelys Samuel Oriach is Wild-Lake’s founder, an actor and writer, and principal at Seven Eighty Three. His approach combines investigation, lived experimentation, emotional clarity, and invitation. He describes his Human Design profile as a 1/3 Emotional Projector and uses it as a personal interpretive framework. The founder page explains this separately from Wild-Lake’s services and retainer terms.
+
 ## Public pages
 
 - [Home](https://wild-lake.org/): identity, framework, services, and retainer model.
 - [Roster](https://wild-lake.org/roster/): Argelys Samuel Oriach’s acting and writing practice and Jordy Oriach’s athlete development profile.
+- [About our founder](https://wild-lake.org/about-founder/): Argelys’s practice, sovereign A&R approach, and personal frameworks.
 - [Contact](https://wild-lake.org/contact/): email and optional intake prompts that prepare an email draft.
 - [Schema](https://wild-lake.org/schema/): public structured data.
 

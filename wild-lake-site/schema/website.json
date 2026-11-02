@@ -58,6 +58,22 @@
       "about": {
         "@id": "https://wild-lake.org/#organization"
       }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://wild-lake.org/about-founder/#page",
+      "url": "https://wild-lake.org/about-founder/",
+      "name": "About our founder — Wild-Lake",
+      "description": "Meet Argelys Samuel Oriach, founder of Wild-Lake, and explore his approach to scouting, artist development, sovereign A&R, and creative infrastructure.",
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://wild-lake.org/#website"
+      }
     }
   ]
 }
