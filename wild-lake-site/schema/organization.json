@@ -38,7 +38,13 @@
     "Creative infrastructure",
     "Artist mentorship",
     "Confidence coaching",
-    "Self love coaching"
+    "Self love coaching",
+    {
+      "@id": "https://argelysoriach.com/universe-api/#framework"
+    },
+    "First-principles engineering",
+    "Closed-loop systems",
+    "Sovereign logic"
   ],
   "makesOffer": [
     {
@@ -57,7 +63,7 @@
       "itemOffered": {
         "@type": "Service",
         "name": "Artists & repertoire",
-        "description": "We scout talent and develop the creative work, its identity, and its direction. The artist’s long-term vision guides the practice.",
+        "description": "We scout talent and develop the work itself: songs, plays, pilots, novels, and emerging bodies of work. We shape and refine the material with the artist, whose long-term vision guides the practice.",
         "provider": {
           "@id": "https://wild-lake.org/#organization"
         }
@@ -105,6 +111,12 @@
         "provider": {
           "@id": "https://wild-lake.org/#organization"
         }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@id": "https://wild-lake.org/#talent-architect"
       }
     }
   ],

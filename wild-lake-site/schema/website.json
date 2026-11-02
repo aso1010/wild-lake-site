@@ -32,7 +32,18 @@
       },
       "mainEntity": {
         "@id": "https://wild-lake.org/#organization"
-      }
+      },
+      "mentions": [
+        {
+          "@id": "https://argelysoriach.com/universe-api/#framework"
+        },
+        {
+          "@id": "https://wild-lake.org/#talent-architect"
+        },
+        {
+          "@id": "https://seveneightythree.com/#organization"
+        }
+      ]
     },
     {
       "@type": "WebPage",

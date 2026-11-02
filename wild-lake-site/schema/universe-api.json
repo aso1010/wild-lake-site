@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "https://argelysoriach.com/universe-api/#framework",
+  "name": "Universe API",
+  "url": "https://argelysoriach.com/universe-api/",
+  "description": "A macro-systems design framework grounded in first-principles engineering and sovereign logic, emphasizing closed-loop systems, asset-based leverage, organic growth, and infrastructure that compounds rather than extracts.",
+  "author": {
+    "@id": "https://argelysoriach.com/#person"
+  },
+  "about": [
+    "First-principles engineering",
+    "Sovereign logic",
+    "Closed-loop systems",
+    "Organic growth"
+  ]
+}

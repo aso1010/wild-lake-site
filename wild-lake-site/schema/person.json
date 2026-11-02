@@ -41,5 +41,8 @@
   ],
   "sameAs": [
     "https://www.linkedin.com/in/argelys-samuel-oriach/"
-  ]
+  ],
+  "affiliation": {
+    "@id": "https://seveneightythree.com/#organization"
+  }
 }

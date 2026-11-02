@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://wild-lake.org/#talent-architect",
+  "name": "Talent Architect practice",
+  "serviceType": [
+    "Talent scouting",
+    "Artists and repertoire (A&R)",
+    "Artist development",
+    "Creative infrastructure",
+    "Artist mentorship",
+    "System design"
+  ],
+  "description": "A non-extractive, retainer-based practice that scouts talent, develops songs, plays, pilots, and novels, and builds infrastructure around the artist while preserving ownership and creative control.",
+  "provider": {
+    "@id": "https://wild-lake.org/#organization"
+  },
+  "areaServed": "Worldwide"
+}
