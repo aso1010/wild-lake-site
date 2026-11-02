@@ -1,0 +1,44 @@
+/* An editorial roster: each person gets a stage, a story, and their own rhythm. */
+.roster .roster-main{max-width:987px;margin:auto;padding:55px var(--gutter) 89px}
+.roster .eyebrow{font-size:13px;line-height:1.618;color:var(--muted-color);margin:0}
+.roster .roster-hero{margin-bottom:89px}
+.roster .roster-hero h1{font-size:clamp(64px,11vw,144px);font-weight:700;line-height:.95;letter-spacing:-.065em;margin:21px 0 34px}
+.roster .roster-hero h1 span{color:var(--muted-color)}
+.roster .roster-deck{font-size:clamp(30px,4.2vw,55px);font-weight:500;line-height:1.12;letter-spacing:-.035em;margin:0 0 21px}
+.roster .roster-hero-note{max-width:40ch;color:var(--subtle-color);font-size:18px;margin:0;line-height:1.618}
+.roster-jump{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:21px;margin-top:55px}
+.roster-jump a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 13px;padding:21px;border:1px solid var(--rule-color);border-radius:13px;text-decoration:none;transition:border-color .2s ease,transform .2s ease}
+.roster-jump a>span:first-child{font-size:18px;font-weight:600}
+.roster-jump small{grid-column:1;grid-row:2;font-size:13px;color:var(--muted-color)}
+.roster-jump a>span:last-child{grid-column:2;grid-row:1 / span 2;align-self:center;font-size:21px}
+.roster-jump a:hover{border-color:var(--text-color);transform:translateY(-3px)}
+.roster-person{margin:0 0 89px}
+.roster-entry{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:55px;align-items:center;padding-top:34px;border-top:1px solid var(--rule-color);scroll-margin-top:34px}
+.roster-visual{margin:0;min-width:0;border:1px solid var(--rule-color);border-radius:21px;overflow:hidden}
+.roster-image-crop{aspect-ratio:4 / 5;overflow:hidden}
+.roster-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 20%;transform:scale(1.06)}
+.roster-visual figcaption{font-size:13px;line-height:1.5;color:var(--muted-color);padding:13px 21px;border-top:1px solid var(--rule-color)}
+.roster-field{aspect-ratio:4 / 5.6;position:relative;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate}
+.roster-field svg{position:absolute;inset:0;width:100%;height:100%;z-index:-1;fill:none;stroke:var(--text-color);stroke-width:1;opacity:.17}
+.field-type{padding:34px 21px 55px;font-size:clamp(36px,4.8vw,64px);line-height:.98;font-weight:600;letter-spacing:-.055em}
+.roster .entry-meta{font-size:13px;color:var(--muted-color);margin-bottom:21px}
+.roster .roster-main .entry-name{font-size:clamp(34px,4.7vw,64px);font-weight:600;line-height:1;letter-spacing:-.045em;margin:0 0 21px}
+.roster .entry-detail{margin:0;color:var(--subtle-color);font-size:18px;line-height:1.618;max-width:36ch}
+.roster .entry-link{display:inline-block;font-size:14px;line-height:1.5;margin-top:21px;padding:13px 0;letter-spacing:0;text-transform:none;text-decoration:underline;text-underline-offset:6px}
+.roster .profile-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:55px;border-left:1px solid var(--rule-color);margin-top:34px;margin-left:21px;padding:21px 0 0 34px;scroll-margin-top:34px}
+.roster .profile-grid h3{font-size:clamp(26px,3.2vw,34px);font-weight:600;line-height:1.15;letter-spacing:-.025em;margin:13px 0 21px}
+.roster .profile-grid p{font-size:18px;line-height:1.618;color:var(--subtle-color);margin:0 0 21px}
+.data-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:13px;padding:13px 0;border-bottom:1px solid var(--rule-color)}
+.roster .data-label{font-size:13px;color:var(--muted-color)}
+.roster .data-value{font-size:13px;text-align:right;overflow-wrap:anywhere}
+.roster-closing{padding:55px 0 34px;border-block:1px solid var(--rule-color)}
+.roster .roster-closing h2{font-size:clamp(34px,4vw,55px);margin:13px 0 21px;line-height:1.1}
+.roster-closing p:not(.eyebrow){color:var(--subtle-color);max-width:45ch}
+.roster-closing a{display:inline-block;margin:13px 21px 0 0;padding-block:8px;font-size:16px}
+.provenance{font-size:13px;line-height:1.618;color:var(--muted-color);margin:34px 0 0;max-width:75ch}
+.roster .base{max-width:987px;margin:auto;padding:0 var(--gutter) 34px}
+.roster .base .rule{height:1px;background:var(--rule-color);margin-bottom:34px}
+.roster .quadrants{display:grid;gap:21px}
+.roster .terminal,.roster .secondary{font-size:13px;line-height:1.618;letter-spacing:0;text-transform:none;color:var(--muted-color);max-width:55ch;margin:0;text-align:left}
+@media(max-width:800px){.roster .roster-main{padding-top:34px}.roster .roster-hero{margin-bottom:55px}.roster-jump{grid-template-columns:1fr;margin-top:34px;gap:13px}.roster-entry{grid-template-columns:minmax(0,1fr);gap:34px}.roster-visual{width:100%;max-width:377px;justify-self:center}.roster-image-crop{aspect-ratio:1}.roster-field{aspect-ratio:1}.roster .profile-grid{grid-template-columns:minmax(0,1fr);gap:34px;margin-left:0;padding-left:21px}.roster-person{margin-bottom:55px}.roster .roster-main .entry-name{font-size:clamp(34px,7vw,55px)}}
+@media(prefers-reduced-motion:reduce){.roster-jump a{transition:none}.roster-jump a:hover{transform:none}}
