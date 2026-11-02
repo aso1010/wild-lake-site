@@ -73,6 +73,15 @@
       },
       "isPartOf": {
         "@id": "https://wild-lake.org/#website"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://wild-lake.org/about-founder/#portrait",
+        "contentUrl": "https://wild-lake.org/assets/images/argelys-samuel-oriach.png",
+        "url": "https://wild-lake.org/assets/images/argelys-samuel-oriach.png",
+        "width": 1117,
+        "height": 1107,
+        "caption": "Argelys Samuel Oriach, founder of Wild-Lake."
       }
     }
   ]
