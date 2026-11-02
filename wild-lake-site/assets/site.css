@@ -101,8 +101,8 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
 .founder-main h2{font-size:clamp(26px,3.4vw,34px);margin:0 0 21px}
 .founder-main p{max-width:55ch;color:var(--subtle-color);margin:0 0 21px}
 .founder-main .founder-lead{font-size:21px;color:var(--text-color)}
-.founder-main section{max-width:610px;margin-top:55px;padding-top:34px;border-top:1px solid var(--rule-color)}
-.founder-principles{margin:34px 0 0}
+.founder-main section{max-width:none;margin-top:55px;padding-top:34px;border-top:1px solid var(--rule-color)}
+.founder-principles{max-width:610px;margin:34px 0 0}
 .founder-principles>div{margin-top:21px}
 .founder-principles dt{font-weight:600;color:var(--text-color)}
 .founder-principles dd{margin:8px 0 0;color:var(--subtle-color)}
