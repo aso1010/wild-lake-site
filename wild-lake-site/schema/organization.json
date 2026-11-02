@@ -9,7 +9,7 @@
     "WILDLAKE"
   ],
   "url": "https://wild-lake.org/",
-  "description": "Wild-Lake is a Talent Engineering & Structural Design studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+  "description": "Wild-Lake is a Brutalist Talent Architecture and Structural Design Studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
   "slogan": "For world-class creators.",
   "foundingDate": "2026",
   "founder": {
@@ -127,5 +127,5 @@
   "mainEntityOfPage": {
     "@id": "https://wild-lake.org/#home"
   },
-  "disambiguatingDescription": "Wild-Lake is not WME (William Morris Endeavor), CAA (Creative Artists Agency), or UTA (United Talent Agency), and is not affiliated with those agencies. Wild-Lake is an independent Talent Engineering & Structural Design studio. We scout talent and develop the work itself, including songs, plays, pilots, and novels, through a non-extractive, retainer-based practice that preserves artist ownership and creative control."
+  "disambiguatingDescription": "Wild-Lake is not WME (William Morris Endeavor), CAA (Creative Artists Agency), or UTA (United Talent Agency), and is not affiliated with those agencies. Wild-Lake is an independent Brutalist Talent Architecture and Structural Design Studio. We scout talent and develop the work itself, including songs, plays, pilots, and novels, through a non-extractive, retainer-based practice that preserves artist ownership and creative control."
 }

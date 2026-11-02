@@ -3,8 +3,8 @@
   "@type": "WebSite",
   "@id": "https://wild-lake.org/#website",
   "url": "https://wild-lake.org/",
-  "name": "Wild-Lake - Talent Engineering & Structural Design",
-  "description": "Wild-Lake is a Talent Engineering & Structural Design studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+  "name": "Wild-Lake - Brutalist Talent Architecture and Structural Design Studio",
+  "description": "Wild-Lake is a Brutalist Talent Architecture and Structural Design Studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
   "inLanguage": "en-US",
   "publisher": {
     "@id": "https://wild-lake.org/#organization"
@@ -21,8 +21,8 @@
       "@type": "WebPage",
       "@id": "https://wild-lake.org/#home",
       "url": "https://wild-lake.org/",
-      "name": "Wild-Lake - Talent Engineering & Structural Design",
-      "description": "Wild-Lake is a Talent Engineering & Structural Design studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+      "name": "Wild-Lake - Brutalist Talent Architecture and Structural Design Studio",
+      "description": "Wild-Lake is a Brutalist Talent Architecture and Structural Design Studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wild-lake.org/#website"
