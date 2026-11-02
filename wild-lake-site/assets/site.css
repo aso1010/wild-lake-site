@@ -107,3 +107,27 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
 .founder-principles dt{font-weight:600;color:var(--text-color)}
 .founder-principles dd{margin:8px 0 0;color:var(--subtle-color)}
 @media(max-width:600px){.site-nav{column-gap:13px;font-size:15px}}
+/* Material-style page outline: current location and direct section jumps. */
+html{scroll-padding-top:var(--outline-offset,34px)}
+.page-outline{max-width:987px;margin:21px auto;padding:13px var(--gutter);background:var(--bg-color);color:var(--subtle-color);border-bottom:1px solid var(--rule-color);z-index:20;font-family:var(--font-sans)}
+.page-outline-title{font-size:13px;font-weight:500;margin:0 0 13px;color:var(--muted-color)}
+.page-outline ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 13px}
+.page-outline a{display:block;padding:8px 13px;border:1px solid transparent;border-radius:21px;font-size:14px;line-height:1.5;text-decoration:none;color:var(--subtle-color)}
+.page-outline a[aria-current=location]{border-color:var(--muted-color);color:var(--text-color);font-weight:600}
+.page-outline .page-outline-mobile{display:none}
+@media(max-width:1439px){
+ .page-outline.is-enhanced{position:sticky;top:0;display:flex;align-items:center;gap:13px;margin-bottom:0}
+ .page-outline.is-enhanced .page-outline-title,.page-outline.is-enhanced ol{display:none}
+ .page-outline.is-enhanced .page-outline-mobile{display:block}
+ .page-outline label{font-size:13px;color:var(--muted-color);flex-shrink:0}
+ .page-outline select{font:500 15px/1.5 var(--font-sans);color:var(--text-color);background:var(--bg-color);border:1px solid var(--rule-color);border-radius:8px;padding:8px;min-height:44px;min-width:0;width:100%;text-overflow:ellipsis}
+ .page-outline select:focus-visible{outline:2px solid var(--text-color);outline-offset:3px}
+}
+@media(min-width:1440px){
+ .page-outline{position:fixed;top:89px;right:21px;width:min(210px,calc((100vw - 987px)/2 - 42px));padding:0;margin:0;max-height:calc(100vh - 178px);overflow-y:auto;border:0}
+ .page-outline.is-enhanced{visibility:hidden;opacity:0;pointer-events:none}
+ .page-outline.is-in-reading-area{visibility:visible;opacity:1;pointer-events:auto}
+ .page-outline ol{display:block}
+ .page-outline li+li{margin-top:8px}
+ .page-outline a{padding:13px;font-size:15px}
+}
