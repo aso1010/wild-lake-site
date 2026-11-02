@@ -3,7 +3,7 @@
   "@type": "WebSite",
   "@id": "https://wild-lake.org/#website",
   "url": "https://wild-lake.org/",
-  "name": "Wild-Lake",
+  "name": "Wild-Lake - Brutalist Talent Architecture",
   "description": "Wild-Lake is an existential mechanics studio and A&R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
   "inLanguage": "en-US",
   "publisher": {
@@ -21,7 +21,7 @@
       "@type": "WebPage",
       "@id": "https://wild-lake.org/#home",
       "url": "https://wild-lake.org/",
-      "name": "Wild-Lake — Existential Mechanics Studio & A&R Venture",
+      "name": "Wild-Lake - Brutalist Talent Architecture",
       "description": "Wild-Lake is an existential mechanics studio and A&R venture for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
       "inLanguage": "en-US",
       "isPartOf": {
