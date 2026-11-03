@@ -6,6 +6,11 @@
 .site-topbar-logo svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:square}
 .site-topbar-logo:focus-visible{outline:2px solid #f4f1e9;outline-offset:5px}
 .site-topbar-logo:hover{opacity:.8}
-.site-topbar-description{display:block;max-width:55ch}
 .site-topbar-location{display:block;white-space:nowrap}
-@media(max-width:760px){.site-topbar{grid-template-columns:minmax(0,1fr);gap:13px;padding-block:21px}.site-topbar-location{margin-left:57px;white-space:normal}}
+@media(max-width:760px){.site-topbar{gap:21px;padding-block:21px}.site-topbar-location{max-width:24ch;white-space:normal;text-align:right}}
+
+/* The studio descriptor belongs to the content hierarchy. */
+.studio-introduction{box-sizing:border-box;width:100%;max-width:987px;margin:34px auto 0;padding:0 var(--gutter);font-family:var(--font-sans,Arial,sans-serif);color:#b0b3a6}
+.studio-introduction p{max-width:40ch;margin:0;font-size:clamp(18px,2.3vw,26px);font-weight:500;line-height:1.35;letter-spacing:-.02em;text-wrap:balance}
+.home .studio-introduction{margin-top:55px;margin-bottom:34px;color:#f4f1e9}
+.home .studio-introduction p{max-width:24ch;font-size:clamp(30px,5vw,55px);line-height:1.12;letter-spacing:-.035em}
