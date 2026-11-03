@@ -148,3 +148,7 @@ html{scroll-padding-top:var(--outline-offset,34px)}
 
 /* The divider below the portrait spans the full introductory composition. */
 .founder-main #founder-work{max-width:none}
+
+/* A native full-viewport opening; studio identity follows on scroll. */
+.home .cap{min-height:100vh;min-height:100svh;padding-block:34px;place-items:center;row-gap:0}
+.home .cap .mark{width:min(100%,calc((100vh - 68px)*2.3));width:min(100%,calc((100svh - 68px)*2.3));margin-inline:auto}
