@@ -8,7 +8,7 @@
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
         observer.unobserve(entry.target);
-        if (preference.matches) return;
+        if (preference.matches || entry.target.contains(document.activeElement)) return;
         var animation = entry.target.animate([
           { opacity: 0, transform: 'translateY(13px)' },
           { opacity: 1, transform: 'translateY(0)' }
@@ -17,10 +17,20 @@
         animation.finished.then(function () { running.delete(animation); }, function () { running.delete(animation); });
       });
     }, { threshold: 0.08 });
-    document.querySelectorAll(selector).forEach(function (element) { observer.observe(element); });
+    document.querySelectorAll(selector).forEach(function (element) {
+      var bounds = element.getBoundingClientRect();
+      // Leave content already in view untouched, including restored scroll positions.
+      if (bounds.top < window.innerHeight && bounds.bottom > 0) return;
+      observer.observe(element);
+    });
   }
   function motionChanged() {
-    if (preference.matches) running.forEach(function (animation) { animation.cancel(); });
+    if (!preference.matches) return;
+    running.forEach(function (animation) { animation.cancel(); });
+    if (dialog && dialog.open) {
+      if (closing) finishClose();
+      else card.classList.add('is-open');
+    }
   }
   if (preference.addEventListener) preference.addEventListener('change', motionChanged);
   else preference.addListener(motionChanged);
@@ -59,6 +69,17 @@
       if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
       trigger = preview;
+      var thumbnail = preview.querySelector('img');
+      var figure = preview.closest('figure');
+      var caption = figure && figure.querySelector('figcaption');
+      var description = thumbnail ? thumbnail.alt : 'Full-size image';
+      dialog.setAttribute('aria-label', description);
+      image.alt = description;
+      if (thumbnail) {
+        image.width = thumbnail.naturalWidth || thumbnail.width;
+        image.height = thumbnail.naturalHeight || thumbnail.height;
+      }
+      dialog.querySelector('.roster-image-dialog-caption').textContent = caption ? caption.textContent : description;
       image.src = preview.href;
       clearTimeout(closeTimer);
       closing = false;
