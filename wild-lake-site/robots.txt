@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wild-lake.org/sitemap.xml
