@@ -1,5 +1,5 @@
 /* An editorial roster: each person gets a stage, a story, and their own rhythm. */
-.roster .roster-main{max-width:987px;margin:auto;padding:55px var(--gutter) 89px}
+.roster .roster-main{max-width:1200px;margin:auto;padding:55px var(--gutter) 89px}
 .roster .eyebrow{font-size:13px;line-height:1.618;color:var(--muted-color);margin:0}
 .roster .roster-hero{margin-bottom:89px}
 .roster .roster-hero h1{font-size:clamp(42px,8vw,110px);font-weight:700;line-height:.95;letter-spacing:-.065em;margin:21px 0 34px}
@@ -37,7 +37,7 @@
 .roster-closing p:not(.eyebrow){color:var(--subtle-color);max-width:45ch}
 .roster-closing a{display:inline-block;margin:13px 21px 0 0;padding-block:8px;font-size:16px}
 .provenance{font-size:13px;line-height:1.618;color:var(--muted-color);margin:34px 0 0;max-width:75ch}
-.roster .base{max-width:987px;margin:auto;padding:0 var(--gutter) 34px}
+.roster .base{max-width:1200px;margin:auto;padding:0 var(--gutter) 34px}
 .roster .base .rule{height:1px;background:var(--rule-color);margin-bottom:34px}
 .roster .quadrants{display:grid;gap:21px}
 .roster .terminal,.roster .secondary{font-size:13px;line-height:1.618;letter-spacing:0;text-transform:none;color:var(--muted-color);max-width:55ch;margin:0;text-align:left}

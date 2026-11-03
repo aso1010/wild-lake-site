@@ -6,7 +6,7 @@
   var targets = links.map(function (link) { return document.getElementById(link.hash.slice(1)); });
   if (targets.some(function (target) { return !target; })) return;
   outline.classList.add('is-enhanced');
-  var wide = window.matchMedia('(min-width: 1440px)');
+  var wide = window.matchMedia('(min-width: 1600px)');
   var pending = false;
   function update() {
     pending = false;
