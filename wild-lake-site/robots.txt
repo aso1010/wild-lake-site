@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wild-lake.org/sitemap.xml
+Sitemap: https://wildlakestudio.com/sitemap.xml

@@ -14,12 +14,12 @@
     "Writer"
   ],
   "worksFor": {
-    "@id": "https://wild-lake.org/#organization"
+    "@id": "https://wildlakestudio.com/#organization"
   },
   "@reverse": {
     "founder": [
       {
-        "@id": "https://wild-lake.org/#organization"
+        "@id": "https://wildlakestudio.com/#organization"
       }
     ]
   },
@@ -47,13 +47,13 @@
   },
   "description": "Founder of Wild-Lake, actor, writer, and principal at Seven Eighty Three. His practice brings first-principles investigation, lived experimentation, and invitation to artist development and creative infrastructure.",
   "subjectOf": {
-    "@id": "https://wild-lake.org/about-founder/#page"
+    "@id": "https://wildlakestudio.com/about-founder/#page"
   },
   "image": {
     "@type": "ImageObject",
-    "@id": "https://wild-lake.org/about-founder/#portrait",
-    "contentUrl": "https://wild-lake.org/assets/images/argelys-samuel-oriach.png",
-    "url": "https://wild-lake.org/assets/images/argelys-samuel-oriach.png",
+    "@id": "https://wildlakestudio.com/about-founder/#portrait",
+    "contentUrl": "https://wildlakestudio.com/assets/images/argelys-samuel-oriach.png",
+    "url": "https://wildlakestudio.com/assets/images/argelys-samuel-oriach.png",
     "width": 1117,
     "height": 1107,
     "caption": "Argelys Samuel Oriach, founder of Wild-Lake."

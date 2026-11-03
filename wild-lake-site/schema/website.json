@@ -1,44 +1,44 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://wild-lake.org/#website",
-  "url": "https://wild-lake.org/",
+  "@id": "https://wildlakestudio.com/#website",
+  "url": "https://wildlakestudio.com/",
   "name": "Wild-Lake - Brutalist Talent Architecture and Structural Design Studio",
   "description": "Wild-Lake is a Brutalist Talent Architecture and Structural Design Studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
   "inLanguage": "en-US",
   "publisher": {
-    "@id": "https://wild-lake.org/#organization"
+    "@id": "https://wildlakestudio.com/#organization"
   },
   "copyrightHolder": {
-    "@id": "https://wild-lake.org/#organization"
+    "@id": "https://wildlakestudio.com/#organization"
   },
   "copyrightYear": 2026,
   "about": {
-    "@id": "https://wild-lake.org/#organization"
+    "@id": "https://wildlakestudio.com/#organization"
   },
   "hasPart": [
     {
       "@type": "WebPage",
-      "@id": "https://wild-lake.org/#home",
-      "url": "https://wild-lake.org/",
+      "@id": "https://wildlakestudio.com/#home",
+      "url": "https://wildlakestudio.com/",
       "name": "Wild-Lake - Brutalist Talent Architecture and Structural Design Studio",
       "description": "Wild-Lake is a Brutalist Talent Architecture and Structural Design Studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
       "inLanguage": "en-US",
       "isPartOf": {
-        "@id": "https://wild-lake.org/#website"
+        "@id": "https://wildlakestudio.com/#website"
       },
       "about": {
-        "@id": "https://wild-lake.org/#organization"
+        "@id": "https://wildlakestudio.com/#organization"
       },
       "mainEntity": {
-        "@id": "https://wild-lake.org/#organization"
+        "@id": "https://wildlakestudio.com/#organization"
       },
       "mentions": [
         {
           "@id": "https://argelysoriach.com/universe-api/#framework"
         },
         {
-          "@id": "https://wild-lake.org/#talent-architect"
+          "@id": "https://wildlakestudio.com/#talent-architect"
         },
         {
           "@id": "https://seveneightythree.com/#organization"
@@ -47,22 +47,22 @@
     },
     {
       "@type": "WebPage",
-      "@id": "https://wild-lake.org/schema/#page",
-      "url": "https://wild-lake.org/schema/",
+      "@id": "https://wildlakestudio.com/schema/#page",
+      "url": "https://wildlakestudio.com/schema/",
       "name": "Wild-Lake — Schema",
       "description": "The machine-readable description of Wild-Lake: organization, website, and founder data, plus llms.txt.",
       "inLanguage": "en-US",
       "isPartOf": {
-        "@id": "https://wild-lake.org/#website"
+        "@id": "https://wildlakestudio.com/#website"
       },
       "about": {
-        "@id": "https://wild-lake.org/#organization"
+        "@id": "https://wildlakestudio.com/#organization"
       }
     },
     {
       "@type": "AboutPage",
-      "@id": "https://wild-lake.org/about-founder/#page",
-      "url": "https://wild-lake.org/about-founder/",
+      "@id": "https://wildlakestudio.com/about-founder/#page",
+      "url": "https://wildlakestudio.com/about-founder/",
       "name": "About our founder — Wild-Lake",
       "description": "Meet Argelys Samuel Oriach, founder of Wild-Lake, and explore his approach to scouting, artist development, sovereign A&R, and creative infrastructure.",
       "mainEntity": {
@@ -72,13 +72,13 @@
         "@id": "https://argelysoriach.com/#person"
       },
       "isPartOf": {
-        "@id": "https://wild-lake.org/#website"
+        "@id": "https://wildlakestudio.com/#website"
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "@id": "https://wild-lake.org/about-founder/#portrait",
-        "contentUrl": "https://wild-lake.org/assets/images/argelys-samuel-oriach.png",
-        "url": "https://wild-lake.org/assets/images/argelys-samuel-oriach.png",
+        "@id": "https://wildlakestudio.com/about-founder/#portrait",
+        "contentUrl": "https://wildlakestudio.com/assets/images/argelys-samuel-oriach.png",
+        "url": "https://wildlakestudio.com/assets/images/argelys-samuel-oriach.png",
         "width": 1117,
         "height": 1107,
         "caption": "Argelys Samuel Oriach, founder of Wild-Lake."

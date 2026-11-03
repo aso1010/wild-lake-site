@@ -35,23 +35,23 @@ Argelys Samuel Oriach is Wild-Lake’s founder, an actor and writer, and princip
 
 ## Public pages
 
-- [Home](https://wild-lake.org/): identity, framework, services, and retainer model.
-- [Roster](https://wild-lake.org/roster/): Argelys Samuel Oriach’s acting and writing practice and Jordy Oriach’s athlete development profile.
-- [About our founder](https://wild-lake.org/about-founder/): Argelys’s practice, sovereign A&R approach, and personal frameworks.
-- [Contact](https://wild-lake.org/contact/): email and optional intake prompts that prepare an email draft.
-- [Schema](https://wild-lake.org/schema/): public structured data.
+- [Home](https://wildlakestudio.com/): identity, framework, services, and retainer model.
+- [Roster](https://wildlakestudio.com/roster/): Argelys Samuel Oriach’s acting and writing practice and Jordy Oriach’s athlete development profile.
+- [About our founder](https://wildlakestudio.com/about-founder/): Argelys’s practice, sovereign A&R approach, and personal frameworks.
+- [Contact](https://wildlakestudio.com/contact/): email and optional intake prompts that prepare an email draft.
+- [Schema](https://wildlakestudio.com/schema/): public structured data.
 
 ## Machine-readable descriptions
 
-- [Organization](https://wild-lake.org/schema/organization.json)
-- [Website](https://wild-lake.org/schema/website.json)
-- [Founder](https://wild-lake.org/schema/person.json)
-- [Talent Architect practice](https://wild-lake.org/schema/talent-architect.json)
-- [Universe API framework](https://wild-lake.org/schema/universe-api.json)
+- [Organization](https://wildlakestudio.com/schema/organization.json)
+- [Website](https://wildlakestudio.com/schema/website.json)
+- [Founder](https://wildlakestudio.com/schema/person.json)
+- [Talent Architect practice](https://wildlakestudio.com/schema/talent-architect.json)
+- [Universe API framework](https://wildlakestudio.com/schema/universe-api.json)
 
 ## Sources and contact
 
-- Website: https://wild-lake.org/
+- Website: https://wildlakestudio.com/
 - Universe API: https://argelysoriach.com/universe-api/
 - Seven Eighty Three: https://seveneightythree.com/
 - Founder: https://argelysoriach.com/
