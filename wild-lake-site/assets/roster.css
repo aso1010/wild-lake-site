@@ -2,7 +2,7 @@
 .roster .roster-main{max-width:987px;margin:auto;padding:55px var(--gutter) 89px}
 .roster .eyebrow{font-size:13px;line-height:1.618;color:var(--muted-color);margin:0}
 .roster .roster-hero{margin-bottom:89px}
-.roster .roster-hero h1{font-size:clamp(64px,11vw,144px);font-weight:700;line-height:.95;letter-spacing:-.065em;margin:21px 0 34px}
+.roster .roster-hero h1{font-size:clamp(42px,8vw,110px);font-weight:700;line-height:.95;letter-spacing:-.065em;margin:21px 0 34px}
 .roster .roster-hero h1 span{color:var(--muted-color)}
 .roster .roster-deck{font-size:clamp(30px,4.2vw,55px);font-weight:500;line-height:1.12;letter-spacing:-.035em;margin:0 0 21px}
 .roster .roster-hero-note{max-width:40ch;color:var(--subtle-color);font-size:18px;margin:0;line-height:1.618}
