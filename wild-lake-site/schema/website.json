@@ -3,8 +3,8 @@
   "@type": "WebSite",
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
-  "name": "Wild-Lake - Brutalist Talent Architecture and Structural Design Studio",
-  "description": "Wild-Lake is a Brutalist Talent Architecture and Structural Design Studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+  "name": "Wild-Lake — Brutalist talent architecture and structural design",
+  "description": "We develop artists and build the infrastructure around their work, identity, and long-term vision. Our model is non-extractive: you own your work, and we work on a mutually agreed retainer instead of taking a percentage of your success.",
   "inLanguage": "en-US",
   "publisher": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -21,8 +21,8 @@
       "@type": "WebPage",
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
-      "name": "Wild-Lake - Brutalist Talent Architecture and Structural Design Studio",
-      "description": "Wild-Lake is a Brutalist Talent Architecture and Structural Design Studio for world-class creators. We develop artists and build the infrastructure around their work, identity, and long-term vision.",
+      "name": "Wild-Lake — Brutalist talent architecture and structural design",
+      "description": "We develop artists and build the infrastructure around their work, identity, and long-term vision. Our model is non-extractive: you own your work, and we work on a mutually agreed retainer instead of taking a percentage of your success.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"

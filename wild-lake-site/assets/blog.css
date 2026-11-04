@@ -1,0 +1,15 @@
+.blog-main{padding:clamp(3.4375rem,8vw,8rem) var(--gutter) 5.5625rem;width:100%;min-width:0}
+.blog-heading{padding-bottom:clamp(3.4375rem,7vw,7rem)}
+.blog-main .eyebrow{font-size:.8125rem;color:var(--muted-color);margin:0 0 1.3125rem}
+.blog-heading h1{font-size:clamp(3.4375rem,2rem + 6vw,8rem);line-height:1.02;letter-spacing:-.045em;margin:0 0 2.125rem;max-width:18ch}
+.blog-deck{font-size:var(--lead-size);color:var(--subtle-color);max-width:42ch;margin:0}
+.blog-opening{border-top:1px solid var(--rule-color);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2.125rem;padding-block:clamp(2.125rem,5vw,4rem)}
+.blog-opening h2{font-size:clamp(2.125rem,2rem + 1.5vw,3.4375rem);margin:0;letter-spacing:-.03em}
+.blog-opening-copy p{font-size:var(--body-size);color:var(--subtle-color);margin:0 0 1.3125rem;max-width:42ch}
+.blog-return{display:inline-flex;align-items:center;gap:.8125rem;min-height:2.75rem;margin-top:1.3125rem;font-size:1rem}
+/* Spring timing adapted from the supplied Transitions Pro card-stack-hover recipe. */
+.blog-return span{display:inline-block;transition:transform 410ms cubic-bezier(.31,2.34,.64,1)}
+@media(hover:hover){.blog-return:hover span{transform:translate(3px,-3px)}}
+.blog-return:focus-visible span{transform:translate(3px,-3px)}
+@media(max-width:45rem){.blog-opening{grid-template-columns:1fr}.blog-heading h1{overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){.blog-return span{transition:none}.blog-return:hover span,.blog-return:focus-visible span{transform:none}}

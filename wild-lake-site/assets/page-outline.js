@@ -6,11 +6,10 @@
   var targets = links.map(function (link) { return document.getElementById(link.hash.slice(1)); });
   if (targets.some(function (target) { return !target; })) return;
   outline.classList.add('is-enhanced');
-  var wide = window.matchMedia('(min-width: 1600px)');
   var pending = false;
   function update() {
     pending = false;
-    var marker = wide.matches ? 144 : outline.getBoundingClientRect().height + 34;
+    var marker = outline.getBoundingClientRect().height + 34;
     var active = 0;
     targets.forEach(function (target, index) {
       var margin = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
@@ -25,7 +24,7 @@
     select.value = targets[active].id;
     var footer = document.querySelector('.base');
     outline.classList.toggle('is-in-reading-area', targets[0].getBoundingClientRect().top <= 180 && (!footer || footer.getBoundingClientRect().top > 180));
-    document.documentElement.style.setProperty('--outline-offset', wide.matches ? '34px' : Math.ceil(outline.getBoundingClientRect().height + 21) + 'px');
+    document.documentElement.style.setProperty('--outline-offset', Math.ceil(outline.getBoundingClientRect().height + 21) + 'px');
   }
   function schedule() {
     if (!pending) { pending = true; requestAnimationFrame(update); }

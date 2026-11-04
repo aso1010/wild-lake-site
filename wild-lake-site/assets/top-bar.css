@@ -1,16 +1,20 @@
 /* Identical brand bar on every page, independent of page-specific layouts. */
 @font-face{font-family:WildLakeHeader;src:url('/assets/fonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
-.site-topbar{box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:21px;width:100%;max-width:1200px;margin:0 auto;padding:34px var(--gutter,clamp(21px,5vw,55px));background:#000;color:#b0b3a6;font-family:WildLakeHeader,Arial,sans-serif;font-size:13px;font-weight:500;font-stretch:100%;font-variation-settings:'wdth' 100,'wght' 500;line-height:1.618;letter-spacing:0;text-transform:none}
+.site-topbar{box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:21px;width:100%;max-width:1200px;margin:0 auto;padding:34px var(--gutter,clamp(21px,5vw,55px));background:#000;color:#b0b3a6;font-family:WildLakeHeader,Arial,sans-serif;font-size:0.8125rem;font-weight:500;font-stretch:100%;font-variation-settings:'wdth' 100,'wght' 500;line-height:1.618;letter-spacing:0;text-transform:none}
 .site-topbar-identity{display:flex;align-items:center;gap:13px;min-width:0}
-.site-topbar-logo{box-sizing:border-box;display:flex;align-items:center;justify-content:center;flex:0 0 55px;width:55px;height:55px;padding:7px;border:1px solid #f4f1e9;border-radius:13px;color:#f4f1e9;background:#000;text-decoration:none}
+.site-topbar-logo{box-sizing:border-box;display:flex;align-items:center;justify-content:center;flex:0 0 55px;width:55px;height:55px;padding:7px;border:1px solid #FFFFFF;border-radius:13px;color:#FFFFFF;background:#000;text-decoration:none}
 .site-topbar-logo svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:square}
-.site-topbar-logo:focus-visible{outline:2px solid #f4f1e9;outline-offset:5px}
+.site-topbar-logo:focus-visible{outline:2px solid #FFFFFF;outline-offset:5px}
 .site-topbar-logo:hover{opacity:.8}
-.site-topbar-location{display:block;white-space:nowrap;color:#f4f1e9;font-size:clamp(18px,2.1vw,26px);line-height:1.35;letter-spacing:-.02em}
+.site-topbar-location{display:block;white-space:nowrap;color:#FFFFFF;font-size:clamp(1.125rem,2.1vw,1.625rem);line-height:1.35;letter-spacing:-.02em}
 @media(max-width:760px){.site-topbar{gap:21px;padding-block:21px}.site-topbar-location{max-width:22ch;white-space:normal;text-align:right;text-wrap:balance}}
 
 /* The studio descriptor belongs to the content hierarchy. */
 .studio-introduction{box-sizing:border-box;width:100%;max-width:1200px;margin:34px auto 0;padding:0 var(--gutter);font-family:var(--font-sans,Arial,sans-serif);color:#b0b3a6}
-.studio-introduction p{max-width:40ch;margin:0;font-size:clamp(18px,2.3vw,26px);font-weight:500;line-height:1.35;letter-spacing:-.02em;text-wrap:balance}
-.home .studio-introduction{margin-top:55px;margin-bottom:34px;color:#f4f1e9}
-.home .studio-introduction h1{margin:0;font-weight:500;text-wrap:balance;max-width:24ch;font-size:clamp(30px,5vw,55px);line-height:1.12;letter-spacing:-.035em}
+.studio-introduction p{max-width:40ch;margin:0;font-size:clamp(1.125rem,2.3vw,1.625rem);font-weight:500;line-height:1.35;letter-spacing:-.02em;text-wrap:balance}
+.home .studio-introduction{margin-top:55px;margin-bottom:34px;color:#FFFFFF}
+.home .studio-introduction h1{margin:0;font-weight:500;text-wrap:balance;max-width:24ch;font-size:clamp(1.875rem,5vw,3.4375rem);line-height:1.12;letter-spacing:-.035em}
+
+/* Share the current favicon artwork with the header avatar. */
+.site-topbar-logo{padding:0;overflow:hidden}
+.site-topbar-logo img{display:block;width:100%;height:100%;object-fit:contain;border-radius:inherit}

@@ -1,0 +1,4 @@
+
+/roster /clients/ 301
+/roster/ /clients/ 301
+/roster/* /clients/:splat 301
