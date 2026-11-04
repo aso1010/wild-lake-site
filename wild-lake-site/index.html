@@ -7,8 +7,7 @@
 <title>Wild-Lake — Brutalist talent architecture and structural design</title>
 <meta content="We develop artists and build the infrastructure around their work, identity, and long-term vision. Our model is non-extractive: you own your work, and we work on a mutually agreed retainer instead of taking a percentage of your success." name="description"/>
 <meta content="#000000" name="theme-color"/>
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -34,15 +33,26 @@
         "addressRegion": "NY",
         "addressCountry": "US"
       },
-      "location": {
-        "@type": "Place",
-        "name": "New York, NY",
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 40.7128,
-          "longitude": -74.006
+      "location": [
+        {
+          "@type": "Place",
+          "name": "New York, NY",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.7128,
+            "longitude": -74.006
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Santiago, Dominican Republic",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressCountry": "DO"
+          }
         }
-      },
+      ],
       "areaServed": "Worldwide",
       "knowsAbout": [
         "Existential mechanics",
@@ -331,8 +341,7 @@
       "url": "https://seveneightythree.com/"
     }
   ]
-}
-</script>
+}</script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap" rel="stylesheet"/>
@@ -474,7 +483,7 @@
 <div class="rule"></div>
 <footer class="quadrants">
 <div class="terminal">
-<div><span class="status-dot"></span>WILD-LAKE™ · NEW YORK, NY</div>
+<div><span class="status-dot"></span>WILD-LAKE™ · NEW YORK / SANTIAGO, DOMINICAN REPUBLIC</div>
 <div>BRUTALIST TALENT ARCHITECTURE · STRUCTURAL DESIGN</div>
 <div>© 2026 WILD-LAKE LLC. ALL RIGHTS RESERVED.</div>
 </div>

@@ -6,8 +6,7 @@
   <title>Schema | Wild-Lake — Brutalist talent architecture and structural design</title>
   <meta name="description" content="The machine-readable description of Wild-Lake: organization, website, and founder data, plus llms.txt.">
   <meta name="theme-color" content="#000000">
-  <script type="application/ld+json">
-{
+  <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -33,15 +32,26 @@
         "addressRegion": "NY",
         "addressCountry": "US"
       },
-      "location": {
-        "@type": "Place",
-        "name": "New York, NY",
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 40.7128,
-          "longitude": -74.006
+      "location": [
+        {
+          "@type": "Place",
+          "name": "New York, NY",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.7128,
+            "longitude": -74.006
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Santiago, Dominican Republic",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressCountry": "DO"
+          }
         }
-      },
+      ],
       "areaServed": "Worldwide",
       "knowsAbout": [
         "Existential mechanics",
@@ -330,8 +340,7 @@
       "url": "https://seveneightythree.com/"
     }
   ]
-}
-</script>
+}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap" rel="stylesheet"/>
