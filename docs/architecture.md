@@ -25,3 +25,11 @@ introductory columns use 0.618:1 proportions; small screens stack. Typography
 remains stable while reading; motion honors reduced-motion preferences. The
 homepage retains the studio descriptor; interior introductions omit it. Mirror
 keeps its isolated inline layout and CSP, with its own Fibonacci spacing.
+
+## Installed tarot app
+
+`site/app/` is the supplied dist-app artifact, served directly at
+`https://mirror.wildlakestudio.com/app/`. The Mirror Worker passes `/app/`
+requests through without its legacy `/mirror/` rewrite. The app service worker
+is scoped to `/app/`; it does not control the existing Mirror root.
+The supplied UI copy reference is preserved in `docs/mirror-app-copy.md`.

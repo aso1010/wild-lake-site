@@ -28,7 +28,9 @@ for p in root.rglob('*'):
         try: json.loads(data)
         except Exception as e: errors.append(f'{p}: {e}')
     if 'Content-Security-Policy' in text:
-        for block in re.findall(r'<(?:script|style)[^>]*>(.*?)</(?:script|style)>', text, re.S):
+        for tag, attrs, block in re.findall(r'<(script|style)([^>]*)>(.*?)</(?:script|style)>', text, re.S):
+            if tag == 'script' and re.search(r'type=[\"\']application/ld\+json[\"\']', attrs):
+                continue  # Structured data is parsed separately; it is not executable JavaScript.
             digest = base64.b64encode(hashlib.sha256(block.encode()).digest()).decode()
             if 'sha256-' + digest not in text: errors.append(f'{p}: stale CSP hash')
 if errors: raise SystemExit('\n'.join(errors))
