@@ -46,3 +46,9 @@
 
 .roster .roster-summary{grid-template-columns:minmax(0,1fr);border-top:1px solid var(--rule-color);padding-top:3.4375rem}
 .roster-jump{grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr))}
+
+/* Give the studio introduction its own balanced reading layout. */
+.roster-introduction{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(34px,5vw,89px);align-items:start;margin-top:34px}
+.roster .roster-introduction .roster-hero-note{max-width:65ch}
+.roster .roster-introduction-copy .roster-hero-note+.roster-hero-note{margin-top:21px}
+@media(max-width:800px){.roster-introduction{grid-template-columns:minmax(0,1fr);gap:34px}}
