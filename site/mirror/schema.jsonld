@@ -12,10 +12,10 @@
       "mainEntity": {
         "@id": "https://wildlakestudio.com/mirror/#app"
       },
-      "name": "Architectural Mirror by Wild Lake",
+      "name": "Architectural Mirror by Wild-Lake",
       "url": "https://wildlakestudio.com/mirror/",
       "description": "A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation.",
-      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v3.jpg"
+      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v4.jpg"
     },
     {
       "@id": "https://wildlakestudio.com/mirror/#app",
@@ -41,13 +41,13 @@
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
       },
-      "name": "Architectural Mirror by Wild Lake",
+      "name": "Architectural Mirror by Wild-Lake",
       "operatingSystem": "Any",
       "publisher": {
         "@id": "https://wildlakestudio.com/#organization"
       },
       "url": "https://wildlakestudio.com/mirror/",
-      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v3.jpg"
+      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v4.jpg"
     },
     {
       "@id": "https://wildlakestudio.com/mirror/#deck",
