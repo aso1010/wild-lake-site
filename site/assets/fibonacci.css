@@ -50,3 +50,7 @@
 .app-feature-note{max-width:42ch;font-size:.875rem;line-height:1.6;color:var(--muted-color);margin:21px 0 0}
 .app-feature-art{display:block;min-width:0}.app-feature-art img{display:block;width:100%;height:auto}
 @media(max-width:800px){.home .app-feature{grid-template-columns:minmax(0,1fr)}.app-feature-art{grid-row:1}}
+
+.tools-heading{padding:var(--space-xl) var(--gutter) 0}
+.home .tools-heading h1{font-size:clamp(var(--fib-55),7vw,var(--fib-89));margin:0 0 var(--space-md);line-height:1.04}
+.tools-heading p{max-width:48ch;font-size:var(--lead-size);color:var(--subtle-color);margin:0}

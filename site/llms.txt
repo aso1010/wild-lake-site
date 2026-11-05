@@ -92,3 +92,9 @@ Architectural Mirror is a Wild-Lake tool for artists and creators, distinct from
 Wild-Lake describes itself as a solo practice powered by AI workflows and states that a portion of every retainer fee goes toward protecting wild lakes, freshwater systems, and public lands. The position statement does not specify a percentage or name recipient organizations.
 
 - https://wildlakestudio.com/responsibility/
+
+## Tools
+
+[Tools](https://wildlakestudio.com/tools/) lists Wild-Lake’s browser-based tools. Quiet Creek Tarot can also be installed on a phone or computer and works offline after its first load. Readings remain on the device.
+
+- App: https://mirror.wildlakestudio.com/app/
