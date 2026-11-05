@@ -13,7 +13,9 @@
         "@id": "https://wildlakestudio.com/mirror/#app"
       },
       "name": "Architectural Mirror",
-      "url": "https://wildlakestudio.com/mirror/"
+      "url": "https://wildlakestudio.com/mirror/",
+      "description": "A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation.",
+      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v1.jpg"
     },
     {
       "@id": "https://wildlakestudio.com/mirror/#app",
@@ -28,7 +30,7 @@
         "@id": "https://argelysoriach.com/#person"
       },
       "datePublished": "2026-11-05",
-      "description": "A tarot web app for artists and creators. It shows the cards and no meanings: the querent reads the images and writes their own interpretation in the log.",
+      "description": "A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation.",
       "hasPart": {
         "@id": "https://wildlakestudio.com/mirror/#deck"
       },
@@ -39,12 +41,13 @@
       "isPartOf": {
         "@id": "https://wildlakestudio.com/magazine/#magazine"
       },
-      "name": "Quiet Creek Tarot",
+      "name": "Architectural Mirror",
       "operatingSystem": "Any",
       "publisher": {
         "@id": "https://wildlakestudio.com/#organization"
       },
-      "url": "https://wildlakestudio.com/mirror/"
+      "url": "https://wildlakestudio.com/mirror/",
+      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v1.jpg"
     },
     {
       "@id": "https://wildlakestudio.com/mirror/#deck",
