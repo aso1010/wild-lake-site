@@ -9,7 +9,7 @@
     "WILDLAKE"
   ],
   "url": "https://wildlakestudio.com/",
-  "description": "We develop artists and build the infrastructure around their work, identity, and long-term vision. Our model is non-extractive: you own your work, and we work on a mutually agreed retainer instead of taking a percentage of your success.",
+  "description": "Wild-Lake is an existential mechanics studio. We develop artists and build the structures that sustain their work. Artists retain ownership and creative control.",
   "slogan": "For world-class creators.",
   "foundingDate": "2026",
   "founder": {
@@ -138,7 +138,7 @@
   "mainEntityOfPage": {
     "@id": "https://wildlakestudio.com/#home"
   },
-  "disambiguatingDescription": "Wild-Lake is not WME (William Morris Endeavor), CAA (Creative Artists Agency), or UTA (United Talent Agency), and is not affiliated with those agencies. Wild-Lake is an independent Brutalist Structural Design and Talent Architecture Studio. We scout talent and develop the work itself, including songs, plays, pilots, and novels, through a non-extractive, retainer-based practice that preserves artist ownership and creative control.",
+  "disambiguatingDescription": "Wild-Lake is not WME (William Morris Endeavor), CAA (Creative Artists Agency), or UTA (United Talent Agency), and is not affiliated with those agencies. Wild-Lake is an independent existential mechanics studio working in brutalist structural design and talent architecture. We scout talent and develop the work itself, including songs, plays, pilots, and novels, through a non-extractive, retainer-based practice that preserves artist ownership and creative control.",
   "logo": "https://wildlakestudio.com/assets/images/wild-lake-mark.png?v=c1a19020ca",
   "subjectOf": [
     {

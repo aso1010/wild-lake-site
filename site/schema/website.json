@@ -4,7 +4,7 @@
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
   "name": "Wild-Lake — Brutalist structural design and talent architecture",
-  "description": "We develop artists and build the infrastructure around their work, identity, and long-term vision. Our model is non-extractive: you own your work, and we work on a mutually agreed retainer instead of taking a percentage of your success.",
+  "description": "Wild-Lake is an existential mechanics studio. We develop artists and build the structures that sustain their work. Artists retain ownership and creative control.",
   "inLanguage": "en-US",
   "publisher": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -22,7 +22,7 @@
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
       "name": "Wild-Lake — Brutalist structural design and talent architecture",
-      "description": "We develop artists and build the infrastructure around their work, identity, and long-term vision. Our model is non-extractive: you own your work, and we work on a mutually agreed retainer instead of taking a percentage of your success.",
+      "description": "Wild-Lake is an existential mechanics studio. We develop artists and build the structures that sustain their work. Artists retain ownership and creative control.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
