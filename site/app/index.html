@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-m8AK+iKNrDt06/PVdQe+et646FnEsQosVHuF9h/2Ebo='; script-src 'sha256-xjvZWdqr0JSej9HuZQSG6ZAu0LC3shL2R1yyIaMbkGc='; font-src 'self'; img-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-bSDxGzqQ+J7+LUkcmDzC9eeOwGUksHs046Yv9KD6QZA='; script-src 'sha256-xjvZWdqr0JSej9HuZQSG6ZAu0LC3shL2R1yyIaMbkGc='; font-src 'self'; img-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <title>Quiet Creek Tarot</title>
 <meta name="description" content="A tarot app for artists and creators. 78 original cards with no meanings: you read the images and write your own interpretation. Works offline.">
 <meta name="theme-color" content="#000000">
@@ -150,30 +150,15 @@ button {
 }
 .app {
   display: grid;
-  grid-template-columns: var(--rail) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto auto minmax(0, 1fr) auto;
   height: 100vh;
   height: 100dvh;
   max-width: 610px;
   margin: 0 auto;
 }
-.rail {
-  grid-column: 1;
-  grid-row: 1 / -1;
-  position: relative;
-  overflow: hidden;
-  border-right: 3px solid var(--ink);
-}
-.rail svg {
-  position: absolute;
-  top: 0;
-  left: 21%;
-  width: 8px;
-  height: 100%;
-  color: var(--ink);
-}
 .bar {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 1;
   display: flex;
   align-items: center;
@@ -217,7 +202,7 @@ button {
   visibility: hidden;
 }
 .notice {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 2;
   display: flex;
   flex-wrap: wrap;
@@ -248,7 +233,7 @@ button {
   color: var(--ink-3);
 }
 .views {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 3;
   position: relative;
   min-height: 0;
@@ -265,7 +250,7 @@ button {
   display: none;
 }
 .tabs {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 4;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -845,11 +830,7 @@ h2 {
   background-color: var(--void);
   border-top: 3px solid var(--ink);
 }
-@media (min-width: 611px) {
-  .app {
-    border-right: 3px solid var(--ink);
-  }
-}
+
 @media (prefers-reduced-motion: reduce) {
   .stone svg,
   .deck span,
@@ -956,10 +937,6 @@ h2 {
 <symbol id="p14" viewBox="0 0 233 377" fill="currentColor"><path d="M55 232h123v78h-123Z"/><path d="M72 51h89v8h-89Z"/><path d="M44.5 152a72 72 0 1 1 144 0a72 72 0 1 1 -144 0Z"/></symbol>
 </svg>
 <div class="app" data-tab="read" data-step="choose">
-
-  <div class="rail" aria-hidden="true">
-    <svg viewBox="0 0 10 100" preserveAspectRatio="none"><path d="M5,0 C2,34 8,66 5,100" stroke="currentColor" stroke-width="2" fill="none" vector-effect="non-scaling-stroke"/></svg>
-  </div>
 
   <header class="bar">
     <span class="wordmark">Quiet Creek Tarot</span>
