@@ -41,3 +41,6 @@
 @media(prefers-reduced-motion:reduce){
   :root{--motion-feedback:0ms;--motion-enter:0ms;--opentilt-open-dur:0ms;--opentilt-close-dur:0ms}
 }
+
+.home .cap .mark{width:min(100%,610px,75svh);margin-inline:auto;display:block}
+.home .cap .mark img{display:block;width:100%;height:auto}
