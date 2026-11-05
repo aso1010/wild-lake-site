@@ -17,3 +17,5 @@
 .blog-essay{max-width:70rem;margin-inline:auto}.blog-essay .blog-heading h1{font-size:clamp(2.625rem,1.5rem + 5vw,6rem);max-width:18ch}.essay-byline{font-size:.875rem;color:var(--muted-color);margin-top:1.5rem}.essay-body{max-width:42rem;margin-inline:auto;font-size:1.125rem;line-height:1.8;overflow-wrap:break-word}.essay-body>p{margin:0 0 1.75rem}.essay-context{border-top:1px solid var(--rule-color);padding-top:1.5rem;margin-top:3rem;font-size:.875rem;color:var(--muted-color)}
 
 .essay-artwork{margin:0 0 3.4375rem}.essay-artwork img{display:block;width:100%;height:auto}.essay-artwork figcaption{max-width:65ch;font-size:.8125rem;line-height:1.618;color:var(--muted-color);margin-top:1rem}
+
+.quiet-creek-avatar{display:block;width:88px;height:88px;margin-bottom:2.125rem}.quiet-creek-avatar img{display:block;width:100%;height:auto}.quiet-creek-avatar:focus-visible{outline:2px solid currentColor;outline-offset:5px}
