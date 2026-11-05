@@ -19,3 +19,5 @@
 .essay-artwork{margin:0 0 3.4375rem}.essay-artwork img{display:block;width:100%;height:auto}.essay-artwork figcaption{max-width:65ch;font-size:.8125rem;line-height:1.618;color:var(--muted-color);margin-top:1rem}
 
 .quiet-creek-avatar{display:block;width:88px;height:88px;margin-bottom:2.125rem}.quiet-creek-avatar img{display:block;width:100%;height:auto}.quiet-creek-avatar:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+
+.quiet-creek-instagram{display:inline-block;margin-top:1.3125rem;padding-block:.5rem;font-size:.875rem;color:var(--subtle-color);text-underline-offset:5px}
