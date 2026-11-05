@@ -13,3 +13,5 @@
 .blog-return:focus-visible span{transform:translate(3px,-3px)}
 @media(max-width:45rem){.blog-opening{grid-template-columns:1fr}.blog-heading h1{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){.blog-return span{transition:none}.blog-return:hover span,.blog-return:focus-visible span{transform:none}}
+
+.blog-essay{max-width:70rem;margin-inline:auto}.blog-essay .blog-heading h1{font-size:clamp(2.625rem,1.5rem + 5vw,6rem);max-width:18ch}.essay-byline{font-size:.875rem;color:var(--muted-color);margin-top:1.5rem}.essay-body{max-width:42rem;margin-inline:auto;font-size:1.125rem;line-height:1.8;overflow-wrap:break-word}.essay-body>p{margin:0 0 1.75rem}.essay-context{border-top:1px solid var(--rule-color);padding-top:1.5rem;margin-top:3rem;font-size:.875rem;color:var(--muted-color)}
