@@ -4,7 +4,7 @@
 .portrait-preview{display:block;color:inherit;cursor:zoom-in;position:relative}
 .portrait-preview:focus-visible{outline:2px solid #FFFFFF;outline-offset:5px}
 .portrait-preview:hover{opacity:1}
-.portrait-preview::after{content:'View portrait ↗';position:absolute;right:13px;bottom:13px;padding:8px 13px;background:#000;color:#FFFFFF;border:1px solid #666;border-radius:8px;font:500 0.8125rem/1.5 Archivo,Arial,sans-serif;opacity:0;translate:0 5px;transition:opacity var(--motion-feedback) ease,translate var(--motion-feedback) var(--motion-ease);pointer-events:none}
+.portrait-preview::after{content:'View image';position:absolute;right:13px;bottom:13px;padding:8px 13px;background:#000;color:#FFFFFF;border:1px solid #666;border-radius:8px;font:500 0.8125rem/1.5 Archivo,Arial,sans-serif;opacity:0;translate:0 5px;transition:opacity var(--motion-feedback) ease,translate var(--motion-feedback) var(--motion-ease);pointer-events:none}
 @media(hover:hover){.portrait-preview:hover::after{opacity:1;translate:0 0}}
 .portrait-preview:focus-visible::after{opacity:1;translate:0 0}
 :is(.site-nav a,.site-topbar-logo,.entry-link,.roster-jump a,.email-link,.founder-main a,.contact-main a){transition:opacity var(--motion-feedback) ease,border-color var(--motion-feedback) ease}

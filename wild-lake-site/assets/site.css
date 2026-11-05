@@ -155,3 +155,6 @@ html{scroll-padding-top:var(--outline-offset,34px)}
 .home .cap .mark{width:min(100%,calc((100vh - 68px)*2.3));width:min(100%,calc((100svh - 68px)*2.3));margin-inline:auto}
 
 @media(min-width:1000px){.home .vectors-grid{gap:55px 89px}.home .who-body{max-width:720px}}
+
+/* Vector arrows retain text color and cannot use emoji presentation. */
+svg.link-arrow{display:inline-block;width:1em;height:1em;vertical-align:-.12em;flex-shrink:0;fill:none;stroke:currentColor;pointer-events:none}
