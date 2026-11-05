@@ -1,0 +1,76 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://wildlakestudio.com/mirror/#page",
+      "@type": "WebPage",
+      "datePublished": "2026-11-05",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://wildlakestudio.com/mirror/#app"
+      },
+      "name": "Architectural Mirror",
+      "url": "https://wildlakestudio.com/mirror/"
+    },
+    {
+      "@id": "https://wildlakestudio.com/mirror/#app",
+      "@type": "WebApplication",
+      "applicationCategory": "LifestyleApplication",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Artists and creators"
+      },
+      "browserRequirements": "Drawing and the log need JavaScript; the opening spread renders without it.",
+      "creator": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "datePublished": "2026-11-05",
+      "description": "A tarot web app for artists and creators. It shows the cards and no meanings: the querent reads the images and writes their own interpretation in the log.",
+      "hasPart": {
+        "@id": "https://wildlakestudio.com/mirror/#deck"
+      },
+      "isAccessibleForFree": true,
+      "isBasedOn": {
+        "@id": "https://seveneightythree.com/assets/#typography"
+      },
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/magazine/#magazine"
+      },
+      "name": "Quiet Creek Tarot",
+      "operatingSystem": "Any",
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "url": "https://wildlakestudio.com/mirror/"
+    },
+    {
+      "@id": "https://wildlakestudio.com/mirror/#deck",
+      "@type": "CreativeWork",
+      "creator": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "description": "78 original cards, 22 major arcana and four suits of 14 (wands, cups, swords, pentacles), drawn as solid geometry in #FFFFFF on #000000. Card names only; no meanings.",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/mirror/#app"
+      },
+      "name": "Quiet Creek Tarot deck"
+    },
+    {
+      "@id": "https://wildlakestudio.com/magazine/#magazine",
+      "@type": "Periodical",
+      "alternateName": "Quiet Creek by Wild-Lake",
+      "description": "On artists, creative work, and the structures that support an independent practice.",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "name": "Quiet Creek",
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "url": "https://wildlakestudio.com/magazine/"
+    }
+  ]
+}
