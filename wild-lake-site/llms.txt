@@ -49,6 +49,10 @@ Argelys Samuel Oriach is Wild-Lake’s founder, an actor and writer, and princip
 - [Talent Architect practice](https://wildlakestudio.com/schema/talent-architect.json)
 - [Universe API framework](https://wildlakestudio.com/schema/universe-api.json)
 
+## Critique as care
+
+Brutalist talent architecture often takes the form of critique as a way to love an artist’s work: taking it seriously enough to examine its choices, expose its conditions, and strengthen what it can carry. Wild-Lake’s critical readings are the studio’s interpretations of the work.
+
 ## Sources and contact
 
 - Website: https://wildlakestudio.com/
