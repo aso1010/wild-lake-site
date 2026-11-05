@@ -19,9 +19,9 @@
     const fade = Math.min(t / 4, 1);
     letters.forEach(l => {
       const wave = t * Math.PI * 2 / 14 + l.phase;
-      const x = Math.sin(wave * 0.7) * 0.45 * fade;
-      const y = Math.sin(wave) * 1.15 * fade;
-      const angle = Math.sin(wave * 0.8) * 0.18 * fade;
+      const x = Math.sin(wave * 0.7) * 0.9 * fade;
+      const y = Math.sin(wave) * 2.4 * fade;
+      const angle = Math.sin(wave * 0.8) * 0.35 * fade;
       l.node.setAttribute('transform',
         `translate(${(l.x + x).toFixed(3)} ${(l.y + y).toFixed(3)}) rotate(${angle.toFixed(3)}) scale(${l.scale})`);
     });
