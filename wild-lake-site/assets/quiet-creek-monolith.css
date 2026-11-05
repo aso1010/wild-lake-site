@@ -1,8 +1,6 @@
 /* Supplied Archivo outline masthead, scoped to Quiet Creek. */
 .blog-page .blog-heading{overflow:hidden;overflow:clip}
 .blog-page .blog-heading h1.quiet-creek-monolith{width:100%;max-width:100%;margin:0 0 2.125rem;line-height:1}
-.quiet-creek-monolith .qc-replay{display:block;width:100%;padding:0;border:0;border-radius:0;background:#000;color:#fff;cursor:pointer;appearance:none}
+.quiet-creek-monolith .qc-water{display:block;width:100%;background:#000;color:#fff}
 .quiet-creek-monolith svg{display:block;width:100%;height:auto;overflow:visible;fill:#fff;shape-rendering:geometricPrecision}
-.quiet-creek-monolith .qc-replay:focus-visible{outline:2px solid #fff;outline-offset:-2px}
 .qc-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-@media(prefers-reduced-motion:reduce){.quiet-creek-monolith .qc-replay{cursor:default}}
