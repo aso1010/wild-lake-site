@@ -15,7 +15,7 @@
       "name": "Architectural Mirror",
       "url": "https://wildlakestudio.com/mirror/",
       "description": "A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation.",
-      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v1.jpg"
+      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v2.jpg"
     },
     {
       "@id": "https://wildlakestudio.com/mirror/#app",
@@ -47,7 +47,7 @@
         "@id": "https://wildlakestudio.com/#organization"
       },
       "url": "https://wildlakestudio.com/mirror/",
-      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v1.jpg"
+      "image": "https://wildlakestudio.com/mirror/assets/mirror-social-v2.jpg"
     },
     {
       "@id": "https://wildlakestudio.com/mirror/#deck",
