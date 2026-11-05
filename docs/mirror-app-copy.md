@@ -15,7 +15,7 @@ One term per concept, everywhere: **reading** (one draw and its words), **Log** 
 | Eyebrow | QUIET CREEK TAROT |
 | Headline | You do the reading. |
 | Body | These 78 cards come with no meanings. Draw one to four, look closely, and write what you see. |
-| Privacy | Your readings stay on this phone. No account, no sign-in. |
+| Privacy | Your readings stay on this phone. No account or sign-in required. |
 | Button | Start a reading |
 
 - **Name the absence first.** A tarot app with no meanings looks broken until someone says so. The headline gives the reader the job; the body says what is missing before a card ever turns.
