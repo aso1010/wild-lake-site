@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-9Gr6ro8ySLU5JrtcaeRDLXczK+xZnfuccr2GvUQoYbQ='; script-src 'sha256-X1LnJW1mtzcPmBOTX/aTGjDB1kUSfXy/OVOzxsEX4Cw=' 'sha256-pBeUmGHrS9OqLqR9dhKcMBFw8/uX4q/4Oz1vZ8shAco='; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-9Gr6ro8ySLU5JrtcaeRDLXczK+xZnfuccr2GvUQoYbQ='; script-src 'sha256-X1LnJW1mtzcPmBOTX/aTGjDB1kUSfXy/OVOzxsEX4Cw=' 'sha256-82N+kq3UBTrmysrW/n/yb9+pGv/fJwe2K+gVzyw9gas='; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Architectural Mirror | Quiet Creek — Wild-Lake</title>
   <meta name="description" content="A tarot web app for artists and creators. It shows the cards and no meanings: the querent reads the images and writes their own interpretation in the log.">
   <meta name="theme-color" content="#000000">
@@ -506,7 +506,7 @@ h2 {
         <h1 id="mirror">Architectural Mirror</h1>
         <div class="spread-controls" hidden><label class="spread-size">Cards <select aria-label="Number of cards" class="card-count"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><button class="draw" type="button">Shuffle</button></div>
       </header>
-      <p class="reading-status" role="status" aria-live="polite">Choose a spread of one to four cards. Shuffle, stop, then deal.</p>
+      <p class="reading-status" role="status" aria-live="polite">Choose one to four cards. Take a breath and bring a question to mind. Shuffle, stop, then deal.</p>
 <div class="shuffle-deck" hidden aria-hidden="true"><svg viewBox="0 0 233 377"><use href="#back"/></svg></div>
 <ol class="card-grid" hidden>
         <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 1"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#m16"/></svg><span class="symbol">THE TOWER</span></span></span></label></li>
@@ -543,7 +543,8 @@ h2 {
   if (!validRecord(st)) st = {at:new Date().toISOString(),spread:[],turned:[],text:'',past:[]};
   st.past = Array.isArray(st.past) ? st.past.filter(validRecord).slice(-610) : [];
   st.turned = Array.isArray(st.turned) ? st.spread.map((_,i) => !!st.turned[i]) : st.spread.map(() => false);
-  count.value = String(st.spread.length || 1);
+  count.value = String(Number.isInteger(st.count) && st.count >= 1 && st.count <= 4 ? st.count : (st.spread.length || 1));
+  st.count = Number(count.value);
   let phase = 'ready', timer = null, pending = null, breatheIn = true;
   const save = () => { try { localStorage.setItem(KEY,JSON.stringify(st)); } catch (_) {} };
   const randomBelow = n => {
@@ -557,12 +558,14 @@ h2 {
     return a;
   };
   const paint = () => {
-    grid.className = 'card-grid cards-' + st.spread.length;
-    grid.hidden = st.spread.length === 0;
+    const visible = Number(count.value);
+    grid.className = 'card-grid cards-' + visible;
+    grid.hidden = phase !== 'ready';
     cards.forEach((c,i) => {
-      c.parentElement.hidden = i >= st.spread.length;
+      c.parentElement.hidden = i >= visible;
       const turn = c.querySelector('.turn');
-      if(i >= st.spread.length) return;
+      turn.disabled = i >= st.spread.length;
+      if(i >= st.spread.length) { turn.checked = false; return; }
       const card = DECK[st.spread[i]];
       c.querySelector('.face use').setAttribute('href','#'+card[0]);
       c.querySelector('.symbol').textContent=card[1];
@@ -570,32 +573,40 @@ h2 {
       turn.setAttribute('aria-label',`Turn card ${i+1}`);
     });
   };
+  count.addEventListener('change', () => {
+    st.count = Number(count.value);
+    paint(); save();
+    const n = st.count;
+    status.textContent = phase === 'stopped'
+      ? `${n === 1 ? 'One card' : n + ' cards'} selected. Hold your question and deal when you’re ready.`
+      : `${n === 1 ? 'One card' : n + ' cards'} selected. Take a breath, bring a question to mind, then shuffle.`;
+  });
   paint(); log.value=st.text; save();
-  if(st.spread.length) status.textContent='Turn any card when you’re ready. You can leave others face down.';
+  if(st.spread.length) status.textContent='Take a breath and hold your question. Turn any card when you’re ready.';
   cards.forEach((c,i) => c.querySelector('.turn').addEventListener('change',e => {st.turned[i]=e.target.checked;save();}));
   log.addEventListener('input',() => {st.text=log.value;save();});
   draw.addEventListener('click',() => {
     if(phase==='ready'){
       pending=shuffled();phase='shuffling';count.disabled=true;
       draw.textContent='Stop';grid.hidden=true;stack.hidden=false;
-      stack.classList.add('is-shuffling');breatheIn=true;status.textContent='Breathe in. Stop whenever you’re ready.';
-      timer=setInterval(() => {breatheIn=!breatheIn;status.textContent=breatheIn?'Breathe in.':'Breathe out.';},4000);
+      stack.classList.add('is-shuffling');breatheIn=true;status.textContent='Breathe in. Bring a question to mind. Stop whenever you’re ready.';
+      timer=setInterval(() => {breatheIn=!breatheIn;status.textContent=breatheIn?'Breathe in. Hold your question gently.':'Breathe out. Let your question settle.';},4000);
     } else if(phase==='shuffling'){
       clearInterval(timer);timer=null;phase='stopped';count.disabled=false;
       // Finalize the deck at the moment the reader stops.
       pending=shuffled();stack.classList.remove('is-shuffling');draw.textContent='Deal';
-      status.textContent='The deck is still. Deal when you’re ready.';
+      status.textContent='The deck is still. Hold your question and deal when you’re ready.';
     } else {
-      if(st.text.trim()) st.past.push({at:st.at,spread:[...st.spread],text:st.text});
+      if(st.text.trim()) st.past.push({at:st.at,spread:st.spread.slice(0, st.count),text:st.text});
       st.past=st.past.slice(-610);
       const n=Math.max(1,Math.min(4,Number(count.value)||1));
-      Object.assign(st,{at:new Date().toISOString(),spread:pending.slice(0,n),turned:Array(n).fill(false),text:''});
+      Object.assign(st,{at:new Date().toISOString(),spread:pending.slice(0,n),count:n,turned:Array(n).fill(false),text:''});
       log.value='';pending=null;phase='ready';stack.hidden=true;draw.textContent='Shuffle';paint();save();
       status.textContent=`${n===1?'One card':n+' cards'} dealt. Turn ${n===1?'it':'any card'} when you’re ready.`;
     }
   });
   out.addEventListener('click',() => {
-    const all=[...st.past,st].filter(r=>r.text.trim());
+    const all=[...st.past,{...st,spread:st.spread.slice(0,st.count)}].filter(r=>r.text.trim());
     const txt=all.map(r=>`${new Date(r.at).toLocaleString()}\n${r.spread.map(n=>DECK[n][1]).join(' / ')}\n\n${r.text.trim()}\n`).join('\n---\n\n');
     const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:'text/plain;charset=utf-8'}));a.download='quiet-creek-tarot-log.txt';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),0);
   });
