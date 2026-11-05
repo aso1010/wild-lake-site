@@ -54,3 +54,5 @@
 .tools-heading{padding:var(--space-xl) var(--gutter) 0}
 .home .tools-heading h1{font-size:clamp(var(--fib-55),7vw,var(--fib-89));margin:0 0 var(--space-md);line-height:1.04}
 .tools-heading p{max-width:48ch;font-size:var(--lead-size);color:var(--subtle-color);margin:0}
+
+.tools-page .app-feature-art .tool-single-card{max-width:233px;margin-inline:auto}

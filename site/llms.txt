@@ -95,6 +95,6 @@ Wild-Lake describes itself as a solo practice powered by AI workflows and states
 
 ## Tools
 
-[Tools](https://wildlakestudio.com/tools/) lists Wild-Lake’s browser-based tools. Quiet Creek Tarot can also be installed on a phone or computer and works offline after its first load. Readings remain on the device.
+[Tools](https://wildlakestudio.com/tools/) lists two tarot tools. Architectural Mirror (https://wildlakestudio.com/mirror/) is a simple browser workspace for a quick reading with notes and text export. Quiet Creek Tarot is the installable app with a guided draw and a Log for revisiting readings. It works offline after its first load. Readings remain on the device.
 
 - App: https://mirror.wildlakestudio.com/app/
