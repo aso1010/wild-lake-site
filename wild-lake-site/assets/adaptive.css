@@ -33,3 +33,10 @@ img,video{max-width:100%;height:auto}
 @media(prefers-contrast:more){:root{--subtle-color:#FFFFFF;--muted-color:#e0e0d8;--rule-color:#92988a}a{text-decoration-thickness:2px}}
 @media(forced-colors:active){.rule{background:CanvasText!important}.site-topbar,.site-topbar-logo{background:Canvas;color:CanvasText}.home .mark text,.home .mark path{fill:CanvasText}}
 @media(prefers-reduced-motion:reduce){.home .mark .ltr{transform:none!important;opacity:1!important;will-change:auto}}
+
+/* Keep desktop client imagery at an editorial scale on wide screens. */
+@media(min-width:801px){
+  .roster .roster-entry{grid-template-columns:minmax(0,min(30vw,360px)) minmax(0,1fr);gap:clamp(34px,5vw,80px)}
+  .roster .roster-visual{width:100%;max-width:360px;justify-self:start}
+  .roster .roster-portrait img{transform:none}
+}
