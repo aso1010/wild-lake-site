@@ -1,0 +1,4 @@
+.home.responsibility-page .practice-impact{margin:0;min-height:65svh}
+.home.responsibility-page .practice-impact h1{max-width:22ch;margin:0 0 clamp(34px,5vw,64px);font-size:clamp(2.125rem,5.2vw,5.5rem);line-height:1.04;letter-spacing:-.045em;color:inherit}
+.home.responsibility-page .responsibility-return{margin-top:55px;font-size:1rem;text-underline-offset:5px}
+@media(max-width:800px){.home.responsibility-page .practice-impact h1 br{display:none}}
