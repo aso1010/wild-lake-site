@@ -1,0 +1,348 @@
+/* Quiet Creek Tarot. Source: the wireframe global.css of 2026-11-05.
+   Repairs: the file was cut off inside `.card .symbol`; that rule is closed and the journal
+   rules it never reached are written. Ground inverted to #000000 (house rule: no white grounds).
+   Fixed vw/vh tracks became fr tracks so the 5px border no longer overflows the viewport.
+   Tokens (--void, --ink, --font-sans, --font-mono, --lh-text, --track-caps) come from the
+   783 typographic core, which the engine inlines above this sheet. */
+
+:root {
+  --font-header: var(--font-sans);
+  --font-utility: var(--font-mono);
+  --color-primary: var(--ink);
+  --color-secondary: var(--void);
+  --art: #FFFFFF;
+  --turn: 610ms;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-family: var(--font-utility);
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.grid-fibonacci {
+  display: grid;
+  grid-template-columns: minmax(0, 8fr) minmax(0, 21fr) minmax(0, 34fr) minmax(0, 37fr);
+  grid-template-rows: minmax(0, 55fr) minmax(0, 45fr);
+  height: 100%;
+  width: 100%;
+  border: 5px solid var(--color-primary);
+}
+
+.incision-boundary {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  height: 100%;
+  background-color: var(--color-secondary);
+  border-right: 3px solid var(--color-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.fluid-line {
+  position: absolute;
+  top: 0;
+  left: 34%;
+  width: 13px;
+  height: 100%;
+  color: var(--color-primary);
+}
+
+.reading-frame {
+  grid-column: 3 / 5;
+  grid-row: 1;
+  padding: 34px;
+  border-bottom: 5px solid var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.reading-frame header,
+.journal-frame header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 21px;
+}
+
+h1, h2 {
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: clamp(34px, 3.82vw, 55px);
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 21px;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 13px;
+}
+
+.draw,
+.export {
+  flex: none;
+  font-family: var(--font-utility);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border: 3px solid var(--color-primary);
+  border-radius: 0;
+  padding: 8px 13px;
+  cursor: pointer;
+}
+
+.draw:active,
+.export:active {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.draw:focus-visible,
+.export:focus-visible,
+.turn:focus-visible + .flip {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 5px;
+}
+
+.raw-input:focus {
+  outline: 1px solid var(--ink-3);
+  outline-offset: -11px;
+}
+
+/* the spread: four standing cards, sized by whichever runs out first, height or width */
+.card-grid {
+  list-style: none;
+  display: flex;
+  gap: 21px;
+  flex: 1 1 0;
+  min-height: 0;
+  container-type: size;
+}
+
+.card-grid li {
+  flex: none;
+  height: min(100cqh, (100cqw - 63px) / 4 * 377 / 233);
+  aspect-ratio: 233 / 377;
+}
+
+.card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  user-select: none;
+  color: var(--art);
+  perspective: 1597px;
+  container-type: inline-size;
+  transition: none;
+}
+
+.turn {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.flip {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transition: transform var(--turn) cubic-bezier(0.618, 0, 0.382, 1);
+}
+
+.turn:checked + .flip {
+  transform: rotateY(180deg);
+}
+
+.back,
+.face {
+  position: absolute;
+  inset: 0;
+  display: block;
+  border: 3px solid var(--art);
+  background-color: var(--color-secondary);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: visibility 0s calc(var(--turn) / 2);
+}
+
+.back svg,
+.face svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.face {
+  transform: rotateY(180deg);
+  visibility: hidden;
+}
+
+.turn:checked + .flip .face {
+  visibility: visible;
+}
+
+.turn:checked + .flip .back {
+  visibility: hidden;
+}
+
+.card.heavy-draw:active {
+  transform: scale(0.98);
+}
+
+.card.heavy-draw:active .back {
+  background-color: var(--art);
+  color: var(--color-secondary);
+}
+
+.card .symbol {
+  font-family: var(--font-utility);
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 17.8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 8px;
+  font-size: clamp(8px, 5.6cqi, 13px);
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: var(--art);
+}
+
+/* Wheel of Fortune turns, slowly */
+.spin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spin 89s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(1turn); }
+}
+
+.journal-frame {
+  grid-column: 3 / 5;
+  grid-row: 2;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.raw-input {
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%;
+  resize: none;
+  font-family: var(--font-utility);
+  font-size: 21px;
+  line-height: var(--lh-text);
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  caret-color: var(--color-primary);
+  border: 3px solid var(--color-primary);
+  border-radius: 0;
+  padding: 21px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip,
+  .back,
+  .face {
+    transition: none;
+  }
+  .spin {
+    animation: none;
+  }
+}
+
+/* phone: the incision stays as a rail, the spread folds to two by two, the page scrolls */
+@media (max-width: 767px) {
+  body {
+    height: auto;
+    overflow: auto;
+  }
+  .grid-fibonacci {
+    grid-template-columns: minmax(0, 8fr) minmax(0, 55fr);
+    grid-template-rows: auto auto;
+    min-height: 100svh;
+    height: auto;
+  }
+  .incision-boundary {
+    grid-column: 1;
+  }
+  .reading-frame,
+  .journal-frame {
+    grid-column: 2;
+    padding: 21px;
+  }
+  .reading-frame header {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  h1 {
+    flex: 1 1 100%;
+    font-size: min(34px, 7.6vw);
+  }
+  .draw {
+    margin-bottom: 21px;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    flex: none;
+    container-type: normal;
+  }
+  .card-grid li {
+    width: 100%;
+    height: auto;
+  }
+  .raw-input {
+    flex: none;
+    min-height: 233px;
+  }
+}

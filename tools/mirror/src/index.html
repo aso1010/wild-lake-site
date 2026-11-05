@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="{{CSP}}">
+  <title>Tarot Framework // 783</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="{{URL}}">
+  <link rel="alternate" type="application/ld+json" href="schema.jsonld">
+{{PRELOAD}}
+  <style>{{STYLE}}</style>
+  <script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+{{SPRITE}}
+  <main class="grid-fibonacci">
+
+    <div class="incision-boundary" aria-hidden="true">
+      <svg class="fluid-line" viewBox="0 0 10 100" preserveAspectRatio="none">
+        <path d="M5,0 C2,34 8,66 5,100" stroke="currentColor" stroke-width="2" fill="none" vector-effect="non-scaling-stroke" />
+      </svg>
+    </div>
+
+    <section class="reading-frame" aria-labelledby="mirror">
+      <header>
+        <h1 id="mirror">Architectural Mirror</h1>
+        <button class="draw" type="button" hidden>Draw</button>
+      </header>
+      <ol class="card-grid">
+        <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 1"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#m16"/></svg><span class="symbol">THE TOWER</span></span></span></label></li>
+        <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 2"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#p04"/></svg><span class="symbol">FOUR OF PENTACLES</span></span></span></label></li>
+        <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 3"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#w14"/></svg><span class="symbol">KING OF WANDS</span></span></span></label></li>
+        <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 4"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#m10"/></svg><span class="symbol">WHEEL OF FORTUNE</span></span></span></label></li>
+      </ol>
+    </section>
+
+    <section class="journal-frame" aria-labelledby="log">
+      <header>
+        <h2 id="log">Log</h2>
+        <button class="export" type="button" hidden>Export</button>
+      </header>
+      <textarea class="raw-input" aria-labelledby="log" spellcheck="false"></textarea>
+    </section>
+
+  </main>
+  <script>{{SCRIPT}}</script>
+</body>
+</html>

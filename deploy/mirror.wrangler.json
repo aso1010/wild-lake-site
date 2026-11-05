@@ -1,1 +1,19 @@
-{"name":"wild-lake-mirror","main":"mirror-worker.js","compatibility_date":"2026-11-05","assets":{"directory":"../wild-lake-site","binding":"ASSETS","run_worker_first":true},"routes":[{"pattern":"mirror.wildlakestudio.com","custom_domain":true}],"observability":{"enabled":true}}
+{
+  "name": "wild-lake-mirror",
+  "main": "mirror-worker.js",
+  "compatibility_date": "2026-11-05",
+  "assets": {
+    "directory": "../site",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "routes": [
+    {
+      "pattern": "mirror.wildlakestudio.com",
+      "custom_domain": true
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

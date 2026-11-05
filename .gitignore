@@ -1,0 +1,10 @@
+.wrangler/
+**/.wrangler/
+.DS_Store
+**/.DS_Store
+build/
+dist/
+**/bin/
+__pycache__/
+# Temporary downloads are published only while requested; never commit them.
+site/downloads/Quiet-Creek-*.zip

@@ -1,0 +1,10 @@
+{
+  "name": "dark-queen-31fb",
+  "compatibility_date": "2026-11-03",
+  "assets": {
+    "directory": "../site"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
