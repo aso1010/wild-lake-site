@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-VO6zMFV6UR8Wj4BbdViYo152qZeKnb9tBC+Wls2fGUs='; script-src 'sha256-X1LnJW1mtzcPmBOTX/aTGjDB1kUSfXy/OVOzxsEX4Cw=' 'sha256-PuG5byXG/rIH5t8bIZhGCO6uHjHd4b7hfgjYctNwBvs='; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-9Gr6ro8ySLU5JrtcaeRDLXczK+xZnfuccr2GvUQoYbQ='; script-src 'sha256-X1LnJW1mtzcPmBOTX/aTGjDB1kUSfXy/OVOzxsEX4Cw=' 'sha256-pBeUmGHrS9OqLqR9dhKcMBFw8/uX4q/4Oz1vZ8shAco='; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Architectural Mirror | Quiet Creek — Wild-Lake</title>
   <meta name="description" content="A tarot web app for artists and creators. It shows the cards and no meanings: the querent reads the images and writes their own interpretation in the log.">
   <meta name="theme-color" content="#000000">
@@ -391,11 +391,26 @@ h2 {
     min-height: 233px;
   }
 }
+
+.spread-controls{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+.spread-size{display:flex;align-items:center;gap:8px;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+.card-count{font:inherit;color:var(--ink);background:#000;border:1px solid var(--ink-3);padding:8px;min-height:40px;border-radius:0}
+.reading-frame header{flex-wrap:wrap}.reading-frame h1{margin-bottom:13px}
+.reading-status{font-size:13px;color:var(--ink-2);margin:0 0 13px;min-height:21px}
+.shuffle-deck{flex:1;min-height:0;display:grid;place-items:center;color:#fff}
+.shuffle-deck svg{height:min(100%,233px);max-height:233px;max-width:144px;width:100%;border:2px solid currentColor}
+.shuffle-deck.is-shuffling svg{animation:creek-breathe 8s ease-in-out infinite}
+@keyframes creek-breathe{0%,100%{transform:scale(.95) rotate(-1deg);opacity:.65}50%{transform:scale(1.02) rotate(1deg);opacity:1}}
+.card-grid.cards-1 li{height:min(100cqh,100cqw * 377 / 233)}
+.card-grid.cards-2 li{height:min(100cqh,(100cqw - 21px) / 2 * 377 / 233)}
+.card-grid.cards-3 li{height:min(100cqh,(100cqw - 42px) / 3 * 377 / 233)}
+@media(max-width:767px){.spread-controls{margin-bottom:13px}.spread-controls .draw{margin:0}.shuffle-deck{min-height:233px;margin-block:21px}.card-grid.cards-1{grid-template-columns:minmax(0,233px);justify-content:center}.card-grid li,.card-grid.cards-1 li,.card-grid.cards-2 li,.card-grid.cards-3 li{height:auto}.reading-status{line-height:1.6}}
+@media(prefers-reduced-motion:reduce){.shuffle-deck.is-shuffling svg{animation:none}}
 </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://wildlakestudio.com/mirror/#page","@type":"WebPage","datePublished":"2026-11-05","inLanguage":"en-US","isPartOf":{"@id":"https://wildlakestudio.com/#website"},"mainEntity":{"@id":"https://wildlakestudio.com/mirror/#app"},"name":"Architectural Mirror","url":"https://wildlakestudio.com/mirror/"},{"@id":"https://wildlakestudio.com/mirror/#app","@type":"WebApplication","applicationCategory":"LifestyleApplication","audience":{"@type":"Audience","audienceType":"Artists and creators"},"browserRequirements":"Drawing and the log need JavaScript; the opening spread renders without it.","creator":{"@id":"https://argelysoriach.com/#person"},"datePublished":"2026-11-05","description":"A tarot web app for artists and creators. It shows the cards and no meanings: the querent reads the images and writes their own interpretation in the log.","hasPart":{"@id":"https://wildlakestudio.com/mirror/#deck"},"isAccessibleForFree":true,"isBasedOn":{"@id":"https://seveneightythree.com/assets/#typography"},"isPartOf":{"@id":"https://wildlakestudio.com/magazine/#magazine"},"name":"Quiet Creek Tarot","operatingSystem":"Any","publisher":{"@id":"https://wildlakestudio.com/#organization"},"url":"https://wildlakestudio.com/mirror/"},{"@id":"https://wildlakestudio.com/mirror/#deck","@type":"CreativeWork","creator":{"@id":"https://argelysoriach.com/#person"},"description":"78 original cards, 22 major arcana and four suits of 14 (wands, cups, swords, pentacles), drawn as solid geometry in #FFFFFF on #000000. Card names only; no meanings.","isPartOf":{"@id":"https://wildlakestudio.com/mirror/#app"},"name":"Quiet Creek Tarot deck"},{"@id":"https://wildlakestudio.com/magazine/#magazine","@type":"Periodical","alternateName":"Quiet Creek by Wild-Lake","description":"On artists, creative work, and the structures that support an independent practice.","isPartOf":{"@id":"https://wildlakestudio.com/#website"},"name":"Quiet Creek","publisher":{"@id":"https://wildlakestudio.com/#organization"},"url":"https://wildlakestudio.com/magazine/"}]}</script>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Architectural Mirror — Quiet Creek"/>
-<meta property="og:description" content="Draw four cards. Read the images. Write your own interpretation. A Quiet Creek tool for artists and creators."/>
+<meta property="og:description" content="Choose one to four cards. Shuffle, stop, deal. Read the images and write your own interpretation. A Quiet Creek tool for artists and creators."/>
 <meta property="og:url" content="https://wildlakestudio.com/mirror/"/>
 <meta property="og:image" content="https://wildlakestudio.com/assets/images/quiet-creek-avatar.png"/>
 <meta name="twitter:card" content="summary"/>
@@ -489,9 +504,11 @@ h2 {
     <section class="reading-frame" aria-labelledby="mirror">
       <header>
         <h1 id="mirror">Architectural Mirror</h1>
-        <button class="draw" type="button" hidden>Draw</button>
+        <div class="spread-controls" hidden><label class="spread-size">Cards <select aria-label="Number of cards" class="card-count"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><button class="draw" type="button">Shuffle</button></div>
       </header>
-      <ol class="card-grid">
+      <p class="reading-status" role="status" aria-live="polite">Choose a spread of one to four cards. Shuffle, stop, then deal.</p>
+<div class="shuffle-deck" hidden aria-hidden="true"><svg viewBox="0 0 233 377"><use href="#back"/></svg></div>
+<ol class="card-grid" hidden>
         <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 1"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#m16"/></svg><span class="symbol">THE TOWER</span></span></span></label></li>
         <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 2"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#p04"/></svg><span class="symbol">FOUR OF PENTACLES</span></span></span></label></li>
         <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 3"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#w14"/></svg><span class="symbol">KING OF WANDS</span></span></span></label></li>
@@ -509,80 +526,80 @@ h2 {
 
   </main>
   <script>(() => {
-  // [id, name] for all 78 cards, filled in by the engine at compile.
   const DECK = [["m00","THE FOOL"],["m01","THE MAGICIAN"],["m02","THE HIGH PRIESTESS"],["m03","THE EMPRESS"],["m04","THE EMPEROR"],["m05","THE HIEROPHANT"],["m06","THE LOVERS"],["m07","THE CHARIOT"],["m08","STRENGTH"],["m09","THE HERMIT"],["m10","WHEEL OF FORTUNE"],["m11","JUSTICE"],["m12","THE HANGED MAN"],["m13","DEATH"],["m14","TEMPERANCE"],["m15","THE DEVIL"],["m16","THE TOWER"],["m17","THE STAR"],["m18","THE MOON"],["m19","THE SUN"],["m20","JUDGEMENT"],["m21","THE WORLD"],["w01","ACE OF WANDS"],["w02","TWO OF WANDS"],["w03","THREE OF WANDS"],["w04","FOUR OF WANDS"],["w05","FIVE OF WANDS"],["w06","SIX OF WANDS"],["w07","SEVEN OF WANDS"],["w08","EIGHT OF WANDS"],["w09","NINE OF WANDS"],["w10","TEN OF WANDS"],["w11","PAGE OF WANDS"],["w12","KNIGHT OF WANDS"],["w13","QUEEN OF WANDS"],["w14","KING OF WANDS"],["c01","ACE OF CUPS"],["c02","TWO OF CUPS"],["c03","THREE OF CUPS"],["c04","FOUR OF CUPS"],["c05","FIVE OF CUPS"],["c06","SIX OF CUPS"],["c07","SEVEN OF CUPS"],["c08","EIGHT OF CUPS"],["c09","NINE OF CUPS"],["c10","TEN OF CUPS"],["c11","PAGE OF CUPS"],["c12","KNIGHT OF CUPS"],["c13","QUEEN OF CUPS"],["c14","KING OF CUPS"],["s01","ACE OF SWORDS"],["s02","TWO OF SWORDS"],["s03","THREE OF SWORDS"],["s04","FOUR OF SWORDS"],["s05","FIVE OF SWORDS"],["s06","SIX OF SWORDS"],["s07","SEVEN OF SWORDS"],["s08","EIGHT OF SWORDS"],["s09","NINE OF SWORDS"],["s10","TEN OF SWORDS"],["s11","PAGE OF SWORDS"],["s12","KNIGHT OF SWORDS"],["s13","QUEEN OF SWORDS"],["s14","KING OF SWORDS"],["p01","ACE OF PENTACLES"],["p02","TWO OF PENTACLES"],["p03","THREE OF PENTACLES"],["p04","FOUR OF PENTACLES"],["p05","FIVE OF PENTACLES"],["p06","SIX OF PENTACLES"],["p07","SEVEN OF PENTACLES"],["p08","EIGHT OF PENTACLES"],["p09","NINE OF PENTACLES"],["p10","TEN OF PENTACLES"],["p11","PAGE OF PENTACLES"],["p12","KNIGHT OF PENTACLES"],["p13","QUEEN OF PENTACLES"],["p14","KING OF PENTACLES"]];
   const KEY = 'quiet-creek-tarot.v1';
   const cards = [...document.querySelectorAll('.card')];
+  const grid = document.querySelector('.card-grid');
   const log = document.querySelector('.raw-input');
   const draw = document.querySelector('.draw');
   const out = document.querySelector('.export');
-  const calm = matchMedia('(prefers-reduced-motion: reduce)');
-
-  const pick = () => {
-    const a = DECK.map((_, i) => i);
-    const r = crypto.getRandomValues(new Uint32Array(4));
-    for (let i = 0; i < 4; i++) {
-      const j = i + (r[i] % (a.length - i));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a.slice(0, 4);
+  const count = document.querySelector('.card-count');
+  const status = document.querySelector('.reading-status');
+  const stack = document.querySelector('.shuffle-deck');
+  const validSpread = a => Array.isArray(a) && a.length <= 4 && new Set(a).size === a.length && a.every(i => Number.isInteger(i) && i >= 0 && i < DECK.length);
+  const validRecord = r => r && typeof r.at === 'string' && !isNaN(Date.parse(r.at)) && typeof r.text === 'string' && validSpread(r.spread);
+  let st;
+  try { st = JSON.parse(localStorage.getItem(KEY)); } catch (_) {}
+  if (!validRecord(st)) st = {at:new Date().toISOString(),spread:[],turned:[],text:'',past:[]};
+  st.past = Array.isArray(st.past) ? st.past.filter(validRecord).slice(-610) : [];
+  st.turned = Array.isArray(st.turned) ? st.spread.map((_,i) => !!st.turned[i]) : st.spread.map(() => false);
+  count.value = String(st.spread.length || 1);
+  let phase = 'ready', timer = null, pending = null, breatheIn = true;
+  const save = () => { try { localStorage.setItem(KEY,JSON.stringify(st)); } catch (_) {} };
+  const randomBelow = n => {
+    const limit = 4294967296 - (4294967296 % n); let v;
+    do { v = crypto.getRandomValues(new Uint32Array(1))[0]; } while (v >= limit);
+    return v % n;
   };
-  const fresh = () => ({ at: new Date().toISOString(), spread: pick(), turned: [0, 0, 0, 0], text: '' });
-  const valid = (s) =>
-    s && typeof s.at === 'string' && typeof s.text === 'string' && Array.isArray(s.past) &&
-    Array.isArray(s.turned) && s.turned.length === 4 &&
-    Array.isArray(s.spread) && s.spread.length === 4 && new Set(s.spread).size === 4 &&
-    s.spread.every((i) => Number.isInteger(i) && i >= 0 && i < DECK.length);
-
-  let st = null;
-  try { st = JSON.parse(localStorage.getItem(KEY)); } catch (e) { st = null; }
-  if (!valid(st)) st = { ...fresh(), past: [] };
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) { /* private window: the reading lives until the tab closes */ } };
-
-  const paint = () => st.spread.forEach((n, i) => {
-    const c = cards[i];
-    c.querySelector('.face use').setAttribute('href', '#' + DECK[n][0]);
-    c.querySelector('.symbol').textContent = DECK[n][1];
-    c.querySelector('.turn').checked = !!st.turned[i];
+  const shuffled = () => {
+    const a = DECK.map((_,i) => i);
+    for(let i=a.length-1;i>0;i--){const j=randomBelow(i+1);[a[i],a[j]]=[a[j],a[i]];}
+    return a;
+  };
+  const paint = () => {
+    grid.className = 'card-grid cards-' + st.spread.length;
+    grid.hidden = st.spread.length === 0;
+    cards.forEach((c,i) => {
+      c.parentElement.hidden = i >= st.spread.length;
+      const turn = c.querySelector('.turn');
+      if(i >= st.spread.length) return;
+      const card = DECK[st.spread[i]];
+      c.querySelector('.face use').setAttribute('href','#'+card[0]);
+      c.querySelector('.symbol').textContent=card[1];
+      turn.checked=!!st.turned[i];
+      turn.setAttribute('aria-label',`Turn card ${i+1}`);
+    });
+  };
+  paint(); log.value=st.text; save();
+  if(st.spread.length) status.textContent='Turn any card when you’re ready. You can leave others face down.';
+  cards.forEach((c,i) => c.querySelector('.turn').addEventListener('change',e => {st.turned[i]=e.target.checked;save();}));
+  log.addEventListener('input',() => {st.text=log.value;save();});
+  draw.addEventListener('click',() => {
+    if(phase==='ready'){
+      pending=shuffled();phase='shuffling';count.disabled=true;
+      draw.textContent='Stop';grid.hidden=true;stack.hidden=false;
+      stack.classList.add('is-shuffling');breatheIn=true;status.textContent='Breathe in. Stop whenever you’re ready.';
+      timer=setInterval(() => {breatheIn=!breatheIn;status.textContent=breatheIn?'Breathe in.':'Breathe out.';},4000);
+    } else if(phase==='shuffling'){
+      clearInterval(timer);timer=null;phase='stopped';count.disabled=false;
+      // Finalize the deck at the moment the reader stops.
+      pending=shuffled();stack.classList.remove('is-shuffling');draw.textContent='Deal';
+      status.textContent='The deck is still. Deal when you’re ready.';
+    } else {
+      if(st.text.trim()) st.past.push({at:st.at,spread:[...st.spread],text:st.text});
+      st.past=st.past.slice(-610);
+      const n=Math.max(1,Math.min(4,Number(count.value)||1));
+      Object.assign(st,{at:new Date().toISOString(),spread:pending.slice(0,n),turned:Array(n).fill(false),text:''});
+      log.value='';pending=null;phase='ready';stack.hidden=true;draw.textContent='Shuffle';paint();save();
+      status.textContent=`${n===1?'One card':n+' cards'} dealt. Turn ${n===1?'it':'any card'} when you’re ready.`;
+    }
   });
-  const names = (r) => r.spread.map((n) => DECK[n][1]).join(' / ');
-  const stamp = (iso) => { const d = new Date(iso), p = (v) => String(v).padStart(2, '0'); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; };
-
-  paint();
-  log.value = st.text;
-  save();
-
-  cards.forEach((c, i) => c.querySelector('.turn').addEventListener('change', (e) => { st.turned[i] = e.target.checked ? 1 : 0; save(); }));
-  log.addEventListener('input', () => { st.text = log.value; save(); });
-
-  let busy = false;
-  draw.addEventListener('click', () => {
-    if (busy) return;
-    busy = true;
-    if (st.text.trim()) st.past.push({ at: st.at, spread: st.spread, text: st.text });
-    st.past = st.past.slice(-610);
-    cards.forEach((c) => { c.querySelector('.turn').checked = false; });
-    setTimeout(() => {
-      Object.assign(st, fresh());
-      paint();
-      log.value = '';
-      save();
-      busy = false;
-    }, calm.matches ? 0 : 610);
+  out.addEventListener('click',() => {
+    const all=[...st.past,st].filter(r=>r.text.trim());
+    const txt=all.map(r=>`${new Date(r.at).toLocaleString()}\n${r.spread.map(n=>DECK[n][1]).join(' / ')}\n\n${r.text.trim()}\n`).join('\n---\n\n');
+    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:'text/plain;charset=utf-8'}));a.download='quiet-creek-tarot-log.txt';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),0);
   });
-
-  out.addEventListener('click', () => {
-    const all = [...st.past, st].filter((r) => r.text.trim());
-    const txt = all.map((r) => `${stamp(r.at)}\n${names(r)}\n\n${r.text.trim()}\n`).join('\n---\n\n');
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([txt], { type: 'text/plain;charset=utf-8' }));
-    a.download = 'quiet-creek-tarot-log.txt';
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(a.href), 0);
-  });
-
-  draw.hidden = false;
-  out.hidden = false;
+  document.querySelector('.spread-controls').hidden=false;out.hidden=false;
 })();
 </script>
 </body>
