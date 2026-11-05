@@ -3,7 +3,7 @@
   "@type": "WebSite",
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
-  "name": "Wild-Lake — Brutalist structural design and talent architecture",
+  "name": "Wild-Lake — Existential Mechanics Studio",
   "description": "Wild-Lake is an existential mechanics studio. We develop artists and build the structures that sustain their work. Artists retain ownership and creative control.",
   "inLanguage": "en-US",
   "publisher": {
@@ -21,7 +21,7 @@
       "@type": "WebPage",
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
-      "name": "Wild-Lake — Brutalist structural design and talent architecture",
+      "name": "Wild-Lake — Existential Mechanics Studio",
       "description": "Wild-Lake is an existential mechanics studio. We develop artists and build the structures that sustain their work. Artists retain ownership and creative control.",
       "inLanguage": "en-US",
       "isPartOf": {
