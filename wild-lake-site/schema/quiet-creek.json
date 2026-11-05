@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Periodical",
+  "@id": "https://wildlakestudio.com/magazine/#magazine",
+  "name": "Quiet Creek",
+  "alternateName": "Quiet Creek Magazine",
+  "url": "https://wildlakestudio.com/magazine/",
+  "description": "Wild-Lake’s magazine on artists, creative work, and the structures that support an independent practice.",
+  "inLanguage": "en-US",
+  "publisher": {
+    "@id": "https://wildlakestudio.com/#organization"
+  },
+  "isPartOf": {
+    "@id": "https://wildlakestudio.com/#website"
+  },
+  "sameAs": [
+    "https://www.instagram.com/thequietestcreek/"
+  ],
+  "image": "https://wildlakestudio.com/assets/images/quiet-creek-avatar.png",
+  "hasPart": [
+    {
+      "@id": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/#article"
+    }
+  ]
+}

@@ -34,23 +34,227 @@
 <link rel="stylesheet" href="/assets/blog.css"/>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "Periodical",
-  "@id": "https://wildlakestudio.com/magazine/#magazine",
-  "url": "https://wildlakestudio.com/magazine/",
-  "name": "Quiet Creek Magazine — Wild-Lake",
-  "description": "Notes from Wild-Lake on artists, creative work, and the structures that support an independent practice.",
-  "inLanguage": "en-US",
-  "publisher": {
-    "@id": "https://wildlakestudio.com/#organization"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "Argelys Samuel Oriach",
-    "url": "https://wildlakestudio.com/about-founder/"
-  },
-  "image": "https://wildlakestudio.com/assets/images/quiet-creek-avatar.png",
-  "sameAs": [
-    "https://www.instagram.com/thequietestcreek/"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://wildlakestudio.com/#organization",
+      "name": "Wild-Lake",
+      "legalName": "Wild-Lake LLC",
+      "alternateName": [
+        "Wild Lake",
+        "WILDLAKE"
+      ],
+      "url": "https://wildlakestudio.com/",
+      "description": "We develop artists and build the infrastructure around their work, identity, and long-term vision. Our model is non-extractive: you own your work, and we work on a mutually agreed retainer instead of taking a percentage of your success.",
+      "slogan": "For world-class creators.",
+      "foundingDate": "2026",
+      "founder": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "location": [
+        {
+          "@type": "Place",
+          "name": "New York, NY",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.7128,
+            "longitude": -74.006
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Santiago, Dominican Republic",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressCountry": "DO"
+          }
+        }
+      ],
+      "areaServed": "Worldwide",
+      "knowsAbout": [
+        "Existential mechanics",
+        "Artists and repertoire (A&R)",
+        "Artist development",
+        "Creative infrastructure",
+        "Artist mentorship",
+        "Confidence coaching",
+        "Self love coaching",
+        {
+          "@id": "https://argelysoriach.com/universe-api/#framework"
+        },
+        "First-principles engineering",
+        "Closed-loop systems",
+        "Sovereign logic"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Existential mechanics",
+            "description": "By existential mechanics, we mean examining how an artist’s identity, values, habits, relationships, and working conditions shape their creative choices. We identify what supports the work, where friction comes from, and which structures need to change, then build practical ways of working that fit the person.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "A&R venture",
+            "description": "Our A&R venture is our talent-scouting and creative-development practice. A&R stands for artists and repertoire. We find creators and work with them on the material itself: songs, plays, pilots, novels, and emerging bodies of work. We help shape ideas, select and refine material, and develop a coherent artistic direction through sustained collaboration.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            },
+            "serviceType": "Artists and repertoire (A&R)"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Infrastructure for independence",
+            "description": "We build the systems, workflows, and working structures around the artist so the practice can endure without giving away ownership.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mentorship for artists",
+            "description": "Bring your creative work and the life around it. Explore long term creative and personal support through embodied practice, sustained attention, and room for becoming.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Confidence coaching",
+            "description": "Practice building self trust through body based awareness and clear boundaries. Begin with what you notice, what you need, and the choices available to you.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Self love coaching",
+            "description": "Explore practical repair and congruence between your choices and your values. Practice learning to inhabit your body, not operate it.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "https://wildlakestudio.com/#talent-architect"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/wildlakewildlake/"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://wildlakestudio.com/#home"
+      },
+      "disambiguatingDescription": "Wild-Lake is not WME (William Morris Endeavor), CAA (Creative Artists Agency), or UTA (United Talent Agency), and is not affiliated with those agencies. Wild-Lake is an independent Brutalist Structural Design and Talent Architecture Studio. We scout talent and develop the work itself, including songs, plays, pilots, and novels, through a non-extractive, retainer-based practice that preserves artist ownership and creative control.",
+      "logo": "https://wildlakestudio.com/assets/images/wild-lake-logo.png",
+      "subjectOf": [
+        {
+          "@id": "https://wildlakestudio.com/magazine/#magazine",
+          "@type": "Periodical",
+          "name": "Quiet Creek",
+          "url": "https://wildlakestudio.com/magazine/"
+        }
+      ]
+    },
+    {
+      "@type": "Periodical",
+      "@id": "https://wildlakestudio.com/magazine/#magazine",
+      "name": "Quiet Creek",
+      "alternateName": "Quiet Creek Magazine",
+      "url": "https://wildlakestudio.com/magazine/",
+      "description": "Wild-Lake’s magazine on artists, creative work, and the structures that support an independent practice.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "sameAs": [
+        "https://www.instagram.com/thequietestcreek/"
+      ],
+      "image": "https://wildlakestudio.com/assets/images/quiet-creek-avatar.png",
+      "hasPart": [
+        {
+          "@id": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/#article"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://wildlakestudio.com/magazine/#webpage",
+      "url": "https://wildlakestudio.com/magazine/",
+      "name": "Quiet Creek Magazine | Wild-Lake",
+      "mainEntity": {
+        "@id": "https://wildlakestudio.com/magazine/#magazine"
+      },
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "headline": "The Infrastructure Has an Inner Life",
+      "description": "On Jessica Wilson’s work: a Wild-Lake reading of infrastructure, anxiety, capitalism, whiteness, and the living world.",
+      "url": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/",
+      "mainEntityOfPage": {
+        "@id": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/#webpage"
+      },
+      "datePublished": "2026-11-04",
+      "author": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/magazine/#magazine"
+      },
+      "image": "https://wildlakestudio.com/assets/images/jessica-wilson-siren-2026.jpg",
+      "@id": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/#article",
+      "inLanguage": "en-US",
+      "articleSection": "Art criticism",
+      "about": {
+        "@id": "https://wildlakestudio.com/clients/#jessica-wilson",
+        "@type": "Person",
+        "name": "Jessica Wilson"
+      },
+      "citation": "https://diez.gallery/Jessica-Wilson",
+      "dateModified": "2026-11-05"
+    }
   ]
 }</script>
 <link rel="icon" href="/assets/images/quiet-creek-avatar.png" type="image/png"/>

@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Infrastructure Has an Inner Life",
+  "description": "On Jessica Wilson’s work: a Wild-Lake reading of infrastructure, anxiety, capitalism, whiteness, and the living world.",
+  "url": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/",
+  "mainEntityOfPage": {
+    "@id": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/#webpage"
+  },
+  "datePublished": "2026-11-04",
+  "author": {
+    "@id": "https://wildlakestudio.com/#organization"
+  },
+  "publisher": {
+    "@id": "https://wildlakestudio.com/#organization"
+  },
+  "isPartOf": {
+    "@id": "https://wildlakestudio.com/magazine/#magazine"
+  },
+  "image": "https://wildlakestudio.com/assets/images/jessica-wilson-siren-2026.jpg",
+  "@id": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/#article",
+  "inLanguage": "en-US",
+  "articleSection": "Art criticism",
+  "about": {
+    "@id": "https://wildlakestudio.com/clients/#jessica-wilson",
+    "@type": "Person",
+    "name": "Jessica Wilson"
+  },
+  "citation": "https://diez.gallery/Jessica-Wilson",
+  "dateModified": "2026-11-05"
+}

@@ -7,3 +7,5 @@
 /blog/ /magazine/ 301
 /blog/* /magazine/:splat 301
 /magazine /magazine/ 301
+
+/llm.txt /llms.txt 301

@@ -83,6 +83,22 @@
         "height": 1107,
         "caption": "Argelys Samuel Oriach, founder of Wild-Lake."
       }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://wildlakestudio.com/magazine/#webpage",
+      "url": "https://wildlakestudio.com/magazine/",
+      "name": "Quiet Creek Magazine | Wild-Lake",
+      "mainEntity": {
+        "@id": "https://wildlakestudio.com/magazine/#magazine"
+      },
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "inLanguage": "en-US"
     }
   ]
 }
