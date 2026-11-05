@@ -1,0 +1,43 @@
+/* Fibonacci anchors; fluid interpolation provides continuity between them.
+   Geometry responds to available space. Reading text never pulses or scales in time. */
+:root{
+  --fib-8:.5rem;--fib-13:.8125rem;--fib-21:1.3125rem;
+  --fib-34:2.125rem;--fib-55:3.4375rem;--fib-89:5.5625rem;--fib-144:9rem;
+  --space-xs:clamp(var(--fib-8),.8vw,var(--fib-13));
+  --space-sm:clamp(var(--fib-13),1.5vw,var(--fib-21));
+  --space-md:clamp(var(--fib-21),2.5vw,var(--fib-34));
+  --space-lg:clamp(var(--fib-34),4vw,var(--fib-55));
+  --space-xl:clamp(var(--fib-55),6.5vw,var(--fib-89));
+  --space-2xl:clamp(var(--fib-89),10vw,var(--fib-144));
+  --s1:var(--space-xs);--s2:var(--space-sm);--s3:var(--space-md);
+  --s4:var(--space-lg);--s5:var(--space-xl);--s6:var(--space-2xl);
+  --gutter:clamp(var(--fib-21),5vw,var(--fib-89));
+  --motion-feedback:144ms;--motion-enter:377ms;
+  --opentilt-open-dur:377ms;--opentilt-close-dur:233ms;
+}
+.site-topbar{padding-block:var(--space-md);gap:var(--space-md)}
+.home .studio-introduction{margin-top:var(--space-xl);margin-bottom:var(--space-lg)}
+.home .studio-introduction h1{font-size:clamp(var(--fib-34),4vw,var(--fib-55));line-height:1.12}
+.site-nav{column-gap:var(--space-md);row-gap:var(--space-xs)}
+.home :is(.pillars,.who,.pitch,.contact){padding-top:var(--space-xl);padding-bottom:var(--space-lg)}
+.home .who-body{gap:var(--space-md)}
+.home .vectors-grid{gap:var(--space-lg) var(--space-xl)}
+.home .practice-impact{margin-block:var(--space-xl);padding-block:var(--space-xl)}
+.home .practice-impact h2,.home.responsibility-page .practice-impact h1{font-size:clamp(var(--fib-34),5.2vw,var(--fib-89));margin-bottom:var(--space-xl)}
+.home .practice-impact .impact-water{margin-bottom:var(--space-lg)}
+.home .impact-body{gap:var(--space-xl)}
+.roster .roster-hero{margin-bottom:var(--space-xl)}
+.roster-introduction{gap:var(--space-xl);margin-top:var(--space-lg)}
+.roster .roster-person{margin-bottom:var(--space-xl)}
+.roster .profile-grid{gap:var(--space-lg);margin-top:var(--space-lg)}
+.founder-main section{padding-block:var(--space-lg)}
+.blog-main{padding-block:var(--space-xl)}
+.blog-heading{padding-bottom:var(--space-xl)}
+.blog-opening{gap:var(--space-lg);padding-block:var(--space-lg)}
+.essay-artwork{margin-bottom:var(--space-xl)}
+@media(min-width:801px){
+  .roster-introduction,.home .impact-body{grid-template-columns:minmax(0,.618fr) minmax(0,1fr)}
+}
+@media(prefers-reduced-motion:reduce){
+  :root{--motion-feedback:0ms;--motion-enter:0ms;--opentilt-open-dur:0ms;--opentilt-close-dur:0ms}
+}
