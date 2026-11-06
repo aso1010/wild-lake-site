@@ -98,7 +98,7 @@ Architectural Mirror is a Wild-Lake tool for artists and creators, distinct from
 
 ## Our responsibility
 
-Wild-Lake describes itself as a solo practice powered by AI workflows and states that a portion of every retainer fee goes toward protecting wild lakes, freshwater systems, and public lands. The position statement does not specify a percentage or name recipient organizations.
+Wild-Lake states that a portion of every retainer fee goes toward protecting wild lakes, freshwater systems, and public lands. The position statement does not specify a percentage or name recipient organizations.
 
 - https://wildlakestudio.com/responsibility/
 
