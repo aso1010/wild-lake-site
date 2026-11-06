@@ -52,3 +52,6 @@
 .roster .roster-introduction .roster-hero-note{max-width:65ch}
 .roster .roster-introduction-copy .roster-hero-note+.roster-hero-note{margin-top:21px}
 @media(max-width:800px){.roster-introduction{grid-template-columns:minmax(0,1fr);gap:34px}}
+
+.roster .roster-introduction{display:block;max-width:65ch}
+.roster .roster-perspective{max-width:60ch;margin:13px 0 0;color:var(--muted-color);font-size:1rem;line-height:1.618}
