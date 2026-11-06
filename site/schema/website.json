@@ -4,7 +4,7 @@
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
   "name": "Wild-Lake — Existential Mechanics Studio",
-  "description": "Artist development and A&R across mediums. Wild-Lake is an existential mechanics studio practicing brutalist structural design and talent architecture.",
+  "description": "Wild-Lake is an existential mechanics studio consulting for record labels, galleries, and cultural institutions on artist development, A&R, and creative infrastructure.",
   "inLanguage": "en-US",
   "publisher": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -22,7 +22,7 @@
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
       "name": "Wild-Lake — Existential Mechanics Studio",
-      "description": "Artist development and A&R across mediums. Wild-Lake is an existential mechanics studio practicing brutalist structural design and talent architecture.",
+      "description": "Wild-Lake is an existential mechanics studio consulting for record labels, galleries, and cultural institutions on artist development, A&R, and creative infrastructure.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
