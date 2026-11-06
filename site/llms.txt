@@ -45,7 +45,7 @@ Argelys Samuel Oriach is Wild-Lake’s founder, a visual, performance, and movem
 ## Public pages
 
 - [Home](https://wildlakestudio.com/): identity, framework, services, and retainer model.
-- [Client Architecture](https://wildlakestudio.com/clients/): Argelys Samuel Oriach’s acting and writing practice and Jordy Oriach’s athlete development profile.
+- [Talent](https://wildlakestudio.com/clients/): Argelys Samuel Oriach’s acting and writing practice and Jordy Oriach’s athlete development profile.
 - [About our founder](https://wildlakestudio.com/about-founder/): Argelys’s practice, sovereign A&R approach, and personal frameworks.
 - [Contact](https://wildlakestudio.com/contact/): email and optional intake prompts that prepare an email draft.
 - [Schema](https://wildlakestudio.com/schema/): public structured data.
