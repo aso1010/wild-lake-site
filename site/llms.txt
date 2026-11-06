@@ -15,6 +15,9 @@ We work directly with artists and through commissions from labels, galleries, bo
 - Creative infrastructure: audience development, publishing channels, and studio systems for an independent creative life. Audience development is infrastructure: it gives the work a way to reach people and sustain that connection over time.
 - Talent Architect practice: Structural Stewardship. Sustained structural support to manage the existential load of the artist, keeping them functional and standing over a ten-year horizon. Artists and institutions engage Wild-Lake on fixed retainers.
 
+- Confidence coaching: Support for trusting your judgment, setting boundaries, and bringing your work into public view.
+- Manifestation work: Clarify what you want to bring into being and shape the habits, decisions, and practical conditions that support it.
+
 ## Universe API framework
 
 Wild-Lake applies [Universe API](https://argelysoriach.com/universe-api/), Argelys Samuel Oriach’s macro-systems design framework. The framework is grounded in first-principles engineering, sovereign logic, closed-loop systems, asset-based leverage, and organic growth that compounds rather than extracts. It is a design framework, not a callable web API.
