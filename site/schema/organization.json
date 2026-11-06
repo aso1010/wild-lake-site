@@ -86,7 +86,7 @@
       "itemOffered": {
         "@type": "Service",
         "name": "Infrastructure for independence",
-        "description": "We build the systems, workflows, and working structures around the artist so the practice can endure without giving away ownership.",
+        "description": "We build audience relationships, publishing channels, and studio systems around the artist. Audience development is infrastructure: it gives the work a way to reach people and sustain that connection over time.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
         }
