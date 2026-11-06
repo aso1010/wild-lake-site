@@ -11,7 +11,11 @@
   "jobTitle": [
     "Founder",
     "Actor",
-    "Writer"
+    "Writer",
+    "Visual artist",
+    "Performance artist",
+    "Movement artist",
+    "Creative director"
   ],
   "worksFor": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -37,7 +41,11 @@
     "Artist development",
     "Acting",
     "Writing",
-    "Artist mentorship"
+    "Artist mentorship",
+    "Visual art",
+    "Performance art",
+    "Movement",
+    "Creative direction"
   ],
   "sameAs": [
     "https://www.linkedin.com/in/argelys-samuel-oriach/"
@@ -45,7 +53,7 @@
   "affiliation": {
     "@id": "https://seveneightythree.com/#organization"
   },
-  "description": "Founder of Wild-Lake, actor, writer, and principal at Seven Eighty Three. His practice brings first-principles investigation, lived experimentation, and invitation to artist development and creative infrastructure.",
+  "description": "Founder of Wild-Lake, visual, performance, and movement artist, creative director, actor, writer, and principal at Seven Eighty Three. His practice brings first-principles investigation, lived experimentation, and invitation to artist development and creative infrastructure.",
   "subjectOf": {
     "@id": "https://wildlakestudio.com/about-founder/#page"
   },
