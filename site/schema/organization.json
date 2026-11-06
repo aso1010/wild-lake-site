@@ -74,7 +74,7 @@
       "itemOffered": {
         "@type": "Service",
         "name": "A&R venture",
-        "description": "A&R stands for artists and repertoire. We help develop the work across mediums and continue working with the artist as it reaches the public. We write about the work and develop audiences to amplify the artist’s message.",
+        "description": "A&R stands for artists and repertoire. We work with what’s there, in any form and at any stage. We help the artist shape the work on their own terms, then write about it and develop audiences to amplify their message.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
         },
