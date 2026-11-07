@@ -14,3 +14,5 @@
 #services .services-formats h3{font-size:1rem;line-height:1.5;font-weight:600;margin:0 0 21px}
 #services .services-formats ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:13px 34px;font-size:1rem;line-height:1.6;color:#a3a3a3}
 @media(max-width:800px){#services .services-grid{display:block}#services .service-pillar{display:block}#services .service-pillar+.service-pillar{margin-top:34px}#services .service-pillar-heading,#services .service-block{padding-block:34px}#services .services-formats ul{display:grid;gap:13px}}
+
+#services .service-pillar-intro{max-width:48ch;font-size:1.125rem;line-height:1.5;color:#a3a3a3;margin:21px 0 0}
