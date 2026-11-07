@@ -9,3 +9,5 @@
 .footer-position p{max-width:85ch}
 .footer-position nav{display:flex;gap:13px 21px;flex-wrap:wrap;font-size:1rem}
 @media(max-width:800px){.footer-columns{grid-template-columns:1fr;gap:34px}.studio-footer .footer-mark{margin-bottom:34px}.footer-position p br{display:none}}
+
+.legal-notice{font-size:1rem;line-height:1.618;color:var(--muted-color);max-width:85ch;margin:34px 0 0}
