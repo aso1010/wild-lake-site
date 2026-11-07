@@ -10,3 +10,7 @@
 .manifesto-principles li{padding-bottom:34px;margin-bottom:34px;border-bottom:1px solid var(--rule-color)}
 .manifesto-principles h3{font-size:clamp(1.3125rem,2vw,1.625rem);line-height:1.3;margin:0 0 21px}
 .manifesto-main .manifesto-closing{margin-top:55px;color:#fff}
+
+.terms-provisions{max-width:65ch;padding-left:1.25em;font-size:clamp(1.125rem,1rem + .4vw,1.3125rem);line-height:1.618;color:var(--subtle-color)}
+.terms-provisions li{padding-left:8px;margin-bottom:21px}.terms-provisions strong{color:#fff;font-weight:600}
+.terms-main section{scroll-margin-top:89px}
