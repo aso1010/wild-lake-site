@@ -3,8 +3,8 @@
   "@type": "WebSite",
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
-  "name": "Wild-Lake — Existential Mechanics Studio",
-  "description": "Wild-Lake is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
+  "name": "Wild Lake Studio — Existential Mechanics Studio",
+  "description": "Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
   "inLanguage": "en-US",
   "publisher": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -21,8 +21,8 @@
       "@type": "WebPage",
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
-      "name": "Wild-Lake — Existential Mechanics Studio",
-      "description": "Wild-Lake is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
+      "name": "Wild Lake Studio — Existential Mechanics Studio",
+      "description": "Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
@@ -49,8 +49,8 @@
       "@type": "WebPage",
       "@id": "https://wildlakestudio.com/schema/#page",
       "url": "https://wildlakestudio.com/schema/",
-      "name": "Wild-Lake — Schema",
-      "description": "The machine-readable description of Wild-Lake: organization, website, and founder data, plus llms.txt.",
+      "name": "Wild Lake Studio — Schema",
+      "description": "The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
@@ -63,8 +63,8 @@
       "@type": "AboutPage",
       "@id": "https://wildlakestudio.com/about-founder/#page",
       "url": "https://wildlakestudio.com/about-founder/",
-      "name": "About our founder — Wild-Lake",
-      "description": "Meet Argelys Samuel Oriach, founder of Wild-Lake, and explore his approach to scouting, artist development, sovereign A&R, and creative infrastructure.",
+      "name": "About our founder — Wild Lake Studio",
+      "description": "Meet Argelys Samuel Oriach, founder of Wild Lake Studio, and explore his approach to scouting, artist development, sovereign A&R, and creative infrastructure.",
       "mainEntity": {
         "@id": "https://argelysoriach.com/#person"
       },
@@ -88,7 +88,7 @@
       "@type": "CollectionPage",
       "@id": "https://wildlakestudio.com/magazine/#webpage",
       "url": "https://wildlakestudio.com/magazine/",
-      "name": "Quiet Creek Magazine | Wild-Lake",
+      "name": "Quiet Creek Magazine | Wild Lake Studio",
       "mainEntity": {
         "@id": "https://wildlakestudio.com/magazine/#magazine"
       },
