@@ -1,8 +1,6 @@
 @font-face{font-family:ServicesMono;src:url('/mirror/assets/fonts/JetBrainsMono-Variable.98f8fe00.woff2') format('woff2');font-weight:100 800;font-style:normal;font-display:swap}
 #services{background:#000000}
 #services .services-content{max-width:1440px}
-#services .pitch-head{gap:21px}
-#services .pitch-title h2{font-weight:800;line-height:1.06;letter-spacing:-.04em;max-width:22ch}
 #services .service-index{font-family:ServicesMono,monospace;font-size:1rem;line-height:1.5;color:#a3a3a3;margin:0 0 13px;font-variant-numeric:tabular-nums}
 #services .services-intro{max-width:65ch;font-size:1.125rem;line-height:1.5;color:#a3a3a3;margin:0 0 55px}
 #services .services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:55px;row-gap:0}
