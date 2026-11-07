@@ -68,3 +68,7 @@
   font-weight:500;
   line-height:1.5;
 }
+
+.home .studio-introduction{container-type:inline-size}
+.home .studio-introduction h1{max-width:none;font-size:min(3.4375rem,5cqw);text-wrap:initial}
+.home .studio-introduction h1 span{display:block;white-space:nowrap}
