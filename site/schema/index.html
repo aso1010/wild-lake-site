@@ -331,9 +331,17 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       "description": "Founder of Wild Lake Studio, visual, performance, and movement artist, creative director, actor, writer, and principal at Seven Eighty Three. His practice brings first-principles investigation, lived experimentation, and invitation to artist development and creative infrastructure.",
-      "subjectOf": {
-        "@id": "https://wildlakestudio.com/about-founder/#page"
-      },
+      "subjectOf": [
+        {
+          "@id": "https://wildlakestudio.com/about-founder/#page"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz’s Afro-Caribbean literary imagination",
+          "url": "https://digitalcollections.wesleyan.edu/Documents/Detail/breaking-the-circle-of-the-plantation-violence-affect-and-the-ephemeral-in-junot-diazs-afro-caribbean-literary-imagination/421352",
+          "genre": "Senior thesis"
+        }
+      ],
       "image": {
         "@type": "ImageObject",
         "@id": "https://wildlakestudio.com/about-founder/#portrait",
@@ -342,7 +350,18 @@
         "width": 1117,
         "height": 1107,
         "caption": "Argelys Samuel Oriach, founder of Wild-Lake."
-      }
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "BA in English with Departmental Honors",
+          "credentialCategory": "Bachelor of Arts",
+          "recognizedBy": {
+            "@type": "CollegeOrUniversity",
+            "name": "Wesleyan University"
+          }
+        }
+      ]
     },
     {
       "@type": "Service",
@@ -965,7 +984,7 @@
   &quot;@type&quot;: &quot;WebSite&quot;,
   &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;,
   &quot;url&quot;: &quot;https://wildlakestudio.com/&quot;,
-  &quot;name&quot;: &quot;Wild Lake Studio — Existential Mechanics and A&R Venture&quot;,
+  &quot;name&quot;: &quot;Wild Lake Studio — Existential Mechanics and A&amp;R Venture&quot;,
   &quot;description&quot;: &quot;Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&amp;R, and creative infrastructure.&quot;,
   &quot;inLanguage&quot;: &quot;en-US&quot;,
   &quot;publisher&quot;: {
@@ -983,7 +1002,7 @@
       &quot;@type&quot;: &quot;WebPage&quot;,
       &quot;@id&quot;: &quot;https://wildlakestudio.com/#home&quot;,
       &quot;url&quot;: &quot;https://wildlakestudio.com/&quot;,
-      &quot;name&quot;: &quot;Wild Lake Studio — Existential Mechanics and A&R Venture&quot;,
+      &quot;name&quot;: &quot;Wild Lake Studio — Existential Mechanics and A&amp;R Venture&quot;,
       &quot;description&quot;: &quot;Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&amp;R, and creative infrastructure.&quot;,
       &quot;inLanguage&quot;: &quot;en-US&quot;,
       &quot;isPartOf&quot;: {
@@ -1127,9 +1146,17 @@
     &quot;@id&quot;: &quot;https://seveneightythree.com/#organization&quot;
   },
   &quot;description&quot;: &quot;Founder of Wild Lake Studio, visual, performance, and movement artist, creative director, actor, writer, and principal at Seven Eighty Three. His practice brings first-principles investigation, lived experimentation, and invitation to artist development and creative infrastructure.&quot;,
-  &quot;subjectOf&quot;: {
-    &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#page&quot;
-  },
+  &quot;subjectOf&quot;: [
+    {
+      &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#page&quot;
+    },
+    {
+      &quot;@type&quot;: &quot;CreativeWork&quot;,
+      &quot;name&quot;: &quot;Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz’s Afro-Caribbean literary imagination&quot;,
+      &quot;url&quot;: &quot;https://digitalcollections.wesleyan.edu/Documents/Detail/breaking-the-circle-of-the-plantation-violence-affect-and-the-ephemeral-in-junot-diazs-afro-caribbean-literary-imagination/421352&quot;,
+      &quot;genre&quot;: &quot;Senior thesis&quot;
+    }
+  ],
   &quot;image&quot;: {
     &quot;@type&quot;: &quot;ImageObject&quot;,
     &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#portrait&quot;,
@@ -1138,7 +1165,18 @@
     &quot;width&quot;: 1117,
     &quot;height&quot;: 1107,
     &quot;caption&quot;: &quot;Argelys Samuel Oriach, founder of Wild-Lake.&quot;
-  }
+  },
+  &quot;hasCredential&quot;: [
+    {
+      &quot;@type&quot;: &quot;EducationalOccupationalCredential&quot;,
+      &quot;name&quot;: &quot;BA in English with Departmental Honors&quot;,
+      &quot;credentialCategory&quot;: &quot;Bachelor of Arts&quot;,
+      &quot;recognizedBy&quot;: {
+        &quot;@type&quot;: &quot;CollegeOrUniversity&quot;,
+        &quot;name&quot;: &quot;Wesleyan University&quot;
+      }
+    }
+  ]
 }
 </code></pre>
       </article>
@@ -1147,7 +1185,7 @@
         <div class="vector-head">Machine-readable overview</div>
         <h2 class="vector-label">llms.txt</h2>
         <p class="vector-body">Plain-text summary and guidance for language models. <a href="../llms.txt">/llms.txt &rarr;</a></p>
-        <pre tabindex="0" data-src="../llms.txt"><code># Wild Lake Studio — Existential Mechanics and A&R Venture
+        <pre tabindex="0" data-src="../llms.txt"><code># Wild Lake Studio — Existential Mechanics and A&amp;R Venture
 
 &gt; Wild Lake Studio is an existential mechanics studio working in brutalist structural design and talent architecture, based in New York and Santiago, Dominican Republic, working worldwide. We work directly with artists and consult for labels, galleries, booking agencies, and cultural institutions on development, A&amp;R, and audience infrastructure.
 
@@ -1191,7 +1229,10 @@ In Wild-Lake’s practice, we begin with the artist and the material already pre
 
 Wild-Lake is an existential mechanics studio. Traditional agencies handle the transaction. We manage the carrying capacity of the human. We partner with record labels, galleries, and booking agencies to sustain artists through the demands of the industry.
 
-## Founder and approach
+## Founder
+
+Argelys majored in English at Wesleyan University, took extensive coursework in studio art and critical theory, and graduated with Departmental Honors. His senior thesis is Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz’s Afro-Caribbean literary imagination. Source: https://digitalcollections.wesleyan.edu/Documents/Detail/breaking-the-circle-of-the-plantation-violence-affect-and-the-ephemeral-in-junot-diazs-afro-caribbean-literary-imagination/421352
+ and approach
 
 Argelys Samuel Oriach is Wild-Lake’s founder, a visual, performance, and movement artist, creative director, actor and writer, and principal at Seven Eighty Three. His approach combines investigation, lived experimentation, emotional clarity, and invitation. He describes his Human Design profile as a 1/3 Emotional Projector and uses it as a personal interpretive framework. The founder page explains this separately from Wild-Lake’s services and retainer terms.
 
