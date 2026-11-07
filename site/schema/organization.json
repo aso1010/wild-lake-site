@@ -64,6 +64,17 @@
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
+        "name": "Artist Development",
+        "description": "We build the creator, not the brand. Working across mediums, we help artists strip away external friction, establish operational autonomy, and strengthen the personal capacity required to sustain a long-term practice. The work endures because the source is grounded.",
+        "provider": {
+          "@id": "https://wildlakestudio.com/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
         "name": "Existential mechanics",
         "description": "By existential mechanics, we mean examining how an artist’s identity, values, habits, relationships, and working conditions shape their creative choices. We identify what supports the work, where friction comes from, and which structures need to change, then build practical ways of working that fit the person.",
         "provider": {
