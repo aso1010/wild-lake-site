@@ -55,3 +55,5 @@
 
 .roster .roster-introduction{display:block;max-width:65ch}
 .roster .roster-perspective{max-width:60ch;margin:13px 0 0;color:var(--muted-color);font-size:1rem;line-height:1.618}
+
+.roster-photo-pending{aspect-ratio:1;display:grid;place-items:center;padding:21px;background:#000000;color:var(--muted-color);font-size:1rem;line-height:1.5;text-align:center}
