@@ -174,3 +174,7 @@ svg.link-arrow{display:inline-block;width:1em;height:1em;vertical-align:-.12em;f
 
 .footer-mark{display:block;width:89px;max-width:100%;grid-column:1 / -1;margin-bottom:13px}
 .footer-mark img{display:block;width:100%;height:auto}
+
+.founder-main .founder-practice-statement{max-width:65ch;margin:34px 0 0;padding-left:21px;border-left:1px solid var(--rule-color)}
+.founder-main .founder-practice-statement p{max-width:65ch}
+.founder-practice-statement footer{font-size:1rem;line-height:1.5;color:var(--muted-color)}
