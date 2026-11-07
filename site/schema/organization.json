@@ -14,7 +14,7 @@
     "wild-lake"
   ],
   "url": "https://wildlakestudio.com/",
-  "description": "Independent talent architecture and sovereign A&R practice for multidisciplinary artists.",
+  "description": "Independent talent architecture, sovereign A&R, and artist development practice for multidisciplinary creators.",
   "slogan": "For world-class creators.",
   "foundingDate": "2026",
   "founder": {
@@ -22,7 +22,7 @@
   },
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Brooklyn",
+    "addressLocality": "Crown Heights",
     "addressRegion": "NY",
     "addressCountry": "US"
   },
@@ -46,7 +46,7 @@
       }
     }
   ],
-  "areaServed": "Worldwide",
+  "areaServed": "Global",
   "knowsAbout": [
     "Existential mechanics",
     "Artists and repertoire (A&R)",
@@ -59,7 +59,11 @@
     "First-principles engineering",
     "Closed-loop systems",
     "Sovereign logic",
-    "Capacity & Boundary Audit"
+    "Capacity & Boundary Audit",
+    "A&R (Artists and Repertoire)",
+    "Talent Architecture",
+    "Somatic Practice",
+    "Sovereign IP Management"
   ],
   "makesOffer": [
     {
@@ -152,5 +156,44 @@
       "url": "https://wildlakestudio.com/magazine/"
     }
   ],
-  "email": "info@wildlakestudio.com"
+  "email": "info@wildlakestudio.com",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Studio Practice & Offerings",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sovereign A&R & Creative Development",
+          "description": "Creative editorial, sound and visual direction, and critical framing across mediums.",
+          "provider": {
+            "@id": "https://wildlakestudio.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Artist Development & Personal Architecture",
+          "description": "Structuring focus mechanics, somatic alignment, and autonomous boundary systems.",
+          "provider": {
+            "@id": "https://wildlakestudio.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Creative Infrastructure",
+          "description": "Sovereign audience development, critical writing, and spatial release architecture.",
+          "provider": {
+            "@id": "https://wildlakestudio.com/#organization"
+          }
+        }
+      }
+    ]
+  }
 }

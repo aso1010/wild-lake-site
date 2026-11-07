@@ -3,8 +3,8 @@
   "@type": "WebSite",
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
-  "name": "Wild Lake Studio | Sovereign A&R & Talent Architecture",
-  "description": "Independent talent architecture, sovereign A&R, and structural strategy for multidisciplinary artists.",
+  "name": "Wild Lake Studio | Sovereign A&R & Artist Development",
+  "description": "Independent talent architecture, sovereign A&R, and artist development across mediums. Grounding the creator to sustain the work. Crown Heights, NY.",
   "inLanguage": "en-US",
   "publisher": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -21,8 +21,8 @@
       "@type": "WebPage",
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
-      "name": "Wild Lake Studio | Sovereign A&R & Talent Architecture",
-      "description": "Independent talent architecture, sovereign A&R, and structural strategy for multidisciplinary artists.",
+      "name": "Wild Lake Studio | Sovereign A&R & Artist Development",
+      "description": "Independent talent architecture, sovereign A&R, and artist development across mediums. Grounding the creator to sustain the work. Crown Heights, NY.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
