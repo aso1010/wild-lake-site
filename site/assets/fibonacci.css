@@ -56,3 +56,15 @@
 .tools-heading p{max-width:48ch;font-size:var(--lead-size);color:var(--subtle-color);margin:0}
 
 .tools-page .app-feature-art .tool-single-card{max-width:233px;margin-inline:auto}
+
+/* Section labels stay legible beside the display headings. */
+.home .vector-head,
+.home .eyebrow,
+.roster .eyebrow,
+.roster .entry-meta,
+.home .practice-impact .impact-label,
+.app-feature-label{
+  font-size:clamp(1rem,.85rem + .5vw,1.3125rem);
+  font-weight:500;
+  line-height:1.5;
+}
