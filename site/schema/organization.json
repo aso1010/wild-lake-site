@@ -59,9 +59,7 @@
     "First-principles engineering",
     "Closed-loop systems",
     "Sovereign logic",
-    "Judgment & Boundary Architecture",
-    "Intent & Conditioning Strategy",
-    "Somatic & Practice Audit"
+    "Capacity & Boundary Audit"
   ],
   "makesOffer": [
     {
@@ -69,7 +67,7 @@
       "itemOffered": {
         "@type": "Service",
         "name": "Artist Development",
-        "description": "We build the creator behind the work. Working across mediums, we help artists strip away external friction, establish operational autonomy, and strengthen the personal capacity required to sustain a long-term practice. The work endures because the source is grounded.",
+        "description": "We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
         }
@@ -79,8 +77,8 @@
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Existential mechanics",
-        "description": "We examine the structural alignment between how a creator lives and what they build. Creative output is a direct function of physical capacity, nervous system stamina, operational boundaries, and core values. We audit and rebuild these underlying mechanics so the artist operates from an unshakeable foundation, eliminating synthetic friction before it reaches the work.",
+        "name": "Existential Mechanics",
+        "description": "We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
         }
@@ -90,8 +88,8 @@
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "A&R & Creative Development",
-        "description": "Traditional A&R reshapes the creator to fit the market. We do the opposite. We work with raw material in any form and at any stage, helping artists sharpen the work on their own terms. Once built, we frame it through critical writing, spatial design, and targeted audience architecture—ensuring the work is encountered, understood, and preserved without compromise.",
+        "name": "Creative Development",
+        "description": "Traditional A&R reshapes the creator. We work with raw material in any form and at any stage, helping artists shape the work on their own terms.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
         },
@@ -102,8 +100,8 @@
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Infrastructure for independence",
-        "description": "Audience development is asset building, not promotion. We build the physical, spatial, and digital channels through which work is encountered, understood, and preserved on the creator's own terms. By establishing sovereign distribution channels, essayistic documentation, and direct audience relationships, we ensure the work outlasts platform algorithms and industry cycles.",
+        "name": "Creative Infrastructure",
+        "description": "Audience development is asset building. We construct the physical, spatial, and digital channels for complex work.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
         }
@@ -114,7 +112,7 @@
       "itemOffered": {
         "@type": "Service",
         "name": "Structural Stewardship",
-        "description": "Sustained operational support to manage the existential load of the artist, keeping them functional and standing over a ten-year horizon.",
+        "description": "Sustained operational support to manage the existential load of the artist over a ten-year horizon.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
         }
@@ -130,30 +128,8 @@
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Judgment & Boundary Architecture",
-        "description": "Frameworks for trusting artistic instinct, enforcing sovereign operational boundaries, and bringing complex work into public view without compromise.",
-        "provider": {
-          "@id": "https://wildlakestudio.com/#organization"
-        }
-      }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Intent & Conditioning Strategy",
-        "description": "Clarifying core creative direction and building the physical, financial, and daily conditions that support execution.",
-        "provider": {
-          "@id": "https://wildlakestudio.com/#organization"
-        }
-      }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Somatic & Practice Audit",
-        "description": "Examining the habits, physical capacity, and environment shaping your practice, making structural changes to sustain long-term output.",
+        "name": "Capacity & Boundary Audit",
+        "description": "Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
         }
