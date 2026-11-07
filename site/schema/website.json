@@ -3,8 +3,8 @@
   "@type": "WebSite",
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
-  "name": "Wild Lake Studio — Existential Mechanics and A&R Venture",
-  "description": "Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
+  "name": "Wild Lake Studio | Sovereign A&R & Talent Architecture",
+  "description": "Independent talent architecture, sovereign A&R, and structural strategy for multidisciplinary artists.",
   "inLanguage": "en-US",
   "publisher": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -21,8 +21,8 @@
       "@type": "WebPage",
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
-      "name": "Wild Lake Studio — Existential Mechanics and A&R Venture",
-      "description": "Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
+      "name": "Wild Lake Studio | Sovereign A&R & Talent Architecture",
+      "description": "Independent talent architecture, sovereign A&R, and structural strategy for multidisciplinary artists.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"

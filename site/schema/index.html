@@ -10,7 +10,10 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": [
+        "Organization",
+        "ProfessionalService"
+      ],
       "@id": "https://wildlakestudio.com/#organization",
       "name": "Wild Lake Studio",
       "legalName": "Wild-Lake LLC",
@@ -18,10 +21,11 @@
       "alternateName": [
         "Wild-Lake",
         "Wild Lake",
-        "WILDLAKE"
+        "WILDLAKE",
+        "wild-lake"
       ],
       "url": "https://wildlakestudio.com/",
-      "description": "Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
+      "description": "Independent talent architecture and sovereign A&R practice for multidisciplinary artists.",
       "slogan": "For world-class creators.",
       "foundingDate": "2026",
       "founder": {
@@ -29,7 +33,7 @@
       },
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "New York",
+        "addressLocality": "Brooklyn",
         "addressRegion": "NY",
         "addressCountry": "US"
       },
@@ -188,8 +192,8 @@
       "@type": "WebSite",
       "@id": "https://wildlakestudio.com/#website",
       "url": "https://wildlakestudio.com/",
-      "name": "Wild Lake Studio — Existential Mechanics and A&R Venture",
-      "description": "Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
+      "name": "Wild Lake Studio | Sovereign A&R & Talent Architecture",
+      "description": "Independent talent architecture, sovereign A&R, and structural strategy for multidisciplinary artists.",
       "inLanguage": "en-US",
       "publisher": {
         "@id": "https://wildlakestudio.com/#organization"
@@ -206,8 +210,8 @@
           "@type": "WebPage",
           "@id": "https://wildlakestudio.com/#home",
           "url": "https://wildlakestudio.com/",
-          "name": "Wild Lake Studio — Existential Mechanics and A&R Venture",
-          "description": "Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
+          "name": "Wild Lake Studio | Sovereign A&R & Talent Architecture",
+          "description": "Independent talent architecture, sovereign A&R, and structural strategy for multidisciplinary artists.",
           "inLanguage": "en-US",
           "isPartOf": {
             "@id": "https://wildlakestudio.com/#website"
@@ -822,17 +826,21 @@
         <p>Quiet Creek magazine: <a href="quiet-creek.json">Publication JSON-LD</a> · <a href="quiet-creek-first-essay.json">First essay JSON-LD</a> · <a href="/magazine/">Read the magazine</a></p>
 <pre tabindex="0" data-src="organization.json"><code>{
   &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;@type&quot;: &quot;Organization&quot;,
+  &quot;@type&quot;: [
+    &quot;Organization&quot;,
+    &quot;ProfessionalService&quot;
+  ],
   &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;,
   &quot;name&quot;: &quot;Wild Lake Studio&quot;,
   &quot;legalName&quot;: &quot;Wild-Lake LLC&quot;,
   &quot;alternateName&quot;: [
     &quot;Wild-Lake&quot;,
     &quot;Wild Lake&quot;,
-    &quot;WILDLAKE&quot;
+    &quot;WILDLAKE&quot;,
+    &quot;wild-lake&quot;
   ],
   &quot;url&quot;: &quot;https://wildlakestudio.com/&quot;,
-  &quot;description&quot;: &quot;Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&amp;R, and creative infrastructure.&quot;,
+  &quot;description&quot;: &quot;Independent talent architecture and sovereign A&amp;R practice for multidisciplinary artists.&quot;,
   &quot;slogan&quot;: &quot;For world-class creators.&quot;,
   &quot;foundingDate&quot;: &quot;2026&quot;,
   &quot;founder&quot;: {
@@ -840,7 +848,7 @@
   },
   &quot;address&quot;: {
     &quot;@type&quot;: &quot;PostalAddress&quot;,
-    &quot;addressLocality&quot;: &quot;New York&quot;,
+    &quot;addressLocality&quot;: &quot;Brooklyn&quot;,
     &quot;addressRegion&quot;: &quot;NY&quot;,
     &quot;addressCountry&quot;: &quot;US&quot;
   },
@@ -1008,8 +1016,8 @@
   &quot;@type&quot;: &quot;WebSite&quot;,
   &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;,
   &quot;url&quot;: &quot;https://wildlakestudio.com/&quot;,
-  &quot;name&quot;: &quot;Wild Lake Studio — Existential Mechanics and A&amp;R Venture&quot;,
-  &quot;description&quot;: &quot;Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&amp;R, and creative infrastructure.&quot;,
+  &quot;name&quot;: &quot;Wild Lake Studio | Sovereign A&amp;R &amp; Talent Architecture&quot;,
+  &quot;description&quot;: &quot;Independent talent architecture, sovereign A&amp;R, and structural strategy for multidisciplinary artists.&quot;,
   &quot;inLanguage&quot;: &quot;en-US&quot;,
   &quot;publisher&quot;: {
     &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
@@ -1026,8 +1034,8 @@
       &quot;@type&quot;: &quot;WebPage&quot;,
       &quot;@id&quot;: &quot;https://wildlakestudio.com/#home&quot;,
       &quot;url&quot;: &quot;https://wildlakestudio.com/&quot;,
-      &quot;name&quot;: &quot;Wild Lake Studio — Existential Mechanics and A&amp;R Venture&quot;,
-      &quot;description&quot;: &quot;Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&amp;R, and creative infrastructure.&quot;,
+      &quot;name&quot;: &quot;Wild Lake Studio | Sovereign A&amp;R &amp; Talent Architecture&quot;,
+      &quot;description&quot;: &quot;Independent talent architecture, sovereign A&amp;R, and structural strategy for multidisciplinary artists.&quot;,
       &quot;inLanguage&quot;: &quot;en-US&quot;,
       &quot;isPartOf&quot;: {
         &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
@@ -1210,7 +1218,7 @@
         <div class="vector-head">Machine-readable overview</div>
         <h2 class="vector-label">llms.txt</h2>
         <p class="vector-body">Plain-text summary and guidance for language models. <a href="../llms.txt">/llms.txt &rarr;</a></p>
-        <pre tabindex="0" data-src="../llms.txt"><code># Wild Lake Studio — Existential Mechanics and A&amp;R Venture
+        <pre tabindex="0" data-src="../llms.txt"><code># Wild Lake Studio | Sovereign A&amp;R &amp; Talent Architecture
 
 &gt; Wild Lake Studio is an existential mechanics studio working in brutalist structural design and talent architecture, based in New York and Santiago, Dominican Republic, working worldwide. We work directly with artists and consult for labels, galleries, booking agencies, and cultural institutions on development, A&amp;R, and audience infrastructure.
 
