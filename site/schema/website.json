@@ -3,7 +3,7 @@
   "@type": "WebSite",
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
-  "name": "Wild Lake Studio — Existential Mechanics Studio",
+  "name": "Wild Lake Studio — Existential Mechanics and A&R Venture",
   "description": "Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
   "inLanguage": "en-US",
   "publisher": {
@@ -21,7 +21,7 @@
       "@type": "WebPage",
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
-      "name": "Wild Lake Studio — Existential Mechanics Studio",
+      "name": "Wild Lake Studio — Existential Mechanics and A&R Venture",
       "description": "Wild Lake Studio is an existential mechanics studio working directly with artists and consulting for institutions on artist development, A&R, and creative infrastructure.",
       "inLanguage": "en-US",
       "isPartOf": {
