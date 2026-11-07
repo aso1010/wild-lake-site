@@ -1,0 +1,12 @@
+.manifesto-main{background:#000;color:#fff;padding:var(--space-xl,89px) var(--gutter)}
+.manifesto-main article{max-width:1100px;margin-inline:auto}
+.manifesto-main .eyebrow{margin:0 0 21px}
+.manifesto-main h1{font-size:clamp(3.4375rem,8vw,6.875rem);line-height:1.02;letter-spacing:-.045em;max-width:15ch;margin:0 0 var(--space-xl,89px)}
+.manifesto-main p{max-width:65ch;font-size:clamp(1.125rem,1rem + .4vw,1.3125rem);line-height:1.618;margin:0 0 34px;color:var(--subtle-color)}
+.manifesto-main .manifesto-declaration{font-size:clamp(1.625rem,3vw,2.125rem);color:#fff;margin-block:55px}
+.manifesto-main section{margin-top:var(--space-xl,89px);border-top:1px solid var(--rule-color);padding-top:34px}
+.manifesto-main h2{font-size:clamp(1.625rem,3vw,2.125rem);margin:0 0 55px}
+.manifesto-principles{list-style:none;padding:0;margin:0}
+.manifesto-principles li{padding-bottom:34px;margin-bottom:34px;border-bottom:1px solid var(--rule-color)}
+.manifesto-principles h3{font-size:clamp(1.3125rem,2vw,1.625rem);line-height:1.3;margin:0 0 21px}
+.manifesto-main .manifesto-closing{margin-top:55px;color:#fff}
