@@ -61,3 +61,12 @@
 /* Tools need one separator between entries, rather than a frame around each. */
 .home.tools-page .app-feature{border-block:0}
 .home.tools-page .app-feature+.app-feature{border-top:1px solid var(--rule-color)}
+/* Homepage opening: one title, a studio heading, then offering headings. */
+.home:has(#overview) .studio-introduction{margin-top:var(--space-lg);margin-bottom:var(--space-lg)}
+.home #overview{padding-block:var(--space-lg)}
+.home #overview h2{font-size:clamp(1.625rem,2.5vw,2.125rem);line-height:1.18;max-width:32ch;margin:0 0 var(--space-md)}
+.home #overview .statement-text{max-width:68ch;font-size:var(--body-size)}
+.home:has(#overview) .page-outline{padding-block:.25rem;border-bottom:0}
+.home:has(#overview) .page-outline a{font-size:.75rem;color:var(--muted-color)}
+.home:has(#overview) .page-outline a[aria-current=location]{color:#fff}
+.home #focus h3.vector-label{font-size:1.3125rem;line-height:1.3;margin:0}
