@@ -58,3 +58,6 @@
 .home .vector-node:hover .vector-label{translate:none;color:inherit}
 /* Wrapped mobile navigation keeps every link on the same spacing rhythm. */
 @media(max-width:600px){.site-nav .begin-link{margin-left:0}}
+/* Tools need one separator between entries, rather than a frame around each. */
+.home.tools-page .app-feature{border-block:0}
+.home.tools-page .app-feature+.app-feature{border-top:1px solid var(--rule-color)}
