@@ -2,7 +2,7 @@
 #services{background:#000000}
 #services .services-content{max-width:1440px}
 #services .service-index{font-family:ServicesMono,monospace;font-size:1rem;line-height:1.5;color:#a3a3a3;margin:0 0 13px;font-variant-numeric:tabular-nums}
-#services .services-intro{max-width:65ch;font-size:1.125rem;line-height:1.5;color:#a3a3a3;margin:0 0 55px}
+#services .services-intro{max-width:65ch;font-size:var(--body-size);line-height:1.618;color:#a3a3a3;margin:0 0 55px}
 #services .services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:55px;row-gap:0}
 #services .service-pillar{display:grid;grid-template-rows:subgrid;grid-row:span 4;min-width:0}
 #services .service-pillar-heading{border-top:1px solid #262626;padding-block:34px}
