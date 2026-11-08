@@ -21,7 +21,7 @@
 .portrait-frame img{display:block;width:100%;height:auto;max-height:70dvh;object-fit:contain;border-radius:inherit}
 .portrait-frame.is-open{opacity:1;transform:none;transition-duration:377ms}
 .portrait-frame.is-closing{opacity:0;transform:translateY(5px) scale(.98)}
-.roster-image-dialog-caption{font-size:0.8125rem;line-height:1.5;text-align:center;color:#b0b3a6;margin:0}
+.roster-image-dialog-caption{font-size:0.8125rem;line-height:1.5;text-align:center;color:var(--muted-color);margin:0}
 @media(prefers-reduced-motion:reduce){.portrait-frame,.portrait-frame.is-open,.portrait-frame.is-closing{animation:none;transition:none}.portrait-preview::after,.page-outline a,.intake button,:is(.site-nav a,.site-topbar-logo,.entry-link,.roster-jump a,.email-link,.founder-main a,.contact-main a){transition:none}.intake button:active{scale:1}.portrait-preview::after{translate:none}}
 
 .roster-visual:focus-within{outline:2px solid #FFFFFF;outline-offset:5px}

@@ -1,6 +1,6 @@
 /* One type family, a restrained hierarchy, and Fibonacci spacing. */
 @font-face{font-family:Archivo;src:url('/assets/fonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
-:root{--font-sans:Archivo,Arial,sans-serif;--font-mono:var(--font-sans);--bg-color:#000000;--text-color:#FFFFFF;--subtle-color:#d1d0c7;--muted-color:#b0b3a6;--rule-color:#3a3f35;--s1:8px;--s2:13px;--s3:21px;--s4:34px;--s5:55px;--s6:89px;--s7:144px;--gutter:clamp(21px,5vw,55px)}
+:root{--font-sans:Archivo,Arial,sans-serif;--font-mono:var(--font-sans);--bg-color:#000000;--text-color:#FFFFFF;--subtle-color:#ededed;--muted-color:#d6d6d6;--rule-color:#3a3f35;--s1:8px;--s2:13px;--s3:21px;--s4:34px;--s5:55px;--s6:89px;--s7:144px;--gutter:clamp(21px,5vw,55px)}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-padding-top:34px}
 body.home,body.roster{margin:0;background:var(--bg-color);color:var(--text-color);font-family:var(--font-sans);font-size:1.125rem;font-weight:400;font-stretch:100%;font-variation-settings:'wdth' 100;line-height:1.618;-webkit-font-smoothing:antialiased;display:block;overflow-x:visible}
