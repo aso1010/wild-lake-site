@@ -10,9 +10,9 @@
         observer.unobserve(entry.target);
         if (preference.matches || entry.target.contains(document.activeElement)) return;
         var animation = entry.target.animate([
-          { opacity: 0, transform: 'translateY(13px)' },
+          { opacity: 0, transform: 'translateY(8px)' },
           { opacity: 1, transform: 'translateY(0)' }
-        ], { duration: 360, easing: 'cubic-bezier(.22,1,.36,1)' });
+        ], { duration: 377, easing: 'cubic-bezier(.22,1,.36,1)' });
         running.add(animation);
         animation.finished.then(function () { running.delete(animation); }, function () { running.delete(animation); });
       });

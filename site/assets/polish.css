@@ -1,0 +1,58 @@
+/* Shared editorial rhythm. Fibonacci anchors interpolate with the viewport. */
+:root{--motion-settle:233ms;--motion-reveal:377ms;--motion-ease:cubic-bezier(.22,1,.36,1)}
+.home #overview{padding-block:var(--space-xl)}
+.home #focus{padding-top:0;padding-bottom:0;margin-bottom:var(--space-xl)}
+.home :is(#practice,#framework,#services,#model){padding-block:0;margin-block:var(--space-xl)}
+.home :is(#focus,#practice,#framework,#services,#model)>.rule{margin-bottom:var(--space-lg)}
+.home :is(.who-label,.pitch-head){margin-bottom:var(--space-lg)}
+.home #invitation{margin-top:var(--space-xl);padding-block:var(--space-xl)}
+:is(#overview,#focus,#practice,#framework,#services,#model,#invitation,.roster-entry,.founder-main section){scroll-margin-top:0}
+.roster .roster-main,.founder-main,.contact-main{padding-block:var(--space-xl)}
+.roster-jump{margin-top:var(--space-lg);gap:var(--space-sm)}
+.roster .roster-entry{padding-top:var(--space-lg)}
+.roster .profile-grid{padding-top:var(--space-md)}
+.roster .profile-grid p:last-child,.founder-main section>p:last-child{margin-bottom:0}
+.founder-main section{margin-top:var(--space-xl);padding-block:var(--space-lg) 0}
+.founder-layout{gap:var(--space-lg)}
+.blog-heading{padding-bottom:var(--space-xl)}
+.blog-opening{padding-block:var(--space-lg);gap:var(--space-lg)}
+.essay-body>p{margin-bottom:var(--space-md)}
+.essay-body .essay-artwork{margin-block:var(--space-xl)}
+.manifesto-main h2{margin-bottom:var(--space-lg)}
+.manifesto-main section>p:last-child{margin-bottom:0}
+.contact-main .intake{margin-top:var(--space-xl);padding-top:var(--space-lg)}
+.footer-columns{gap:var(--space-lg)}
+.studio-footer .footer-mark{margin-bottom:var(--space-lg)}
+.footer-position{margin-top:var(--space-lg);padding-top:var(--space-lg)}
+/* Feedback follows the supplied card-stack recipe's settling curve.
+   Travel is restricted to interactive objects; reading text stays still. */
+:is(.entry-link,.blog-return,.magazine-links a,.app-feature-open) .link-arrow{transition:transform var(--motion-settle) var(--motion-ease)}
+.roster-jump a{transition:border-color var(--motion-settle) ease,transform var(--motion-settle) var(--motion-ease),background-color var(--motion-settle) ease}
+.roster-jump a>span:last-child{transition:transform var(--motion-settle) var(--motion-ease)}
+.portrait-preview img{transition:scale var(--motion-reveal) var(--motion-ease)}
+.intake :is(input,textarea,select){transition:border-color var(--motion-settle) ease,outline-offset var(--motion-settle) ease}
+.intake :is(input,textarea,select):focus-visible{border-color:#fff;outline:1px solid #fff;outline-offset:3px}
+@media(hover:hover) and (pointer:fine){
+ .roster-jump a:hover{opacity:1;transform:translateY(-2px);border-color:#fff;background:#000}
+ .roster-jump a:hover>span:last-child{transform:translateY(3px)}
+ .portrait-preview:hover img{scale:1.015}
+ :is(.entry-link,.blog-return,.magazine-links a,.app-feature-open):hover .link-arrow{transform:translate(2px,-2px)}
+}
+.roster-jump a:focus-visible>span:last-child{transform:translateY(3px)}
+:is(.entry-link,.blog-return,.magazine-links a,.app-feature-open):focus-visible .link-arrow{transform:translate(2px,-2px)}
+/* Native cross-document transitions preserve normal anchors and browser history. */
+@media(prefers-reduced-motion:no-preference){
+ @view-transition{navigation:auto}
+ ::view-transition-old(root){animation:page-leave 144ms ease both}
+ ::view-transition-new(root){animation:page-arrive 233ms var(--motion-ease) both}
+}
+@keyframes page-leave{to{opacity:0}}
+@keyframes page-arrive{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){
+ .roster-jump a,.roster-jump a>span:last-child,.portrait-preview img,.intake :is(input,textarea,select),:is(.entry-link,.blog-return,.magazine-links a,.app-feature-open) .link-arrow{transition:none}
+ .roster-jump a:hover,.roster-jump a:focus-visible>span:last-child,.roster-jump a:hover>span:last-child,:is(.entry-link,.blog-return,.magazine-links a,.app-feature-open):is(:hover,:focus-visible) .link-arrow{transform:none}
+ .portrait-preview:hover img{scale:1}
+}
+/* Navigation settles without bounce; static service descriptions stay anchored. */
+.site-nav a::after,.home .nav-arrow,.blog-return span{transition-timing-function:var(--motion-ease);transition-duration:var(--motion-settle)}
+.home .vector-node:hover .vector-label{translate:none;color:inherit}
