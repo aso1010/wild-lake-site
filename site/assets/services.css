@@ -6,7 +6,7 @@
 #services .services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:55px;row-gap:0}
 #services .service-pillar{display:grid;grid-template-rows:subgrid;grid-row:span 4;min-width:0}
 #services .service-pillar-heading{border-top:1px solid #262626;padding-block:34px}
-#services .service-pillar h3{font-family:ServicesMono,monospace;font-size:clamp(1.125rem,1.5vw,1.3125rem);font-weight:600;line-height:1.35;color:#fff;margin:0}
+#services .service-pillar h3{font-family:var(--font-sans);font-size:clamp(1.125rem,1.5vw,1.3125rem);font-weight:600;line-height:1.35;color:#fff;margin:0}
 #services .service-block{border-top:1px solid #262626;padding-block:34px;min-width:0}
 #services .service-block h4{font-size:clamp(1.3125rem,2vw,1.625rem);font-weight:600;line-height:1.25;letter-spacing:-.015em;color:#fff;margin:0 0 21px}
 #services .service-block>p:last-child{font-size:1.125rem;line-height:1.5;color:#a3a3a3;max-width:48ch;margin:0}
