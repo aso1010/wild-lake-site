@@ -2,6 +2,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 python3 tools/validate.py
+python3 tools/check_dependencies.py
 case "${1:-all}" in
   site) npx --yes wrangler@4.158.0 deploy --config deploy/site.wrangler.json ;;
   mirror) npx --yes wrangler@4.158.0 deploy --config deploy/mirror.wrangler.json ;;

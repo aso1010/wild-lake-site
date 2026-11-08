@@ -40,9 +40,9 @@
   var dialog = document.createElement('dialog');
   dialog.className = 'roster-image-dialog';
   dialog.setAttribute('aria-label', 'Portrait of Argelys Samuel Oriach');
-  dialog.innerHTML = '<button type="button" class="roster-image-dialog-close" autofocus>Close portrait</button><div class="t-opentilt-stage"><div class="t-opentilt-card"><img alt="Portrait of Argelys Samuel Oriach" width="1117" height="1107"/></div></div><p class="roster-image-dialog-caption">Argelys Samuel Oriach · Wild-Lake</p>';
+  dialog.innerHTML = '<button type="button" class="roster-image-dialog-close" autofocus>Close portrait</button><div class="portrait-stage"><div class="portrait-frame"><img alt="Portrait of Argelys Samuel Oriach" width="1117" height="1107"/></div></div><p class="roster-image-dialog-caption">Argelys Samuel Oriach · Wild-Lake</p>';
   document.body.appendChild(dialog);
-  var card = dialog.querySelector('.t-opentilt-card');
+  var card = dialog.querySelector('.portrait-frame');
   var image = dialog.querySelector('img');
   var trigger = null, closeTimer = 0, closing = false;
   function finishClose() {
@@ -59,8 +59,8 @@
     card.classList.add('is-closing');
     closeTimer = setTimeout(finishClose, 280);
   }
-  card.addEventListener('animationend', function (event) {
-    if (event.animationName === 't-opentilt-close') finishClose();
+  card.addEventListener('transitionend', function (event) {
+    if (event.target === card && event.propertyName === 'opacity' && closing) finishClose();
   });
   previews.forEach(function (preview) {
     preview.setAttribute('aria-haspopup', 'dialog');

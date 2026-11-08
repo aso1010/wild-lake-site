@@ -1,6 +1,5 @@
-/* Image opening adapted from transitions.dev Pro image-open-tilt.
-   Small pitch, no bend, native modal semantics, and no changes to the monolith. */
-:root{--motion-feedback:150ms;--motion-enter:360ms;--motion-ease:cubic-bezier(.22,1,.36,1);--opentilt-open-dur:360ms;--opentilt-close-dur:240ms;--opentilt-open-ease:cubic-bezier(.22,1,.36,1);--opentilt-close-ease:cubic-bezier(.22,1,.36,1);--opentilt-closed-scale:.96;--opentilt-tilt-x:4deg;--opentilt-tilt-y:-3deg;--opentilt-lift:8px;--opentilt-perspective:1100px}
+/* Native image dialog and interaction feedback. No library runtime. */
+:root{--motion-feedback:144ms;--motion-enter:377ms;--motion-ease:cubic-bezier(.22,1,.36,1)}
 .portrait-preview{display:block;color:inherit;cursor:zoom-in;position:relative}
 .portrait-preview:focus-visible{outline:2px solid #FFFFFF;outline-offset:5px}
 .portrait-preview:hover{opacity:1}
@@ -17,14 +16,12 @@
 .roster-image-dialog[open]{display:flex;flex-direction:column;gap:13px}
 .roster-image-dialog-close{align-self:flex-end;display:block;padding:8px 13px;min-height:44px;background:#000;color:#FFFFFF;border:1px solid #777;border-radius:13px;font:500 0.9375rem/1.5 Archivo,Arial,sans-serif;cursor:pointer}
 .roster-image-dialog-close:focus-visible{outline:2px solid #FFFFFF;outline-offset:4px}
-.t-opentilt-stage{perspective:var(--opentilt-perspective);min-height:0}
-.t-opentilt-card{border-radius:21px;scale:var(--opentilt-closed-scale);opacity:0;transform-origin:center;transform:rotateX(0deg) rotateY(0deg) translateZ(0);transition:scale var(--opentilt-close-dur) var(--opentilt-close-ease),opacity var(--opentilt-close-dur) ease,border-radius var(--opentilt-close-dur) var(--opentilt-close-ease)}
-.t-opentilt-card img{display:block;width:100%;height:auto;max-height:70dvh;object-fit:contain;border-radius:inherit}
-.t-opentilt-card.is-open{scale:1;opacity:1;border-radius:13px;transition:scale var(--opentilt-open-dur) var(--opentilt-open-ease),opacity var(--opentilt-open-dur) ease,border-radius var(--opentilt-open-dur) var(--opentilt-open-ease);animation:t-opentilt-open var(--opentilt-open-dur) both}
-.t-opentilt-card.is-closing{animation:t-opentilt-close var(--opentilt-close-dur) both}
-@keyframes t-opentilt-open{0%{transform:rotateX(0deg) rotateY(0deg) translateZ(0);animation-timing-function:cubic-bezier(.3,.7,.4,1)}40%{transform:rotateX(var(--opentilt-tilt-x)) rotateY(var(--opentilt-tilt-y)) translateZ(var(--opentilt-lift));animation-timing-function:cubic-bezier(.45,0,.3,1)}100%{transform:rotateX(0deg) rotateY(0deg) translateZ(0)}}
-@keyframes t-opentilt-close{0%{transform:rotateX(0deg) rotateY(0deg) translateZ(0)}45%{transform:rotateX(calc(var(--opentilt-tilt-x)*-.45)) rotateY(calc(var(--opentilt-tilt-y)*-.45)) translateZ(calc(var(--opentilt-lift)*.4))}100%{transform:rotateX(0deg) rotateY(0deg) translateZ(0)}}
+.portrait-stage{min-height:0}
+.portrait-frame{border-radius:13px;opacity:0;transform:translateY(8px) scale(.98);transition:opacity 233ms ease,transform 233ms var(--motion-ease)}
+.portrait-frame img{display:block;width:100%;height:auto;max-height:70dvh;object-fit:contain;border-radius:inherit}
+.portrait-frame.is-open{opacity:1;transform:none;transition-duration:377ms}
+.portrait-frame.is-closing{opacity:0;transform:translateY(5px) scale(.98)}
 .roster-image-dialog-caption{font-size:0.8125rem;line-height:1.5;text-align:center;color:#b0b3a6;margin:0}
-@media(prefers-reduced-motion:reduce){.t-opentilt-card,.t-opentilt-card.is-open,.t-opentilt-card.is-closing{animation:none;transition:none}.portrait-preview::after,.page-outline a,.intake button,:is(.site-nav a,.site-topbar-logo,.entry-link,.roster-jump a,.email-link,.founder-main a,.contact-main a){transition:none}.intake button:active{scale:1}.portrait-preview::after{translate:none}}
+@media(prefers-reduced-motion:reduce){.portrait-frame,.portrait-frame.is-open,.portrait-frame.is-closing{animation:none;transition:none}.portrait-preview::after,.page-outline a,.intake button,:is(.site-nav a,.site-topbar-logo,.entry-link,.roster-jump a,.email-link,.founder-main a,.contact-main a){transition:none}.intake button:active{scale:1}.portrait-preview::after{translate:none}}
 
 .roster-visual:focus-within{outline:2px solid #FFFFFF;outline-offset:5px}

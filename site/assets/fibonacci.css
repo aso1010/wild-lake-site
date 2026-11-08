@@ -13,7 +13,6 @@
   --s4:var(--space-lg);--s5:var(--space-xl);--s6:var(--space-2xl);
   --gutter:clamp(var(--fib-21),5vw,var(--fib-89));
   --motion-feedback:144ms;--motion-enter:377ms;
-  --opentilt-open-dur:377ms;--opentilt-close-dur:233ms;
 }
 .site-topbar{padding-block:var(--space-md);gap:var(--space-md)}
 .home .studio-introduction{margin-top:var(--space-xl);margin-bottom:var(--space-lg)}
@@ -39,7 +38,7 @@
   .roster-introduction,.home .impact-body{grid-template-columns:minmax(0,.618fr) minmax(0,1fr)}
 }
 @media(prefers-reduced-motion:reduce){
-  :root{--motion-feedback:0ms;--motion-enter:0ms;--opentilt-open-dur:0ms;--opentilt-close-dur:0ms}
+  :root{--motion-feedback:0ms;--motion-enter:0ms}
 }
 
 .home .app-feature{margin:var(--space-xl) var(--gutter);padding-block:var(--space-xl);border-top:1px solid var(--rule-color);border-bottom:1px solid var(--rule-color);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-xl);align-items:center;scroll-margin-top:89px}

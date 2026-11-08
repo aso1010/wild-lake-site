@@ -24,8 +24,7 @@
 .footer-columns{gap:var(--space-lg)}
 .studio-footer .footer-mark{margin-bottom:var(--space-lg)}
 .footer-position{margin-top:var(--space-lg);padding-top:var(--space-lg)}
-/* Feedback follows the supplied card-stack recipe's settling curve.
-   Travel is restricted to interactive objects; reading text stays still. */
+/* Native interaction feedback. Reading text stays still. */
 :is(.entry-link,.blog-return,.magazine-links a,.app-feature-open) .link-arrow{transition:transform var(--motion-settle) var(--motion-ease)}
 .roster-jump a{transition:border-color var(--motion-settle) ease,transform var(--motion-settle) var(--motion-ease),background-color var(--motion-settle) ease}
 .roster-jump a>span:last-child{transition:transform var(--motion-settle) var(--motion-ease)}
