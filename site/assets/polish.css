@@ -56,3 +56,5 @@
 /* Navigation settles without bounce; static service descriptions stay anchored. */
 .site-nav a::after,.home .nav-arrow,.blog-return span{transition-timing-function:var(--motion-ease);transition-duration:var(--motion-settle)}
 .home .vector-node:hover .vector-label{translate:none;color:inherit}
+/* Wrapped mobile navigation keeps every link on the same spacing rhythm. */
+@media(max-width:600px){.site-nav .begin-link{margin-left:0}}
