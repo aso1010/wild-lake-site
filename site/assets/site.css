@@ -134,7 +134,7 @@ html{scroll-padding-top:var(--outline-offset,34px)}
 }
 .founder-portrait{width:100%;max-width:377px;margin:0;padding:8px 8px 13px;border:1px solid var(--rule-color);border-radius:21px;background:var(--bg-color)}
 .founder-portrait-crop{aspect-ratio:1;overflow:hidden;border-radius:13px}
-.founder-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0;transform:scale(1.12);transform-origin:50% 20%}
+.founder-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0;transform:scale(1.18);transform-origin:50% 20%}
 .founder-portrait figcaption{margin-top:13px;padding-inline:5px;font-size:0.8125rem;line-height:1.618;color:var(--muted-color);text-align:center}
 
 /* Compose the portrait and biography as one editorial introduction. */
