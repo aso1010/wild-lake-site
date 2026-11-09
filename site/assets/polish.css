@@ -75,3 +75,5 @@
 #services .services-formats li span{display:block;margin-top:13px;font-family:var(--font-sans);line-height:1.6}
 /* Drew's portrait uses a closer crop while the image viewer keeps the original. */
 .roster #drew-rutland .roster-portrait img{transform:scale(1.5);transform-origin:45% 43%;object-position:50% 43%}
+/* Slightly closer framing for Zack; the viewer retains the full image. */
+.roster #zachary-reed-kantor .roster-portrait img{transform:scale(1.12);transform-origin:50% 35%}
