@@ -15,7 +15,9 @@
     "Visual artist",
     "Performance artist",
     "Movement artist",
-    "Creative director"
+    "Creative director",
+    "Talent Architect",
+    "Artist Developer"
   ],
   "worksFor": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -53,7 +55,7 @@
   "affiliation": {
     "@id": "https://seveneightythree.com/#organization"
   },
-  "description": "Founder of Wild Lake Studio, visual, performance, and movement artist, creative director, actor, writer, and principal at Seven Eighty Three. His practice brings first-principles investigation, lived experimentation, and invitation to artist development and creative infrastructure.",
+  "description": "Founder of Wild Lake Studio, visual, performance, and movement artist, creative director, talent architect, artist developer, actor, writer, and principal at Seven Eighty Three. His practice brings first-principles investigation, lived experimentation, and invitation to artist development and creative infrastructure.",
   "subjectOf": [
     {
       "@id": "https://wildlakestudio.com/about-founder/#page"
