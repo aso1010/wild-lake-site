@@ -135,18 +135,6 @@
  .site-nav a{justify-content:flex-start;min-width:0}
  .site-nav .begin-link{margin-left:0}
 }
-/* Desktop page index floats in a dedicated right rail; mobile keeps its horizontal index. */
-@media(min-width:1200px){
- .home:has(#overview){--index-rail:233px;--index-gap:55px}
- .home:has(#overview) :is(.studio-introduction,#overview,#focus,#practice,#services,#model,#invitation){padding-right:calc(var(--gutter) + var(--index-rail) + var(--index-gap))}
- .home:has(#overview) .protocol-feature-home{margin-right:calc(var(--gutter) + var(--index-rail) + var(--index-gap))}
- .home:has(#overview) .page-outline.is-enhanced{position:fixed;top:89px;right:var(--gutter);left:auto;width:var(--index-rail);max-height:calc(100dvh - 144px);display:block;padding:0;margin:0;border:0;background:#000;text-align:right;overflow-x:hidden;overflow-y:auto;opacity:0;visibility:hidden;pointer-events:none}
- .home:has(#overview) .page-outline.is-enhanced.is-in-reading-area{opacity:1;visibility:visible;pointer-events:auto}
- .home:has(#overview) .page-outline .page-outline-title{display:block;font-size:1rem;margin:0 0 21px;text-align:right}
- .home:has(#overview) .page-outline ol{display:flex;flex-direction:column;align-items:flex-end;gap:13px;width:100%;margin:0;padding:0}
- .home:has(#overview) .page-outline li{width:auto;margin:0;max-width:100%}
- .home:has(#overview) .page-outline a{justify-content:flex-end;text-align:right;font-size:1rem;white-space:normal;line-height:1.5;min-height:44px;padding:8px 0}
-}
 /* One introductory statement replaces the descriptor plus repeated studio heading. */
 .home:has(#overview) #overview h1{font-size:clamp(2rem,3.4vw,3.4375rem);font-weight:500;font-variation-settings:'wdth' 100,'wght' 500;line-height:1.16;letter-spacing:-.025em;text-wrap:initial;max-width:30ch;margin:0 0 var(--space-lg)}
 .home:has(#overview) #overview .statement-text{max-width:56ch}
@@ -160,3 +148,19 @@
 /* The location reads as a small monospaced caption beneath the monolith. */
 @font-face{font-family:LocationMono;src:url('/mirror/assets/fonts/JetBrainsMono-Variable.98f8fe00.woff2') format('woff2');font-weight:100 800;font-style:normal;font-display:swap}
 .home>.hero-location{font-family:LocationMono,monospace;font-size:clamp(11px,.35vw + 10px,15px);font-weight:400;line-height:1.5;letter-spacing:.06em}
+/* Caption and two navigation levels follow the supplied 783 page's geometry. */
+.home:has(#overview){--gutter:clamp(20px,3.2vw,56px)}
+.home>.hero-location{padding:0 var(--gutter) 21px;line-height:1.618;letter-spacing:.04em}
+.home:has(#overview) .site-nav{display:flex;flex-wrap:wrap;gap:8px 34px;padding:21px var(--gutter);margin:0;border-block:1px solid var(--rule-color)}
+.home:has(#overview) .site-nav a{font:400 21px/1.4 var(--font-sans);min-height:44px}
+.home:has(#overview) .page-outline,.home:has(#overview) .page-outline.is-enhanced{position:sticky;top:0;right:auto;left:auto;display:flex;align-items:center;gap:21px;width:100%;max-width:none;max-height:none;margin:0;padding:13px var(--gutter);border:0;border-bottom:1px solid var(--rule-color);background:#000;opacity:1;visibility:visible;pointer-events:auto;text-align:left;overflow:visible;font:400 13px/1.618 LocationMono,monospace}
+.home:has(#overview) .page-outline .page-outline-title{display:block;flex:none;margin:0;font:inherit;color:var(--muted-color);white-space:nowrap;text-align:left}
+.home:has(#overview) .page-outline ol{display:flex;flex:1;min-width:0;flex-direction:row;align-items:center;gap:21px;margin:0;padding:4px;overflow-x:auto;scrollbar-width:thin}
+.home:has(#overview) .page-outline li{flex:none;margin:0;width:auto}
+.home:has(#overview) .page-outline a{display:inline-flex;align-items:center;justify-content:flex-start;min-height:44px;padding:0;font:inherit;white-space:nowrap;text-align:left;color:var(--muted-color)}
+.home:has(#overview) .page-outline a[aria-current=location]{color:#fff;background:none}
+@media(max-width:599px){
+ .home:has(#overview) .site-nav{padding-block:13px;gap:0 21px}
+ .home:has(#overview) .site-nav a{font-size:16px}
+ .home:has(#overview) .page-outline{gap:13px}
+}
