@@ -154,3 +154,7 @@
 /* The first viewport belongs entirely to the monolith. */
 .home:has(#overview) .cap{min-height:100vh;min-height:100svh;min-height:100dvh}
 .home:has(#overview) .cap+.site-nav{margin-top:0}
+/* Location grounds the monolith at the bottom of its first viewport. */
+.home:has(#overview) .cap{position:relative}
+.home .cap .hero-location{position:absolute;left:clamp(20px,3.2vw,56px);right:21px;bottom:clamp(21px,3vw,34px);margin:0;color:#fff;font:500 clamp(.875rem,1.2vw,1.125rem)/1.4 var(--font-sans);text-align:left}
+.home:has(#overview) .cap .mark{width:min(100%,calc((100svh - 144px)*2.3));width:min(100%,calc((100dvh - 144px)*2.3))}
