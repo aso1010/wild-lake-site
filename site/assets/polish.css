@@ -112,3 +112,38 @@
  .home:has(#overview) .studio-introduction h1 span{white-space:normal}
  .home:has(#overview) :is(.who-title,.pitch-title h2){font-size:1.625rem}
 }
+/* The first reading section carries the studio's central proposition. */
+.home:has(#overview) .studio-introduction h1{font-size:clamp(2.125rem,3.8vw,3.4375rem)}
+.home:has(#overview) #overview{padding-block:clamp(5.5625rem,8vw,9rem)}
+.home:has(#overview) #overview h2{font-size:clamp(2rem,3vw,2.75rem);line-height:1.16;max-width:28ch;margin-bottom:var(--space-lg)}
+.home:has(#overview) #overview .statement-text{font-size:clamp(1.25rem,1rem + .7vw,1.75rem);line-height:1.65;max-width:52ch}
+.home #focus>.rule{margin-bottom:var(--space-xl)}
+.home #focus .vectors-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(3.4375rem,8vw,9rem);row-gap:clamp(4.25rem,6.5vw,8rem)}
+.home #focus .vector-node{gap:var(--space-md);padding-bottom:var(--space-sm)}
+.home #focus .vector-head{font-size:1.125rem;line-height:1.5}
+.home #focus h3.vector-label{font-size:clamp(1.5rem,2vw,2.125rem);line-height:1.2;max-width:24ch}
+.home #focus .vector-body{font-size:clamp(1.125rem,1rem + .4vw,1.5rem);line-height:1.65;max-width:38ch}
+@media(max-width:700px){
+ .home #focus .vectors-grid{grid-template-columns:minmax(0,1fr);row-gap:var(--space-xl)}
+ .home:has(#overview) .studio-introduction h1 span{white-space:normal}
+}
+/* Give primary navigation a separate, comfortable rhythm. */
+.site-nav{padding-block:var(--space-md);column-gap:var(--space-lg);row-gap:var(--space-sm);font-size:1.125rem}
+.site-nav a{min-height:55px}
+@media(max-width:900px){
+ .site-nav,.home .site-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 13px;font-size:1rem;padding-block:21px}
+ .site-nav a{justify-content:flex-start;min-width:0}
+ .site-nav .begin-link{margin-left:0}
+}
+/* Desktop page index floats in a dedicated right rail; mobile keeps its horizontal index. */
+@media(min-width:1200px){
+ .home:has(#overview){--index-rail:233px;--index-gap:55px}
+ .home:has(#overview) :is(.studio-introduction,#overview,#focus,#practice,#services,#model,#invitation){padding-right:calc(var(--gutter) + var(--index-rail) + var(--index-gap))}
+ .home:has(#overview) .protocol-feature-home{margin-right:calc(var(--gutter) + var(--index-rail) + var(--index-gap))}
+ .home:has(#overview) .page-outline.is-enhanced{position:fixed;top:89px;right:var(--gutter);left:auto;width:var(--index-rail);max-height:calc(100dvh - 144px);display:block;padding:0;margin:0;border:0;background:#000;text-align:right;overflow-x:hidden;overflow-y:auto;opacity:0;visibility:hidden;pointer-events:none}
+ .home:has(#overview) .page-outline.is-enhanced.is-in-reading-area{opacity:1;visibility:visible;pointer-events:auto}
+ .home:has(#overview) .page-outline .page-outline-title{display:block;font-size:1rem;margin:0 0 21px;text-align:right}
+ .home:has(#overview) .page-outline ol{display:flex;flex-direction:column;align-items:flex-end;gap:13px;width:100%;margin:0;padding:0}
+ .home:has(#overview) .page-outline li{width:auto;margin:0;max-width:100%}
+ .home:has(#overview) .page-outline a{justify-content:flex-end;text-align:right;font-size:1rem;white-space:normal;line-height:1.5;min-height:44px;padding:8px 0}
+}

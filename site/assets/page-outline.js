@@ -9,7 +9,8 @@
   var pending = false;
   function update() {
     pending = false;
-    var marker = outline.getBoundingClientRect().height + 34;
+    var sideRail = getComputedStyle(outline).position === 'fixed';
+    var marker = sideRail ? 34 : outline.getBoundingClientRect().height + 34;
     var active = 0;
     targets.forEach(function (target, index) {
       var margin = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
@@ -23,8 +24,9 @@
     });
     select.value = targets[active].id;
     var footer = document.querySelector('.base');
-    outline.classList.toggle('is-in-reading-area', targets[0].getBoundingClientRect().top <= 180 && (!footer || footer.getBoundingClientRect().top > 180));
-    document.documentElement.style.setProperty('--outline-offset', Math.ceil(outline.getBoundingClientRect().height + 21) + 'px');
+    var readingStart = document.getElementById('overview') ? window.innerHeight * .75 : 180;
+    outline.classList.toggle('is-in-reading-area', targets[0].getBoundingClientRect().top <= readingStart && (!footer || footer.getBoundingClientRect().top > 180));
+    document.documentElement.style.setProperty('--outline-offset', (sideRail ? 21 : Math.ceil(outline.getBoundingClientRect().height + 21)) + 'px');
   }
   function schedule() {
     if (!pending) { pending = true; requestAnimationFrame(update); }
