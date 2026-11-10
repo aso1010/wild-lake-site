@@ -82,3 +82,33 @@
 .protocols-main h3{font-size:clamp(1.3125rem,2vw,1.625rem);line-height:1.25;margin:var(--space-lg) 0 var(--space-sm)}
 .protocols-main section h2+h3{margin-top:0}
 .protocols-main header h1{margin-bottom:var(--space-lg)}
+/* A direct route into the protocols, without decorative card chrome. */
+.protocol-feature{border-left:2px solid #fff;padding:var(--space-md) 0 var(--space-md) var(--space-lg);display:grid;gap:var(--space-md);scroll-margin-top:21px}
+.home .protocol-feature-home{margin:var(--space-xl) var(--gutter);grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--space-xl)}
+.protocol-feature .eyebrow{margin:0 0 var(--space-sm);color:var(--muted-color)}
+.home .protocol-feature h2,.protocols-main .protocol-feature h3{font-size:clamp(1.625rem,3vw,2.125rem);line-height:1.18;margin:0}
+.protocol-feature p{font-size:var(--body-size);line-height:1.618;color:var(--subtle-color);margin:0 0 var(--space-md);max-width:48ch}
+.protocol-feature-link{display:inline-flex;gap:13px;align-items:center;min-height:44px;color:#fff;font-size:1.125rem}
+.protocol-feature-method{margin-top:var(--space-lg)}
+@media(max-width:800px){.home .protocol-feature-home{grid-template-columns:minmax(0,1fr)}.protocol-feature{padding-left:var(--space-md)}}
+/* Homepage is an introduction; detailed operating and commercial copy has its own pages. */
+.home:has(#overview){--home-section-space:clamp(5.5625rem,10vw,9rem)}
+.home:has(#overview) :is(#practice,#services,#model){margin-block:var(--home-section-space)}
+.home:has(#overview) #focus{margin-bottom:var(--home-section-space)}
+.home:has(#overview) :is(#practice,#services,#model)>.rule{margin-bottom:var(--space-xl)}
+.home:has(#overview) .protocol-feature-home{margin-block:var(--home-section-space)}
+.home:has(#overview) #invitation{margin-top:var(--home-section-space);padding-block:var(--space-xl)}
+.home-offering-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-lg) var(--space-xl);margin-bottom:var(--space-lg)}
+.home-offering-grid h3{font-size:clamp(1.3125rem,2vw,1.625rem);margin:0 0 var(--space-md)}
+.home-offering-grid p{max-width:48ch;margin:0;color:var(--subtle-color);font-size:var(--body-size)}
+.home:has(#overview) :is(.who-title,.pitch-title h2){font-size:clamp(2.125rem,3.5vw,3.4375rem);line-height:1.12}
+.practice-main>header h1{font-size:clamp(2.125rem,5vw,3.4375rem);line-height:1.12;margin:var(--space-sm) 0 var(--space-xl)}
+.home .practice-main>.pitch{padding-inline:0}
+@media(max-width:600px){.home-offering-grid{grid-template-columns:1fr}.home:has(#overview) .studio-introduction h1{font-size:clamp(1.3125rem,5.5vw,2.125rem)}}
+.practice-main{padding:var(--space-xl) var(--gutter);width:100%;min-width:0}
+.home .practice-main .pitch-title h2{font-size:clamp(1.625rem,3vw,2.125rem)}
+@media(max-width:600px){
+ .home:has(#overview) .studio-introduction h1{font-size:clamp(1.625rem,6.5vw,2.125rem)}
+ .home:has(#overview) .studio-introduction h1 span{white-space:normal}
+ .home:has(#overview) :is(.who-title,.pitch-title h2){font-size:1.625rem}
+}
