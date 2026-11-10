@@ -77,3 +77,8 @@
 .roster #drew-rutland .roster-portrait img{transform:scale(1.5);transform-origin:45% 43%;object-position:50% 43%}
 /* Slightly closer framing for Zack; the viewer retains the full image. */
 .roster #zachary-reed-kantor .roster-portrait img{transform:scale(1.12);transform-origin:50% 35%}
+/* Protocol entries share one reading column and a clear H1–H2–H3 sequence. */
+.protocols-main article{max-width:65ch}
+.protocols-main h3{font-size:clamp(1.3125rem,2vw,1.625rem);line-height:1.25;margin:var(--space-lg) 0 var(--space-sm)}
+.protocols-main section h2+h3{margin-top:0}
+.protocols-main header h1{margin-bottom:var(--space-lg)}
