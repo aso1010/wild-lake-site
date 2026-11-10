@@ -151,3 +151,6 @@
 .home:has(#overview) #overview h1{font-size:clamp(2rem,3.4vw,3.4375rem);font-weight:500;font-variation-settings:'wdth' 100,'wght' 500;line-height:1.16;letter-spacing:-.025em;text-wrap:initial;max-width:30ch;margin:0 0 var(--space-lg)}
 .home:has(#overview) #overview .statement-text{max-width:56ch}
 .home #focus>.who-title{font-size:clamp(1.625rem,3vw,2.125rem);margin:0 0 var(--space-xl)}
+/* The first viewport belongs entirely to the monolith. */
+.home:has(#overview) .cap{min-height:100vh;min-height:100svh;min-height:100dvh}
+.home:has(#overview) .cap+.site-nav{margin-top:0}
