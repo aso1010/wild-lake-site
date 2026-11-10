@@ -157,3 +157,6 @@
 /* A small scroll reveals the location before navigation. */
 .home>.hero-location{margin:0;padding:13px clamp(20px,3.2vw,56px) 21px;color:#fff;font:500 clamp(.875rem,1.2vw,1.125rem)/1.4 var(--font-sans);text-align:left}
 .home>.hero-location+.site-nav{margin-top:0}
+/* The location reads as a small monospaced caption beneath the monolith. */
+@font-face{font-family:LocationMono;src:url('/mirror/assets/fonts/JetBrainsMono-Variable.98f8fe00.woff2') format('woff2');font-weight:100 800;font-style:normal;font-display:swap}
+.home>.hero-location{font-family:LocationMono,monospace;font-size:clamp(.625rem,.65vw,.75rem);font-weight:400;line-height:1.5;letter-spacing:.06em}
