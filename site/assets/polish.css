@@ -147,3 +147,7 @@
  .home:has(#overview) .page-outline li{width:auto;margin:0;max-width:100%}
  .home:has(#overview) .page-outline a{justify-content:flex-end;text-align:right;font-size:1rem;white-space:normal;line-height:1.5;min-height:44px;padding:8px 0}
 }
+/* One introductory statement replaces the descriptor plus repeated studio heading. */
+.home:has(#overview) #overview h1{font-size:clamp(2rem,3.4vw,3.4375rem);font-weight:500;font-variation-settings:'wdth' 100,'wght' 500;line-height:1.16;letter-spacing:-.025em;text-wrap:initial;max-width:30ch;margin:0 0 var(--space-lg)}
+.home:has(#overview) #overview .statement-text{max-width:56ch}
+.home #focus>.who-title{font-size:clamp(1.625rem,3vw,2.125rem);margin:0 0 var(--space-xl)}
