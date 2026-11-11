@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://wildlakestudio.com/development-protocols/#webpage",
+  "url": "https://wildlakestudio.com/development-protocols/",
+  "name": "Development Protocols | Wild Lake Studio",
+  "description": "Optional artist wellbeing practices within a retained engagement, including active listening, structural honesty, automatic writing, reflection, grounding, movement, and vision quests. The artist controls participation.",
+  "about": [
+    {
+      "@id": "https://wildlakestudio.com/#organization"
+    },
+    {
+      "@type": "Thing",
+      "name": "Artist wellbeing"
+    }
+  ],
+  "isPartOf": {
+    "@id": "https://wildlakestudio.com/#website"
+  },
+  "publisher": {
+    "@id": "https://wildlakestudio.com/#organization"
+  },
+  "inLanguage": "en-US",
+  "hasPart": [
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/development-protocols/#reflection",
+      "name": "Reflection & Study",
+      "text": "We give the artist space to say what they have been holding, at their own pace. Our attention follows what they choose to share, allowing room for expression before interpretation or revision begins. We expose the load-bearing reality of the artist’s situation, examining what the practice can carry and where its limits are being exceeded. We call this conversational brutalism: applying the architectural principle of exposed structure to information. The conversation makes the conditions visible so the artist can decide what to change and where support is needed. Selected texts give us language for the questions emerging in the practice. Writing continuously lets associations, images, and questions emerge before editing begins. We return to the material afterward to see what it holds. Images and archetypes provide prompts for interpretation, helping the artist articulate associations, tensions, and possible choices. Attentive listening becomes a study of rhythm, feeling, memory, and how a work holds attention."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/development-protocols/#grounding",
+      "name": "Attention & Grounding",
+      "text": "Time to notice thoughts, sensations, and the conditions surrounding the work. Gentle attention to breathing and its relationship to movement, voice, and concentration. Self-directed contact can provide a point of physical attention. Any guided touch is discussed and agreed beforehand."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/development-protocols/#movement",
+      "name": "Movement & Expression",
+      "text": "A change of surroundings can challenge familiar assumptions. Visits may range from a local park or the Blue Ridge Mountains to Santiago and the surrounding campo , where Argelys’s family is rooted. His experience of rural life and poverty grounds conversations about labor, access, and the conditions that sustain a creative practice. The setting and purpose are agreed with the artist. Movement offers a way to explore rhythm, impulse, pleasure, and physical expression. Voluntary movement provides another way to notice and respond to held tension. Emotion can have room without becoming an assignment. Tears, sound, or silence may emerge; none is required as evidence of progress."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/development-protocols/#engagement",
+      "name": "Within an Engagement",
+      "text": "These practices support the artist’s work within an agreed scope. Participation is voluntary, and the artist can pause, decline, or change direction. Each practice returns to a concrete question: what helps this person sustain the work they want to make? Discuss an engagement · The Method"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Thing",
+      "name": "Active listening"
+    },
+    {
+      "@type": "Thing",
+      "name": "Structural honesty"
+    },
+    {
+      "@type": "Thing",
+      "name": "Reading assignments"
+    },
+    {
+      "@type": "Thing",
+      "name": "Automatic writing"
+    },
+    {
+      "@type": "Thing",
+      "name": "Tarot readings"
+    },
+    {
+      "@type": "Thing",
+      "name": "Listening to music"
+    },
+    {
+      "@type": "Thing",
+      "name": "Meditation"
+    },
+    {
+      "@type": "Thing",
+      "name": "Breathwork"
+    },
+    {
+      "@type": "Thing",
+      "name": "Placement of hands"
+    },
+    {
+      "@type": "Thing",
+      "name": "Vision quests"
+    },
+    {
+      "@type": "Thing",
+      "name": "Dancing"
+    },
+    {
+      "@type": "Thing",
+      "name": "Shaking the body"
+    },
+    {
+      "@type": "Thing",
+      "name": "Crying and vocal expression"
+    }
+  ]
+}

@@ -9,16 +9,17 @@
   "familyName": "Oriach",
   "url": "https://argelysoriach.com/",
   "jobTitle": [
-    "Founder",
+    "Multidisciplinary artist",
+    "Artist developer",
+    "Creative director",
+    "Systems architect",
     "Actor",
+    "Vocalist",
     "Writer",
     "Visual artist",
     "Performance artist",
     "Movement artist",
-    "Creative director",
-    "Talent Architect",
-    "Artist Developer",
-    "Engineer"
+    "Talent architect"
   ],
   "worksFor": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -38,17 +39,24 @@
     {
       "@type": "HighSchool",
       "name": "Phillips Academy Andover"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Northwestern University’s National High School Institute (Cherubs) theatre program"
     }
   ],
   "knowsAbout": [
     "Artist development",
-    "Acting",
-    "Writing",
-    "Artist mentorship",
+    "Systems design",
+    "Creative direction",
+    "Live production",
     "Visual art",
     "Performance art",
     "Movement",
-    "Creative direction"
+    "Acting",
+    "Vocal performance",
+    "Writing",
+    "Alexander Technique"
   ],
   "sameAs": [
     "https://www.linkedin.com/in/argelys-samuel-oriach/"
@@ -56,7 +64,7 @@
   "affiliation": {
     "@id": "https://seveneightythree.com/#organization"
   },
-  "description": "Founder of Wild Lake Studio, visual, performance, and movement artist, creative director, talent architect, artist developer, actor, writer, and principal at Seven Eighty Three. His practice brings first-principles investigation, lived experimentation, and invitation to artist development and creative infrastructure.",
+  "description": "Argelys Samuel Oriach is a Dominican-born multidisciplinary artist, artist developer, creative director, and systems architect based in Crown Heights, Brooklyn.",
   "subjectOf": [
     {
       "@id": "https://wildlakestudio.com/about-founder/#page"
@@ -88,5 +96,13 @@
         "name": "Wesleyan University"
       }
     }
-  ]
+  ],
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Crown Heights, Brooklyn, New York"
+  },
+  "birthPlace": {
+    "@type": "Country",
+    "name": "Dominican Republic"
+  }
 }

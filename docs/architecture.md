@@ -33,3 +33,17 @@ keeps its isolated inline layout and CSP, with its own Fibonacci spacing.
 requests through without its legacy `/mirror/` rewrite. The app service worker
 is scoped to `/app/`; it does not control the existing Mirror root.
 The supplied UI copy reference is preserved in `docs/mirror-app-copy.md`.
+
+## Structured copy
+
+`site/schema/` holds the canonical organization, founder, website, client roster,
+Method, Development Protocols, and engagement descriptions. Full entity definitions
+embedded in page JSON-LD must match those documents; identity-only references may
+remain compact. The client-page founder identity stays distinct so its role list
+can focus on the artistic practice. `site/llms.txt` summarizes the current public
+copy and links to each document. The schema page previews the canonical files.
+
+`tools/check_copy_sync.py` checks repeated entity definitions and previews before
+deployment. Copy changes affecting these descriptions require their canonical
+JSON and llms.txt counterparts to be updated in the same change. The check uses
+only the Python standard library and adds no browser dependency.

@@ -2,18 +2,16 @@
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://wildlakestudio.com/#talent-architect",
-  "name": "Talent Architect practice",
+  "name": "Talent Architecture",
   "serviceType": [
-    "Talent scouting",
-    "Artists and repertoire (A&R)",
-    "Artist development",
-    "Creative infrastructure",
-    "Artist mentorship",
-    "System design"
+    "Existential Mechanics",
+    "Structural Stewardship",
+    "Capacity & Boundary Audit"
   ],
-  "description": "A non-extractive, retainer-based practice that scouts talent, develops songs, plays, pilots, and novels, and builds infrastructure around the artist while preserving ownership and creative control.",
+  "description": "Structural support for the person sustaining the practice, with boundaries and working conditions that make independence possible. Focused interventions alternate with periods of independent execution; scope, reserved availability, and response times are agreed in advance.",
   "provider": {
     "@id": "https://wildlakestudio.com/#organization"
   },
-  "areaServed": "Worldwide"
+  "areaServed": "Worldwide",
+  "url": "https://wildlakestudio.com/practice/#architecture-pillar"
 }
