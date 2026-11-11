@@ -7,6 +7,8 @@
   if (targets.some(function (target) { return !target; })) return;
   outline.classList.add('is-enhanced');
   var pending = false;
+  var strip = document.body.classList.contains('roster') ? outline.querySelector('ol') : null;
+  var lastActive = -1;
   function update() {
     pending = false;
     var position = getComputedStyle(outline).position;
@@ -25,6 +27,14 @@
       else link.removeAttribute('aria-current');
     });
     select.value = targets[active].id;
+    if (strip && active !== lastActive) {
+      var frame = strip.getBoundingClientRect();
+      var name = links[active].getBoundingClientRect();
+      var nextLeft = strip.scrollLeft + name.left - frame.left - 12;
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      strip.scrollTo({ left: Math.max(0, nextLeft), behavior: reduced || lastActive < 0 ? 'instant' : 'smooth' });
+      lastActive = active;
+    }
     var footer = document.querySelector('.base');
     var readingStart = document.getElementById('overview') ? window.innerHeight * .75 : 180;
     outline.classList.toggle('is-in-reading-area', targets[0].getBoundingClientRect().top <= readingStart && (!footer || footer.getBoundingClientRect().top > 180));
@@ -41,7 +51,7 @@
     schedule();
   });
   window.addEventListener('scroll', schedule, { passive: true });
-  window.addEventListener('resize', schedule);
+  window.addEventListener('resize', function () { lastActive = -1; schedule(); });
   window.addEventListener('hashchange', schedule);
   window.addEventListener('load', schedule);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(schedule);

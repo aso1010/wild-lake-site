@@ -31,16 +31,8 @@ body.reading-layout:not(:has(#overview))>.cap{box-sizing:border-box;width:100%;m
 body.reading-layout:has(#overview)>.cap{width:100%;max-width:none;margin-inline:0}
 @media(max-width:600px){body.reading-layout.roster .roster-jump{grid-template-columns:minmax(0,1fr)}}
 
-/* The client index exposes the complete roster rather than clipping names. */
-body.reading-layout.roster>.page-outline{position:static;display:block}
-body.reading-layout.roster>.page-outline .page-outline-title{margin-bottom:13px}
-body.reading-layout.roster>.page-outline ol{display:flex;flex-wrap:wrap;gap:8px 21px;overflow:visible;padding:4px 0}
-body.reading-layout.roster>.page-outline li{max-width:100%}
-body.reading-layout.roster>.page-outline a{white-space:normal}
-@media(max-width:600px){
- body.reading-layout.roster>.page-outline.is-enhanced{position:sticky;display:flex;align-items:center;gap:13px}
- body.reading-layout.roster>.page-outline.is-enhanced .page-outline-title,
- body.reading-layout.roster>.page-outline.is-enhanced ol{display:none}
- body.reading-layout.roster>.page-outline.is-enhanced label{display:block;flex:none;font:inherit;white-space:nowrap}
- body.reading-layout.roster>.page-outline.is-enhanced select{display:block;flex:1;min-width:0;width:100%;min-height:44px;padding:8px;color:#fff;background:#000;border:1px solid var(--rule-color,#666);font:inherit}
-}
+/* A fixed label frames a single moving strip of client names. */
+body.reading-layout.roster>.page-outline{position:sticky;display:flex;align-items:center}
+body.reading-layout.roster>.page-outline ol{display:flex;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;min-width:0;mask-image:linear-gradient(to right,transparent,#000 8px,#000 calc(100% - 16px),transparent)}
+body.reading-layout.roster>.page-outline li{flex:none}
+body.reading-layout.roster>.page-outline a{white-space:nowrap}
