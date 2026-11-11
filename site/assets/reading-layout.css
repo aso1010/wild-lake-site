@@ -96,3 +96,6 @@ body.reading-layout.roster .client-facts{order:4;min-width:0}
  body.reading-layout.roster .data-label{margin:0;line-height:1.5}
  body.reading-layout.roster .data-value{line-height:1.5}
 }
+
+/* Geography grounds the full-width monolith at the navigation's left edge. */
+body.reading-layout.home:has(#overview)>.hero-location{padding-inline:clamp(20px,3.2vw,56px);text-align:left}
