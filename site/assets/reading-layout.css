@@ -99,3 +99,7 @@ body.reading-layout.roster .client-facts{order:4;min-width:0}
 
 /* Geography grounds the full-width monolith at the navigation's left edge. */
 body.reading-layout.home:has(#overview)>.hero-location{padding-inline:var(--gutter);text-align:left}
+
+@media(min-width:1100px){
+ body.reading-layout.home:has(#overview) #overview .statement-text{max-width:65ch}
+}
