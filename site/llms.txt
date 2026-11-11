@@ -117,3 +117,7 @@ Wild Lake Studio is the formal name used for titles, legal notices, and structur
 - [website.json](https://wildlakestudio.com/schema/website.json)
 
 Spanish essay: https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/es/ (full translation of The Infrastructure Has an Inner Life, with captions and image descriptions).
+
+Official LinkedIn profiles:
+- Argelys Samuel Oriach: https://www.linkedin.com/in/argelys-samuel-oriach/
+- Wild Lake Studio: https://www.linkedin.com/company/wild-lake/

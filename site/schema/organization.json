@@ -125,7 +125,8 @@
     }
   ],
   "sameAs": [
-    "https://www.instagram.com/wildlakewildlake/"
+    "https://www.instagram.com/wildlakewildlake/",
+    "https://www.linkedin.com/company/wild-lake/"
   ],
   "mainEntityOfPage": {
     "@id": "https://wildlakestudio.com/#home"
