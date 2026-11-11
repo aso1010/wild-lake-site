@@ -100,3 +100,6 @@ body.reading-layout.roster>.page-outline a{white-space:nowrap}
  body.reading-layout.home:has(#overview){--gutter:clamp(1.3125rem,5vw,5.5rem)}
  body.reading-layout.home:has(#overview)>.cap{padding-inline:clamp(20px,3.2vw,56px)}
 }
+@media(min-width:1100px){
+ body.reading-layout{--gutter:clamp(1.3125rem,5vw,5.5rem)}
+}
