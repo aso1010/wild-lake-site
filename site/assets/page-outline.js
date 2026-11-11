@@ -9,8 +9,10 @@
   var pending = false;
   function update() {
     pending = false;
-    var sideRail = getComputedStyle(outline).position === 'fixed';
-    var marker = sideRail ? 34 : outline.getBoundingClientRect().height + 34;
+    var position = getComputedStyle(outline).position;
+    var sideRail = position === 'fixed';
+    var sticky = position === 'sticky';
+    var marker = sticky ? outline.getBoundingClientRect().height + 34 : 34;
     var active = 0;
     targets.forEach(function (target, index) {
       var margin = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
@@ -26,7 +28,7 @@
     var footer = document.querySelector('.base');
     var readingStart = document.getElementById('overview') ? window.innerHeight * .75 : 180;
     outline.classList.toggle('is-in-reading-area', targets[0].getBoundingClientRect().top <= readingStart && (!footer || footer.getBoundingClientRect().top > 180));
-    document.documentElement.style.setProperty('--outline-offset', (sideRail ? 21 : Math.ceil(outline.getBoundingClientRect().height + 21)) + 'px');
+    document.documentElement.style.setProperty('--outline-offset', (sticky ? Math.ceil(outline.getBoundingClientRect().height + 21) : 21) + 'px');
   }
   function schedule() {
     if (!pending) { pending = true; requestAnimationFrame(update); }
