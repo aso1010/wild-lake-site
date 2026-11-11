@@ -24,3 +24,9 @@
 
 .magazine-links{display:flex;flex-wrap:wrap;align-items:center;gap:13px 34px;margin-top:21px}
 .magazine-links a{display:inline-flex;align-items:center;min-height:44px;margin:0;padding:8px 0;font-family:var(--font-sans);font-size:1rem;font-weight:400;line-height:1.5;color:var(--text-color);text-underline-offset:5px;text-decoration-thickness:1px}
+
+/* Native language navigation remains usable without JavaScript. */
+.essay-language{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin:1.5rem 0;font-family:var(--font-mono,monospace);font-size:1rem;color:#fff}
+.essay-language a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.3em;padding:.25rem .5rem}
+.essay-language a[aria-current="page"]{font-weight:700;text-decoration-thickness:2px}
+.essay-language a:focus-visible{outline:2px solid #fff;outline-offset:4px}
