@@ -16,3 +16,5 @@
 .site-topbar .site-topbar-logo img{display:block;width:100%;height:auto;max-width:100%}
 .site-topbar .site-topbar-logo:focus-visible{outline:2px solid #fff;outline-offset:6px}
 .site-topbar:has(.site-topbar-logo) .site-topbar-location{font:400 clamp(11px,.3vw + 10px,15px)/1.618 var(--font-mono,monospace);letter-spacing:.02em;text-align:left;max-width:none;white-space:normal}
+
+.site-topbar .site-topbar-logo picture{display:block;width:100%;line-height:0}
