@@ -36,3 +36,67 @@ body.reading-layout.roster>.page-outline{position:sticky;display:flex;align-item
 body.reading-layout.roster>.page-outline ol{display:flex;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;min-width:0;mask-image:linear-gradient(to right,transparent,#000 8px,#000 calc(100% - 16px),transparent)}
 body.reading-layout.roster>.page-outline li{flex:none}
 body.reading-layout.roster>.page-outline a{white-space:nowrap}
+
+/* Desktop pages share a wider canvas; individual paragraphs retain a reading measure. */
+@media(min-width:1100px){
+ body.reading-layout{--reading-width:85rem}
+ body.reading-layout .manifesto-main p,
+ body.reading-layout .essay-body{max-width:65ch}
+ body.reading-layout .essay-body{margin-inline:0}
+ body.reading-layout .blog-opening{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body.reading-layout .founder-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:55px}
+ body.reading-layout .founder-layout .founder-portrait{grid-column:2;grid-row:1;justify-self:end}
+ body.reading-layout.roster .roster-jump{grid-template-columns:repeat(3,minmax(0,1fr))}
+ body.reading-layout .footer-columns{grid-template-columns:repeat(3,minmax(0,1fr))}
+ body.reading-layout.roster .roster-person{display:grid;grid-template-columns:200px minmax(0,1fr) minmax(240px,.55fr);grid-template-rows:auto 1fr;gap:20px 28px;align-content:start;align-items:start;min-height:calc(100svh - var(--outline-offset,90px));padding:24px 0;margin:0;border-top:1px solid var(--rule-color);scroll-margin-top:0}
+ body.reading-layout.roster .roster-entry,
+ body.reading-layout.roster .profile-grid{display:contents}
+ body.reading-layout.roster .roster-visual{grid-column:1;grid-row:1 / span 2;max-width:200px}
+ body.reading-layout.roster .entry-copy{grid-column:2 / span 2;grid-row:1;min-width:0}
+ body.reading-layout.roster .profile-grid>div:first-child{grid-column:2;grid-row:2;min-width:0}
+ body.reading-layout.roster .profile-grid>div:last-child{grid-column:3;grid-row:2;min-width:0}
+ body.reading-layout.roster .roster-main .entry-name{font-size:36px;line-height:1.05;margin:8px 0 12px}
+ body.reading-layout.roster .entry-name br{display:none}
+ body.reading-layout.roster .entry-name br::after{content:' '}
+ body.reading-layout.roster .entry-meta,
+ body.reading-layout.roster .eyebrow{font-size:13px;margin:0 0 8px}
+ body.reading-layout.roster .entry-detail{font-size:17px;line-height:1.45;margin:0;max-width:none}
+ body.reading-layout.roster .entry-copy>.entry-link{display:none}
+ body.reading-layout.roster .profile-grid h3{font-size:24px;line-height:1.15;margin:0 0 12px}
+ body.reading-layout.roster .profile-grid p{font-size:17px;line-height:1.45;margin:0 0 12px}
+ body.reading-layout.roster .profile-grid .entry-link{font-size:14px;line-height:1.4;margin-top:8px;min-height:32px}
+ body.reading-layout.roster .data-row{font-size:14px;line-height:1.45;grid-template-columns:minmax(70px,.7fr) minmax(0,1.3fr);gap:12px;padding:8px 0}
+ body.reading-layout.roster .data-label,
+ body.reading-layout.roster .data-value{font-size:inherit;overflow-wrap:anywhere}
+ body.reading-layout.roster .roster-visual figcaption{font-size:12px;line-height:1.4;padding:10px}
+}
+@media(min-width:1100px){
+ body.reading-layout.roster .roster-person{grid-template-columns:200px minmax(0,1fr) 240px;column-gap:24px}
+}
+@media(min-width:1100px) and (max-height:800px){
+ body.reading-layout.roster .roster-person{padding-block:16px;row-gap:16px}
+ body.reading-layout.roster .roster-main .entry-name{font-size:32px;margin:6px 0 10px}
+ body.reading-layout.roster .entry-detail,
+ body.reading-layout.roster .profile-grid p{font-size:16px;line-height:1.4;margin-bottom:10px}
+ body.reading-layout.roster .profile-grid h3{font-size:22px;margin-bottom:10px}
+ body.reading-layout.roster .data-row{padding-block:6px}
+}
+@media(min-width:1100px) and (max-height:800px){
+ body.reading-layout.roster .roster-person{grid-template-columns:160px minmax(0,1fr) 210px;column-gap:20px;padding-block:12px;row-gap:12px}
+ body.reading-layout.roster .roster-visual{max-width:160px}
+ body.reading-layout.roster .profile-grid p{line-height:1.35;margin-bottom:8px}
+ body.reading-layout.roster .profile-grid .entry-link{padding-block:4px;margin-top:4px}
+}
+@media(min-width:1100px) and (max-height:800px){
+ body.reading-layout.roster .data-row{display:block;padding-block:5px}
+ body.reading-layout.roster .data-label{display:block;font-size:12px;line-height:1.3;margin-bottom:2px}
+ body.reading-layout.roster .data-value{display:block;text-align:left;font-size:14px;line-height:1.35}
+}
+@media(min-width:1100px) and (max-height:800px){
+ body.reading-layout.roster .data-row{padding-block:3px}
+ body.reading-layout.roster .data-label{line-height:1.2;margin-bottom:0}
+}
+@media(min-width:1100px){
+ body.reading-layout.home:has(#overview){--gutter:clamp(1.3125rem,5vw,5.5rem)}
+ body.reading-layout.home:has(#overview)>.cap{padding-inline:clamp(20px,3.2vw,56px)}
+}
