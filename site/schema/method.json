@@ -8,7 +8,8 @@
   "about": {
     "@type": "Organization",
     "@id": "https://wildlakestudio.com/#organization",
-    "name": "Wild Lake Studio"
+    "name": "Wild Lake Studio",
+    "slogan": "Wild-Lake is point zero for starmaking."
   },
   "isPartOf": {
     "@id": "https://wildlakestudio.com/#website"
