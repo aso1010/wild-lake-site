@@ -172,3 +172,12 @@
 
 /* A deliberate void separates the monolith from its location caption. */
 .home>.hero-location{padding-top:clamp(34px,5vh,55px)}
+/* One section-index treatment across every editorial page. */
+.page-outline,.page-outline.is-enhanced,.page-outline.is-in-reading-area{position:sticky;top:0;right:auto;left:auto;display:flex;align-items:center;gap:21px;width:100%;max-width:none;max-height:none;margin:0;padding:13px var(--gutter);border:0;border-bottom:1px solid var(--rule-color);background:#000;opacity:1;visibility:visible;pointer-events:auto;text-align:left;overflow:visible;font:400 13px/1.618 LocationMono,monospace}
+.page-outline .page-outline-title,.page-outline.is-enhanced .page-outline-title{display:block;flex:none;margin:0;font:inherit;color:var(--muted-color);white-space:nowrap;text-align:left}
+.page-outline ol,.page-outline.is-enhanced ol{display:flex;flex:1;min-width:0;flex-direction:row;align-items:center;gap:21px;margin:0;padding:4px;overflow-x:auto;scrollbar-width:thin}
+.page-outline li,.page-outline li+li{flex:none;margin:0;width:auto}
+.page-outline a{display:inline-flex;align-items:center;justify-content:flex-start;min-height:44px;padding:0;font:inherit;white-space:nowrap;text-align:left;color:var(--muted-color);border:0;border-bottom:1px solid transparent;border-radius:0}
+.page-outline a[aria-current=location]{color:#fff;background:none;border:0;border-bottom:1px solid #fff;border-radius:0;font-weight:500}
+.page-outline .page-outline-mobile,.page-outline.is-enhanced .page-outline-mobile{display:none}
+@media(max-width:599px){.page-outline,.page-outline.is-enhanced{gap:13px}}
