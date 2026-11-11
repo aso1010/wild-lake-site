@@ -10,3 +10,9 @@
 .home .studio-introduction{margin-top:55px;margin-bottom:34px;color:#FFFFFF}
 .home .studio-introduction h1{margin:0;font-weight:500;text-wrap:balance;max-width:24ch;font-size:clamp(1.875rem,5vw,3.4375rem);line-height:1.12;letter-spacing:-.035em}
 
+
+/* Interior pages lead with the studio identity; geography is supporting context. */
+.site-topbar .site-topbar-logo{display:flex;align-items:center;width:clamp(210px,27vw,340px);max-width:100%;min-height:44px;justify-self:start}
+.site-topbar .site-topbar-logo img{display:block;width:100%;height:auto;max-width:100%}
+.site-topbar .site-topbar-logo:focus-visible{outline:2px solid #fff;outline-offset:6px}
+.site-topbar:has(.site-topbar-logo) .site-topbar-location{font:400 clamp(11px,.3vw + 10px,15px)/1.618 var(--font-mono,monospace);letter-spacing:.02em;text-align:left;max-width:none;white-space:normal}
