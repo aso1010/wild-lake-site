@@ -11,8 +11,9 @@
   const canvas = document.createElement('canvas');
   canvas.className = 'monolith-water-canvas';
   canvas.setAttribute('aria-hidden', 'true');
-  const gl = canvas.getContext('webgl2', { alpha: false, antialias: false, powerPreference: 'low-power' });
+  const gl = canvas.getContext('webgl2', { alpha: true, antialias: false, powerPreference: 'low-power' });
   if (!gl) return;
+  const waterSpeed = 1 / 8; // Fibonacci divisor: eight times slower than the original.
   let frame = 0, elapsed = 0, last = 0, paused = false, visible = true, ready = false, revision = 0;
   let program, texture, observer, resizeObserver;
   const button = document.createElement('button');
@@ -58,7 +59,7 @@
       u_fit:1, u_scale:.8, u_originX:.5, u_originY:.5, u_rotation:0, u_offsetX:0, u_offsetY:0,
       u_worldWidth:0, u_worldHeight:0 };
     Object.keys(settings).forEach(name => gl.uniform1f(location(name), settings[name]));
-    gl.uniform4f(location('u_colorBack'), 143/255, 143/255, 143/255, 1);
+    gl.uniform4f(location('u_colorBack'), 0, 0, 0, 0);
     gl.uniform4f(location('u_colorHighlight'), 1, 1, 1, 1);
     texture = gl.createTexture();
     gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, texture);
@@ -77,7 +78,7 @@
       if (!ready || paused || !visible || document.hidden || motion.matches) { last = 0; return; }
       if (!last) last = now;
       if (now - last >= 1000/30) {
-        elapsed += Math.min(now - last, 100);
+        elapsed += Math.min(now - last, 100) * waterSpeed;
         last = now;
         draw();
       }
@@ -97,9 +98,6 @@
       svg.setAttribute('width', width); svg.setAttribute('height', height);
       svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
       svg.setAttribute('fill', '#ffffff');
-      const background = document.createElementNS(svgNS, 'rect');
-      background.setAttribute('width', width); background.setAttribute('height', height); background.setAttribute('fill', '#000000');
-      svg.append(background);
       lines.querySelectorAll(':scope > svg').forEach(line => {
         const rect = line.getBoundingClientRect(), clone = line.cloneNode(true);
         clone.setAttribute('x', (rect.left - box.left) * ratio); clone.setAttribute('y', (rect.top - box.top) * ratio);
