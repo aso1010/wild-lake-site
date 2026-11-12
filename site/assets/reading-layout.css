@@ -118,4 +118,7 @@ body.reading-layout.home:has(#overview)>.cap{height:calc(100svh - 54px);height:c
 body.reading-layout.home:has(#overview)>.hero-location{box-sizing:border-box;display:flex;align-items:center;min-height:54px;margin:0;padding-top:8px;padding-bottom:16px}
 
 /* Tight founder crop retains the tie knot. */
-body.reading-layout .founder-portrait img{transform:scale(1.28);transform-origin:50% 0%}
+body.reading-layout .founder-portrait img{transform:none}
+
+body.reading-layout .founder-portrait-crop{display:block}
+.blog-heading:has(.quiet-creek-monolith)>.eyebrow{margin-bottom:clamp(40px,5vw,72px)}
