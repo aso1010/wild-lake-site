@@ -48,6 +48,8 @@ deployment. Copy changes affecting these descriptions require their canonical
 JSON and llms.txt counterparts to be updated in the same change. The check uses
 only the Python standard library and adds no browser dependency.
 
-## Water monolith preview
+## Click-activated water monolith
 
-`/?water=1` enables Paper Shaders Water (0.0.82, Apache-2.0) through a local native WebGL2 renderer. The GLSL and license are vendored in `site/assets/`; no React or package runtime is required. Water settings follow the supplied example, with scale set to 1 to match the original full-size monolith and a transparent SVG wordmark as its image texture. The background is transparent and the shader output is alpha-masked to the distorted glyphs, keeping the surrounding site pure black. The animation clock runs at 1/8 speed (8 is a Fibonacci number), independently of its smooth render cadence. The effect pauses outside the viewport or hidden tabs, provides a pause control, and falls back to the SVG for reduced motion or unavailable WebGL. The normal homepage remains the default presentation.
+The homepage retains its usual SVG motion until a visitor clicks or taps anywhere on the wordmark. A transparent native button supports keyboard activation too. Only then does the page create WebGL2 and import the self-hosted shader source. Paper Shaders Water (0.0.82, Apache-2.0) is rendered natively without React or a package runtime. The GLSL and license are vendored in `site/assets/`.
+
+The water output is alpha-masked to the distorted letters, preserving the pure black surrounding space. Scale 1 matches the full-size monolith. Its clock advances at 1/8 speed, using Fibonacci's 8 independently of its smooth render cadence. The effect pauses outside the viewport or in hidden tabs and includes a pause control. Reduced-motion preferences and unavailable WebGL retain the original SVG. The former `?water=1` preview URL now follows the same click-to-activate behavior.

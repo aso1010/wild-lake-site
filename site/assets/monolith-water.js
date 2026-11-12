@@ -1,12 +1,22 @@
-/* Native, opt-in renderer for Paper Shaders' Apache-2.0 Water GLSL.
+/* Native, click-activated renderer for Paper Shaders' Apache-2.0 Water GLSL.
  * No React, packages, network services, or external runtime assets.
- * Preview: /?water=1. The original SVG remains the accessible fallback. */
+ * The usual SVG motion remains until the monolith is activated. */
 (async function () {
-  if (new URLSearchParams(location.search).get('water') !== '1') return;
   const host = document.querySelector('.home .cap .mark');
   const lines = host && host.querySelector('.mark-a');
   if (!host || !lines) return;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  if (motion.matches) return;
+  const activate = document.createElement('button');
+  activate.type = 'button';
+  activate.className = 'monolith-water-activate';
+  activate.setAttribute('aria-label', 'Activate water effect on the Wild Lake monolith');
+  host.setAttribute('role', 'group');
+  host.classList.add('is-water-interactive');
+  host.append(activate);
+  await new Promise(resolve => activate.addEventListener('click', resolve, { once:true }));
+  activate.remove();
+  host.classList.remove('is-water-interactive');
   if (motion.matches) return;
   const canvas = document.createElement('canvas');
   canvas.className = 'monolith-water-canvas';

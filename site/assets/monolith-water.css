@@ -5,3 +5,7 @@
 .has-water .monolith-water-toggle{display:block;position:absolute;right:12px;bottom:12px;z-index:1;min-height:44px;padding:8px 14px;border:1px solid #fff;border-radius:0;background:#000;color:#fff;font:400 13px/1.4 var(--font-sans,Arial,sans-serif);cursor:pointer}
 .monolith-water-toggle:focus-visible{outline:2px solid #fff;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){.has-water .monolith-water-canvas,.has-water .monolith-water-toggle{display:none}.has-water .mark-a{visibility:visible}}
+
+.home .cap .mark.is-water-interactive{position:relative}
+.monolith-water-activate{position:absolute;inset:0;z-index:1;display:block;width:100%;height:100%;padding:0;border:0;border-radius:0;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.monolith-water-activate:focus-visible{outline:2px solid #fff;outline-offset:6px}
