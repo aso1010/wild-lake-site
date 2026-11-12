@@ -122,3 +122,6 @@ body.reading-layout .founder-portrait img{transform:none}
 
 body.reading-layout .founder-portrait-crop{display:block}
 .blog-heading:has(.quiet-creek-monolith)>.eyebrow{margin-bottom:clamp(40px,5vw,72px)}
+
+.core-offering{font-size:clamp(20px,1.5vw,26px);line-height:1.55;max-width:60ch;margin:0 0 40px;color:#fff}
+.core-offering strong{display:block;font-weight:600;margin-bottom:12px}
