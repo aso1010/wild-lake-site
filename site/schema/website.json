@@ -321,6 +321,12 @@
       "hasPart": [
         {
           "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-terms",
+          "name": "Terms of the practice",
+          "text": "The conditions, the person, and the work. How we organize the conditions around the work—time, space, resources, habits, and boundaries—so the practice can sustain what the artist wants to make. How we develop and support the person carrying the work: their judgment, capacity, autonomy, and relationships. How we scout talent and develop creative material through critique, direction, and critical framing, while the artist retains ownership and creative control."
+        },
+        {
+          "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/method/#method-foundation",
           "name": "The structural principle",
           "text": "Nature is brutalist. Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle. Clients come to Wild-Lake to build a practice or when the way they work has become unsustainable. The engagement is a controlled demolition, undertaken with the artist. We take the practice down to its studs, dismantling habits and brittle systems that can no longer carry the work. Then we rebuild around what the artist needs to operate with clarity. We dismantle the architecture of extraction. The artist survives the loop."
@@ -373,7 +379,45 @@
           "name": "Begin an engagement",
           "text": "Begin with your work and what you need help with. Contact the studio"
         }
-      ]
+      ],
+      "mainEntity": {
+        "@type": "DefinedTermSet",
+        "@id": "https://wildlakestudio.com/method/#method-terms",
+        "name": "Terms of the practice",
+        "url": "https://wildlakestudio.com/method/#method-terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://wildlakestudio.com/method/#term-structural-design",
+            "name": "Structural Design",
+            "description": "How we organize the conditions around the work—time, space, resources, habits, and boundaries—so the practice can sustain what the artist wants to make.",
+            "url": "https://wildlakestudio.com/method/#term-structural-design",
+            "inDefinedTermSet": {
+              "@id": "https://wildlakestudio.com/method/#method-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://wildlakestudio.com/method/#term-talent-architecture",
+            "name": "Talent Architecture",
+            "description": "How we develop and support the person carrying the work: their judgment, capacity, autonomy, and relationships.",
+            "url": "https://wildlakestudio.com/method/#term-talent-architecture",
+            "inDefinedTermSet": {
+              "@id": "https://wildlakestudio.com/method/#method-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://wildlakestudio.com/method/#term-sovereign-ar",
+            "name": "Sovereign A&R",
+            "description": "How we scout talent and develop creative material through critique, direction, and critical framing, while the artist retains ownership and creative control.",
+            "url": "https://wildlakestudio.com/method/#term-sovereign-ar",
+            "inDefinedTermSet": {
+              "@id": "https://wildlakestudio.com/method/#method-terms"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "WebPage",

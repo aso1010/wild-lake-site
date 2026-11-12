@@ -103,3 +103,12 @@ body.reading-layout.home:has(#overview)>.hero-location{padding-inline:var(--gutt
 @media(min-width:1100px){
  body.reading-layout.home:has(#overview) #overview .statement-text{max-width:65ch}
 }
+
+/* Plain-language definitions follow the Method's reading hierarchy. */
+.practice-terms{margin:32px 0 0}
+.practice-terms>div{margin-bottom:32px;scroll-margin-top:var(--outline-offset,100px)}
+.practice-terms dt{font-family:var(--font-sans);font-size:clamp(22px,2vw,28px);line-height:1.25;font-weight:600;color:#fff;margin-bottom:12px}
+.practice-terms dd{margin:0}
+.practice-terms dd p{margin-bottom:0}
+.overview-terms-link{margin-top:24px;font-size:1rem}
+.overview-terms-link a{display:inline-flex;align-items:center;gap:8px;min-height:44px}
