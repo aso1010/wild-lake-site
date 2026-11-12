@@ -47,3 +47,7 @@ copy and links to each document. The schema page previews the canonical files.
 deployment. Copy changes affecting these descriptions require their canonical
 JSON and llms.txt counterparts to be updated in the same change. The check uses
 only the Python standard library and adds no browser dependency.
+
+## Water monolith preview
+
+`/?water=1` enables Paper Shaders Water (0.0.82, Apache-2.0) through a local native WebGL2 renderer. The GLSL and license are vendored in `site/assets/`; no React or package runtime is required. Settings match the supplied water example, using the SVG wordmark as its image texture. The effect pauses outside the viewport or hidden tabs, provides a pause control, and falls back to the SVG for reduced motion or unavailable WebGL. The normal homepage remains the default presentation.
