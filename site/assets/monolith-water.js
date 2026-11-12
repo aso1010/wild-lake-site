@@ -13,6 +13,7 @@
   canvas.setAttribute('aria-hidden', 'true');
   const gl = canvas.getContext('webgl2', { alpha: true, antialias: false, powerPreference: 'low-power' });
   if (!gl) return;
+  const waterSpeed = 1 / 8; // Fibonacci divisor: eight times slower than the original.
   let frame = 0, elapsed = 0, last = 0, paused = false, visible = true, ready = false, revision = 0;
   let program, texture, observer, resizeObserver;
   const button = document.createElement('button');
@@ -77,7 +78,7 @@
       if (!ready || paused || !visible || document.hidden || motion.matches) { last = 0; return; }
       if (!last) last = now;
       if (now - last >= 1000/30) {
-        elapsed += Math.min(now - last, 100);
+        elapsed += Math.min(now - last, 100) * waterSpeed;
         last = now;
         draw();
       }
