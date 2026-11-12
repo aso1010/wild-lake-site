@@ -1,5 +1,4 @@
 {
-  "@context": "https://schema.org",
   "@type": "Person",
   "@id": "https://argelysoriach.com/#person",
   "name": "Argelys Samuel Oriach",
@@ -9,15 +8,14 @@
   "familyName": "Oriach",
   "url": "https://argelysoriach.com/",
   "jobTitle": [
-    "Multidisciplinary artist",
+    "Systems architect",
+    "Performance artist",
     "Artist developer",
     "Creative director",
-    "Systems architect",
     "Actor",
     "Vocalist",
     "Writer",
     "Visual artist",
-    "Performance artist",
     "Movement artist",
     "Talent architect"
   ],
@@ -56,7 +54,9 @@
     "Acting",
     "Vocal performance",
     "Writing",
-    "Alexander Technique"
+    "Alexander Technique",
+    "Performance as method",
+    "Durational performance"
   ],
   "sameAs": [
     "https://www.linkedin.com/in/argelys-samuel-oriach/"
@@ -64,7 +64,7 @@
   "affiliation": {
     "@id": "https://seveneightythree.com/#organization"
   },
-  "description": "Argelys Samuel Oriach is a Dominican-born multidisciplinary artist, artist developer, creative director, and systems architect based in Crown Heights, Brooklyn.",
+  "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, artist developer, and creative director based in Crown Heights, Brooklyn. He constructs systems and inhabits them. Performance is the governing method of his practice; writing, voice, movement, design, and corporate roles are its forms.",
   "subjectOf": [
     {
       "@id": "https://wildlakestudio.com/about-founder/#page"
@@ -104,5 +104,6 @@
   "birthPlace": {
     "@type": "Country",
     "name": "Dominican Republic"
-  }
+  },
+  "@context": "https://schema.org"
 }

@@ -138,7 +138,7 @@
       "@type": "Person",
       "@id": "https://wildlakestudio.com/clients/#argelys-oriach",
       "name": "Argelys Samuel Oriach",
-      "description": "Dominican-born visual, performance, and movement artist, creative director, actor, writer, vocalist, songwriter, and the author of This Is Not a Love Story . Currently writing a pilot, a play, and his debut autofiction novel, Graduation .",
+      "description": "Dominican-born systems architect and performance artist working through writing, voice, movement, and design. Author of This Is Not a Love Story; currently writing a pilot, a play, and his debut autofiction novel, Graduation. He constructs systems and inhabits them. Performance is the governing method of his practice; writing, voice, movement, design, and corporate roles are its forms.",
       "url": "https://wildlakestudio.com/clients/#argelys-oriach",
       "sameAs": [
         "https://argelysoriach.com/",
@@ -146,17 +146,20 @@
       ],
       "image": "https://wildlakestudio.com/assets/images/argelys-client.jpg?v=d1fe734a38",
       "jobTitle": [
-        "Visual artist",
+        "Systems architect",
         "Performance artist",
+        "Visual artist",
         "Movement artist",
-        "Creative director",
-        "Engineer"
+        "Creative director"
       ],
       "knowsAbout": [
         "Visual art",
         "Performance art",
         "Movement",
-        "Creative direction"
+        "Creative direction",
+        "Performance as method",
+        "Durational performance",
+        "Systems design"
       ],
       "hasCredential": [
         {
