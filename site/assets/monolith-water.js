@@ -56,7 +56,7 @@
     const uniforms = {};
     ['u_time','u_resolution','u_pixelRatio','u_imageAspectRatio'].forEach(name => { uniforms[name] = location(name); });
     const settings = { u_size:1, u_highlights:.07, u_layering:.5, u_edges:.8, u_waves:.3, u_caustic:.1,
-      u_fit:1, u_scale:.8, u_originX:.5, u_originY:.5, u_rotation:0, u_offsetX:0, u_offsetY:0,
+      u_fit:1, u_scale:1, u_originX:.5, u_originY:.5, u_rotation:0, u_offsetX:0, u_offsetY:0,
       u_worldWidth:0, u_worldHeight:0 };
     Object.keys(settings).forEach(name => gl.uniform1f(location(name), settings[name]));
     gl.uniform4f(location('u_colorBack'), 0, 0, 0, 0);
