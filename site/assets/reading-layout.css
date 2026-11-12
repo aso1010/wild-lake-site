@@ -117,5 +117,5 @@ body.reading-layout.home:has(#overview)>.hero-location{padding-inline:var(--gutt
 body.reading-layout.home:has(#overview)>.cap{height:calc(100svh - 54px);height:calc(100dvh - 54px);padding-bottom:8px}
 body.reading-layout.home:has(#overview)>.hero-location{box-sizing:border-box;display:flex;align-items:center;min-height:54px;margin:0;padding-top:8px;padding-bottom:16px}
 
-/* Tight founder crop leaves only the top of the tie in frame. */
-body.reading-layout .founder-portrait img{transform:scale(1.3);transform-origin:50% 10%}
+/* Tight founder crop retains the tie knot. */
+body.reading-layout .founder-portrait img{transform:scale(1.2);transform-origin:50% 25%}
