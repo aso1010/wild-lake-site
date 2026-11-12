@@ -130,4 +130,4 @@ Official LinkedIn profiles:
 - Argelys Samuel Oriach: https://www.linkedin.com/in/argelys-samuel-oriach/
 - Wild Lake Studio: https://www.linkedin.com/company/wild-lake/
 
-Operational Infrastructure protocols: Programmatic Request Gating, Single-File Edge Deployments, Async Communication Boundaries, Direct Payment Routing, Custom Domain Syndicate Feeds. They cover structured inquiry forms, portable static sites, advance agendas and calendar boundaries, artist-controlled payment accounts, and direct newsletters and RSS. Tool choices follow the engagement scope; payment processing fees and provider data handling still apply.
+Operational Infrastructure protocols: Programmatic request gating, Single-file edge deployments, Async communication boundaries, Direct payment routing, Custom domain syndicate feeds. They cover structured inquiry forms, portable static sites, advance agendas and calendar boundaries, artist-controlled payment accounts, and direct newsletters and RSS. Tool choices follow the engagement scope; payment processing fees and provider data handling still apply.
