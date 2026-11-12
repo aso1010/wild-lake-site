@@ -11,20 +11,20 @@
   activate.type = 'button';
   activate.className = 'monolith-water-activate';
   activate.setAttribute('aria-label', 'Activate water effect on the Wild Lake monolith');
+  activate.setAttribute('aria-pressed', 'false');
   host.setAttribute('role', 'group');
   host.classList.add('is-water-interactive');
   host.append(activate);
   await new Promise(resolve => activate.addEventListener('click', resolve, { once:true }));
-  activate.remove();
-  host.classList.remove('is-water-interactive');
-  if (motion.matches) return;
+  activate.disabled = true;
+  if (motion.matches) { activate.remove(); host.classList.remove('is-water-interactive'); return; }
   const canvas = document.createElement('canvas');
   canvas.className = 'monolith-water-canvas';
   canvas.setAttribute('aria-hidden', 'true');
   const gl = canvas.getContext('webgl2', { alpha: true, antialias: false, powerPreference: 'low-power' });
-  if (!gl) return;
+  if (!gl) { activate.remove(); host.classList.remove('is-water-interactive'); return; }
   const waterSpeed = 1 / 8; // Fibonacci divisor: eight times slower than the original.
-  let frame = 0, elapsed = 0, last = 0, paused = false, visible = true, ready = false, revision = 0;
+  let frame = 0, elapsed = 0, last = 0, paused = false, visible = true, ready = false, revision = 0, waterActive = true;
   let program, texture, observer, resizeObserver;
   const button = document.createElement('button');
   button.type = 'button';
@@ -34,7 +34,8 @@
   function fallback() {
     ready = false;
     cancelAnimationFrame(frame);
-    host.classList.remove('has-water');
+    host.classList.remove('has-water', 'is-water-interactive');
+    activate.remove();
     if (observer) observer.disconnect();
     if (resizeObserver) resizeObserver.disconnect();
     canvas.remove();
@@ -85,7 +86,7 @@
     }
     function tick(now) {
       frame = 0;
-      if (!ready || paused || !visible || document.hidden || motion.matches) { last = 0; return; }
+      if (!ready || !waterActive || paused || !visible || document.hidden || motion.matches) { last = 0; return; }
       if (!last) last = now;
       if (now - last >= 1000/30) {
         elapsed += Math.min(now - last, 100) * waterSpeed;
@@ -95,8 +96,22 @@
       frame = requestAnimationFrame(tick);
     }
     function resume() {
-      if (!frame && ready && !paused && visible && !document.hidden && !motion.matches) frame = requestAnimationFrame(tick);
+      if (!frame && ready && waterActive && !paused && visible && !document.hidden && !motion.matches) frame = requestAnimationFrame(tick);
     }
+    function reflectMode() {
+      const showing = ready && waterActive && !motion.matches;
+      host.classList.toggle('has-water', showing);
+      activate.setAttribute('aria-pressed', String(showing));
+      activate.setAttribute('aria-label', showing ? 'Return to usual monolith motion' : 'Activate water effect on the Wild Lake monolith');
+      activate.disabled = motion.matches;
+    }
+    activate.addEventListener('click', () => {
+      waterActive = !waterActive;
+      last = 0;
+      reflectMode();
+      if (!waterActive) { cancelAnimationFrame(frame); frame = 0; }
+      else { draw(); resume(); }
+    });
     async function resize() {
       const current = ++revision;
       const box = lines.getBoundingClientRect();
@@ -127,7 +142,7 @@
         gl.uniform1f(uniforms.u_imageAspectRatio, width / height);
         gl.bindTexture(gl.TEXTURE_2D, texture);
         gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, image);
-        ready = true; draw(); host.classList.add('has-water'); resume();
+        ready = true; draw(); reflectMode(); resume();
       } finally { URL.revokeObjectURL(url); }
     }
     button.addEventListener('click', () => {
@@ -136,7 +151,7 @@
       if (paused) { cancelAnimationFrame(frame); frame = 0; last = 0; } else resume();
     });
     document.addEventListener('visibilitychange', () => { last = 0; resume(); });
-    motion.addEventListener('change', () => { host.classList.toggle('has-water', !motion.matches && ready); last = 0; resume(); });
+    motion.addEventListener('change', () => { if (motion.matches) waterActive = false; reflectMode(); last = 0; resume(); });
     canvas.addEventListener('webglcontextlost', event => { event.preventDefault(); fallback(); });
     observer = new IntersectionObserver(entries => { visible = entries[0].isIntersecting; last = 0; resume(); });
     observer.observe(host);
