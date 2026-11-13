@@ -125,7 +125,7 @@ body.reading-layout .founder-portrait-crop{display:block}
 .core-offering strong{display:block;font-weight:600;margin-bottom:12px}
 
 /* Navigation shares the content dividers' centered inner rail. */
-:is(body.reading-layout,body.reading-layout.home:has(#overview))>:is(.site-nav,.page-outline,.page-outline.is-enhanced,.page-outline.is-in-reading-area){box-sizing:border-box;width:calc(100% - 2 * var(--gutter,21px));max-width:var(--reading-width);margin-inline:auto;padding-inline:0;justify-content:center}
+:is(body.reading-layout,body.reading-layout.home:has(#overview))>:is(.site-nav,.page-outline,.page-outline.is-enhanced,.page-outline.is-in-reading-area){box-sizing:border-box;width:calc(100% - 2 * var(--gutter,21px));max-width:var(--reading-width);margin-inline:auto;padding-inline:0;justify-content:flex-start}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav{display:flex;flex-wrap:wrap;column-gap:clamp(21px,2.4vw,34px);row-gap:8px}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav .begin-link{margin-left:0}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.page-outline ol{flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto}
