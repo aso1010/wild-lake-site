@@ -10,9 +10,9 @@ Wild Lake is an independent studio for artists, labels, galleries and agencies. 
 
 [Talent Architecture — The Method](https://wildlakestudio.com/method/#method-talent-architecture)
 
-Your practice is the asset. We find where it’s breaking.
+Your practice is the asset. We find where it is breaking.
 
-Talent Architecture is a capacity and boundary audit for creators whose workload has outgrown them. We dismantle the habits that drain you, build an operating framework that protects your autonomy, and then step back. You keep your IP, your income and your decisions.
+Talent Architecture is a capacity and boundary audit for creators whose workload has outgrown them. We dismantle the habits that drain you, build an operating framework that protects your autonomy, and step back. You keep your IP, your income, and your decisions.
 
 The core offering is undivided attention. Close study of the artist, the work, and the conditions shaping both. We observe, listen, and stay with the material long enough to offer a precise response.
 
@@ -42,21 +42,93 @@ Investigation, experimentation, emotional clarity, and invitation are his person
 
 ## The Method: the manual
 
-Terms of the practice: https://wildlakestudio.com/method/#method-terms
+https://wildlakestudio.com/method/
 
-Structural Design: How we organize the conditions around the work—time, space, resources, habits, and boundaries—so the practice can sustain what the artist wants to make.
+The founder's life and artistic practice gave this method its form. This is the manual for how Wild Lake works with an artist and the material.
 
-Talent Architecture: How we develop and support the person carrying the work: their judgment, capacity, autonomy, and relationships.
+### Talent Architecture
 
-Sovereign A&R: How we scout talent and develop creative material through critique, direction, and critical framing, while the artist retains ownership and creative control.
+Your practice is the asset. We find where it is breaking.
 
-The Method describes critique and revision, structural honesty (conversational brutalism), the observer mandate, and the alternating rhythm of intervention and absence. Clients arrive to build a practice or rebuild operations that have become unsustainable. Artist wellbeing includes support for artists healing from narcissistic abuse, examining narcissistic patterns in themselves, or navigating both. The focus is self-trust, relational patterns, boundaries, and creative autonomy, with the artist deciding what to share. Wild-Lake supports artistic practice and leaves room for care beyond the studio.
+Talent Architecture is a capacity and boundary audit for creators whose workload has outgrown them. We dismantle the habits that drain you, build an operating framework that protects your autonomy, and step back. You keep your IP, your income, and your decisions.
 
-As artist developers, Wild-Lake works with curators as a defensive buffer between artists and institutional demands, establishing boundaries around access, output, and carrying capacity.
+### Terms of the practice
 
-Development Protocols are optional, guided practices within an agreed retained engagement: active listening, structural honesty, reading assignments, automatic writing, brainstorming, manifestation (including vision boarding), tarot readings, attentive listening to music, meditation, gentle breathwork, consensual nervous system co-regulation with ongoing consent and agreed boundaries, placement of hands, vision quests, dancing, shaking the body, crying and vocal expression. Artists may pause, decline, or change direction. These are artist development practices; no clinical qualification or guaranteed treatment outcome is stated.
+The conditions, the person, and the work.
 
-Vision quests may involve a local park, the Blue Ridge Mountains, or Santiago and its surrounding campo, where the founder’s family is rooted. His lived experience grounds conversations about labor, access, and the conditions supporting creative practice.
+Structural Design How we organize the conditions around the work (time, space, resources, habits, and boundaries) so the practice can sustain what the artist wants to make.
+
+Talent Architecture How we develop and support the person carrying the work: their judgment, capacity, autonomy, and relationships.
+
+Sovereign A&R How we scout talent and develop creative material through critique, direction, and critical framing. The artist retains ownership and creative control.
+
+### The structural principle
+
+Nature is brutalist.
+
+Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle.
+
+Clients come to Wild Lake to build a practice, or when the way they work has become unsustainable. The engagement is a controlled demolition, undertaken with the artist. We take the practice down to its studs, remove the habits and brittle systems that can no longer carry the work, and rebuild around what the artist needs to operate with clarity.
+
+We dismantle the architecture of extraction. The artist leaves the loop intact.
+
+### Critique & revision
+
+Development requires close study of the material and direct revision with the artist. Critique is the primary mechanism of care. We examine the work closely enough to offer an interpretation the artist can use as scaffolding or tear down.
+
+Sustaining the work also means managing the creator's own internal engine. The practice confronts the ego patterns and self-referential loops that drain creative stamina. We help the artist stop depending on outside validation and build grounded autonomy. That protects the person and, through the person, the work.
+
+Stewardship spans mediums: visual art, sculpture, installation, short stories, plays, scripts, essays, songs, films, and performance. It also covers the macro-systems that keep those practices standing over the long term.
+
+Audience development is part of that infrastructure. We build publishing channels and lasting relationships with the people who encounter the work, and the creator sets the terms of engagement.
+
+### Structural honesty
+
+We expose the load-bearing reality of the artist's situation: what the practice can carry, and where its limits are exceeded. We call this conversational brutalism, the architectural principle of exposed structure applied to information. The conversation makes the conditions visible so the artist can decide what to change and where support is needed.
+
+### Observation & absence
+
+We come close only to observe and edit, and to bring clarity to the raw material. Then we depart. The response, the execution, and the timeline remain the artist's.
+
+We build for asynchronous stamina. Engagements alternate between high-density structural interventions and extended absence, which gives the artist the isolation to execute without surveillance.
+
+### Artist wellbeing
+
+During a retained engagement, Argelys may guide practices that bring attention to the artist's habits, physical experience, and creative direction.
+
+We support artists healing from narcissistic abuse, examining narcissistic patterns within themselves, or both. The work centers on rebuilding self-trust, recognizing harmful relational patterns, and setting boundaries that protect creative autonomy.
+
+Building a sustainable practice can include healing from trauma and seeing how past experience shapes the conditions of making. We make room for that history when setting the pace, boundaries, and expectations of an engagement. The artist decides what to share. Our role is to support the practice, with room for care beyond the studio.
+
+Explore the practices: https://wildlakestudio.com/development-protocols/
+
+Development Protocols
+Active listening, structural honesty, automatic writing, grounding, movement, and vision quests, alongside operational systems for inquiries, communication, payments, and direct publishing. Each practice is optional. The artist can pause, decline, or change direction.
+
+Explore the protocols: https://wildlakestudio.com/development-protocols/
+
+### Institutional stewardship
+
+We work with curators as a buffer between the artist and institutional demands. Together we examine what an engagement asks of the artist, set boundaries around access and output, and address pressures that could exhaust the person sustaining the work. As artist developers, our role is to make those boundaries hold.
+
+### Ownership & engagement
+
+The artist retains ownership and creative control. We scout talent and work with artists directly, or partner with record labels, galleries, and booking agencies. Either way, the artist enters the engagement willingly, on their own initiative or through a representative.
+
+The Stewardship Subscription reserves availability between client-triggered interventions. Response times, scope, and capacity are agreed in advance. Fixed project commissions and focused advisory engagements are also available.
+
+Engagement formats and fees: https://wildlakestudio.com/pricing/
+Terms of Practice: https://wildlakestudio.com/terms/
+
+### Spirit and engineering
+
+Universe API is Argelys's systems design framework. It identifies what the work needs. Changes are tested with the artist and revised through use.
+
+### Begin an engagement
+
+Start with your work and what you need help with.
+
+Contact the studio: https://wildlakestudio.com/contact/
 
 ## Past and current clients
 
