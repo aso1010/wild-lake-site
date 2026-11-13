@@ -138,8 +138,3 @@ body.reading-layout .founder-portrait-crop{display:block}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav{padding-block:clamp(24px,3vw,40px)}
 body.reading-layout.home:has(#overview)>.site-nav{margin-top:clamp(72px,10vh,144px)}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.page-outline{padding-block:clamp(21px,2.5vw,34px)}
-
-/* Position the Talent Architecture offer before the practice and method. */
-body.reading-layout.home>.talent-positioning{box-sizing:border-box;width:100%;max-width:var(--reading-rail);margin-inline:auto;padding:clamp(55px,8vw,110px) var(--gutter,21px);min-width:0}
-.home .talent-positioning h2{font-size:clamp(2rem,3.4vw,3.4375rem);line-height:1.16;font-weight:500;font-variation-settings:'wdth' 100,'wght' 500;letter-spacing:-.025em;max-width:30ch;margin:0 0 34px}
-.home .talent-positioning p{font-size:clamp(1.25rem,1rem + .7vw,1.75rem);line-height:1.65;color:var(--subtle-color);max-width:65ch;margin:0}
