@@ -4,7 +4,7 @@
     {
       "@type": "CollectionPage",
       "@id": "https://wildlakestudio.com/clients/#webpage",
-      "name": "Wild Lake Studio Client Architecture",
+      "name": "Clients | Wild Lake Studio",
       "url": "https://wildlakestudio.com/clients/",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
@@ -12,7 +12,7 @@
       "about": {
         "@id": "https://wildlakestudio.com/#organization"
       },
-      "description": "Past and current clients of Wild-Lake, with biographies describing each person’s practice, education, and live/work locations.",
+      "description": "Wild Lake Studio past and current clients: Aissa Rose Gueye, Argelys Samuel Oriach, Drew Rutland, Emily Wilson, Jessica Wilson, Jimmy Andrew O’Keeffe, Jordy Oriach, Kyle Roach, Patrick Schlotterback, Sophia Jennings, Timo Sassen, and Zachary Reed Kantor. Individuals first. Explore their work and distinct trajectories.",
       "mainEntity": {
         "@type": "ItemList",
         "itemListElement": [

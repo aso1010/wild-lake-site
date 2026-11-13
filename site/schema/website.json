@@ -3,8 +3,8 @@
   "@type": "WebSite",
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
-  "name": "Wild Lake Studio | Sovereign A&R & Artist Development",
-  "description": "An existential mechanics studio providing structural design, talent architecture, artist development, sovereign A&R, and creative infrastructure across mediums.",
+  "name": "Wild Lake Studio | Talent Architecture and Artist Development",
+  "description": "Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film.",
   "inLanguage": "en-US",
   "publisher": {
     "@id": "https://wildlakestudio.com/#organization"
@@ -21,8 +21,8 @@
       "@type": "WebPage",
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
-      "name": "Wild Lake Studio | Sovereign A&R & Artist Development",
-      "description": "Wild-Lake is an independent studio for artists, labels, galleries and agencies. Critical direction, creative infrastructure, and systems that carry a career.",
+      "name": "Wild Lake Studio | Talent Architecture and Artist Development",
+      "description": "Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
@@ -97,14 +97,14 @@
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
       },
-      "name": "Client Architecture | Wild Lake Studio — Existential Mechanics and A&R Venture",
-      "description": "Past and current clients of Wild-Lake, with biographies describing each person’s practice, education, and live/work locations."
+      "name": "Clients | Wild Lake Studio",
+      "description": "Wild Lake Studio past and current clients: Aissa Rose Gueye, Argelys Samuel Oriach, Drew Rutland, Emily Wilson, Jessica Wilson, Jimmy Andrew O’Keeffe, Jordy Oriach, Kyle Roach, Patrick Schlotterback, Sophia Jennings, Timo Sassen, and Zachary Reed Kantor. Individuals first. Explore their work and distinct trajectories."
     },
     {
       "@type": "AboutPage",
       "@id": "https://wildlakestudio.com/about-founder/#page",
       "url": "https://wildlakestudio.com/about-founder/",
-      "name": "About our founder | Wild Lake Studio — Existential Mechanics and A&R Venture",
+      "name": "About our founder | Wild Lake Studio",
       "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.",
       "mainEntity": {
         "@id": "https://argelysoriach.com/#person"
@@ -199,7 +199,7 @@
       "@type": "WebPage",
       "@id": "https://wildlakestudio.com/schema/#page",
       "url": "https://wildlakestudio.com/schema/",
-      "name": "Schema | Wild Lake Studio — Existential Mechanics and A&R Venture",
+      "name": "Schema | Wild Lake Studio",
       "description": "The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt.",
       "inLanguage": "en-US",
       "isPartOf": {
@@ -233,7 +233,7 @@
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
       },
-      "name": "The Infrastructure Has an Inner Life | Quiet Creek — Wild Lake Studio",
+      "name": "The Infrastructure Has an Inner Life | Wild Lake Studio",
       "description": "On Jessica Wilson’s work: a Wild Lake Studio reading of infrastructure, anxiety, capitalism, whiteness, and the living world."
     },
     {
@@ -243,7 +243,7 @@
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
       },
-      "name": "Architectural Mirror by Wild Lake Studio",
+      "name": "Architectural Mirror | Wild Lake Studio",
       "description": "A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation."
     },
     {
@@ -264,7 +264,7 @@
         "@id": "https://wildlakestudio.com/#website"
       },
       "name": "Tools | Wild Lake Studio",
-      "description": "Architectural Mirror is a simple browser tool. Quiet Creek Tarot is an installable app with a guided draw and saved readings."
+      "description": "Reflective tools from Wild-Lake: Name & Number numerology, Architectural Mirror, and Quiet Creek Tarot."
     },
     {
       "@type": "WebPage",
@@ -301,7 +301,7 @@
       "@id": "https://wildlakestudio.com/development-protocols/#webpage",
       "url": "https://wildlakestudio.com/development-protocols/",
       "name": "Development Protocols | Wild Lake Studio",
-      "description": "Optional artist wellbeing practices within a retained engagement, including active listening, structural honesty, automatic writing, reflection, grounding, movement, and vision quests. The artist controls participation.",
+      "description": "Artist wellbeing within a retained engagement: optional practices in reflection, study, grounding, movement, and expression guided by Argelys Samuel Oriach.",
       "about": [
         {
           "@id": "https://wildlakestudio.com/#organization"

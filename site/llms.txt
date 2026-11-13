@@ -1,6 +1,6 @@
-# Wild Lake Studio | Sovereign A&R & Artist Development
+# Wild Lake Studio | Talent Architecture and Artist Development
 
-> Wild Lake Studio, known as Wild-Lake, is an existential mechanics studio providing structural design and talent architecture for independent artists. Based across New York, Tampa, Florida, and Santiago, Dominican Republic; working worldwide.
+> Wild Lake Studio, known as Wild-Lake, is an independent talent architecture and artist development studio for creators across music, art, writing and film. Based across New York, Tampa, and Santiago; working worldwide.
 
 Wild-Lake is point zero for starmaking.
 
@@ -183,20 +183,20 @@ Emily Wilson is also a photographer; she studied photography alongside a double 
 
 ## Public pages
 
-- [Wild Lake Studio | Sovereign A&R & Artist Development](https://wildlakestudio.com/): Wild-Lake is an independent studio for artists, labels, galleries and agencies. Critical direction, creative infrastructure, and systems that carry a career.
-- [Client Architecture | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/clients/): Past and current clients of Wild-Lake, with biographies describing each person’s practice, education, and live/work locations.
-- [About our founder | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/about-founder/): Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.
+- [Wild Lake Studio | Talent Architecture and Artist Development](https://wildlakestudio.com/): Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film.
+- [Clients | Wild Lake Studio](https://wildlakestudio.com/clients/): Wild Lake Studio past and current clients: Aissa Rose Gueye, Argelys Samuel Oriach, Drew Rutland, Emily Wilson, Jessica Wilson, Jimmy Andrew O’Keeffe, Jordy Oriach, Kyle Roach, Patrick Schlotterback, Sophia Jennings, Timo Sassen, and Zachary Reed Kantor. Individuals first. Explore their work and distinct trajectories.
+- [About our founder | Wild Lake Studio](https://wildlakestudio.com/about-founder/): Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.
 - [Contact | Wild Lake Studio](https://wildlakestudio.com/contact/): Tell Wild-Lake about your work and the support you need. Optional prompts for artists, labels, galleries, agencies and institutions.
-- [Schema | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/schema/): The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt.
+- [Schema | Wild Lake Studio](https://wildlakestudio.com/schema/): The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt.
 - [Quiet Creek Magazine | Wild Lake Studio](https://wildlakestudio.com/magazine/): Notes from Wild Lake Studio on artists, creative work, and the structures that support an independent practice.
-- [The Infrastructure Has an Inner Life | Quiet Creek — Wild Lake Studio](https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/): On Jessica Wilson’s work: a Wild Lake Studio reading of infrastructure, anxiety, capitalism, whiteness, and the living world.
-- [Architectural Mirror by Wild Lake Studio](https://wildlakestudio.com/mirror/): A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation.
+- [The Infrastructure Has an Inner Life | Wild Lake Studio](https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/): On Jessica Wilson’s work: a Wild Lake Studio reading of infrastructure, anxiety, capitalism, whiteness, and the living world.
+- [Architectural Mirror | Wild Lake Studio](https://wildlakestudio.com/mirror/): A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation.
 - [Our responsibility | Wild Lake Studio](https://wildlakestudio.com/responsibility/): A portion of every retainer fee goes directly toward protecting wild lakes, freshwater systems, and public lands.
-- [Tools | Wild Lake Studio](https://wildlakestudio.com/tools/): Architectural Mirror is a simple browser tool. Quiet Creek Tarot is an installable app with a guided draw and saved readings.
+- [Tools | Wild Lake Studio](https://wildlakestudio.com/tools/): Reflective tools from Wild-Lake: Name & Number numerology, Architectural Mirror, and Quiet Creek Tarot.
 - [The Sovereign Engine | Wild Lake Studio](https://wildlakestudio.com/manifesto/): The Sovereign Engine: Wild Lake Studio’s manifesto on controlled demolition, sovereign A&R, talent architecture, and retainer mechanics.
 - [Privacy Protocol | Wild Lake Studio](https://wildlakestudio.com/privacy/): How the Wild Lake Studio contact form prepares an email and how to ask about information you share.
 - [Terms of Practice | Wild Lake Studio](https://wildlakestudio.com/terms/): Engagement terms, retainer mechanics, intellectual property, confidentiality, and governance for Wild Lake Studio LLC.
-- [Development Protocols | Wild Lake Studio](https://wildlakestudio.com/development-protocols/): Optional artist wellbeing practices within a retained engagement, including active listening, structural honesty, automatic writing, reflection, grounding, movement, and vision quests. The artist controls participation.
+- [Development Protocols | Wild Lake Studio](https://wildlakestudio.com/development-protocols/): Artist wellbeing within a retained engagement: optional practices in reflection, study, grounding, movement, and expression guided by Argelys Samuel Oriach.
 - [The Method | Wild Lake Studio](https://wildlakestudio.com/method/): Wild-Lake’s operating manual: critique, structural honesty, artist wellbeing, sovereign ownership, and an intermittent engagement rhythm.
 - [Ways to Work Together | Wild Lake Studio](https://wildlakestudio.com/practice/): Sovereign A&R, talent architecture, stewardship subscriptions, project commissions, and advisory engagements at Wild Lake Studio.
 
@@ -222,7 +222,7 @@ Wild Lake Studio is the formal name used for titles, legal notices, and structur
 - Universe API: https://argelysoriach.com/universe-api/
 - Email: info@wildlakestudio.com
 - Legal inquiries: legal@wildlakestudio.com
-- Instagram: https://www.instagram.com/wildlakewildlake/
+- Instagram: https://www.instagram.com/wildlake.studio
 
 ## Machine-readable documents
 
