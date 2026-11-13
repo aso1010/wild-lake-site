@@ -24,13 +24,8 @@
   const gl = canvas.getContext('webgl2', { alpha: true, antialias: false, powerPreference: 'low-power' });
   if (!gl) { activate.remove(); host.classList.remove('is-water-interactive'); return; }
   const waterSpeed = 1.25; // Gentler motion, preserving the current Water preset.
-  let frame = 0, elapsed = 0, last = 0, paused = false, visible = true, ready = false, revision = 0, waterActive = true;
+  let frame = 0, elapsed = 0, last = 0, visible = true, ready = false, revision = 0, waterActive = true;
   let program, texture, observer, resizeObserver;
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'monolith-water-toggle';
-  button.textContent = 'Pause water';
-  button.setAttribute('aria-pressed', 'false');
   function fallback() {
     ready = false;
     cancelAnimationFrame(frame);
@@ -39,7 +34,6 @@
     if (observer) observer.disconnect();
     if (resizeObserver) resizeObserver.disconnect();
     canvas.remove();
-    button.remove();
     if (texture) gl.deleteTexture(texture);
     if (program) gl.deleteProgram(program);
   }
@@ -79,14 +73,14 @@
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
     gl.uniform1i(location('u_image'), 0);
-    host.append(canvas, button);
+    host.append(canvas);
     function draw() {
       gl.uniform1f(uniforms.u_time, elapsed / 1000);
       gl.drawArrays(gl.TRIANGLES, 0, 6);
     }
     function tick(now) {
       frame = 0;
-      if (!ready || !waterActive || paused || !visible || document.hidden || motion.matches) { last = 0; return; }
+      if (!ready || !waterActive || !visible || document.hidden || motion.matches) { last = 0; return; }
       if (!last) last = now;
       if (now - last >= 1000/30) {
         elapsed += Math.min(now - last, 100) * waterSpeed;
@@ -96,7 +90,7 @@
       frame = requestAnimationFrame(tick);
     }
     function resume() {
-      if (!frame && ready && waterActive && !paused && visible && !document.hidden && !motion.matches) frame = requestAnimationFrame(tick);
+      if (!frame && ready && waterActive && visible && !document.hidden && !motion.matches) frame = requestAnimationFrame(tick);
     }
     function reflectMode() {
       const showing = ready && waterActive && !motion.matches;
@@ -145,11 +139,6 @@
         ready = true; draw(); reflectMode(); resume();
       } finally { URL.revokeObjectURL(url); }
     }
-    button.addEventListener('click', () => {
-      paused = !paused; button.textContent = paused ? 'Play water' : 'Pause water';
-      button.setAttribute('aria-pressed', String(paused));
-      if (paused) { cancelAnimationFrame(frame); frame = 0; last = 0; } else resume();
-    });
     document.addEventListener('visibilitychange', () => { last = 0; resume(); });
     motion.addEventListener('change', () => { if (motion.matches) waterActive = false; reflectMode(); last = 0; resume(); });
     canvas.addEventListener('webglcontextlost', event => { event.preventDefault(); fallback(); });
