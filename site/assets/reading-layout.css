@@ -138,3 +138,17 @@ body.reading-layout .founder-portrait-crop{display:block}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav{padding-block:clamp(24px,3vw,40px)}
 body.reading-layout.home:has(#overview)>.site-nav{margin-top:clamp(72px,10vh,144px)}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.page-outline{padding-block:clamp(21px,2.5vw,34px)}
+
+/* The Method: page title, positioning statement, section headings, then detail. */
+body.reading-layout .method-main{padding-block:clamp(64px,8vw,128px)}
+.method-main #method-overview h1{font-size:clamp(3.75rem,8vw,7.5rem);line-height:1.02;letter-spacing:-.045em;margin:0 0 40px}
+.method-main #method-overview>p:not(.eyebrow){font-size:clamp(1.25rem,1.6vw,1.5rem);max-width:56ch}
+.method-main article>section{margin-top:clamp(72px,8vw,128px);padding-top:clamp(34px,4vw,64px)}
+.method-main article>section>h2{font-size:clamp(2rem,3.4vw,3rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 34px;max-width:28ch}
+.method-main #method-talent-architecture{padding-block:clamp(48px,6vw,88px) 0}
+.method-main #method-talent-architecture h2{font-size:clamp(2.75rem,5vw,4.5rem);line-height:1.08;letter-spacing:-.04em;max-width:24ch;margin:0 0 40px}
+.method-main #method-talent-architecture>p:not(.eyebrow){font-size:clamp(1.25rem,1.8vw,1.625rem);line-height:1.6;max-width:58ch;color:#fff}
+.method-main .eyebrow{font-family:LocationMono,monospace;font-size:.8125rem;line-height:1.5;letter-spacing:.04em;color:var(--muted-color);margin:0 0 24px}
+.method-main .practice-terms dt{font-size:clamp(1.375rem,2vw,1.75rem)}
+.method-main .practice-terms>div{margin-bottom:40px}
+.method-main .protocol-feature{margin-top:48px}
