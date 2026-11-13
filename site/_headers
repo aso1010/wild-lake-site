@@ -5,3 +5,9 @@
 /downloads/wild-lake-featured-venture.zip
   Content-Disposition: attachment; filename="wild-lake-featured-venture.zip"
   Content-Type: application/zip
+
+/downloads/wild-lake-facebook-cover.png
+  Content-Disposition: attachment; filename="wild-lake-facebook-cover.png"
+  Content-Type: image/png
+  Cache-Control: no-store, max-age=0
+  X-Robots-Tag: noindex, noarchive
