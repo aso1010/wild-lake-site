@@ -25,5 +25,9 @@ for path in root.rglob('*.html'):
 page = root / 'schema' / 'index.html'
 for match in re.finditer(r'<pre\b[^>]*data-src="([^"]+)"[^>]*><code>(.*?)</code></pre>', page.read_text(), re.S):
     if html.unescape(match[2]) != (page.parent / match[1]).read_text(): errors.append(f'Stale schema preview: {match[1]}')
+# The editorial name is Wild-Lake; Wild Lake Studio remains the formal name.
+for path in root.rglob('*'):
+    if path.suffix in {'.html', '.json', '.txt', '.js', '.webmanifest'} and re.search(r'\bWild Lake\b(?! Studio\b)', path.read_text()):
+        errors.append(f'{path.relative_to(root)}: use Wild-Lake for the editorial name')
 if errors: raise SystemExit('\n'.join(errors))
 print('Validated canonical structured copy and schema document previews.')

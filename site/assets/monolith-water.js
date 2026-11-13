@@ -10,7 +10,7 @@
   const activate = document.createElement('button');
   activate.type = 'button';
   activate.className = 'monolith-water-activate';
-  activate.setAttribute('aria-label', 'Activate water effect on the Wild Lake monolith');
+  activate.setAttribute('aria-label', 'Activate water effect on the Wild-Lake monolith');
   activate.setAttribute('aria-pressed', 'false');
   host.setAttribute('role', 'group');
   host.classList.add('is-water-interactive');
@@ -95,7 +95,7 @@
       const showing = ready && waterActive && !motion.matches;
       host.classList.toggle('has-water', showing);
       activate.setAttribute('aria-pressed', String(showing));
-      activate.setAttribute('aria-label', showing ? 'Switch to double sine wave' : 'Activate water effect on the Wild Lake monolith');
+      activate.setAttribute('aria-label', showing ? 'Switch to double sine wave' : 'Activate water effect on the Wild-Lake monolith');
       activate.disabled = motion.matches;
     }
     activate.addEventListener('click', () => {

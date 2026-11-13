@@ -6,7 +6,7 @@
   "name": "Engagements & Pricing | Wild Lake Studio",
   "headline": "Engagements & Pricing",
   "description": "Retainers, intensives, subsidized Stewardship Subscriptions, and fixed project fees. Engagements protect the artist and sustain the practice. Fees agreed individually.",
-  "abstract": "Wild Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.",
+  "abstract": "Wild-Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.",
   "isPartOf": {
     "@id": "https://wildlakestudio.com/#website"
   },
@@ -49,7 +49,7 @@
       "@type": "WebPageElement",
       "@id": "https://wildlakestudio.com/pricing/#engagement-included",
       "name": "Included in every engagement",
-      "text": "Included in every engagement The artist retains ownership and creative control, including direct audience relationships. Wild Lake takes no percentage of masters, publishing, or touring. The fee structure is agreed in advance, as a retainer, a Stewardship Subscription, or a fixed project fee."
+      "text": "Included in every engagement The artist retains ownership and creative control, including direct audience relationships. Wild-Lake takes no percentage of masters, publishing, or touring. The fee structure is agreed in advance, as a retainer, a Stewardship Subscription, or a fixed project fee."
     },
     {
       "@type": "WebPageElement",

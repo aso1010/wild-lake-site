@@ -22,7 +22,7 @@
       "@id": "https://wildlakestudio.com/#home",
       "url": "https://wildlakestudio.com/",
       "name": "Wild Lake Studio | Sovereign A&R & Artist Development",
-      "description": "Wild Lake is an independent studio for artists, labels, galleries and agencies. Critical direction, creative infrastructure, and systems that carry a career.",
+      "description": "Wild-Lake is an independent studio for artists, labels, galleries and agencies. Critical direction, creative infrastructure, and systems that carry a career.",
       "inLanguage": "en-US",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
@@ -44,13 +44,13 @@
           "@id": "https://seveneightythree.com/#organization"
         }
       ],
-      "headline": "Wild Lake is point zero for starmaking.",
+      "headline": "Wild-Lake is point zero for starmaking.",
       "hasPart": [
         {
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#overview",
-          "name": "Wild Lake is point zero for starmaking.",
-          "text": "Wild Lake is an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage."
+          "name": "Wild-Lake is point zero for starmaking.",
+          "text": "Wild-Lake is an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage."
         },
         {
           "@type": "WebPageElement",
@@ -142,7 +142,7 @@
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/about-founder/#founder-method",
           "name": "The Method",
-          "text": "Wild Lake's method grew through the lived practice described here. The manual sets out how critique, structural honesty, artist wellbeing, and focused interventions operate within an engagement."
+          "text": "Wild-Lake's method grew through the lived practice described here. The manual sets out how critique, structural honesty, artist wellbeing, and focused interventions operate within an engagement."
         },
         {
           "@type": "WebPageElement",
@@ -178,7 +178,7 @@
         "@id": "https://wildlakestudio.com/#website"
       },
       "name": "Contact | Wild Lake Studio",
-      "description": "Tell Wild Lake about your work and the support you need. Optional prompts for artists, labels, galleries, agencies and institutions.",
+      "description": "Tell Wild-Lake about your work and the support you need. Optional prompts for artists, labels, galleries, agencies and institutions.",
       "headline": "Let’s begin.",
       "hasPart": [
         {
@@ -485,7 +485,7 @@
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/method/#method-foundation",
           "name": "The structural principle",
-          "text": "The structural principle Nature is brutalist. Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle. Clients come to Wild Lake to build a practice, or when the way they work has become unsustainable. The engagement is a controlled demolition, undertaken with the artist. We take the practice down to its studs, remove the habits and brittle systems that can no longer carry the work, and rebuild around what the artist needs to operate with clarity. We dismantle the architecture of extraction. The artist leaves the loop intact."
+          "text": "The structural principle Nature is brutalist. Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle. Clients come to Wild-Lake to build a practice, or when the way they work has become unsustainable. The engagement is a controlled demolition, undertaken with the artist. We take the practice down to its studs, remove the habits and brittle systems that can no longer carry the work, and rebuild around what the artist needs to operate with clarity. We dismantle the architecture of extraction. The artist leaves the loop intact."
         },
         {
           "@type": "WebPageElement",
@@ -616,7 +616,7 @@
       "name": "Engagements & Pricing | Wild Lake Studio",
       "headline": "Engagements & Pricing",
       "description": "Retainers, intensives, subsidized Stewardship Subscriptions, and fixed project fees. Engagements protect the artist and sustain the practice. Fees agreed individually.",
-      "abstract": "Wild Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.",
+      "abstract": "Wild-Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
       },
@@ -659,7 +659,7 @@
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/pricing/#engagement-included",
           "name": "Included in every engagement",
-          "text": "Included in every engagement The artist retains ownership and creative control, including direct audience relationships. Wild Lake takes no percentage of masters, publishing, or touring. The fee structure is agreed in advance, as a retainer, a Stewardship Subscription, or a fixed project fee."
+          "text": "Included in every engagement The artist retains ownership and creative control, including direct audience relationships. Wild-Lake takes no percentage of masters, publishing, or touring. The fee structure is agreed in advance, as a retainer, a Stewardship Subscription, or a fixed project fee."
         },
         {
           "@type": "WebPageElement",
