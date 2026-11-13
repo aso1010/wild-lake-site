@@ -26,3 +26,5 @@
 .header-globe.is-playing video{opacity:1}
 .header-globe.is-playing img{visibility:hidden}
 @media(prefers-reduced-motion:reduce){.header-globe video{display:none}.header-globe.is-playing img{visibility:visible}}
+
+.site-topbar .site-topbar-descriptor{font-style:italic}
