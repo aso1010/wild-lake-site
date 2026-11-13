@@ -4,7 +4,7 @@ from pathlib import Path
 import html, json, re
 root = Path(__file__).resolve().parents[1] / 'site'
 canonical = {}
-for name in ['organization.json', 'person.json', 'talent-architect.json', 'website.json', 'method.json', 'development-protocols.json', 'practice.json', 'clients.json', 'numerology.json', 'contact.json']:
+for name in ['organization.json', 'person.json', 'talent-architect.json', 'website.json', 'method.json', 'development-protocols.json', 'practice.json', 'clients.json', 'numerology.json', 'contact.json', 'pricing.json']:
     data = json.loads((root / 'schema' / name).read_text())
     for node in data.get('@graph', [data]):
         if '@id' in node: canonical[node['@id']] = {k:v for k,v in node.items() if k != '@context'}

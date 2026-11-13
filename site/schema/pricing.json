@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://wildlakestudio.com/pricing/#webpage",
+  "url": "https://wildlakestudio.com/pricing/",
+  "name": "Engagements & Pricing | Wild Lake Studio",
+  "headline": "Engagements & Pricing",
+  "description": "Retainers, intensives, subsidized Stewardship Subscriptions, and fixed project fees. Engagements protect the artist and sustain the practice. Fees agreed individually.",
+  "abstract": "Wild Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.",
+  "isPartOf": {
+    "@id": "https://wildlakestudio.com/#website"
+  },
+  "publisher": {
+    "@id": "https://wildlakestudio.com/#organization"
+  },
+  "inLanguage": "en-US",
+  "hasPart": [
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/pricing/#engagement-rhythms",
+      "name": "Two rhythms, one practice",
+      "text": "Two rhythms, one practice Choose the rhythm that fits the demands of the practice: reserved availability with occasional intensive work, or more frequent support while building a foundation. Established artists Retainer + intensive For established artists across disciplines, including those navigating touring, album cycles, exhibitions, productions, and large teams. Reserved availability The retainer keeps Argelys, the founder, available for text and voice-note access between sessions. Responses arrive within an agreed window. A limited number of urgent calls per quarter is agreed in advance. Access provides structural advice and grounding. Management and creative approval sit outside it. Focused intervention A deep intensive, in person or remotely, on a cadence set by the artist’s needs, from several months to several years apart. Pre-session intake. One to two days of deep work: a structural honesty audit, movement, writing, listening, and an infrastructure check. A post-session structural memo with next steps. Pricing Retainer and intensive fees are agreed individually. Rising artists Subsidized Stewardship Subscription For rising and developing independent artists building their foundation. Established artist retainers fund higher-frequency, ongoing support at a subsidized rate. Ongoing development Regular sessions, on a cadence agreed together. Development Protocols , including active listening, automatic writing, movement, and vision quests. Operational infrastructure setup: request gating, direct payment routing, custom domain feeds, and async communication boundaries. Scope and participation Eligibility rests on the artist’s practice and need, and inability to pay is one factor among them. Scope, expectations, and participation are agreed together. Subsidized does not mean charity. This is a real engagement. Pricing A sliding scale based on need and available capacity, with the rate agreed individually."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/pricing/#established-artists",
+      "name": "Established artists",
+      "text": "Established artists Retainer + intensive For established artists across disciplines, including those navigating touring, album cycles, exhibitions, productions, and large teams. Reserved availability The retainer keeps Argelys, the founder, available for text and voice-note access between sessions. Responses arrive within an agreed window. A limited number of urgent calls per quarter is agreed in advance. Access provides structural advice and grounding. Management and creative approval sit outside it. Focused intervention A deep intensive, in person or remotely, on a cadence set by the artist’s needs, from several months to several years apart. Pre-session intake. One to two days of deep work: a structural honesty audit, movement, writing, listening, and an infrastructure check. A post-session structural memo with next steps. Pricing Retainer and intensive fees are agreed individually."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/pricing/#rising-artists",
+      "name": "Rising artists",
+      "text": "Rising artists Subsidized Stewardship Subscription For rising and developing independent artists building their foundation. Established artist retainers fund higher-frequency, ongoing support at a subsidized rate. Ongoing development Regular sessions, on a cadence agreed together. Development Protocols , including active listening, automatic writing, movement, and vision quests. Operational infrastructure setup: request gating, direct payment routing, custom domain feeds, and async communication boundaries. Scope and participation Eligibility rests on the artist’s practice and need, and inability to pay is one factor among them. Scope, expectations, and participation are agreed together. Subsidized does not mean charity. This is a real engagement. Pricing A sliding scale based on need and available capacity, with the rate agreed individually."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/pricing/#fixed-project-fee",
+      "name": "Fixed project fee",
+      "text": "Fixed project fee For Creative Infrastructure commissions and defined editorial work. Scope and fee are agreed before work begins."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/pricing/#engagement-access",
+      "name": "What access means",
+      "text": "What access means Reserved attention works within clear boundaries. An engagement does not create continuous, around-the-clock availability. Agreed response windows, including the scope and limits of urgent access. Async-first communication, with time for independent execution. Request gating for professional inquiries. The artist can pause, decline, or change direction at any time. Touch and co-regulation practices are optional and require explicit, ongoing consent."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/pricing/#engagement-included",
+      "name": "Included in every engagement",
+      "text": "Included in every engagement The artist retains ownership and creative control, including direct audience relationships. Wild Lake takes no percentage of masters, publishing, or touring. The fee structure is agreed in advance, as a retainer, a Stewardship Subscription, or a fixed project fee."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/pricing/#engagement-process",
+      "name": "How it works",
+      "text": "How it works Tell us about your work. We determine fit, rhythm, and scope. Agree terms: retainer, subscription, or fixed fee. Send a message →"
+    }
+  ]
+}
