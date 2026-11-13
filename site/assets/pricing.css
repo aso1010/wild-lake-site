@@ -1,0 +1,23 @@
+/* Engagements use the studio's shared fonts and content rail. */
+body.pricing-page .engagements-main{padding-block:clamp(55px,9vw,144px)}
+.engagements-intro{padding-bottom:clamp(55px,7vw,110px)}
+.engagement-label{font-family:var(--font-mono,monospace);font-size:.8125rem;letter-spacing:.06em;line-height:1.5}
+.engagements-main h1{font-size:clamp(2.25rem,5vw,4.5rem);line-height:1.08;letter-spacing:-.04em;max-width:22ch;margin:21px 0 34px}
+.engagements-main p,.engagements-main li{font-size:clamp(1rem,1.3vw,1.1875rem);line-height:1.618;color:var(--subtle-color,#d2d2cc)}
+.engagements-main .engagement-label{font-size:.8125rem}
+.engagements-main p{max-width:65ch;margin-block:0 21px}
+.engagements-main .engagement-lead{font-size:clamp(1.125rem,1.7vw,1.5rem)}
+.engagement-section{border-top:1px solid var(--rule-color,#343730);padding-block:clamp(34px,5vw,72px)}
+.engagements-main h2{font-size:clamp(1.75rem,3vw,2.75rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 34px}
+.engagements-main h3{font-size:clamp(1.5rem,2.3vw,2.125rem);line-height:1.2;margin:13px 0 34px;overflow-wrap:anywhere}
+.engagements-main h4{font-size:1.125rem;line-height:1.4;margin:34px 0 13px}
+.engagement-cards{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;margin-top:55px}
+.engagement-card{border:1px solid var(--rule-color,#343730);padding:clamp(21px,3vw,42px);min-width:0}
+.engagements-main ul,.engagement-steps{padding-left:1.4em;margin:0 0 34px;max-width:65ch}
+.engagements-main li+li{margin-top:13px}
+.engagements-main .engagement-fee{border-top:1px solid var(--rule-color,#343730);padding-top:21px;margin-top:34px;display:grid;gap:13px;color:#fff;overflow-wrap:anywhere}
+.engagement-fee>span:last-child{font-family:var(--font-mono,monospace);font-size:1rem}
+.engagement-cta{display:inline-flex;align-items:center;gap:21px;min-height:48px;padding:13px 21px;border:1px solid #fff;color:#fff;text-decoration:none}
+.engagement-cta:hover{background:#fff;color:#000}
+.engagements-main a:focus-visible{outline:2px solid #fff;outline-offset:5px}
+@media(min-width:900px){.engagement-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
