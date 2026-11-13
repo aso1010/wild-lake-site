@@ -1,7 +1,7 @@
 document.getElementById('intake-form').addEventListener('submit', function (event) {
   event.preventDefault();
   const fields = new FormData(event.currentTarget);
-  const prompts = [['name', 'Name'], ['email', 'Email'], ['support', 'Support'], ['message', 'Message']];
+  const prompts = [['message', 'Message'], ['work', 'Work'], ['name', 'Name']];
   const lines = prompts.map(([key, label]) => {
     const value = String(fields.get(key) || '').trim();
     return value ? label + ': ' + value : '';

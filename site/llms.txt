@@ -82,7 +82,7 @@ Emily Wilson is also a photographer; she studied photography alongside a double 
 - [Wild Lake Studio | Sovereign A&R & Artist Development](https://wildlakestudio.com/): Wild Lake is an independent studio for artists, labels, galleries and agencies. Critical direction, creative infrastructure, and systems that carry a career.
 - [Client Architecture | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/clients/): Past and current clients of Wild-Lake, with biographies describing each person’s practice, education, and live/work locations.
 - [About our founder | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/about-founder/): Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.
-- [Contact | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/contact/): Begin a conversation with Wild Lake Studio, a Brutalist Structural Design and Talent Architecture Studio for world-class creators.
+- [Contact | Wild Lake Studio](https://wildlakestudio.com/contact/): Tell Wild Lake about your work and the support you need. Optional prompts for artists, labels, galleries, agencies and institutions.
 - [Schema | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/schema/): The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt.
 - [Quiet Creek Magazine | Wild Lake Studio](https://wildlakestudio.com/magazine/): Notes from Wild Lake Studio on artists, creative work, and the structures that support an independent practice.
 - [The Infrastructure Has an Inner Life | Quiet Creek — Wild Lake Studio](https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/): On Jessica Wilson’s work: a Wild Lake Studio reading of infrastructure, anxiety, capitalism, whiteness, and the living world.
@@ -179,3 +179,9 @@ The artist retains ownership and creative control. We work on an agreed Stewards
 ### Let’s begin.
 
 Tell us about your work, or the artists you work with, and what support is needed.
+
+## Contact: Let’s begin
+
+https://wildlakestudio.com/contact/
+
+Tell us about your work, or the artists you work with, and the support you are looking for. Optional prompts distinguish artists’ work, friction, and goals from representatives’ artist or program, situation, timeline, and support needs. A work link and name are optional. The form prepares a draft in the visitor’s email app for review and sending; it does not submit messages to a studio server. Direct email: info@wildlakestudio.com. Your work stays yours. We never take ownership or a percentage.

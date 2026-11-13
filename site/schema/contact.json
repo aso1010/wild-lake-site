@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "https://wildlakestudio.com/contact/#webpage",
+  "url": "https://wildlakestudio.com/contact/",
+  "isPartOf": {
+    "@id": "https://wildlakestudio.com/#website"
+  },
+  "name": "Contact | Wild Lake Studio",
+  "description": "Tell Wild Lake about your work and the support you need. Optional prompts for artists, labels, galleries, agencies and institutions.",
+  "headline": "Let’s begin.",
+  "hasPart": [
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/contact/#contact-overview",
+      "name": "Let’s begin.",
+      "text": "NEW YORK / TAMPA / SANTIAGO / WORLDWIDE. Tell us about your work, or the artists you work with, and the support you are looking for. info@wildlakestudio.com"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/contact/#contact-intake",
+      "name": "A place to start",
+      "text": "These prompts are optional. Answer the ones that help, skip the rest. If you are an artist: What are you making, and where is it now? Where does the work meet friction? What would the next year look like if it went well? If you represent a label, gallery, agency or institution: Which artist or program is this about? What is the situation, and what is the timeline? What do you want the studio to do? Include if you can: A link to the work. Your name. This form opens an email draft for you to review and send. You can also write to us directly at info@wildlakestudio.com. Your work stays yours. We never take ownership or a percentage."
+    }
+  ]
+}
