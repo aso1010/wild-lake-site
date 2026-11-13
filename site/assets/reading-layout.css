@@ -160,3 +160,6 @@ body.reading-layout.tools-page .app-feature-art{display:flex;align-items:center;
 body.reading-layout.tools-page .app-feature-art img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
 body.reading-layout.tools-page .app-feature-art .tool-single-card{width:auto;height:100%;max-width:100%;margin:0}
 @media(min-width:900px){body.reading-layout.tools-page .app-feature{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,80px)}}
+
+/* Three distinct homepage offerings share an equal desktop hierarchy. */
+@media(min-width:1100px){.home:has(#overview) .home-offering-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(32px,4vw,64px)}}
