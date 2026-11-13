@@ -23,7 +23,7 @@
   canvas.setAttribute('aria-hidden', 'true');
   const gl = canvas.getContext('webgl2', { alpha: true, antialias: false, powerPreference: 'low-power' });
   if (!gl) { activate.remove(); host.classList.remove('is-water-interactive'); return; }
-  const waterSpeed = 1.25; // Gentler motion, preserving the current Water preset.
+  const waterSpeed = 0.625; // Gentler motion, preserving the current Water preset.
   let frame = 0, elapsed = 0, last = 0, visible = true, ready = false, revision = 0, waterActive = true;
   let program, texture, observer, resizeObserver;
   function fallback() {
