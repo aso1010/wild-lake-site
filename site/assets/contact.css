@@ -14,6 +14,6 @@
 .contact-details label{margin:0}
 .contact-main .contact-draft-note{max-width:65ch;font-size:1rem;line-height:1.65;margin-top:24px}
 .contact-main .contact-assurance{font-size:1.125rem;max-width:65ch;margin-top:40px;color:#fff}
-@media(min-width:900px){.contact-main .contact-prompts{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,7vw,112px)}.contact-details{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
+@media(min-width:900px){.contact-main .contact-prompts{grid-template-columns:minmax(0,1fr);gap:48px}.contact-details{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
 
 .contact-main .contact-details-name-only{grid-template-columns:minmax(0,1fr)}
