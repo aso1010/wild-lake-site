@@ -1,5 +1,4 @@
 {
-  "@context": "https://schema.org",
   "@type": [
     "Organization",
     "ProfessionalService"
@@ -28,6 +27,10 @@
     {
       "@type": "Place",
       "name": "New York, USA"
+    },
+    {
+      "@type": "Place",
+      "name": "Tampa, Florida, USA"
     },
     {
       "@type": "Place",
@@ -233,5 +236,6 @@
       }
     ]
   },
-  "slogan": "Wild-Lake is point zero for starmaking."
+  "slogan": "Wild-Lake is point zero for starmaking.",
+  "@context": "https://schema.org"
 }
