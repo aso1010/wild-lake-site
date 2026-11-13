@@ -2,9 +2,9 @@
 
 > Wild Lake Studio, known as Wild-Lake, is an existential mechanics studio providing structural design and talent architecture for independent artists. Based across New York, Tampa, Florida, and Santiago, Dominican Republic; working worldwide.
 
-Wild Lake is point zero for starmaking.
+Wild-Lake is point zero for starmaking.
 
-Wild Lake is an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage.
+Wild-Lake is an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage.
 
 ## Practice and engagement
 
@@ -44,7 +44,7 @@ That foundation fueled a twelve-year trajectory building organic growth systems.
 
 He now operates two laboratories. Seven Eighty Three is an independent systems design practice engineering automated infrastructure for executive leadership. Wild Lake Studio is the practice that guides developing and independent artists.
 
-Wild Lake's method grew through the lived practice described here. The manual sets out how critique, structural honesty, artist wellbeing, and focused interventions operate within an engagement.
+Wild-Lake's method grew through the lived practice described here. The manual sets out how critique, structural honesty, artist wellbeing, and focused interventions operate within an engagement.
 
 Performance governs how he works across writing, voice, movement, visual art, design, and acting for stage and screen. “Multidisciplinary” describes the range of media. “Performance artist” describes how he inhabits them.
 
@@ -76,7 +76,7 @@ Invitation Entering a creative relationship by mutual recognition and consent. G
 
 https://wildlakestudio.com/method/
 
-The founder's life and artistic practice gave this method its form. This is the manual for how Wild Lake works with an artist and the material.
+The founder's life and artistic practice gave this method its form. This is the manual for how Wild-Lake works with an artist and the material.
 
 ### Talent Architecture
 
@@ -100,7 +100,7 @@ Nature is brutalist.
 
 Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle.
 
-Clients come to Wild Lake to build a practice, or when the way they work has become unsustainable. The engagement is a controlled demolition, undertaken with the artist. We take the practice down to its studs, remove the habits and brittle systems that can no longer carry the work, and rebuild around what the artist needs to operate with clarity.
+Clients come to Wild-Lake to build a practice, or when the way they work has become unsustainable. The engagement is a controlled demolition, undertaken with the artist. We take the practice down to its studs, remove the habits and brittle systems that can no longer carry the work, and rebuild around what the artist needs to operate with clarity.
 
 We dismantle the architecture of extraction. The artist leaves the loop intact.
 
@@ -183,10 +183,10 @@ Emily Wilson is also a photographer; she studied photography alongside a double 
 
 ## Public pages
 
-- [Wild Lake Studio | Sovereign A&R & Artist Development](https://wildlakestudio.com/): Wild Lake is an independent studio for artists, labels, galleries and agencies. Critical direction, creative infrastructure, and systems that carry a career.
+- [Wild Lake Studio | Sovereign A&R & Artist Development](https://wildlakestudio.com/): Wild-Lake is an independent studio for artists, labels, galleries and agencies. Critical direction, creative infrastructure, and systems that carry a career.
 - [Client Architecture | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/clients/): Past and current clients of Wild-Lake, with biographies describing each person’s practice, education, and live/work locations.
 - [About our founder | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/about-founder/): Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.
-- [Contact | Wild Lake Studio](https://wildlakestudio.com/contact/): Tell Wild Lake about your work and the support you need. Optional prompts for artists, labels, galleries, agencies and institutions.
+- [Contact | Wild Lake Studio](https://wildlakestudio.com/contact/): Tell Wild-Lake about your work and the support you need. Optional prompts for artists, labels, galleries, agencies and institutions.
 - [Schema | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/schema/): The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt.
 - [Quiet Creek Magazine | Wild Lake Studio](https://wildlakestudio.com/magazine/): Notes from Wild Lake Studio on artists, creative work, and the structures that support an independent practice.
 - [The Infrastructure Has an Inner Life | Quiet Creek — Wild Lake Studio](https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/): On Jessica Wilson’s work: a Wild Lake Studio reading of infrastructure, anxiety, capitalism, whiteness, and the living world.
@@ -250,7 +250,7 @@ Operational Infrastructure protocols: Programmatic request gating, Single-file e
 
 https://wildlakestudio.com/pricing/
 
-Engagements protect the artist and sustain the practice. Wild Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.
+Engagements protect the artist and sustain the practice. Wild-Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.
 
 Established artists: retainer availability for text and voice notes, agreed response windows, limited urgent calls, and occasional deep intensives. Management and creative approval sit outside the engagement. Retainer and intensive fees are agreed individually.
 
@@ -258,7 +258,7 @@ Rising artists: a subsidized Stewardship Subscription for higher-frequency ongoi
 
 Fixed project fee: Creative Infrastructure commissions and defined editorial work. Scope and fee are agreed before work begins.
 
-Access is async-first within clear boundaries. Artists may pause, decline, or change direction. Touch and co-regulation require explicit ongoing consent. Artists retain ownership, creative control, and direct audience relationships. Wild Lake takes no percentage of masters, publishing, or touring. No public fee amounts are listed. Begin by sharing the work, determining fit, rhythm, and scope, then agreeing retainer, subscription, or fixed-fee terms.
+Access is async-first within clear boundaries. Artists may pause, decline, or change direction. Touch and co-regulation require explicit ongoing consent. Artists retain ownership, creative control, and direct audience relationships. Wild-Lake takes no percentage of masters, publishing, or touring. No public fee amounts are listed. Begin by sharing the work, determining fit, rhythm, and scope, then agreeing retainer, subscription, or fixed-fee terms.
 
 ## Name & Number
 

@@ -169,3 +169,9 @@ body.reading-layout.tools-page .app-feature-art .tool-single-card{width:auto;hei
  :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav.site-nav{justify-content:space-between;column-gap:13px}
  :is(body.reading-layout,body.reading-layout.home:has(#overview))>.page-outline ol{flex:1 1 auto;justify-content:space-between}
 }
+
+/* Page-level dividers follow the inner content rail, including padded sections. */
+body.reading-layout .rule{box-sizing:border-box;width:100%;max-width:none;margin-inline:0}
+body.reading-layout.home:has(#overview)>.contact{position:relative;border-top:0}
+body.reading-layout.home:has(#overview)>.contact::before{content:"";position:absolute;top:0;left:var(--gutter,21px);right:var(--gutter,21px);height:1px;background:var(--rule-color);pointer-events:none}
+body.reading-layout .practice-main>.pitch{width:100%;max-width:none;margin-inline:0;padding-inline:0}
