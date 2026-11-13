@@ -4,7 +4,7 @@ from pathlib import Path
 import html, json, re
 root = Path(__file__).resolve().parents[1] / 'site'
 canonical = {}
-for name in ['organization.json', 'person.json', 'talent-architect.json', 'website.json', 'method.json', 'development-protocols.json', 'practice.json', 'clients.json', 'numerology.json', 'contact.json', 'pricing.json']:
+for name in ['organization.json', 'person.json', 'talent-architect.json', 'website.json', 'method.json', 'development-protocols.json', 'practice.json', 'clients.json', 'numerology.json', 'contact.json', 'pricing.json', 'lab-783.json']:
     data = json.loads((root / 'schema' / name).read_text())
     for node in data.get('@graph', [data]):
         if '@id' in node: canonical[node['@id']] = {k:v for k,v in node.items() if k != '@context'}
@@ -29,5 +29,8 @@ for match in re.finditer(r'<pre\b[^>]*data-src="([^"]+)"[^>]*><code>(.*?)</code>
 for path in root.rglob('*'):
     if path.suffix in {'.html', '.json', '.txt', '.js', '.webmanifest'} and re.search(r'\bWild Lake\b(?! Studio\b)', path.read_text()):
         errors.append(f'{path.relative_to(root)}: use Wild-Lake for the editorial name')
+organization = json.loads((root / 'schema/organization.json').read_text())
+if organization.get('parentOrganization', {}).get('@id') != 'https://seveneightythree.com/#organization':
+    errors.append('Studio parentOrganization must be Seven Eighty Three (Lab 783)')
 if errors: raise SystemExit('\n'.join(errors))
 print('Validated canonical structured copy and schema document previews.')

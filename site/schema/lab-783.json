@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://seveneightythree.com/#organization",
+  "name": "Seven Eighty Three",
+  "alternateName": "Lab 783",
+  "url": "https://seveneightythree.com/",
+  "description": "An independent systems design practice.",
+  "subOrganization": {
+    "@id": "https://wildlakestudio.com/#organization"
+  }
+}

@@ -63,7 +63,7 @@
   "affiliation": {
     "@id": "https://seveneightythree.com/#organization"
   },
-  "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He constructs systems and inhabits them. Performance governs his practice, and writing, voice, movement, design, and corporate roles are its forms.",
+  "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He constructs systems and inhabits them. Performance governs his practice, and writing, voice, movement, design, and corporate roles are its forms. He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists.",
   "subjectOf": [
     {
       "@id": "https://wildlakestudio.com/about-founder/#page"
