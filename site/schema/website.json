@@ -60,7 +60,7 @@
       "@id": "https://wildlakestudio.com/about-founder/#page",
       "url": "https://wildlakestudio.com/about-founder/",
       "name": "About our founder | Wild Lake Studio — Existential Mechanics and A&R Venture",
-      "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, artist developer, and artistic director based in Crown Heights, Brooklyn.",
+      "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.",
       "mainEntity": {
         "@id": "https://argelysoriach.com/#person"
       },

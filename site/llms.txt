@@ -18,7 +18,7 @@ Artists retain ownership and creative control. The studio takes no percentage of
 
 ## Founder: the medium
 
-Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, artist developer, and artistic director based in Crown Heights, Brooklyn. He constructs systems and inhabits them. Performance is the governing method of his practice; writing, voice, movement, design, and corporate roles are its forms.
+Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He constructs systems and inhabits them. Performance is the governing method of his practice; writing, voice, movement, design, and corporate roles are its forms.
 
 Wild-Lake formalizes his fifteen-year independent practice, beginning in his freshman year at Wesleyan University with initiation into the Eclectic Society. He has guided twelve or more developing and independent multidisciplinary artists through structural stewardship and live production architecture.
 
@@ -73,7 +73,7 @@ Emily Wilson is also a photographer; she studied photography alongside a double 
 
 - [Wild Lake Studio | Sovereign A&R & Artist Development](https://wildlakestudio.com/): Independent talent architecture, sovereign A&R, and artist development across mediums. Grounding the creator to sustain the work. Crown Heights, NY.
 - [Client Architecture | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/clients/): Past and current clients of Wild-Lake, with biographies describing each person’s practice, education, and live/work locations.
-- [About our founder | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/about-founder/): Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, artist developer, and artistic director based in Crown Heights, Brooklyn.
+- [About our founder | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/about-founder/): Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.
 - [Contact | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/contact/): Begin a conversation with Wild Lake Studio, a Brutalist Structural Design and Talent Architecture Studio for world-class creators.
 - [Schema | Wild Lake Studio — Existential Mechanics and A&R Venture](https://wildlakestudio.com/schema/): The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt.
 - [Quiet Creek Magazine | Wild Lake Studio](https://wildlakestudio.com/magazine/): Notes from Wild Lake Studio on artists, creative work, and the structures that support an independent practice.
