@@ -23,7 +23,7 @@
   canvas.setAttribute('aria-hidden', 'true');
   const gl = canvas.getContext('webgl2', { alpha: true, antialias: false, powerPreference: 'low-power' });
   if (!gl) { activate.remove(); host.classList.remove('is-water-interactive'); return; }
-  const waterSpeed = 1 / 8; // Fibonacci divisor: eight times slower than the original.
+  const waterSpeed = 2; // Requested Water preset speed.
   let frame = 0, elapsed = 0, last = 0, paused = false, visible = true, ready = false, revision = 0, waterActive = true;
   let program, texture, observer, resizeObserver;
   const button = document.createElement('button');
@@ -66,11 +66,11 @@
     const location = name => gl.getUniformLocation(program, name);
     const uniforms = {};
     ['u_time','u_resolution','u_pixelRatio','u_imageAspectRatio'].forEach(name => { uniforms[name] = location(name); });
-    const settings = { u_size:1, u_highlights:.07, u_layering:.5, u_edges:.8, u_waves:.3, u_caustic:.1,
-      u_fit:1, u_scale:1, u_originX:.5, u_originY:.5, u_rotation:0, u_offsetX:0, u_offsetY:0,
+    const settings = { u_size:.5, u_highlights:0, u_layering:0, u_edges:0, u_waves:.5, u_caustic:0,
+      u_fit:1, u_scale:.4, u_originX:.5, u_originY:.5, u_rotation:0, u_offsetX:0, u_offsetY:0,
       u_worldWidth:0, u_worldHeight:0 };
     Object.keys(settings).forEach(name => gl.uniform1f(location(name), settings[name]));
-    gl.uniform4f(location('u_colorBack'), 0, 0, 0, 0);
+    gl.uniform4f(location('u_colorBack'), 143/255, 143/255, 143/255, 1);
     gl.uniform4f(location('u_colorHighlight'), 1, 1, 1, 1);
     texture = gl.createTexture();
     gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, texture);
