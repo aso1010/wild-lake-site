@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://wildlakestudio.com/numerology/#app",
+  "name": "Name & Number",
+  "url": "https://wildlakestudio.com/numerology/",
+  "description": "Calculate Life Path, Expression, Soul Urge, Personality, Birthday, and Maturity numbers. A private, transparent numerology tool for your own interpretation.",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Any modern web browser",
+  "browserRequirements": "JavaScript enabled",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@id": "https://wildlakestudio.com/#organization"
+  },
+  "featureList": [
+    "Pythagorean name numerology",
+    "Life Path, Expression, Soul Urge, Personality, Birthday, and Maturity calculations",
+    "Optional Y vowel rule",
+    "Visible calculation steps",
+    "Local text export",
+    "No input storage or transmission"
+  ],
+  "inLanguage": "en-US"
+}

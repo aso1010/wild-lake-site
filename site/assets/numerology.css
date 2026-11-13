@@ -1,0 +1,49 @@
+.number-main{padding-block:clamp(55px,8vw,120px)}
+.number-main [hidden]{display:none!important}
+.number-main h1{font-size:clamp(3.25rem,7.5vw,7rem);line-height:1.05;letter-spacing:-.045em;margin:0 0 40px}
+.number-main .number-index{font:400 .8125rem/1.5 LocationMono,monospace;letter-spacing:.04em;color:var(--muted-color);margin:0 0 24px}
+.number-main .number-declaration{font-size:clamp(1.75rem,3vw,2.75rem);line-height:1.2;color:#fff;letter-spacing:-.025em}
+.number-main p{font-size:clamp(1.0625rem,1.35vw,1.25rem);line-height:1.65;max-width:64ch;margin:0 0 24px;color:var(--subtle-color)}
+.number-main .number-note,.number-main .number-help{font-size:.9375rem;line-height:1.6;color:var(--muted-color)}
+.number-intro{margin-bottom:clamp(64px,8vw,120px)}
+.number-workspace{display:grid;grid-template-columns:minmax(0,1fr);gap:64px;border-top:1px solid var(--rule-color);padding-top:clamp(40px,5vw,72px)}
+.number-main h2{font-size:clamp(1.75rem,2.8vw,2.5rem);line-height:1.2;letter-spacing:-.025em;margin:0 0 32px}
+.number-main form{margin-top:32px}
+.number-main label{display:block;color:#fff;margin:24px 0 12px;font-size:1.0625rem}
+.number-main label>span{font-size:.875rem;color:var(--muted-color)}
+.number-main input:not([type=checkbox]),.number-main textarea{box-sizing:border-box;width:100%;min-width:0;min-height:52px;border:1px solid #787b75;border-radius:0;padding:14px;background:#000;color:#fff;color-scheme:dark;font:400 1rem/1.5 var(--font-sans);margin-bottom:12px}
+.number-main textarea{resize:vertical}
+.number-main fieldset{border:1px solid var(--rule-color);padding:20px;margin:28px 0}
+.number-main legend{padding-inline:8px;font-size:.9375rem}
+.number-main .number-check{display:flex;align-items:center;gap:12px;min-height:44px;margin:0 0 12px}
+.number-main input[type=checkbox]{width:20px;height:20px;accent-color:#fff;flex:none}
+.number-main input[aria-invalid=true]{border:2px solid #fff}
+.number-main button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;border:1px solid #fff;border-radius:0;padding:12px 20px;background:#fff;color:#000;font:500 1rem/1.5 var(--font-sans);cursor:pointer}
+.number-main button.number-secondary{background:#000;color:#fff}
+.number-actions{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0}
+.number-main :is(a,button,input,textarea,summary):focus-visible{outline:2px solid #fff;outline-offset:5px}
+.number-main .number-error{color:#fff;border-left:3px solid #fff;padding-left:16px}
+.number-main .number-error:empty{display:none}
+.number-method{min-width:0;border-top:1px solid var(--rule-color);padding-top:40px}
+.number-method h2{font-size:clamp(1.5rem,2vw,2rem)}
+.number-main table{width:100%;border-collapse:collapse;margin:32px 0;font:400 1rem/1.5 LocationMono,monospace}
+.number-main caption{text-align:left;margin-bottom:16px;font-size:.875rem;color:var(--muted-color)}
+.number-main :is(th,td){text-align:left;padding:12px 8px;border-bottom:1px solid var(--rule-color)}
+.number-main th{font-weight:500}
+.number-main summary{cursor:pointer;min-height:44px;padding-block:12px;line-height:1.5;text-decoration:underline;text-underline-offset:5px}
+.number-main details>p:first-of-type{margin-top:20px}
+.number-results{border-top:1px solid var(--rule-color);margin-top:clamp(64px,8vw,120px);padding-top:48px;scroll-margin-top:32px}
+.number-cards{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;margin-block:40px 64px}
+.number-card{border:1px solid var(--rule-color);padding:clamp(24px,3vw,40px);min-width:0}
+.number-card h3{font-size:clamp(1.5rem,2.2vw,2rem);line-height:1.2;margin:0 0 20px}
+.number-card .number-value{font-size:clamp(5rem,8vw,7rem);font-weight:500;line-height:1;letter-spacing:-.06em;color:#fff;margin:24px 0}
+.number-card .number-root{font:400 .875rem/1.6 LocationMono,monospace;margin-bottom:28px}
+.number-card .number-explanation{font-size:1rem;color:var(--muted-color);border-bottom:1px solid var(--rule-color);padding-bottom:24px}
+.number-card h4{font-size:1.125rem;line-height:1.4;margin:28px 0 16px}
+.number-card .number-prompt{color:#fff}
+.number-card .number-calculation{white-space:pre-wrap;overflow-wrap:anywhere;font:400 .875rem/1.8 LocationMono,monospace}
+.number-reflection{max-width:65ch}
+.number-reflection h3{font-size:clamp(1.5rem,2.5vw,2rem);line-height:1.2;margin:0 0 24px}
+.number-reflection button{margin-top:16px}
+@media(min-width:900px){.number-workspace{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(48px,7vw,112px)}.number-method{border:0;padding-top:0}.number-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.number-main{scroll-behavior:auto}}
