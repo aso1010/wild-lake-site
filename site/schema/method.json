@@ -21,6 +21,12 @@
   "hasPart": [
     {
       "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/method/#method-talent-architecture",
+      "name": "Talent Architecture",
+      "text": "Your practice is the asset. We find where it’s breaking. Talent Architecture is a capacity and boundary audit for creators whose workload has outgrown them. We dismantle the habits that drain you, build an operating framework that protects your autonomy, and then step back. You keep your IP, your income and your decisions."
+    },
+    {
+      "@type": "WebPageElement",
       "@id": "https://wildlakestudio.com/method/#method-terms",
       "name": "Terms of the practice",
       "text": "The conditions, the person, and the work. How we organize the conditions around the work—time, space, resources, habits, and boundaries—so the practice can sustain what the artist wants to make. How we develop and support the person carrying the work: their judgment, capacity, autonomy, and relationships. How we scout talent and develop creative material through critique, direction, and critical framing, while the artist retains ownership and creative control."
