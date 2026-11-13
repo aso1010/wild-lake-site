@@ -163,3 +163,9 @@ body.reading-layout.tools-page .app-feature-art .tool-single-card{width:auto;hei
 
 /* Three distinct homepage offerings share an equal desktop hierarchy. */
 @media(min-width:1100px){.home:has(#overview) .home-offering-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(32px,4vw,64px)}}
+
+/* Distribute desktop tabs across their existing divider-width rail. */
+@media(min-width:1100px){
+ :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav.site-nav{justify-content:space-between;column-gap:13px}
+ :is(body.reading-layout,body.reading-layout.home:has(#overview))>.page-outline ol{flex:1 1 auto;justify-content:space-between}
+}
