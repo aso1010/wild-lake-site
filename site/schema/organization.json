@@ -1,20 +1,16 @@
 {
-  "@type": [
-    "Organization",
-    "ProfessionalService"
-  ],
+  "@type": "Organization",
   "@id": "https://wildlakestudio.com/#organization",
   "name": "Wild Lake Studio",
   "legalName": "Wild Lake Studio LLC",
-  "alternateName": [
-    "Wild-Lake",
-    "WILDLAKE"
-  ],
-  "url": "https://wildlakestudio.com/",
-  "description": "An existential mechanics studio providing structural design, talent architecture, artist development, sovereign A&R, and creative infrastructure across mediums.",
+  "alternateName": "Wild-Lake",
+  "url": "https://wildlakestudio.com",
+  "description": "Independent studio for creators across music, art, writing and film. Talent architecture and artist development.",
   "foundingDate": "2026",
   "founder": {
-    "@id": "https://argelysoriach.com/#person"
+    "@type": "Person",
+    "@id": "https://argelysoriach.com/#person",
+    "name": "Argelys Samuel Oriach"
   },
   "address": {
     "@type": "PostalAddress",
@@ -36,7 +32,12 @@
       "name": "Santiago, Dominican Republic"
     }
   ],
-  "areaServed": "Worldwide",
+  "areaServed": [
+    "New York",
+    "Tampa",
+    "Santiago",
+    "Worldwide"
+  ],
   "knowsAbout": [
     "Existential mechanics",
     "Artist development",
@@ -127,7 +128,7 @@
     }
   ],
   "sameAs": [
-    "https://www.instagram.com/wildlakewildlake/",
+    "https://www.instagram.com/wildlake.studio",
     "https://www.linkedin.com/company/wild-lake/"
   ],
   "mainEntityOfPage": {
