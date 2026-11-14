@@ -1,4 +1,4 @@
-/* Native, water-first renderer for Paper Shaders' Apache-2.0 Water GLSL.
+/* Native, sine-first renderer for Paper Shaders' Apache-2.0 Water GLSL.
  * No React, packages, network services, or external runtime assets.
  * Water starts automatically; clicking switches to the double sine wave. */
 (async function () {
@@ -23,7 +23,7 @@
   const gl = canvas.getContext('webgl2', { alpha: true, antialias: false, powerPreference: 'low-power' });
   if (!gl) { activate.remove(); host.classList.remove('is-water-interactive'); return; }
   const waterSpeed = 0.4; // Slow, living ripples across a wind-touched lake.
-  let frame = 0, elapsed = 0, last = 0, visible = true, ready = false, revision = 0, waterActive = true;
+  let frame = 0, elapsed = 0, last = 0, visible = true, ready = false, revision = 0, waterActive = false;
   let program, texture, observer, resizeObserver;
   function fallback() {
     ready = false;
