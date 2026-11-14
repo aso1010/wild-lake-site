@@ -98,13 +98,13 @@
 
 /* Explicit roles separate semantic heading levels from visual presentation. */
 body{font-family:var(--font-sans);font-size:var(--text-base);line-height:var(--leading-body);letter-spacing:var(--tracking-normal)}
-.type-display{font-size:var(--text-3xl)!important;line-height:var(--leading-display)!important}
 .type-h1{font-size:var(--text-2xl)!important}
 .type-h2{font-size:var(--text-xl)!important}
 .type-h3{font-size:var(--text-lg)!important}
 .type-h4{font-size:var(--text-md)!important}
 .type-h5{font-size:var(--text-base)!important;text-transform:none!important;letter-spacing:var(--tracking-label)!important}
 :is(.type-h1,.type-h2,.type-h3,.type-h4,.type-h5){font-family:var(--font-sans)!important;font-weight:var(--weight-heading)!important;line-height:var(--leading-heading)!important;letter-spacing:var(--tracking-tight)}
+.type-display{font-size:var(--text-3xl)!important;line-height:var(--leading-display)!important}
 .type-body{font-family:var(--font-sans);font-size:var(--text-base)!important;line-height:var(--leading-body)!important}
 .type-lead{font-size:var(--text-md)!important;line-height:var(--leading-body)!important}
 :is(.type-eyebrow,.eyebrow,.vector-head,.page-outline-title){font-family:var(--font-mono)!important;font-size:var(--text-xs)!important;line-height:var(--leading-body)!important;letter-spacing:var(--tracking-label)!important;text-transform:none!important;color:var(--muted-color,#d6d6d6);margin-bottom:var(--type-eyebrow-gap)}
