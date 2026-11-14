@@ -101,7 +101,9 @@
             }
           }
         ]
-      }
+      },
+      "headline": "Artists and creators",
+      "abstract": "We work with developing and independent artists across music, visual art, literature, film, design, performance, and athletics. These profiles cover past and current engagements, viewed from Wild-Lake’s perspective."
     },
     {
       "@type": "Person",
