@@ -21,6 +21,6 @@ if __name__=='__main__':
   s=path.read_text();nav=render(path)
   if re.search(r'<nav\b[^>]*class="site-nav"',s):s=re.sub(r'<nav\b[^>]*class="site-nav".*?</nav>',lambda m:nav,s,count=1,flags=re.S)
   else:s=re.sub(r'(<body\b[^>]*>)',lambda m:m[1]+'\n'+nav,s,count=1)
-  if '/assets/navigation.css' not in s:s=s.replace('<link rel="stylesheet" href="/assets/css/fibonacci.css"/>','<link rel="stylesheet" href="/assets/navigation.css"/>\n<link rel="stylesheet" href="/assets/css/fibonacci.css"/>')
+  if path != root/'clients/index.html' and '/assets/navigation.css' not in s:s=s.replace('<link rel="stylesheet" href="/assets/css/fibonacci.css"/>','<link rel="stylesheet" href="/assets/navigation.css"/>\n<link rel="stylesheet" href="/assets/css/fibonacci.css"/>')
   path.write_text(s)
  print('Synchronized primary navigation across 20 HTML pages.')

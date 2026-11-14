@@ -363,16 +363,111 @@
       ]
     },
     {
-      "@type": "WebPage",
+      "@type": "CollectionPage",
       "@id": "https://wildlakestudio.com/clients/#webpage",
+      "name": "Clients | Wild Lake Studio",
       "url": "https://wildlakestudio.com/clients/",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
       },
-      "name": "Clients | Wild Lake Studio",
+      "about": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
       "description": "Wild Lake Studio past and current clients: Aissa Rose Gueye, Argelys Samuel Oriach, Drew Rutland, Emily Wilson, Jessica Wilson, Jimmy Andrew O’Keeffe, Jordy Oriach, Kyle Roach, Patrick Schlotterback, Sophia Jennings, Timo Sassen, and Zachary Reed Kantor. Individuals first. Explore their work and distinct trajectories.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#aissa-gueye"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#argelys-oriach"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#drew-rutland"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#emily-wilson"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#jessica-wilson"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#jimmy-andrew-okeeffe"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#jordy-oriach"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#kyle-roach"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#patrick-schlotterback"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#sophia-jennings"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#timo-sassen"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@id": "https://wildlakestudio.com/clients/#zachary-reed-kantor"
+            }
+          }
+        ]
+      },
       "headline": "Artists and creators",
-      "abstract": "We work with developing and independent artists across music, visual art, literature, film, design, performance, and athletics. These profiles cover past and current engagements, viewed from Wild-Lake’s perspective."
+      "abstract": "We work with developing and independent artists across music, visual art, literature, film, design, performance, and athletics. These profiles cover past and current engagements, viewed from Wild-Lake’s perspective.",
+      "breadcrumb": {
+        "@id": "https://wildlakestudio.com/clients/#breadcrumbs"
+      }
     },
     {
       "@type": "AboutPage",

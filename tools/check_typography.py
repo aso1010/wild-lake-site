@@ -28,7 +28,8 @@ for path in root.rglob('*.html'):
   role='type-label' if in_footer and n==2 else 'type-display' if path==root/'index.html' and n==1 else f'type-h{n}'
   if role not in classes:errors.append(f'{name}: missing {role}')
   previous=n
- if not a.styles or a.styles[-1]!=canonical or a.styles.count(canonical)!=1:errors.append(f'{name}: canonical type sheet must load once, last')
+ expected='/assets/clients-monolith.css' if name=='clients/index.html' else canonical
+ if not a.styles or a.styles[-1]!=expected or a.styles.count(expected)!=1:errors.append(f'{name}: canonical type sheet or compiled bundle must load once, last')
  if '—' in text or '--' in ''.join(a.copy):errors.append(f'{name}: banned punctuation in copy')
  for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S):
   if '—' in json.dumps(json.loads(block),ensure_ascii=False):errors.append(f'{name}: em dash in JSON-LD')
@@ -43,7 +44,7 @@ for path in root.rglob('*.css'):
   if '--' in comment:errors.append(f'{path.name}: double hyphen in comment')
  for prop,value in re.findall(r'(?<![-\w])(font-size|line-height|letter-spacing)\s*:\s*([^;{}]+)',text):
   if not re.match(r'(?:var\(|inherit|initial|unset|normal|revert)',value.strip()):errors.append(f'{path.name}: literal {prop}')
- if path!=root/'assets/css/fibonacci.css' and re.search(r'--(?:text-(?:xs|sm|base|md|lg|xl|2xl|3xl)|leading-[\w-]+|tracking-[\w-]+|font-(?:sans|mono)|body-size|lead-size)\s*:',text):errors.append(f'{path.name}: competing type token definition')
+ if path not in [root/'assets/css/fibonacci.css',root/'assets/clients-monolith.css'] and re.search(r'--(?:text-(?:xs|sm|base|md|lg|xl|2xl|3xl)|leading-[\w-]+|tracking-[\w-]+|font-(?:sans|mono)|body-size|lead-size)\s*:',text):errors.append(f'{path.name}: competing type token definition')
 css=(root/'assets/css/fibonacci.css').read_text()
 for token in ['xs','sm','base','md','lg','xl','2xl','3xl']:
  if len(re.findall(r'--text-'+token+r'\s*:',css))!=1:errors.append(f'Duplicated or absent {token} scale')

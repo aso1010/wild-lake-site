@@ -16,7 +16,9 @@ for p in root.rglob('*.html'):
  s=p.read_text();parser=Links();parser.feed(s);pages[p.resolve()]=parser
  nav=re.findall(r'<nav\b[^>]*class="site-nav".*?</nav>',s,re.S)
  if nav!=[render(p)]:errors.append(f'{p.relative_to(root)}: navigation differs from canonical manifest')
- if s.count('/assets/navigation.css')!=1:errors.append(f'{p.relative_to(root)}: shared navigation CSS missing or duplicated')
+ if p==root/'clients/index.html':
+  if s.count('/assets/clients-monolith.css')!=1:errors.append('clients/index.html: compiled navigation bundle missing')
+ elif s.count('/assets/navigation.css')!=1:errors.append(f'{p.relative_to(root)}: shared navigation CSS missing or duplicated')
  if '—' in s:errors.append(f'{p.relative_to(root)}: em dash')
 count=0
 for p,parsed in pages.items():

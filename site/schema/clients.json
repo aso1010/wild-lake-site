@@ -103,7 +103,10 @@
         ]
       },
       "headline": "Artists and creators",
-      "abstract": "We work with developing and independent artists across music, visual art, literature, film, design, performance, and athletics. These profiles cover past and current engagements, viewed from Wild-Lake’s perspective."
+      "abstract": "We work with developing and independent artists across music, visual art, literature, film, design, performance, and athletics. These profiles cover past and current engagements, viewed from Wild-Lake’s perspective.",
+      "breadcrumb": {
+        "@id": "https://wildlakestudio.com/clients/#breadcrumbs"
+      }
     },
     {
       "@type": "Person",
@@ -134,6 +137,9 @@
           "@type": "Place",
           "name": "Los Angeles"
         }
+      ],
+      "sameAs": [
+        "https://www.thewriterscolony.com/aissa-rose-gueye"
       ]
     },
     {
@@ -143,26 +149,21 @@
       "description": "Dominican-born systems architect and performance artist working through writing, voice, movement, and design. Author of This Is Not a Love Story; currently writing a pilot, a play, and his debut autofiction novel, Graduation. He constructs systems and inhabits them. Performance is the governing method of his practice; writing, voice, movement, design, and corporate roles are its forms. Born in the Dominican Republic, Argelys Samuel Oriach was raised by a housekeeper and a facility maintainer, and learned in adulthood that his mother was a writer and his father a musician, though neither pursued their craft. Because of this, he understands creative capacity entirely through the physical infrastructure required to sustain it. A method actor trained in the Alexander Technique, Oriach studies how people look, listen, move, and affect one another. He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists. This Is Not a Love Story is a screenplay written in prose form. He is the founder and artistic director of Wild Lake Studio.",
       "url": "https://wildlakestudio.com/clients/#argelys-oriach",
       "sameAs": [
+        "https://argelysoriach.com/#person",
         "https://argelysoriach.com/",
         "https://www.linkedin.com/in/argelys-samuel-oriach"
       ],
       "image": "https://wildlakestudio.com/assets/images/argelys-client.jpg?v=d1fe734a38",
       "jobTitle": [
-        "Founder",
-        "Systems architect",
         "Performance artist",
-        "Visual artist",
-        "Movement artist",
-        "Artistic director"
+        "Artistic director",
+        "Systems architect",
+        "Founder"
       ],
       "knowsAbout": [
-        "Visual art",
-        "Performance art",
-        "Movement",
-        "Creative direction",
-        "Performance as method",
-        "Durational performance",
-        "Systems design"
+        {
+          "@id": "https://argelysoriach.com/universe-api/#framework"
+        }
       ],
       "hasCredential": [
         {
@@ -199,7 +200,10 @@
           "@type": "Place",
           "name": "New York"
         }
-      ]
+      ],
+      "worksFor": {
+        "@id": "https://wildlakestudio.com/#organization"
+      }
     },
     {
       "@type": "Person",
@@ -296,7 +300,8 @@
           "@type": "Place",
           "name": "Amsterdam"
         }
-      ]
+      ],
+      "image": "https://wildlakestudio.com/assets/images/jessica-wilson-fountain-2024.png"
     },
     {
       "@type": "Person",
@@ -366,7 +371,8 @@
           "@type": "Place",
           "name": "New York"
         }
-      ]
+      ],
+      "image": "https://wildlakestudio.com/assets/images/jordy-oriach.png"
     },
     {
       "@type": "Person",
@@ -390,6 +396,9 @@
           "@type": "Place",
           "name": "New York"
         }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/kylemroach"
       ]
     },
     {
@@ -432,6 +441,9 @@
           "@type": "Place",
           "name": "New York"
         }
+      ],
+      "sameAs": [
+        "https://cargocollective.com/patrickschlotterback"
       ]
     },
     {
@@ -478,6 +490,9 @@
           "@type": "Place",
           "name": "New York"
         }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/timosassen/"
       ]
     },
     {
@@ -575,6 +590,300 @@
         }
       ],
       "description": "Two Londoners walking home from a first date glimpse the life they could share."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://wildlakestudio.com/#organization",
+      "name": "Wild Lake Studio",
+      "legalName": "Wild Lake Studio LLC",
+      "alternateName": "Wild-Lake",
+      "url": "https://wildlakestudio.com",
+      "description": "Independent studio for creators across music, art, writing and film. Talent architecture and artist development.",
+      "foundingDate": "2026",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://wildlakestudio.com/clients/#argelys-oriach",
+        "name": "Argelys Samuel Oriach"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Crown Heights",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "location": [
+        {
+          "@type": "Place",
+          "name": "New York, USA"
+        },
+        {
+          "@type": "Place",
+          "name": "Tampa, Florida, USA"
+        },
+        {
+          "@type": "Place",
+          "name": "Santiago, Dominican Republic"
+        }
+      ],
+      "areaServed": [
+        "New York",
+        "Tampa",
+        "Santiago",
+        "Worldwide"
+      ],
+      "knowsAbout": [
+        "Existential mechanics",
+        "Artist development",
+        "Multidisciplinary Artist & Repertoire (A&R) across music, visual art, literature, and film",
+        "Talent architecture",
+        "Creative infrastructure",
+        "Audience development",
+        "Structural stewardship",
+        "Artist wellbeing",
+        "Structural honesty",
+        "Institutional stewardship",
+        {
+          "@id": "https://argelysoriach.com/universe-api/#framework"
+        }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "url": "https://wildlakestudio.com/practice/#sovereign-ar",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://wildlakestudio.com/#sovereign-ar",
+            "name": "Sovereign A&R",
+            "serviceType": "Multidisciplinary Artist & Repertoire",
+            "url": "https://wildlakestudio.com/practice/#sovereign-ar",
+            "description": "Multidisciplinary Artist & Repertoire: scouting artists and developing complete bodies of work across music, visual art, literature, and film through critique, direction, and critical framing. The artist retains 100% ownership and creative control. Wild-Lake takes 0% IP ownership and 0% revenue share.",
+            "category": [
+              "Music",
+              "Visual art",
+              "Literature",
+              "Film"
+            ],
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://wildlakestudio.com/practice/#service-01-1",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Artist development",
+            "description": "We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://wildlakestudio.com/practice/#service-01-2",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Creative development",
+            "description": "We develop complete bodies of work across music, visual art, literature, and film through critique, direction, and critical framing. The artist retains 100% ownership and creative control. Wild-Lake takes 0% IP ownership and 0% revenue share.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://wildlakestudio.com/practice/#service-01-3",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Creative infrastructure",
+            "description": "Audience development is asset building. We construct the physical, spatial, and digital channels for complex work.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://wildlakestudio.com/practice/#service-02-1",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Existential mechanics",
+            "description": "We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://wildlakestudio.com/practice/#service-02-2",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Structural stewardship",
+            "description": "Sustained operational support to manage the existential load of the artist over a ten-year horizon.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://wildlakestudio.com/practice/#service-02-3",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Capacity & boundary audit",
+            "description": "Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.",
+            "provider": {
+              "@id": "https://wildlakestudio.com/#organization"
+            }
+          }
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/wildlake.studio",
+        "https://www.linkedin.com/company/wild-lake/"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://wildlakestudio.com/#home"
+      },
+      "disambiguatingDescription": "Wild Lake Studio is known as Wild-Lake. We scout talent and work with artists directly, or partner with record labels, galleries, and booking agencies. In either case, the artist enters the engagement willingly, on their own initiative or through a representative.",
+      "logo": "https://wildlakestudio.com/assets/images/wild-lake-mark.png?v=caf21f9cf6",
+      "subjectOf": [
+        {
+          "@id": "https://wildlakestudio.com/magazine/#magazine",
+          "@type": "Periodical",
+          "name": "Quiet Creek",
+          "url": "https://wildlakestudio.com/magazine/"
+        }
+      ],
+      "email": "info@wildlakestudio.com",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Ways to work together",
+        "url": "https://wildlakestudio.com/practice/",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Sovereign A&R",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "url": "https://wildlakestudio.com/practice/#service-01-1",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Artist development",
+                  "description": "We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice.",
+                  "provider": {
+                    "@id": "https://wildlakestudio.com/#organization"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://wildlakestudio.com/practice/#service-01-2",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Creative development",
+                  "description": "We develop complete bodies of work across music, visual art, literature, and film through critique, direction, and critical framing. The artist retains 100% ownership and creative control. Wild-Lake takes 0% IP ownership and 0% revenue share.",
+                  "provider": {
+                    "@id": "https://wildlakestudio.com/#organization"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://wildlakestudio.com/practice/#service-01-3",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Creative infrastructure",
+                  "description": "Audience development is asset building. We construct the physical, spatial, and digital channels for complex work.",
+                  "provider": {
+                    "@id": "https://wildlakestudio.com/#organization"
+                  }
+                }
+              }
+            ],
+            "description": "Multidisciplinary Artist & Repertoire: scouting artists and developing complete bodies of work across music, visual art, literature, and film through critique, direction, and critical framing. The artist retains 100% ownership and creative control. Wild-Lake takes 0% IP ownership and 0% revenue share."
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Talent architecture",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "url": "https://wildlakestudio.com/practice/#service-02-1",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Existential mechanics",
+                  "description": "We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries.",
+                  "provider": {
+                    "@id": "https://wildlakestudio.com/#organization"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://wildlakestudio.com/practice/#service-02-2",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Structural stewardship",
+                  "description": "Sustained operational support to manage the existential load of the artist over a ten-year horizon.",
+                  "provider": {
+                    "@id": "https://wildlakestudio.com/#organization"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://wildlakestudio.com/practice/#service-02-3",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Capacity & boundary audit",
+                  "description": "Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.",
+                  "provider": {
+                    "@id": "https://wildlakestudio.com/#organization"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "slogan": "Wild Lake Studio is where generational creators are made.",
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": "https://seveneightythree.com/#organization",
+        "name": "Seven Eighty Three",
+        "alternateName": "Lab 783",
+        "url": "https://seveneightythree.com/",
+        "description": "An independent systems design practice.",
+        "subOrganization": {
+          "@id": "https://wildlakestudio.com/#organization"
+        }
+      },
+      "member": {
+        "@id": "https://wildlakestudio.com/clients/#argelys-oriach"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://wildlakestudio.com/clients/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://wildlakestudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Clients",
+          "item": "https://wildlakestudio.com/clients/"
+        }
+      ]
     }
   ]
 }
