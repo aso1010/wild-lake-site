@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'sha256-aSMaRUgYwIDVlt3VRJjD/6N0KFOeDCeySnpCfKf9DGc='; script-src 'sha256-Og1FwMycVhocqsaJxJ8PJvPZNyKCgTUBiYLtCUxLTB8=' 'sha256-Lxu7ACFvFlhtAQ3xwmrpGE5L67eNGohTBTy5SS8548o='; font-src 'self'; img-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'sha256-QrvYDYhFE9EUGVT42AKsWgaDnatMpp3i++IM17GsnUw='; script-src 'sha256-Lxu7ACFvFlhtAQ3xwmrpGE5L67eNGohTBTy5SS8548o='; font-src 'self'; img-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Architectural Mirror | Wild Lake Studio</title>
 
   <meta name="theme-color" content="#000000">
@@ -13,31 +13,9 @@
   <link rel="preload" href="/mirror/assets/fonts/Archivo-Variable.c2193589.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/mirror/assets/fonts/JetBrainsMono-Variable.98f8fe00.woff2" as="font" type="font/woff2" crossorigin>
   <style>
-@font-face {
-  font-family: 'Archivo';
-  src: url('/mirror/assets/fonts/Archivo-Variable.c2193589.woff2') format('woff2'),
-       url('/mirror/assets/fonts/Archivo-Variable.bc878c6e.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 100 900;
-  font-stretch: 62% 125%;
-  font-display: block;
-}
-@font-face {
-  font-family: 'Archivo';
-  src: url('/mirror/assets/fonts/Archivo-Italic-Variable.1cb3e748.woff2') format('woff2'),
-       url('/mirror/assets/fonts/Archivo-Italic-Variable.28148413.ttf') format('truetype');
-  font-style: italic;
-  font-weight: 100 900;
-  font-stretch: 62% 125%;
-  font-display: block;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/mirror/assets/fonts/JetBrainsMono-Variable.98f8fe00.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 100 800;
-  font-display: block;
-}
+
+
+
 :root {
   color-scheme: dark;
   --void: #000000;
@@ -45,8 +23,8 @@
   --ink-2: rgba(244, 244, 240, 0.82);
   --ink-3: rgba(244, 244, 240, 0.62);
   --line: rgba(244, 244, 240, 0.3);
-  --font-sans: Archivo, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  
+  
   --wght-thin: 100;
   --wght-light: 300;
   --wght-regular: 400;
@@ -56,18 +34,18 @@
   --wdth-condensed: 62%;
   --wdth-normal: 100%;
   --wdth-expanded: 125%;
-  --t-13: 13px;
-  --t-21: 21px;
-  --t-34: 34px;
-  --t-55: 55px;
-  --t-89: 89px;
-  --t-144: 144px;
-  --lh-monolith: 0.88;
-  --lh-solid: 1;
-  --lh-text: 1.618;
-  --track-monolith: -0.01em;
-  --track-display: -0.021em;
-  --track-caps: 0.144em;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 html,
 body {
@@ -75,10 +53,10 @@ body {
 }
 body {
   color: var(--ink);
-  font-family: var(--font-sans);
+  font-family:var(--font-sans);
   font-weight: var(--wght-regular);
   font-stretch: var(--wdth-normal);
-  line-height: var(--lh-text);
+  line-height:var(--lh-text);
   font-kerning: normal;
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
@@ -90,21 +68,21 @@ body {
   color: var(--void);
 }
 .monolith-header {
-  font-family: var(--font-sans);
+  font-family:var(--font-sans);
   font-weight: var(--wght-black);
   font-stretch: var(--wdth-expanded);
-  line-height: var(--lh-monolith);
-  letter-spacing: var(--track-monolith);
+  line-height:var(--lh-monolith);
+  letter-spacing:var(--track-monolith);
   text-transform: uppercase;
   color: var(--ink);
 }
 .monolith-condensed {
-  font-family: var(--font-sans);
+  font-family:var(--font-sans);
   font-weight: var(--wght-extrabold);
   font-stretch: var(--wdth-condensed);
 }
 .mono {
-  font-family: var(--font-mono);
+  font-family:var(--font-sans);
 }
 
 :root {
@@ -126,7 +104,7 @@ body {
 body {
   background-color: var(--color-secondary);
   color: var(--color-primary);
-  font-family: var(--font-utility);
+  font-family:var(--font-sans);
   height: 100vh;
   height: 100svh;
   overflow: hidden;
@@ -163,32 +141,32 @@ body {
   gap: 21px;
 }
 h1, h2 {
-  font-family: var(--font-header);
+  font-family:var(--font-sans);
   text-transform: uppercase;
-  letter-spacing: -0.03em;
+  letter-spacing:var(--tracking-tight);
   color: var(--color-primary);
 }
 h1 {
-  font-size: clamp(26px, 3vw, 46px);
+  font-size:var(--text-3xl);
   overflow-wrap: anywhere;
   font-weight: 900;
-  line-height: 1;
+  line-height:var(--leading-solid);
   margin-bottom: 21px;
 }
 h2 {
-  font-size: 21px;
+  font-size:var(--text-md);
   font-weight: 700;
-  line-height: 1;
+  line-height:var(--leading-solid);
   margin-bottom: 13px;
 }
 .draw,
 .export {
   flex: none;
-  font-family: var(--font-utility);
-  font-size: 13px;
+  font-family:var(--font-sans);
+  font-size:var(--text-xs);
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: var(--track-caps);
+  line-height:var(--leading-solid);
+  letter-spacing:var(--track-caps);
   text-transform: uppercase;
   color: var(--color-primary);
   background-color: var(--color-secondary);
@@ -289,7 +267,7 @@ h2 {
   color: var(--color-secondary);
 }
 .card .symbol {
-  font-family: var(--font-utility);
+  font-family:var(--font-sans);
   font-weight: 700;
   position: absolute;
   left: 0;
@@ -301,9 +279,9 @@ h2 {
   justify-content: center;
   text-align: center;
   padding: 0 8px;
-  font-size: clamp(8px, 5.6cqi, 13px);
-  line-height: 1.2;
-  letter-spacing: 0.08em;
+  font-size:var(--text-xs);
+  line-height:var(--leading-heading);
+  letter-spacing:var(--tracking-label);
   color: var(--art);
 }
 .spin {
@@ -328,9 +306,9 @@ h2 {
   min-height: 0;
   width: 100%;
   resize: none;
-  font-family: var(--font-utility);
-  font-size: 21px;
-  line-height: var(--lh-text);
+  font-family:var(--font-sans);
+  font-size:var(--text-md);
+  line-height:var(--lh-text);
   color: var(--color-primary);
   background-color: var(--color-secondary);
   caret-color: var(--color-primary);
@@ -370,7 +348,7 @@ h2 {
   }
   h1 {
     flex: 1 1 100%;
-    font-size: min(34px, 7.6vw);
+    font-size:var(--text-xl);
   }
   .draw {
     margin-bottom: 21px;
@@ -393,10 +371,10 @@ h2 {
 }
 
 .spread-controls{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
-.spread-size{display:flex;align-items:center;gap:8px;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+.spread-size{display:flex;align-items:center;gap:8px;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:var(--tracking-label)}
 .card-count{font:inherit;color:var(--ink);background:#000;border:1px solid var(--ink-3);padding:8px;min-height:40px;border-radius:0}
 .reading-frame header{flex-wrap:wrap}.reading-frame h1{margin-bottom:13px}
-.reading-status{font-size:13px;color:var(--ink-2);margin:0 0 13px;min-height:21px}
+.reading-status{font-size:var(--text-xs);color:var(--ink-2);margin:0 0 13px;min-height:21px}
 .shuffle-deck{flex:1;min-height:0;display:grid;place-items:center;color:#fff}
 .shuffle-deck svg{height:min(100%,233px);max-height:233px;max-width:144px;width:100%;border:2px solid currentColor}
 .shuffle-deck.is-shuffling svg{animation:creek-breathe 8s ease-in-out infinite}
@@ -404,10 +382,10 @@ h2 {
 .card-grid.cards-1 li{height:min(100cqh,100cqw * 377 / 233)}
 .card-grid.cards-2 li{height:min(100cqh,(100cqw - 21px) / 2 * 377 / 233)}
 .card-grid.cards-3 li{height:min(100cqh,(100cqw - 42px) / 3 * 377 / 233)}
-@media(max-width:767px){.spread-controls{margin-bottom:13px}.spread-controls .draw{margin:0}.shuffle-deck{min-height:233px;margin-block:21px}.card-grid.cards-1{grid-template-columns:minmax(0,233px);justify-content:center}.card-grid li,.card-grid.cards-1 li,.card-grid.cards-2 li,.card-grid.cards-3 li{height:auto}.reading-status{line-height:1.6}}
+@media(max-width:767px){.spread-controls{margin-bottom:13px}.spread-controls .draw{margin:0}.shuffle-deck{min-height:233px;margin-block:21px}.card-grid.cards-1{grid-template-columns:minmax(0,233px);justify-content:center}.card-grid li,.card-grid.cards-1 li,.card-grid.cards-2 li,.card-grid.cards-3 li{height:auto}.reading-status{line-height:var(--leading-body)}}
 @media(prefers-reduced-motion:reduce){.shuffle-deck.is-shuffling svg{animation:none}}
 
-.mirror-byline{display:block;font-family:var(--font-utility);font-size:13px;font-weight:400;line-height:1.6;letter-spacing:0;text-transform:none;margin-top:8px;color:var(--ink-2)}
+.mirror-byline{display:block;font-family:var(--font-sans);font-size:var(--text-xs);font-weight:400;line-height:var(--leading-body);letter-spacing:var(--tracking-normal);text-transform:none;margin-top:8px;color:var(--ink-2)}
 </style>
   <script type="application/ld+json">
 {
@@ -503,7 +481,7 @@ h2 {
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=af25891ad5">
 <link rel="manifest" href="/site.webmanifest?v=af25891ad5">
 
-<!-- Page metadata and static water-monolith preview. -->
+
 <meta name="description" content="A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation."/>
 <meta name="title" content="Architectural Mirror | Wild Lake Studio"/>
 <meta property="og:title" content="Architectural Mirror | Wild Lake Studio"/>
@@ -522,6 +500,7 @@ h2 {
 <meta name="twitter:description" content="A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation."/>
 <meta name="twitter:image" content="https://wildlakestudio.com/assets/social/wild-lake-classic-edge-og.png"/>
 <meta name="twitter:image:alt" content="Wild-Lake classic stacked monolith, white on black."/>
+<link rel="stylesheet" href="/assets/css/fibonacci.css"/>
 </head>
 <body class="reading-layout">
 <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -609,22 +588,22 @@ h2 {
 
     <section class="reading-frame" aria-labelledby="mirror">
       <header>
-        <h1 id="mirror">Architectural Mirror<small class="mirror-byline">by Wild-Lake</small></h1>
-        <div class="spread-controls" hidden><label class="spread-size">Cards <select aria-label="Number of cards" class="card-count"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><button class="draw" type="button">Shuffle</button></div>
+        <h1 id="mirror" class="type-h1">Architectural Mirror<small class="mirror-byline">by Wild-Lake</small></h1>
+        <div class="spread-controls" hidden><label class="spread-size type-label">Cards <select aria-label="Number of cards" class="card-count"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><button class="draw" type="button">Shuffle</button></div>
       </header>
-      <p class="reading-status" role="status" aria-live="polite">Choose one to four cards. Take a breath and bring a question to mind. Shuffle, stop, then deal.</p>
+      <p class="reading-status type-body" role="status" aria-live="polite">Choose one to four cards. Take a breath and bring a question to mind. Shuffle, stop, then deal.</p>
 <div class="shuffle-deck" hidden aria-hidden="true"><svg viewBox="0 0 233 377"><use href="#back"/></svg></div>
 <ol class="card-grid" hidden>
-        <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 1"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#m16"/></svg><span class="symbol">THE TOWER</span></span></span></label></li>
-        <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 2"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#p04"/></svg><span class="symbol">FOUR OF PENTACLES</span></span></span></label></li>
-        <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 3"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#w14"/></svg><span class="symbol">KING OF WANDS</span></span></span></label></li>
-        <li><label class="card heavy-draw"><input class="turn" type="checkbox" aria-label="Turn card 4"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#m10"/></svg><span class="symbol">WHEEL OF FORTUNE</span></span></span></label></li>
+        <li><label class="card heavy-draw type-label"><input class="turn" type="checkbox" aria-label="Turn card 1"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#m16"/></svg><span class="symbol">THE TOWER</span></span></span></label></li>
+        <li><label class="card heavy-draw type-label"><input class="turn" type="checkbox" aria-label="Turn card 2"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#p04"/></svg><span class="symbol">FOUR OF PENTACLES</span></span></span></label></li>
+        <li><label class="card heavy-draw type-label"><input class="turn" type="checkbox" aria-label="Turn card 3"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#w14"/></svg><span class="symbol">KING OF WANDS</span></span></span></label></li>
+        <li><label class="card heavy-draw type-label"><input class="turn" type="checkbox" aria-label="Turn card 4"><span class="flip"><span class="back"><svg viewBox="0 0 233 377"><use href="#back"/></svg></span><span class="face"><svg viewBox="0 0 233 377"><use href="#m10"/></svg><span class="symbol">WHEEL OF FORTUNE</span></span></span></label></li>
       </ol>
     </section>
 
     <section class="journal-frame" aria-labelledby="log">
       <header>
-        <h2 id="log">Log</h2>
+        <h2 id="log" class="type-h2">Log</h2>
         <button class="export" type="button" hidden>Export</button>
       </header>
       <textarea class="raw-input" aria-labelledby="log" spellcheck="false"></textarea>

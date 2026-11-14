@@ -1,30 +1,30 @@
-/* Fluid shared canvas: copy and dividers use the same available width. */
-:root{--gutter:clamp(1.3125rem,5vw,5.5rem);--page-width:100%;--body-size:clamp(1.125rem,1.02rem + .3vw,1.375rem);--lead-size:clamp(1.3125rem,1.12rem + .55vw,1.75rem)}
-body.home,body.roster{font-size:var(--body-size)}
+
+:root{--gutter:clamp(1.3125rem,5vw,5.5rem);--page-width:100%;}
+body.home,body.roster{font-size:var(--text-base)}
 :is(.home,.roster) :is(p,h1,h2,h3,li,dd){overflow-wrap:anywhere}
 .home :is(.roster-nav,.statement-block,.pillars,.who,.pitch,.contact,.base),
 .roster .roster-main,.roster .base,
 .site-nav,.site-topbar,.studio-introduction,.contact-header,.contact-main,.founder-main{width:100%;max-width:var(--page-width);min-width:0}
 .home .who-body,.home .who-body p,.home .statement-text,.home .vector-body,.home .contact>p{width:100%;max-width:none}
-.home .vector-body,.home .who-body p{font-size:var(--body-size)}
-.home .statement-text,.home .who-body .who-lead,.home .who-body .pitch-close,.home .contact>p{font-size:var(--lead-size)}
-.home .who-title,.home .pitch-title h2{max-width:none;font-size:clamp(2.125rem,1.5rem + 2.5vw,4.5rem)}
+.home .vector-body,.home .who-body p{font-size:var(--text-base)}
+.home .statement-text,.home .who-body .who-lead,.home .who-body .pitch-close,.home .contact>p{font-size:var(--text-md)}
+.home .who-title,.home .pitch-title h2{max-width:none;font-size:var(--text-3xl)}
 .home .vectors-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,25rem),1fr));gap:clamp(2.125rem,4vw,5.5625rem)}
 .home :is(.pillars,.who,.pitch,.contact){padding-top:clamp(3.4375rem,6vw,7rem);padding-bottom:2.125rem}
 .home .who-body{gap:1.3125rem}
 .home .site-nav{gap:.5rem 1.3125rem}
 .founder-main section,.founder-main p,.founder-principles,.contact-main p,.intake{max-width:none}
-.roster :is(.roster-intro p,.entry-detail,.profile-grid p){max-width:none;font-size:var(--body-size)}
+.roster :is(.roster-intro p,.entry-detail,.profile-grid p){max-width:none;font-size:var(--text-base)}
 .home .cap{min-height:100svh;height:auto;padding-block:2.125rem}
 img,video{max-width:100%;height:auto}
-.intake :is(input,select,textarea,button){font-size:1em}
-/* Slim horizontal section navigation, following the 783 reference. */
+.intake :is(input,select,textarea,button){font-size:var(--text-base)}
+
 .home :is(.statement-block,.pillars,.who,.pitch,.contact,.base),.roster .roster-main,.roster .base,.founder-main,.contact-main{width:100%;max-width:none;margin-inline:0}
 .page-outline,.page-outline.is-enhanced,.page-outline.is-in-reading-area{position:sticky;top:0;right:auto;display:flex;align-items:center;gap:1.5rem;width:100%;max-width:none;max-height:none;margin:0;padding:.5rem var(--gutter);border:0;border-bottom:1px solid var(--rule-color);background:var(--bg-color);visibility:visible;opacity:1;pointer-events:auto;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;z-index:20}
-.page-outline .page-outline-title,.page-outline.is-enhanced .page-outline-title{display:block;flex:none;white-space:nowrap;font-size:.75rem;line-height:1.5;margin:0;color:var(--muted-color)}
+.page-outline .page-outline-title,.page-outline.is-enhanced .page-outline-title{display:block;flex:none;white-space:nowrap;font-size:var(--text-xs);line-height:var(--leading-body);margin:0;color:var(--muted-color)}
 .page-outline ol,.page-outline.is-enhanced ol{display:flex;align-items:center;flex-wrap:nowrap;gap:1.25rem;flex:none;margin:0;padding:0}
 .page-outline li,.page-outline li+li{margin:0;flex:none}
-.page-outline a{display:flex;align-items:center;min-height:2.75rem;padding:.5rem 0;font-size:.75rem;line-height:1.5;white-space:nowrap;border:0;border-bottom:1px solid transparent;border-radius:0;color:var(--muted-color);background:none;box-shadow:none}
+.page-outline a{display:flex;align-items:center;min-height:2.75rem;padding:.5rem 0;font-size:var(--text-xs);line-height:var(--leading-body);white-space:nowrap;border:0;border-bottom:1px solid transparent;border-radius:0;color:var(--muted-color);background:none;box-shadow:none}
 .page-outline a[aria-current=location]{border:0;border-bottom:1px solid #FFFFFF;border-radius:0;color:#FFFFFF;background:none;box-shadow:none;font-weight:500}
 .page-outline .page-outline-mobile,.page-outline.is-enhanced .page-outline-mobile{display:none}
 @media(max-width:40rem){.page-outline,.page-outline.is-enhanced{gap:1rem}.page-outline ol,.page-outline.is-enhanced ol{gap:1rem}}
@@ -34,7 +34,7 @@ img,video{max-width:100%;height:auto}
 @media(forced-colors:active){.rule{background:CanvasText!important}.site-topbar,.site-topbar-logo{background:Canvas;color:CanvasText}.home .mark text,.home .mark path{fill:CanvasText}}
 @media(prefers-reduced-motion:reduce){.home .mark .ltr{transform:none!important;opacity:1!important;will-change:auto}}
 
-/* Keep desktop client imagery at an editorial scale on wide screens. */
+
 @media(min-width:801px){
   .roster .roster-entry{grid-template-columns:minmax(0,min(30vw,360px)) minmax(0,1fr);gap:clamp(34px,5vw,80px)}
   .roster .roster-visual{width:100%;max-width:360px;justify-self:start}

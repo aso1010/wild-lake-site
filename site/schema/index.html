@@ -1201,8 +1201,8 @@
       --muted-color: rgba(244, 244, 240, 0.50);
       --subtle-color: rgba(244, 244, 240, 0.68);
       --rule-color: rgba(244, 244, 240, 0.16);
-      --font-mono: 'Archivo', Arial, sans-serif;
-      --font-sans: 'Archivo', Arial, sans-serif;
+      
+      
     }
 
     *, *::before, *::after {
@@ -1221,7 +1221,7 @@
       display: flex;
       flex-direction: column;
       gap: clamp(20px, 3vh, 40px);
-      font-family: var(--font-mono);
+      font-family:var(--font-sans);
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
@@ -1276,9 +1276,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: clamp(10px, 0.5vw + 7px, 12px);
+      font-size:var(--text-xs);
       font-weight: 500;
-      letter-spacing: 0.06em;
+      letter-spacing:var(--tracking-label);
       text-transform: uppercase;
       color: var(--muted-color);
     }
@@ -1326,19 +1326,19 @@
     }
 
     .mark text {
-      font-family: var(--font-sans);
+      font-family:var(--font-sans);
       font-weight: 900;
       font-stretch: 125%;
       font-variation-settings: 'wdth' 125, 'wght' 900;
       fill: var(--text-color);
-      letter-spacing: -0.02em;
+      letter-spacing:var(--tracking-tight);
     }
 
     .subtitle-bar {
       padding: 0 clamp(20px, 3.2vw, 56px);
-      font-size: clamp(13px, 1vw + 8px, 18px);
+      font-size:var(--text-base);
       font-weight: 400;
-      letter-spacing: -0.01em;
+      letter-spacing:var(--tracking-tight);
       color: var(--muted-color);
       margin-top: -6px;
     }
@@ -1370,29 +1370,29 @@
     }
 
     .vector-head {
-      font-size: clamp(10px, 0.5vw + 7px, 11px);
+      font-size:var(--text-xs);
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing:var(--tracking-label);
       text-transform: uppercase;
       color: var(--muted-color);
     }
 
     .vector-label {
       margin: 0;
-      font-family: var(--font-sans);
+      font-family:var(--font-sans);
       font-weight: 900;
       font-stretch: 125%;
       font-variation-settings: 'wdth' 125, 'wght' 900;
-      font-size: clamp(15px, 1.2vw + 10px, 20px);
+      font-size:var(--text-md);
       text-transform: uppercase;
-      letter-spacing: -0.01em;
+      letter-spacing:var(--tracking-tight);
       color: var(--text-color);
     }
 
     .vector-body {
       margin: 0;
-      font-size: clamp(11px, 0.75vw + 7px, 13.5px);
-      line-height: 1.5;
+      font-size:var(--text-sm);
+      line-height:var(--leading-body);
       color: var(--subtle-color);
     }
 
@@ -1405,9 +1405,9 @@
       padding: clamp(14px, 2vw, 24px);
       border: 1px solid var(--rule-color);
       overflow-x: auto;
-      font-family: var(--font-mono);
-      font-size: clamp(11px, 0.5vw + 9px, 13px);
-      line-height: 1.55;
+      font-family:var(--font-sans);
+      font-size:var(--text-xs);
+      line-height:var(--leading-body);
       color: var(--subtle-color);
       tab-size: 2;
     }
@@ -1430,10 +1430,10 @@
       display: flex;
       flex-direction: column;
       gap: 6px;
-      font-size: clamp(10px, 0.55vw + 8px, 12px);
+      font-size:var(--text-xs);
       font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: -0.02em;
+      line-height:var(--leading-body);
+      letter-spacing:var(--tracking-tight);
       text-transform: uppercase;
       color: var(--muted-color);
     }
@@ -1442,10 +1442,10 @@
       flex: 1 1 320px;
       max-width: 48ch;
       margin-left: auto;
-      font-size: clamp(11px, 0.8vw + 8px, 13.5px);
+      font-size:var(--text-sm);
       font-weight: 400;
-      line-height: 1.45;
-      letter-spacing: -0.01em;
+      line-height:var(--leading-body);
+      letter-spacing:var(--tracking-tight);
       color: var(--subtle-color);
       text-align: right;
     }
@@ -1465,28 +1465,20 @@
       border-radius: 50%;
       margin-right: 6px;
     }
-    /* Global typeface: Archivo variable; all text, UI labels and navigation. */
-    button, input, select, textarea, label { font-family: var(--font-sans); }
+    
+    button, input, select, textarea, label { font-family:var(--font-sans); }
 
-/* Locally hosted Archivo from the supplied typeface package. */
-@font-face {
-  font-family: "Archivo Local";
-  src: url("/assets/fonts/Archivo-VariableFont_wdth,wght.ttf") format("truetype");
-  font-style: normal; font-weight: 100 900; font-stretch: 62% 125%; font-display: swap;
-}
-@font-face {
-  font-family: "Archivo Local";
-  src: url("/assets/fonts/Archivo-Italic-VariableFont_wdth,wght.ttf") format("truetype");
-  font-style: italic; font-weight: 100 900; font-stretch: 62% 125%; font-display: swap;
-}
-:root { --font-sans: "Archivo Local", "Archivo", Arial, sans-serif; --font-mono: "Archivo Local", "Archivo", Arial, sans-serif; }
+
+
+
+:root {   }
 
 .files,.file,.base{min-width:0;max-width:100%}.files pre{width:100%;max-width:100%;min-width:0;white-space:pre-wrap;overflow-wrap:anywhere}
 
 .studio-footer .footer-mark{display:block;max-width:100%}.studio-footer .footer-mark img{display:block;width:100%;max-width:100%;height:auto}
 </style>
 
-<!-- Static social preview for link crawlers. -->
+
 
 
 <meta property="og:locale" content="en_US"/>
@@ -1517,7 +1509,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=af25891ad5">
 <link rel="manifest" href="/site.webmanifest?v=af25891ad5">
 
-<!-- Page metadata and static water-monolith preview. -->
+
 <meta name="description" content="The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt."/>
 <meta name="title" content="Schema | Wild Lake Studio"/>
 <meta property="og:title" content="Schema | Wild Lake Studio"/>
@@ -1536,15 +1528,16 @@
 <meta name="twitter:description" content="The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt."/>
 <meta name="twitter:image" content="https://wildlakestudio.com/assets/social/wild-lake-classic-edge-og.png"/>
 <meta name="twitter:image:alt" content="Wild-Lake classic stacked monolith, white on black."/>
+<link rel="stylesheet" href="/assets/css/fibonacci.css"/>
 </head>
 <body class="reading-layout">
 
   <header class="site-topbar">
 <a class="site-topbar-logo" href="/" aria-label="Wild Lake Studio home"><span class="header-globe"><img src="/assets/images/wild-lake-mark.png?v=caf21f9cf6" width="1080" height="1080" alt="Wild-Lake globe" decoding="async"/><video data-globe-src="/assets/images/wild-lake-globe-spin.mp4" width="384" height="384" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video></span></a>
-<p class="site-topbar-descriptor">Work that endures, and stays yours.</p>
+<p class="site-topbar-descriptor type-body">Work that endures, and stays yours.</p>
 </header>
 <header class="cap">
-<h1 class="mark" aria-label="Schema">
+<h1 class="mark type-h1" aria-label="Schema">
       <svg viewBox="0 0 1000 208" aria-hidden="true">
         <text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">SCHEMA</text>
       </svg>
@@ -1560,10 +1553,10 @@
 
     <section class="files" aria-label="Data files">
       <article class="file">
-        <div class="vector-head">Organization</div>
-        <h2 class="vector-label">Organization</h2>
-        <p class="vector-body">The entity: name, legal name, locations, founder, and current offerings. <a href="organization.json">organization.json &rarr;</a></p>
-        <p>Quiet Creek magazine: <a href="quiet-creek.json">Publication JSON-LD</a> · <a href="quiet-creek-first-essay.json">First essay JSON-LD</a> · <a href="/magazine/">Read the magazine</a></p>
+        <div class="vector-head type-eyebrow">Organization</div>
+        <h2 class="vector-label type-h2">Organization</h2>
+        <p class="vector-body type-body">The entity: name, legal name, locations, founder, and current offerings. <a href="organization.json">organization.json &rarr;</a></p>
+        <p class="type-body">Quiet Creek magazine: <a href="quiet-creek.json">Publication JSON-LD</a> · <a href="quiet-creek-first-essay.json">First essay JSON-LD</a> · <a href="/magazine/">Read the magazine</a></p>
 <pre tabindex="0" data-src="organization.json"><code>{
   &quot;@type&quot;: &quot;Organization&quot;,
   &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;,
@@ -1820,9 +1813,9 @@
       </article>
 
       <article class="file">
-        <div class="vector-head">Website</div>
-        <h2 class="vector-label">Website</h2>
-        <p class="vector-body">The site and its pages, and who publishes them. <a href="website.json">website.json &rarr;</a></p>
+        <div class="vector-head type-eyebrow">Website</div>
+        <h2 class="vector-label type-h2">Website</h2>
+        <p class="vector-body type-body">The site and its pages, and who publishes them. <a href="website.json">website.json &rarr;</a></p>
         <pre tabindex="0" data-src="website.json"><code>{
   &quot;@context&quot;: &quot;https://schema.org&quot;,
   &quot;@type&quot;: &quot;WebSite&quot;,
@@ -2547,9 +2540,9 @@
       </article>
 
       <article class="file">
-        <div class="vector-head">Founder</div>
-        <h2 class="vector-label">Founder</h2>
-        <p class="vector-body">The founder and chief executive officer. <a href="person.json">person.json &rarr;</a></p>
+        <div class="vector-head type-eyebrow">Founder</div>
+        <h2 class="vector-label type-h2">Founder</h2>
+        <p class="vector-body type-body">The founder and chief executive officer. <a href="person.json">person.json &rarr;</a></p>
         <pre tabindex="0" data-src="person.json"><code>{
   &quot;@type&quot;: &quot;Person&quot;,
   &quot;@id&quot;: &quot;https://argelysoriach.com/#person&quot;,
@@ -2662,10 +2655,10 @@
       </article>
 
       <article class="file">
-        <div class="vector-head">Machine-readable overview</div>
-        <nav aria-label="Additional structured documents"><p><a href="clients.json">Past and current clients JSON</a> · <a href="method.json">Method JSON</a> · <a href="development-protocols.json">Development Protocols JSON</a> · <a href="practice.json">Engagements JSON</a></p></nav>
-<h2 class="vector-label">llms.txt</h2>
-        <p class="vector-body">Plain-text summary and guidance for language models. <a href="../llms.txt">/llms.txt &rarr;</a></p>
+        <div class="vector-head type-eyebrow">Machine-readable overview</div>
+        <nav aria-label="Additional structured documents"><p class="type-body"><a href="clients.json">Past and current clients JSON</a> · <a href="method.json">Method JSON</a> · <a href="development-protocols.json">Development Protocols JSON</a> · <a href="practice.json">Engagements JSON</a></p></nav>
+<h2 class="vector-label type-h2">llms.txt</h2>
+        <p class="vector-body type-body">Plain-text summary and guidance for language models. <a href="../llms.txt">/llms.txt &rarr;</a></p>
         <pre tabindex="0" data-src="../llms.txt"><code># Wild Lake Studio | Talent Architecture and Artist Development
 
 &gt; Wild Lake Studio, known as Wild-Lake, is an independent talent architecture and artist development studio for creators across music, art, writing and film. Based across New York, Tampa, and Santiago; working worldwide.
@@ -2676,7 +2669,7 @@ Wild-Lake is an independent studio for artists, labels, galleries and agencies. 
 
 ## Practice and engagement
 
-[Talent Architecture — The Method](https://wildlakestudio.com/method/#method-talent-architecture)
+[Talent Architecture: The Method](https://wildlakestudio.com/method/#method-talent-architecture)
 
 Your practice is the asset. We find where it is breaking.
 
@@ -3035,13 +3028,13 @@ Wild Lake Studio’s parentOrganization is Seven Eighty Three (Lab 783), https:/
     <footer class="studio-footer" aria-label="Studio information">
 <a class="footer-mark" href="/" aria-label="Wild Lake Studio home"><img src="/assets/images/wild-lake-mark.png?v=caf21f9cf6" width="1080" height="1080" alt="Wild-Lake" loading="lazy" decoding="async"/></a>
 <div class="footer-columns">
-<nav aria-label="Practice"><h2>PRACTICE</h2><ul><li><a href="/practice/">Ways to work together</a></li><li><a href="/pricing/">Engagements &amp; Pricing</a></li><li><a href="/#services">Sovereign A&amp;R</a></li><li><a href="/#practice">Talent Architecture</a></li><li><a href="/method/#method-framework">Systems Strategy</a></li><li><a href="/mirror/">Architectural Mirror</a></li></ul></nav>
-<div><h2>LOCATION &amp; CONTACT</h2><p>Crown Heights, Brooklyn, NY<br/>Tampa, FL · Santiago, DR<br/><a href="mailto:info@wildlakestudio.com">info@wildlakestudio.com</a></p></div>
-<nav aria-label="Legal and governance"><h2>LEGAL &amp; GOVERNANCE</h2><p>© 2026 Wild Lake Studio. All rights reserved.</p><ul><li><a href="/terms/">Terms of Practice</a></li><li><a href="/privacy/">Privacy Protocol</a></li><li><a href="/terms/#sovereign-ip">Sovereign IP Policy</a></li></ul></nav>
+<nav aria-label="Practice"><h2 class="type-h2">PRACTICE</h2><ul><li><a href="/practice/">Ways to work together</a></li><li><a href="/pricing/">Engagements &amp; Pricing</a></li><li><a href="/#services">Sovereign A&amp;R</a></li><li><a href="/#practice">Talent Architecture</a></li><li><a href="/method/#method-framework">Systems Strategy</a></li><li><a href="/mirror/">Architectural Mirror</a></li></ul></nav>
+<div><h2 class="type-h2">LOCATION &amp; CONTACT</h2><p class="type-body">Crown Heights, Brooklyn, NY<br/>Tampa, FL · Santiago, DR<br/><a href="mailto:info@wildlakestudio.com">info@wildlakestudio.com</a></p></div>
+<nav aria-label="Legal and governance"><h2 class="type-h2">LEGAL &amp; GOVERNANCE</h2><p class="type-body">© 2026 Wild Lake Studio. All rights reserved.</p><ul><li><a href="/terms/">Terms of Practice</a></li><li><a href="/privacy/">Privacy Protocol</a></li><li><a href="/terms/#sovereign-ip">Sovereign IP Policy</a></li></ul></nav>
 </div>
-<div class="footer-position"><p>Wild Lake Studio, known as Wild-Lake, is an independent talent architecture and sovereign A&amp;R practice.<br/>Wild-Lake commits a fraction of every studio retainer toward public land conservation and freshwater ecosystem defense.</p><nav aria-label="Further information"><a href="/manifesto/">Manifesto</a><a href="/development-protocols/">Artist wellbeing</a><a href="/responsibility/">Responsibility</a><a href="/about-founder/">Founder</a><a href="/method/">Method</a><a href="/schema/">Schema</a><a href="https://www.linkedin.com/company/wild-lake/" aria-label="Wild Lake Studio on LinkedIn">LinkedIn</a></nav></div>
+<div class="footer-position"><p class="type-body">Wild Lake Studio, known as Wild-Lake, is an independent talent architecture and sovereign A&amp;R practice.<br/>Wild-Lake commits a fraction of every studio retainer toward public land conservation and freshwater ecosystem defense.</p><nav aria-label="Further information"><a href="/manifesto/">Manifesto</a><a href="/development-protocols/">Artist wellbeing</a><a href="/responsibility/">Responsibility</a><a href="/about-founder/">Founder</a><a href="/method/">Method</a><a href="/schema/">Schema</a><a href="https://www.linkedin.com/company/wild-lake/" aria-label="Wild Lake Studio on LinkedIn">LinkedIn</a></nav></div>
 </footer>
-  <p><a href="universe-api.json">Universe API framework JSON</a> · <a href="talent-architect.json">Talent Architect practice JSON</a></p>
+  <p class="type-body"><a href="universe-api.json">Universe API framework JSON</a> · <a href="talent-architect.json">Talent Architect practice JSON</a></p>
 </main>
 
   <script>

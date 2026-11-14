@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-bSDxGzqQ+J7+LUkcmDzC9eeOwGUksHs046Yv9KD6QZA='; script-src 'sha256-xjvZWdqr0JSej9HuZQSG6ZAu0LC3shL2R1yyIaMbkGc='; font-src 'self'; img-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'sha256-vgWLgQW7uaSvJczPO4LGBZkom9FYoJijnOfEhG+6PhY='; script-src 'sha256-xjvZWdqr0JSej9HuZQSG6ZAu0LC3shL2R1yyIaMbkGc='; font-src 'self'; img-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <title>Quiet Creek Tarot | Wild Lake Studio</title>
 
 <meta name="theme-color" content="#000000">
@@ -19,21 +19,8 @@
 <link rel="preload" href="assets/fonts/Archivo-Variable.c2193589.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/JetBrainsMono-Variable.98f8fe00.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face {
-  font-family: 'Archivo';
-  src: url('assets/fonts/Archivo-Variable.c2193589.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 100 900;
-  font-stretch: 62% 125%;
-  font-display: block;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('assets/fonts/JetBrainsMono-Variable.98f8fe00.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 100 800;
-  font-display: block;
-}
+
+
 :root {
   color-scheme: dark;
   --void: #000000;
@@ -41,8 +28,8 @@
   --ink-2: rgba(244, 244, 240, 0.82);
   --ink-3: rgba(244, 244, 240, 0.62);
   --line: rgba(244, 244, 240, 0.3);
-  --font-sans: Archivo, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  
+  
   --wght-thin: 100;
   --wght-light: 300;
   --wght-regular: 400;
@@ -52,18 +39,18 @@
   --wdth-condensed: 62%;
   --wdth-normal: 100%;
   --wdth-expanded: 125%;
-  --t-13: 13px;
-  --t-21: 21px;
-  --t-34: 34px;
-  --t-55: 55px;
-  --t-89: 89px;
-  --t-144: 144px;
-  --lh-monolith: 0.88;
-  --lh-solid: 1;
-  --lh-text: 1.618;
-  --track-monolith: -0.01em;
-  --track-display: -0.021em;
-  --track-caps: 0.144em;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 html,
 body {
@@ -71,10 +58,10 @@ body {
 }
 body {
   color: var(--ink);
-  font-family: var(--font-sans);
+  font-family:var(--font-sans);
   font-weight: var(--wght-regular);
   font-stretch: var(--wdth-normal);
-  line-height: var(--lh-text);
+  line-height:var(--lh-text);
   font-kerning: normal;
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
@@ -86,21 +73,21 @@ body {
   color: var(--void);
 }
 .monolith-header {
-  font-family: var(--font-sans);
+  font-family:var(--font-sans);
   font-weight: var(--wght-black);
   font-stretch: var(--wdth-expanded);
-  line-height: var(--lh-monolith);
-  letter-spacing: var(--track-monolith);
+  line-height:var(--lh-monolith);
+  letter-spacing:var(--track-monolith);
   text-transform: uppercase;
   color: var(--ink);
 }
 .monolith-condensed {
-  font-family: var(--font-sans);
+  font-family:var(--font-sans);
   font-weight: var(--wght-extrabold);
   font-stretch: var(--wdth-condensed);
 }
 .mono {
-  font-family: var(--font-mono);
+  font-family:var(--font-sans);
 }
 
 :root {
@@ -130,7 +117,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 button {
-  font: inherit;
+  font:inherit;
   color: inherit;
   background: none;
   border: 0;
@@ -184,11 +171,11 @@ button {
 .quiet,
 .primary,
 .tabs button {
-  font-family: var(--font-mono);
+  font-family:var(--font-sans);
   font-weight: 700;
-  font-size: 11px;
-  line-height: 1.3;
-  letter-spacing: var(--track-caps);
+  font-size:var(--text-xs);
+  line-height:var(--leading-heading);
+  letter-spacing:var(--track-caps);
   text-transform: uppercase;
 }
 .back {
@@ -214,8 +201,8 @@ button {
 }
 .notice-text {
   flex: 1 1 233px;
-  font-size: 15px;
-  line-height: 1.45;
+  font-size:var(--text-sm);
+  line-height:var(--leading-body);
   color: var(--ink);
 }
 .notice-acts,
@@ -259,7 +246,7 @@ button {
 }
 .tabs button {
   min-height: 55px;
-  font-size: 13px;
+  font-size:var(--text-xs);
   color: var(--ink-3);
 }
 .tabs button + button {
@@ -270,18 +257,18 @@ button {
   box-shadow: inset 0 5px 0 var(--ink);
 }
 h1 {
-  font-family: var(--font-sans);
+  font-family:var(--font-sans);
   font-weight: 900;
-  font-size: clamp(34px, 9.4vw, 55px);
-  line-height: 0.88;
-  letter-spacing: -0.021em;
+  font-size:var(--text-3xl);
+  line-height:var(--leading-solid);
+  letter-spacing:var(--tracking-tight);
   text-transform: uppercase;
 }
 h2 {
-  font-family: var(--font-sans);
+  font-family:var(--font-sans);
   font-weight: 700;
-  font-size: 21px;
-  line-height: 1.2;
+  font-size:var(--text-md);
+  line-height:var(--leading-heading);
 }
 .hint {
   color: var(--ink-3);
@@ -291,7 +278,7 @@ h2 {
   width: 100%;
   min-height: 55px;
   padding: 0 21px;
-  font-size: 13px;
+  font-size:var(--text-xs);
   border: 3px solid var(--ink);
   color: var(--ink);
   background-color: var(--void);
@@ -339,10 +326,10 @@ h2 {
   aspect-ratio: 233 / 377;
   border: 3px solid var(--art);
   color: var(--art);
-  font-family: var(--font-sans);
+  font-family:var(--font-sans);
   font-weight: 900;
-  font-size: clamp(34px, 11vw, 55px);
-  line-height: 1;
+  font-size:var(--text-3xl);
+  line-height:var(--leading-solid);
 }
 .stone,
 .deck {
@@ -365,7 +352,7 @@ h2 {
 .breath {
   position: relative;
   height: 1.3em;
-  font-size: 13px;
+  font-size:var(--text-xs);
   text-align: center;
 }
 .breath span {
@@ -388,22 +375,22 @@ h2 {
 }
 .breath-still {
   display: none;
-  font-family: var(--font-mono);
-  font-size: 13px;
+  font-family:var(--font-sans);
+  font-size:var(--text-xs);
   text-align: center;
 }
 .field-label {
   margin-top: 13px;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 1.2;
+  font-size:var(--text-md);
+  line-height:var(--leading-heading);
 }
 .question,
 .words {
   display: block;
   width: 100%;
-  font-family: var(--font-mono);
-  font-size: 17px;
+  font-family:var(--font-sans);
+  font-size:var(--text-base);
   color: var(--ink);
   caret-color: var(--ink);
   background-color: var(--void);
@@ -480,8 +467,8 @@ h2 {
 }
 .asked {
   margin-top: -8px;
-  font-size: 21px;
-  line-height: 1.3;
+  font-size:var(--text-md);
+  line-height:var(--leading-heading);
   color: var(--ink-2);
 }
 .asked::before { content: "\201C"; }
@@ -568,11 +555,11 @@ h2 {
   justify-content: center;
   padding: 0 5px;
   text-align: center;
-  font-family: var(--font-mono);
+  font-family:var(--font-sans);
   font-weight: 700;
-  font-size: clamp(7px, 6cqi, 13px);
-  line-height: 1.2;
-  letter-spacing: 0.08em;
+  font-size:var(--text-xs);
+  line-height:var(--leading-heading);
+  letter-spacing:var(--tracking-label);
   text-transform: uppercase;
 }
 .spin {
@@ -591,13 +578,13 @@ h2 {
 }
 .write-label {
   font-weight: 700;
-  font-size: 21px;
-  line-height: 1.2;
+  font-size:var(--text-md);
+  line-height:var(--leading-heading);
 }
 .words {
   min-height: 144px;
   padding: 13px;
-  line-height: var(--lh-text);
+  line-height:var(--lh-text);
   resize: vertical;
 }
 .saved {
@@ -612,8 +599,8 @@ h2 {
   border: 3px solid var(--ink);
 }
 .install-text {
-  font-size: 15px;
-  line-height: 1.45;
+  font-size:var(--text-sm);
+  line-height:var(--leading-body);
 }
 .step-reading .primary {
   margin-top: 13px;
@@ -662,16 +649,16 @@ h2 {
 }
 .entry-names {
   font-weight: 700;
-  font-size: 15px;
-  line-height: 1.3;
+  font-size:var(--text-sm);
+  line-height:var(--leading-heading);
 }
 .entry-text {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  font-size: 15px;
-  line-height: 1.45;
+  font-size:var(--text-sm);
+  line-height:var(--leading-body);
   color: var(--ink-2);
 }
 .entry-text.none {
@@ -683,13 +670,13 @@ h2 {
   gap: 13px;
   padding: 21px 0 0;
   border-top: 3px solid var(--ink);
-  font-size: 17px;
-  line-height: 1.45;
+  font-size:var(--text-base);
+  line-height:var(--leading-body);
   color: var(--ink-2);
 }
 .empty-title {
   font-weight: 700;
-  font-size: 21px;
+  font-size:var(--text-md);
   color: var(--ink);
 }
 .empty .primary {
@@ -702,8 +689,8 @@ h2 {
   margin-top: 34px;
 }
 .log-note {
-  font-size: 15px;
-  line-height: 1.45;
+  font-size:var(--text-sm);
+  line-height:var(--leading-body);
   color: var(--ink-3);
 }
 .log-acts .quiet {
@@ -746,15 +733,15 @@ h2 {
 .welcome h1 {
   margin-top: 13px;
   font-stretch: 125%;
-  font-size: clamp(34px, 10vw, 55px);
+  font-size:var(--text-3xl);
 }
 .welcome p {
-  font-size: 17px;
-  line-height: 1.45;
+  font-size:var(--text-base);
+  line-height:var(--leading-body);
   color: var(--ink-2);
 }
 .welcome .small {
-  font-size: 15px;
+  font-size:var(--text-sm);
   color: var(--ink-3);
 }
 .welcome .primary {
@@ -798,7 +785,7 @@ h2 {
   color: var(--ink-3);
 }
 .lens-name {
-  font-size: 13px;
+  font-size:var(--text-xs);
 }
 .confirm {
   width: min(100% - 42px, 377px);
@@ -810,8 +797,8 @@ h2 {
 }
 .confirm p {
   margin: 13px 0 21px;
-  font-size: 15px;
-  line-height: 1.45;
+  font-size:var(--text-sm);
+  line-height:var(--leading-body);
   color: var(--ink-2);
 }
 .confirm-acts {
@@ -825,8 +812,8 @@ h2 {
   right: 0;
   bottom: 0;
   padding: 21px 21px calc(var(--safe-b) + 21px);
-  font-family: var(--font-mono);
-  font-size: 13px;
+  font-family:var(--font-sans);
+  font-size:var(--text-xs);
   background-color: var(--void);
   border-top: 3px solid var(--ink);
 }
@@ -1255,7 +1242,7 @@ h2 {
 }
 </script>
 
-<!-- Page metadata and static water-monolith preview. -->
+
 <meta name="description" content="A tarot app for artists and creators. 78 original cards with no meanings: you read the images and write your own interpretation. Works offline."/>
 <meta name="title" content="Quiet Creek Tarot | Wild Lake Studio"/>
 <meta property="og:title" content="Quiet Creek Tarot | Wild Lake Studio"/>
@@ -1274,6 +1261,7 @@ h2 {
 <meta name="twitter:description" content="A tarot app for artists and creators. 78 original cards with no meanings: you read the images and write your own interpretation. Works offline."/>
 <meta name="twitter:image" content="https://wildlakestudio.com/assets/social/wild-lake-classic-edge-og.png"/>
 <meta name="twitter:image:alt" content="Wild-Lake classic stacked monolith, white on black."/>
+<link rel="stylesheet" href="/assets/css/fibonacci.css"/>
 </head>
 <body>
 <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -1365,7 +1353,7 @@ h2 {
   </header>
 
   <div class="notice" role="status" aria-live="polite" hidden>
-    <p class="notice-text"></p>
+    <p class="notice-text type-body"></p>
     <div class="notice-acts"><button class="notice-do" type="button" hidden></button><button class="notice-close" type="button">Close</button></div>
   </div>
 
@@ -1374,21 +1362,21 @@ h2 {
     <section class="view view-read" aria-label="Read">
 
       <div class="step step-choose">
-        <h1>How many cards?</h1>
+        <h1 class="type-h1">How many cards?</h1>
         <ol class="count">
           <li><button type="button" data-count="1" aria-label="Draw 1 card"><span>1</span></button></li>
           <li><button type="button" data-count="2" aria-label="Draw 2 cards"><span>2</span></button></li>
           <li><button type="button" data-count="3" aria-label="Draw 3 cards"><span>3</span></button></li>
           <li><button type="button" data-count="4" aria-label="Draw 4 cards"><span>4</span></button></li>
         </ol>
-        <p class="hint">Tap a number to begin.</p>
+        <p class="hint type-body">Tap a number to begin.</p>
       </div>
 
       <div class="step step-breathe">
         <div class="stone" aria-hidden="true"><svg viewBox="0 0 233 377"><use href="#back"/></svg></div>
-        <p class="breath" aria-hidden="true"><span class="in">Breathe in</span><span class="out">Breathe out</span></p>
-        <p class="breath-still">Take one slow breath.</p>
-        <label class="field-label" for="question">Bring a question to mind.</label>
+        <p class="breath type-body" aria-hidden="true"><span class="in">Breathe in</span><span class="out">Breathe out</span></p>
+        <p class="breath-still type-body">Take one slow breath.</p>
+        <label class="field-label type-label" for="question">Bring a question to mind.</label>
         <input id="question" class="question" type="text" maxlength="233" autocomplete="off" autocapitalize="sentences" enterkeyhint="done" placeholder="Or keep it to yourself.">
         <button class="primary" type="button" data-act="shuffle">Shuffle</button>
       </div>
@@ -1401,24 +1389,24 @@ h2 {
           <span><svg viewBox="0 0 233 377"><use href="#back"/></svg></span>
           <span><svg viewBox="0 0 233 377"><use href="#back"/></svg></span>
         </div>
-        <p class="hint shuffling">Shuffling. Stop when you&rsquo;re ready.</p>
-        <p class="hint set">The order is set.</p>
+        <p class="hint shuffling type-body">Shuffling. Stop when you&rsquo;re ready.</p>
+        <p class="hint set type-body">The order is set.</p>
         <button class="primary shuffling" type="button" data-act="stop">Stop</button>
         <button class="primary set" type="button" data-act="deal">Deal</button>
       </div>
 
       <div class="step step-reading">
-        <p class="when"></p>
-        <p class="asked" hidden></p>
+        <p class="when type-body"></p>
+        <p class="asked type-body" hidden></p>
         <ol class="spread"></ol>
-        <p class="hint reading-hint" aria-live="polite"></p>
+        <p class="hint reading-hint type-body" aria-live="polite"></p>
         <div class="write" hidden>
-          <label class="write-label" for="words">What do you see?</label>
+          <label class="write-label type-label" for="words">What do you see?</label>
           <textarea id="words" class="words" rows="6" autocapitalize="sentences" placeholder="Colors, shapes, a word, a memory."></textarea>
-          <p class="saved" aria-live="polite"></p>
+          <p class="saved type-body" aria-live="polite"></p>
         </div>
         <div class="install" hidden>
-          <p class="install-text"></p>
+          <p class="install-text type-body"></p>
           <div class="install-acts"><button class="install-do" type="button">Install</button><button class="install-later" type="button">Not now</button></div>
         </div>
         <button class="primary" type="button" data-act="new">New reading</button>
@@ -1429,21 +1417,21 @@ h2 {
 
     <section class="view view-log" aria-labelledby="log-title">
       <header class="log-head">
-        <h1 id="log-title">Log</h1>
-        <p class="log-count"></p>
+        <h2 id="log-title" class="type-h2">Log</h2>
+        <p class="log-count type-body"></p>
       </header>
       <ol class="entries"></ol>
       <div class="empty" hidden>
-        <p class="empty-title">No readings yet.</p>
-        <p>Every reading you deal is kept here, with whatever you write.</p>
+        <p class="empty-title type-body">No readings yet.</p>
+        <p class="type-body">Every reading you deal is kept here, with whatever you write.</p>
         <button class="primary" type="button" data-act="start">Start a reading</button>
       </div>
       <div class="log-acts">
         <button class="primary" type="button" data-act="export">Export Log</button>
-        <p class="log-note">Saves every reading as one text file. Your readings live only on this <span class="device">phone</span>, so export now and then to keep a copy.</p>
+        <p class="log-note type-body">Saves every reading as one text file. Your readings live only on this <span class="device">phone</span>, so export now and then to keep a copy.</p>
         <button class="quiet" type="button" data-act="install" hidden>Install on this <span class="device">phone</span></button>
       </div>
-      <p class="colophon">Quiet Creek Tarot by Wild-Lake. 78 original cards. No meanings.</p>
+      <p class="colophon type-body">Quiet Creek Tarot by Wild-Lake. 78 original cards. No meanings.</p>
     </section>
 
   </main>
@@ -1456,27 +1444,27 @@ h2 {
 </div>
 
 <div class="welcome" hidden>
-  <p class="eyebrow">Quiet Creek Tarot</p>
+  <p class="eyebrow type-eyebrow">Quiet Creek Tarot</p>
   <ol class="welcome-cards" aria-hidden="true">
     <li><svg viewBox="0 0 233 377"><use href="#m13"/></svg></li>
     <li><svg viewBox="0 0 233 377"><use href="#m19"/></svg></li>
     <li><svg viewBox="0 0 233 377"><use href="#c01"/></svg></li>
   </ol>
-  <h1>You do the reading.</h1>
-  <p>These 78 cards come with no meanings. Draw one to four, look closely, and write what you see.</p>
-  <p class="small">Your readings stay on this <span class="device">phone</span>. No account or sign-in required.</p>
+  <h2 class="type-h2">You do the reading.</h2>
+  <p class="type-body">These 78 cards come with no meanings. Draw one to four, look closely, and write what you see.</p>
+  <p class="small type-body">Your readings stay on this <span class="device">phone</span>. No account or sign-in required.</p>
   <button class="primary" type="button" data-act="welcome">Start a reading</button>
 </div>
 
 <dialog class="lens" aria-label="Card">
   <button class="lens-close" type="button" data-act="close-lens">Close</button>
   <svg viewBox="0 0 233 377"><use href="#back"/></svg>
-  <p class="lens-name"></p>
+  <p class="lens-name type-body"></p>
 </dialog>
 
 <dialog class="confirm" aria-labelledby="confirm-title">
-  <h2 id="confirm-title">Delete this reading?</h2>
-  <p>Its cards and words will be gone from this <span class="device">phone</span>. This can&rsquo;t be undone.</p>
+  <h2 id="confirm-title" class="type-h2">Delete this reading?</h2>
+  <p class="type-body">Its cards and words will be gone from this <span class="device">phone</span>. This can&rsquo;t be undone.</p>
   <div class="confirm-acts">
     <button class="primary" type="button" data-act="confirm-delete">Delete</button>
     <button class="primary" type="button" data-act="keep">Keep it</button>
@@ -1487,7 +1475,7 @@ h2 {
 
 <template id="t-entry"><li><button class="entry" type="button"><span class="entry-when"></span><span class="entry-cards"></span><span class="entry-names"></span><span class="entry-text"></span></button></li></template>
 
-<noscript><p class="noscript">Quiet Creek Tarot needs JavaScript to shuffle and deal.</p></noscript>
+<noscript><p class="noscript type-body">Quiet Creek Tarot needs JavaScript to shuffle and deal.</p></noscript>
 <script>(() => {
   'use strict';
 

@@ -1,4 +1,4 @@
-/* One centered content measure, shared with the Method and Quiet Creek essays. */
+
 :root{--reading-width:46.5rem}
 body.reading-layout{--reading-rail:calc(var(--reading-width) + 2 * var(--gutter,21px))}
 body.reading-layout.roster>main,
@@ -27,17 +27,17 @@ body.reading-layout.roster .roster-visual{width:100%;max-width:360px;justify-sel
 body.reading-layout.roster .roster-jump{grid-template-columns:repeat(2,minmax(0,1fr))}
 body.reading-layout .footer-columns{grid-template-columns:minmax(0,1fr);gap:34px}
 body.reading-layout:not(:has(#overview))>.cap{box-sizing:border-box;width:100%;max-width:var(--reading-rail);padding-inline:var(--gutter,21px);margin-inline:auto}
-/* The homepage opening monolith continues to occupy the entire viewport. */
+
 body.reading-layout:has(#overview)>.cap{width:100%;max-width:none;margin-inline:0}
 @media(max-width:600px){body.reading-layout.roster .roster-jump{grid-template-columns:minmax(0,1fr)}}
 
-/* A fixed label frames a single moving strip of client names. */
+
 body.reading-layout.roster>.page-outline{position:sticky;display:flex;align-items:center}
 body.reading-layout.roster>.page-outline ol{display:flex;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;min-width:0;mask-image:linear-gradient(to right,transparent,#000 8px,#000 calc(100% - 16px),transparent)}
 body.reading-layout.roster>.page-outline li{flex:none}
 body.reading-layout.roster>.page-outline a{white-space:nowrap}
 
-/* Desktop pages share a wider canvas; individual paragraphs retain a reading measure. */
+
 @media(min-width:1100px){
  body.reading-layout{--reading-width:85rem}
  body.reading-layout .manifesto-main p,
@@ -57,11 +57,11 @@ body.reading-layout.roster>.page-outline a{white-space:nowrap}
  body.reading-layout{--gutter:clamp(1.3125rem,5vw,5.5rem)}
 }
 
-/* Profiles use their natural height, with generous portrait and narrative columns. */
+
 body.reading-layout.roster .client-visual,
 body.reading-layout.roster .client-narrative{display:contents}
-body.reading-layout.roster .client-biography p{font-size:var(--body-size);line-height:1.618;color:var(--subtle-color);margin:0 0 21px}
-body.reading-layout.roster .client-biography h3{font-size:clamp(1.625rem,3.2vw,2.125rem);line-height:1.15;margin:13px 0 21px}
+body.reading-layout.roster .client-biography p{font-size:var(--text-base);line-height:var(--leading-body);color:var(--subtle-color);margin:0 0 21px}
+body.reading-layout.roster .client-biography h3{font-size:var(--text-xl);line-height:var(--leading-heading);margin:13px 0 21px}
 body.reading-layout.roster .roster-person{display:grid;grid-template-columns:minmax(0,1fr);gap:34px}
 body.reading-layout.roster .roster-visual{order:1}
 body.reading-layout.roster .entry-copy{order:2}
@@ -77,54 +77,54 @@ body.reading-layout.roster .client-facts{order:4;min-width:0}
  body.reading-layout.roster .entry-copy,
  body.reading-layout.roster .client-biography,
  body.reading-layout.roster .client-facts{order:0}
- body.reading-layout.roster .roster-main .entry-name{font-size:clamp(40px,3.1vw,56px);line-height:1.08;margin:12px 0 24px}
+ body.reading-layout.roster .roster-main .entry-name{font-size:var(--text-3xl);line-height:var(--leading-display);margin:12px 0 24px}
  body.reading-layout.roster .entry-name br{display:none}
  body.reading-layout.roster .entry-meta,
- body.reading-layout.roster .eyebrow{font-size:15px;margin-bottom:12px}
+ body.reading-layout.roster .eyebrow{font-size:var(--text-sm);margin-bottom:12px}
  body.reading-layout.roster .entry-detail,
- body.reading-layout.roster .client-biography p{font-size:clamp(18px,1.35vw,21px);line-height:1.55;margin:0 0 20px;max-width:68ch}
- body.reading-layout.roster .client-biography h3{font-size:30px;line-height:1.15;margin:0 0 24px}
+ body.reading-layout.roster .client-biography p{font-size:var(--text-md);line-height:var(--leading-body);margin:0 0 20px;max-width:68ch}
+ body.reading-layout.roster .client-biography h3{font-size:var(--text-xl);line-height:var(--leading-heading);margin:0 0 24px}
  body.reading-layout.roster .entry-copy>.entry-link{display:none}
- body.reading-layout.roster .client-biography .entry-link{font-size:16px;min-height:44px;margin-top:8px}
- body.reading-layout.roster .data-row{display:block;padding-block:12px;font-size:16px;line-height:1.5}
- body.reading-layout.roster .data-label{display:block;font-size:14px;margin-bottom:4px}
- body.reading-layout.roster .data-value{display:block;font-size:16px;text-align:left;overflow-wrap:anywhere}
- body.reading-layout.roster .roster-visual figcaption{font-size:13px;line-height:1.5;padding:13px 16px}
+ body.reading-layout.roster .client-biography .entry-link{font-size:var(--text-base);min-height:44px;margin-top:8px}
+ body.reading-layout.roster .data-row{display:block;padding-block:12px;font-size:var(--text-base);line-height:var(--leading-body)}
+ body.reading-layout.roster .data-label{display:block;font-size:var(--text-sm);margin-bottom:4px}
+ body.reading-layout.roster .data-value{display:block;font-size:var(--text-base);text-align:left;overflow-wrap:anywhere}
+ body.reading-layout.roster .roster-visual figcaption{font-size:var(--text-xs);line-height:var(--leading-body);padding:13px 16px}
 }
 @media(min-width:1100px){
  body.reading-layout.roster .data-row{display:grid;grid-template-columns:minmax(82px,.65fr) minmax(0,1.35fr);gap:16px;align-items:start;padding-block:10px}
- body.reading-layout.roster .data-label{margin:0;line-height:1.5}
- body.reading-layout.roster .data-value{line-height:1.5}
+ body.reading-layout.roster .data-label{margin:0;line-height:var(--leading-body)}
+ body.reading-layout.roster .data-value{line-height:var(--leading-body)}
 }
 
-/* Geography grounds the full-width monolith at the navigation's left edge. */
+
 body.reading-layout.home:has(#overview)>.hero-location{padding-inline:var(--gutter);text-align:left}
 
 body.reading-layout.home:has(#overview) #overview .statement-text{width:100%;max-width:none}
 
-/* Plain-language definitions follow the Method's reading hierarchy. */
+
 .practice-terms{margin:32px 0 0}
 .practice-terms>div{margin-bottom:32px;scroll-margin-top:var(--outline-offset,100px)}
-.practice-terms dt{font-family:var(--font-sans);font-size:clamp(22px,2vw,28px);line-height:1.25;font-weight:600;color:#fff;margin-bottom:12px}
+.practice-terms dt{font-family:var(--font-sans);font-size:var(--text-lg);line-height:var(--leading-heading);font-weight:600;color:#fff;margin-bottom:12px}
 .practice-terms dd{margin:0}
 .practice-terms dd p{margin-bottom:0}
-.overview-terms-link{margin-top:24px;font-size:1rem}
+.overview-terms-link{margin-top:24px;font-size:var(--text-base)}
 .overview-terms-link a{display:inline-flex;align-items:center;gap:8px;min-height:44px}
 
-/* The mark and its location caption form one grounded opening composition. */
+
 body.reading-layout.home:has(#overview)>.cap{height:calc(100svh - 54px);height:calc(100dvh - 54px);padding-bottom:8px}
 body.reading-layout.home:has(#overview)>.hero-location{box-sizing:border-box;display:flex;align-items:center;min-height:54px;margin:0;padding-top:8px;padding-bottom:16px}
 
-/* Tight founder crop retains the tie knot. */
+
 body.reading-layout .founder-portrait img{transform:none}
 
 body.reading-layout .founder-portrait-crop{display:block}
 .blog-heading:has(.quiet-creek-monolith)>.eyebrow{margin-bottom:clamp(40px,5vw,72px)}
 
-.core-offering{font-size:clamp(20px,1.5vw,26px);line-height:1.55;max-width:60ch;margin:0 0 40px;color:#fff}
+.core-offering{font-size:var(--text-lg);line-height:var(--leading-body);max-width:60ch;margin:0 0 40px;color:#fff}
 .core-offering strong{display:block;font-weight:600;margin-bottom:12px}
 
-/* Navigation shares the content dividers' centered inner rail. */
+
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>:is(.site-nav,.page-outline,.page-outline.is-enhanced,.page-outline.is-in-reading-area){box-sizing:border-box;width:calc(100% - 2 * var(--gutter,21px));max-width:var(--reading-width);margin-inline:auto;padding-inline:0;justify-content:flex-start}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav{display:flex;flex-wrap:wrap;column-gap:clamp(21px,2.4vw,34px);row-gap:8px}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav .begin-link{margin-left:0}
@@ -134,26 +134,26 @@ body.reading-layout .founder-portrait-crop{display:block}
  :is(body.reading-layout,body.reading-layout.home:has(#overview))>.page-outline{justify-content:flex-start}
 }
 
-/* Let the monolith resolve before the two navigation levels begin. */
+
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav{padding-block:clamp(24px,3vw,40px)}
 body.reading-layout.home:has(#overview)>.site-nav{margin-top:clamp(72px,10vh,144px)}
 :is(body.reading-layout,body.reading-layout.home:has(#overview))>.page-outline{padding-block:clamp(21px,2.5vw,34px)}
 
-/* The Method: page title, positioning statement, section headings, then detail. */
+
 body.reading-layout .method-main{padding-block:clamp(64px,8vw,128px)}
-.method-main #method-overview h1{font-size:clamp(3.75rem,8vw,7.5rem);line-height:1.02;letter-spacing:-.045em;margin:0 0 40px}
-.method-main #method-overview>p:not(.eyebrow){font-size:clamp(1.25rem,1.6vw,1.5rem);max-width:56ch}
+.method-main #method-overview h1{font-size:var(--text-3xl);line-height:var(--leading-display);letter-spacing:var(--tracking-tight);margin:0 0 40px}
+.method-main #method-overview>p:not(.eyebrow){font-size:var(--text-lg);max-width:56ch}
 .method-main article>section{margin-top:clamp(72px,8vw,128px);padding-top:clamp(34px,4vw,64px)}
-.method-main article>section>h2{font-size:clamp(2rem,3.4vw,3rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 34px;max-width:28ch}
+.method-main article>section>h2{font-size:var(--text-3xl);line-height:var(--leading-heading);letter-spacing:var(--tracking-tight);margin:0 0 34px;max-width:28ch}
 .method-main #method-talent-architecture{padding-block:clamp(48px,6vw,88px) 0}
-.method-main #method-talent-architecture h2{font-size:clamp(2.75rem,5vw,4.5rem);line-height:1.08;letter-spacing:-.04em;max-width:24ch;margin:0 0 40px}
-.method-main #method-talent-architecture>p:not(.eyebrow){font-size:clamp(1.25rem,1.8vw,1.625rem);line-height:1.6;max-width:58ch;color:#fff}
-.method-main .eyebrow{font-family:LocationMono,monospace;font-size:.8125rem;line-height:1.5;letter-spacing:.04em;color:var(--muted-color);margin:0 0 24px}
-.method-main .practice-terms dt{font-size:clamp(1.375rem,2vw,1.75rem)}
+.method-main #method-talent-architecture h2{font-size:var(--text-3xl);line-height:var(--leading-display);letter-spacing:var(--tracking-tight);max-width:24ch;margin:0 0 40px}
+.method-main #method-talent-architecture>p:not(.eyebrow){font-size:var(--text-lg);line-height:var(--leading-body);max-width:58ch;color:#fff}
+.method-main .eyebrow{font-family:var(--font-mono);font-size:var(--text-xs);line-height:var(--leading-body);letter-spacing:var(--tracking-label);color:var(--muted-color);margin:0 0 24px}
+.method-main .practice-terms dt{font-size:var(--text-lg)}
 .method-main .practice-terms>div{margin-bottom:40px}
 .method-main .protocol-feature{margin-top:48px}
 
-/* Tool previews share a visual height without distorting either illustration. */
+
 body.reading-layout.tools-page .app-feature{grid-template-columns:minmax(0,1fr);gap:40px;margin-block:clamp(48px,6vw,88px);padding-block:clamp(34px,4vw,64px)}
 body.reading-layout.tools-page .app-feature-copy{min-width:0}
 body.reading-layout.tools-page .app-feature-art{display:flex;align-items:center;justify-content:center;grid-row:auto;width:100%;height:clamp(240px,24vw,340px);min-width:0}
@@ -161,16 +161,16 @@ body.reading-layout.tools-page .app-feature-art img{width:auto;height:auto;max-w
 body.reading-layout.tools-page .app-feature-art .tool-single-card{width:auto;height:100%;max-width:100%;margin:0}
 @media(min-width:900px){body.reading-layout.tools-page .app-feature{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,80px)}}
 
-/* Three distinct homepage offerings share an equal desktop hierarchy. */
+
 @media(min-width:1100px){.home:has(#overview) .home-offering-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(32px,4vw,64px)}}
 
-/* Distribute desktop tabs across their existing divider-width rail. */
+
 @media(min-width:1100px){
  :is(body.reading-layout,body.reading-layout.home:has(#overview))>.site-nav.site-nav{justify-content:space-between;column-gap:13px}
  :is(body.reading-layout,body.reading-layout.home:has(#overview))>.page-outline ol{flex:1 1 auto;justify-content:space-between}
 }
 
-/* Page-level dividers follow the inner content rail, including padded sections. */
+
 body.reading-layout .rule{box-sizing:border-box;width:100%;max-width:none;margin-inline:0}
 body.reading-layout.home:has(#overview)>.contact{position:relative;border-top:0}
 body.reading-layout.home:has(#overview)>.contact::before{content:"";position:absolute;top:0;left:var(--gutter,21px);right:var(--gutter,21px);height:1px;background:var(--rule-color);pointer-events:none}

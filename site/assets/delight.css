@@ -1,4 +1,4 @@
-/* Native seam, navigation and action states. No filters, embedded graphics or library. */
+
 .home .rule{position:relative;overflow:hidden}
 .home .rule::after{content:'';position:absolute;inset:0;background:#fff;transform:scaleX(0);transform-origin:left;opacity:0}
 .home .seam-awake .rule::after{animation:seam-light 610ms ease-out both}
@@ -9,7 +9,7 @@
 .site-nav a:focus-visible::after{transform:scaleX(1)}
 .site-nav a:focus-visible .nav-arrow{transform:translate(2px,-2px)}
 .studio-action{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
-.intake .studio-action{background:#fff;color:#000;border:1px solid #fff;border-radius:5px;font:500 1rem/1.5 var(--font-sans);padding:13px 21px;min-height:48px;transition:background-color 144ms ease,transform 144ms ease}
+.intake .studio-action{background:#fff;color:#000;border:1px solid #fff;border-radius:5px;font:500 var(--text-base)/var(--leading-body) var(--font-sans);padding:13px 21px;min-height:48px;transition:background-color 144ms ease,transform 144ms ease}
 .studio-action-label{display:inline-flex;align-items:center;gap:8px}
 @media(hover:hover){.site-nav a:hover::after{transform:scaleX(1)}.site-nav a:hover .nav-arrow{transform:translate(2px,-2px)}.intake .studio-action:hover{background:#d6dec4}}
 @media(prefers-reduced-motion:reduce){.home .seam-awake .rule::after{animation:none}.site-nav a::after,.home .nav-arrow,.intake .studio-action{transition:none}.site-nav a:hover .nav-arrow,.site-nav a:focus-visible .nav-arrow{transform:none}}
