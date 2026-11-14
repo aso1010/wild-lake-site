@@ -32,7 +32,7 @@
       ],
       "@id": "https://wildlakestudio.com/method/#method-terms",
       "name": "Terms of the practice",
-      "text": "Terms of the practice Structural design Organizing time, space, resources, habits, and boundaries so the work can be made and sustained. Talent architecture Fortifying the person carrying the work: their judgment, capacity, autonomy, and relationships, within those working conditions. Sovereign A&R Developing raw material through close study, critique, direction, and critical framing. The conditions support the creator, and the creator develops the material. The artist retains 100% ownership and creative control.",
+      "text": "Terms of the practice Structural design Organizing time, space, resources, habits, and boundaries so the work can be made and sustained. Talent architecture Fortifying the person carrying the work: their judgment, capacity, autonomy, and relationships, within those working conditions. Sovereign A&R Multidisciplinary Artist & Repertoire: how we scout talent and develop complete bodies of work across music, visual art, literature, and film through critique, direction, and critical framing. The artist retains ownership and creative control.",
       "url": "https://wildlakestudio.com/method/#method-terms",
       "hasDefinedTerm": [
         {
@@ -59,7 +59,7 @@
           "@type": "DefinedTerm",
           "@id": "https://wildlakestudio.com/method/#term-sovereign-ar",
           "name": "Sovereign A&R",
-          "description": "Developing raw material through close study, critique, direction, and critical framing. The conditions support the creator, and the creator develops the material. The artist retains 100% ownership and creative control.",
+          "description": "Multidisciplinary Artist & Repertoire: how we scout talent and develop complete bodies of work across music, visual art, literature, and film through critique, direction, and critical framing. The artist retains ownership and creative control.",
           "url": "https://wildlakestudio.com/method/#term-sovereign-ar",
           "inDefinedTermSet": {
             "@id": "https://wildlakestudio.com/method/#method-terms"
