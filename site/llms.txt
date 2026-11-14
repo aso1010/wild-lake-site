@@ -6,6 +6,17 @@ Wild-Lake is point zero for starmaking.
 
 Wild-Lake is an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage.
 
+## Consideration journey
+
+1. Home: https://wildlakestudio.com/
+2. Offerings: https://wildlakestudio.com/practice/
+3. Method: https://wildlakestudio.com/method/
+4. Pricing: https://wildlakestudio.com/pricing/
+5. Contact: https://wildlakestudio.com/contact/#contact-intake
+6. Terms of Practice: https://wildlakestudio.com/terms/
+
+Offerings defines scope. The Method defines execution. Pricing defines commercial formats and boundaries. Contact compiles an optional email draft. Terms of Practice governs the agreement.
+
 ## Practice and engagement
 
 [Talent Architecture: The Method](https://wildlakestudio.com/method/#method-talent-architecture)
@@ -80,7 +91,7 @@ https://wildlakestudio.com/method/
 
 https://wildlakestudio.com/method/#method-overview
 
-The manual The Method: Diagnosis & Scope Traditional A&R and institutional pipelines can extract creative output faster than an artist's internal and operational infrastructure can carry it. Delivery demands then exceed the capacity required to sustain the work. Wild-Lake is the structural counterpart. We build the conditions, capacity, and artistic rigor required for work that endures. An engagement may be initiated by the artist or commissioned by a manager, label, gallery, or agency. The artist enters willingly and retains control of the work. The practice begins with the assets the artist already holds: raw material, rights, skills, audience relationships, and working infrastructure. We identify what those assets can support, agree an intervention, observe it in use, and revise it against the result. Wild-Lake takes 0% IP ownership and 0% revenue share. Meet the founder
+The manual The Method: Diagnosis & Scope Traditional A&R and institutional pipelines can extract creative output faster than an artist's internal and operational infrastructure can carry it. Delivery demands then exceed the capacity required to sustain the work. Wild-Lake is the structural counterpart. We build the conditions, capacity, and artistic rigor required for work that endures. An engagement may be initiated by the artist or commissioned by a manager, label, gallery, or agency. The artist enters willingly and retains control of the work. The practice begins with the assets the artist already holds: raw material, rights, skills, audience relationships, and working infrastructure. We identify what those assets can support, agree an intervention, observe it in use, and revise it against the result. Wild-Lake takes 0% IP ownership and 0% revenue share. Offerings · Meet the founder
 
 ### Terms of the Practice
 
@@ -116,14 +127,9 @@ Artist Wellbeing & Development Protocols The pace, boundaries, and expectations 
 
 https://wildlakestudio.com/method/#method-sovereignty
 
-Ownership, Universe API & Governance The artist retains 100% of their IP and creative control. Wild-Lake takes 0% IP ownership and 0% revenue share. Asset-based leverage remains with the artist, including rights, income, and direct audience relationships. An upfront monthly Stewardship Subscription reserves agreed capacity for client-triggered interventions. Scope, response windows, access limits, and review points are set before the engagement begins. Fixed commissions and focused advisory scopes are available when the work has a defined boundary. Universe API is Argelys's macro-micro diagnostic framework. It connects the conditions of the wider system with the artist's day-to-day capacity and decisions. It governs how interventions are scoped, tested in real conditions, and revised through use. Each intervention follows a closed loop: identify the constraint and the assets available, agree the change and the evidence to review, deploy it, observe its effect on the practice, and refine it with the artist. The review governs the next intervention and keeps the agreed scope proportional to the work. Engagement formats and fees · Terms of Practice · Begin an engagement
+Ownership, Universe API & Governance The artist retains 100% of their IP and creative control. Wild-Lake takes 0% IP ownership and 0% revenue share. Asset-based leverage remains with the artist, including rights, income, and direct audience relationships. An upfront monthly Stewardship Subscription reserves agreed capacity for client-triggered interventions. Scope, response windows, access limits, and review points are set before the engagement begins. Fixed commissions and focused advisory scopes are available when the work has a defined boundary. Universe API is Argelys's macro-micro diagnostic framework. It connects the conditions of the wider system with the artist's day-to-day capacity and decisions. It governs how interventions are scoped, tested in real conditions, and revised through use. Each intervention follows a closed loop: identify the constraint and the assets available, agree the change and the evidence to review, deploy it, observe its effect on the practice, and refine it with the artist. The review governs the next intervention and keeps the agreed scope proportional to the work. Next: Engagements & Pricing → · Terms of Practice · Begin an engagement
 
-Founder: https://wildlakestudio.com/about-founder/
-Development Protocols: https://wildlakestudio.com/development-protocols/
-Universe API: https://argelysoriach.com/universe-api/
-Engagement formats and fees: https://wildlakestudio.com/pricing/
-Terms of Practice: https://wildlakestudio.com/terms/
-Begin an engagement: https://wildlakestudio.com/contact/
+Next pages: https://wildlakestudio.com/practice/ | https://wildlakestudio.com/method/ | https://wildlakestudio.com/pricing/ | https://wildlakestudio.com/contact/ | https://wildlakestudio.com/terms/
 
 ## Development Protocols
 
@@ -260,7 +266,7 @@ Operational Infrastructure protocols: Programmatic request gating, Single-file e
 
 https://wildlakestudio.com/pricing/
 
-Engagements & Pricing Engagements protect the artist and sustain the practice. Wild-Lake operates a closed-loop cross-subsidy model. Paid retainers from established artists and institutional partners directly fund higher-frequency Stewardship Subscriptions for rising independent artists. That funding creates zero claim on the work, equity, or revenue of any artist supported. The practice funds this capacity through its own paid engagements rather than external capital or predatory backend deals. Within each engagement, upfront flat or recurring fees reserve asynchronous studio capacity and focused interventions. Interventions are followed by uninterrupted absence for independent execution. The artist retains 100% of their IP, masters, publishing, and direct audience ownership. At an agreed review, artist and studio examine the result and refine the next intervention. Review The Method · Terms of Practice
+Engagements & Pricing Engagements protect the artist and sustain the practice. Wild-Lake operates a closed-loop cross-subsidy model. Paid retainers from established artists and institutional partners directly fund higher-frequency Stewardship Subscriptions for rising independent artists. That funding creates zero claim on the work, equity, or revenue of any artist supported. The practice funds this capacity through its own paid engagements rather than external capital or predatory backend deals. Within each engagement, upfront flat or recurring fees reserve asynchronous studio capacity and focused interventions. Interventions are followed by uninterrupted absence for independent execution. The artist retains 100% of their IP, masters, publishing, and direct audience ownership. At an agreed review, artist and studio examine the result and refine the next intervention. Offerings · The Method · Terms of Practice
 
 ### Two rhythms, one practice
 
@@ -290,15 +296,9 @@ Sovereign terms included in every engagement The artist retains 100% ownership o
 
 https://wildlakestudio.com/pricing/#engagement-process
 
-How an engagement begins Submit work and context. Diagnostic scoping via Universe API principles: identify the actual bottleneck, the assets available, and the intervention to test. Written agreement on retainer, subscription, or fixed fee, including scope, response windows, and review criteria. After the intervention, the artist executes independently. At the agreed review, artist and studio assess the result and refine the next scope. Send a message → Terms of Practice
+How an engagement begins Submit work and context. Diagnostic scoping via Universe API principles: identify the actual bottleneck, the assets available, and the intervention to test. Written agreement on retainer, subscription, or fixed fee, including scope, response windows, and review criteria. After the intervention, the artist executes independently. At the agreed review, artist and studio assess the result and refine the next scope. Next: Begin an engagement → Terms of Practice
 
-Review The Method: https://wildlakestudio.com/method/
-Development Protocols: https://wildlakestudio.com/development-protocols/
-Operational Infrastructure: https://wildlakestudio.com/development-protocols/#operational-infrastructure
-Universe API: https://argelysoriach.com/universe-api/
-Responsibility: https://wildlakestudio.com/responsibility/
-Terms of Practice: https://wildlakestudio.com/terms/
-Send a message: https://wildlakestudio.com/contact/#contact-intake
+Next pages: https://wildlakestudio.com/practice/ | https://wildlakestudio.com/method/ | https://wildlakestudio.com/pricing/ | https://wildlakestudio.com/contact/ | https://wildlakestudio.com/terms/
 
 ## Name & Number
 
@@ -340,18 +340,15 @@ https://wildlakestudio.com/contact/
 
 https://wildlakestudio.com/contact/#contact-overview
 
-Let’s begin. NEW YORK / TAMPA / SANTIAGO / WORLDWIDE Wild-Lake has bases in New York, Tampa, and Santiago. We also collaborate remotely, without requiring in-person intensive sessions. Artists can inquire directly or through managers, booking agents, labels, galleries, and institutions. Identify the work, the structural bottleneck, and the conditions or timeline you are building toward. Review The Method and Engagements & Pricing beforehand to establish shared terms. Argelys Samuel Oriach, Founder and Artistic Director, uses Universe API to scope the constraint, the intervention to test, and the evidence to review. info@wildlakestudio.com
+Let’s begin. NEW YORK / TAMPA / SANTIAGO / WORLDWIDE Wild-Lake has bases in New York, Tampa, and Santiago. We also collaborate remotely, without requiring in-person intensive sessions. Artists can inquire directly or through managers, booking agents, labels, galleries, and institutions. Identify the work, the structural bottleneck, and the conditions or timeline you are building toward. Review Offerings, The Method, and Engagements & Pricing beforehand to establish shared operating terms before submitting work. Argelys Samuel Oriach, Founder and Artistic Director, uses Universe API to scope the constraint, the intervention to test, and the evidence to review. info@wildlakestudio.com
 
 ### Diagnostic intake
 
 https://wildlakestudio.com/contact/#contact-intake
 
-Diagnostic intake These prompts and fields are optional. Include the facts that help us identify the constraint, the engagement format, and the target horizon. You can also write directly by email. If you are an artist What is the core body of work, and what stage is it in? Where is your current practice or infrastructure breaking down? What conditions or timeline are you building toward over the next 12 months? If you represent a label, gallery, agency or institution Which artist, roster, or program requires support? What is the operational bottleneck, release/exhibition timeline, or institutional demand? Which engagement structure fits best (retainer, intensive, or fixed commission)? Your message (optional) Engagement format (optional) Not sure yet Established artist (Retainer and intensive) Rising artist (Subsidized Stewardship Subscription) Fixed project fee Institutional partnership Include if you can A link to the work. Your name. A link to the work (optional) Your name (optional) Open email draft → This form compiles an email draft in your browser for you to review and send through your email app. Wild-Lake receives it only when you send it. You can also write directly to info@wildlakestudio.com. Read the Privacy Protocol. Your work stays yours. We never take ownership or a percentage.
+Diagnostic intake These prompts and fields are optional. Include the facts that help us identify the constraint, the engagement format, and the target horizon. You can also write directly by email. If you are an artist What is the core body of work, and what stage is it in? Where is your current practice or infrastructure breaking down? What conditions or timeline are you building toward over the next 12 months? If you represent a label, gallery, agency or institution Which artist, roster, or program requires support? What is the operational bottleneck, release/exhibition timeline, or institutional demand? Which engagement structure fits best (retainer, intensive, or fixed commission)? Your message (optional) Engagement format (optional) Not sure yet Established artist (Retainer and intensive) Rising artist (Subsidized Stewardship Subscription) Fixed project fee Institutional partnership Include if you can A link to the work. Your name. A link to the work (optional) Your name (optional)
 
-Privacy Protocol: https://wildlakestudio.com/privacy/
-The Method: https://wildlakestudio.com/method/
-Engagements & Pricing: https://wildlakestudio.com/pricing/
-Universe API: https://argelysoriach.com/universe-api/
+Next pages: https://wildlakestudio.com/practice/ | https://wildlakestudio.com/method/ | https://wildlakestudio.com/pricing/ | https://wildlakestudio.com/contact/ | https://wildlakestudio.com/terms/
 
 ## Laboratory relationship
 

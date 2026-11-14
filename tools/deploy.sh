@@ -6,6 +6,7 @@ python3 tools/check_dependencies.py
 python3 tools/check_copy_sync.py
 python3 tools/check_metadata.py
 python3 tools/check_typography.py
+python3 tools/check_navigation.py
 case "${1:-all}" in
   site) npx --yes wrangler@4.158.0 deploy --config deploy/site.wrangler.json ;;
   mirror) npx --yes wrangler@4.158.0 deploy --config deploy/mirror.wrangler.json ;;

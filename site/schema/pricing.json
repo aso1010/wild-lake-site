@@ -6,7 +6,7 @@
   "name": "Engagements & Pricing | Wild Lake Studio",
   "headline": "Engagements & Pricing",
   "description": "Retainers, intensives, subsidized Stewardship Subscriptions, and fixed project fees. Engagements protect the artist and sustain the practice. Fees agreed individually.",
-  "abstract": "Engagements & Pricing Engagements protect the artist and sustain the practice. Wild-Lake operates a closed-loop cross-subsidy model. Paid retainers from established artists and institutional partners directly fund higher-frequency Stewardship Subscriptions for rising independent artists. That funding creates zero claim on the work, equity, or revenue of any artist supported. The practice funds this capacity through its own paid engagements rather than external capital or predatory backend deals. Within each engagement, upfront flat or recurring fees reserve asynchronous studio capacity and focused interventions. Interventions are followed by uninterrupted absence for independent execution. The artist retains 100% of their IP, masters, publishing, and direct audience ownership. At an agreed review, artist and studio examine the result and refine the next intervention. Review The Method · Terms of Practice",
+  "abstract": "Engagements & Pricing Engagements protect the artist and sustain the practice. Wild-Lake operates a closed-loop cross-subsidy model. Paid retainers from established artists and institutional partners directly fund higher-frequency Stewardship Subscriptions for rising independent artists. That funding creates zero claim on the work, equity, or revenue of any artist supported. The practice funds this capacity through its own paid engagements rather than external capital or predatory backend deals. Within each engagement, upfront flat or recurring fees reserve asynchronous studio capacity and focused interventions. Interventions are followed by uninterrupted absence for independent execution. The artist retains 100% of their IP, masters, publishing, and direct audience ownership. At an agreed review, artist and studio examine the result and refine the next intervention. Offerings · The Method · Terms of Practice",
   "isPartOf": {
     "@id": "https://wildlakestudio.com/#website"
   },
@@ -43,7 +43,7 @@
       "@type": "WebPageElement",
       "@id": "https://wildlakestudio.com/pricing/#engagement-process",
       "name": "How an engagement begins",
-      "text": "How an engagement begins Submit work and context. Diagnostic scoping via Universe API principles: identify the actual bottleneck, the assets available, and the intervention to test. Written agreement on retainer, subscription, or fixed fee, including scope, response windows, and review criteria. After the intervention, the artist executes independently. At the agreed review, artist and studio assess the result and refine the next scope. Send a message → Terms of Practice"
+      "text": "How an engagement begins Submit work and context. Diagnostic scoping via Universe API principles: identify the actual bottleneck, the assets available, and the intervention to test. Written agreement on retainer, subscription, or fixed fee, including scope, response windows, and review criteria. After the intervention, the artist executes independently. At the agreed review, artist and studio assess the result and refine the next scope. Next: Begin an engagement → Terms of Practice"
     }
   ],
   "about": [
