@@ -44,13 +44,13 @@
           "@id": "https://seveneightythree.com/#organization"
         }
       ],
-      "headline": "Wild-Lake is point zero for starmaking.",
+      "headline": "Wild Lake Studio is point zero for starmaking.",
       "hasPart": [
         {
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#overview",
-          "name": "Wild-Lake is point zero for starmaking.",
-          "text": "Wild-Lake is an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage."
+          "name": "Wild Lake Studio is point zero for starmaking.",
+          "text": "Known as Wild-Lake, we are an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage."
         },
         {
           "@type": "WebPageElement",
@@ -100,7 +100,7 @@
         "@type": "Organization",
         "@id": "https://wildlakestudio.com/#organization",
         "name": "Wild Lake Studio",
-        "slogan": "Wild-Lake is point zero for starmaking."
+        "slogan": "Wild Lake Studio is point zero for starmaking."
       },
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
@@ -142,7 +142,7 @@
         "@type": "Organization",
         "@id": "https://wildlakestudio.com/#organization",
         "name": "Wild Lake Studio",
-        "slogan": "Wild-Lake is point zero for starmaking."
+        "slogan": "Wild Lake Studio is point zero for starmaking."
       },
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
