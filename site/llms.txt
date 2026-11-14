@@ -260,15 +260,45 @@ Operational Infrastructure protocols: Programmatic request gating, Single-file e
 
 https://wildlakestudio.com/pricing/
 
-Engagements protect the artist and sustain the practice. Wild-Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.
+Engagements & Pricing Engagements protect the artist and sustain the practice. Wild-Lake operates a closed-loop cross-subsidy model. Paid retainers from established artists and institutional partners directly fund higher-frequency Stewardship Subscriptions for rising independent artists. That funding creates zero claim on the work, equity, or revenue of any artist supported. The practice funds this capacity through its own paid engagements rather than external capital or predatory backend deals. Within each engagement, upfront flat or recurring fees reserve asynchronous studio capacity and focused interventions. Interventions are followed by uninterrupted absence for independent execution. The artist retains 100% of their IP, masters, publishing, and direct audience ownership. At an agreed review, artist and studio examine the result and refine the next intervention. Review The Method · Terms of Practice
 
-Established artists: retainer availability for text and voice notes, agreed response windows, limited urgent calls, and occasional deep intensives. Management and creative approval sit outside the engagement. Retainer and intensive fees are agreed individually.
+### Two rhythms, one practice
 
-Rising artists: a subsidized Stewardship Subscription for higher-frequency ongoing development and operational infrastructure. Eligibility rests on practice and need; inability to pay is one factor. Scope, expectations, and participation are agreed together. A sliding scale follows need and available capacity, with the rate agreed individually.
+https://wildlakestudio.com/pricing/#engagement-rhythms
 
-Fixed project fee: Creative Infrastructure commissions and defined editorial work. Scope and fee are agreed before work begins.
+Two rhythms, one practice The scope determines the rhythm: reserved availability with occasional intensive work, or higher-frequency support while building a foundation. Both reserve capacity for agreed interventions and protect time for independent execution. Established artists Retainer and intensive For established artists across disciplines, or their managers, labels, galleries, and agencies navigating touring, album cycles, exhibitions, or large-scale productions. Reserved availability The retainer reserves text and voice-note access to Argelys Samuel Oriach, Founder and Artistic Director, within agreed response windows. A capped number of urgent calls per quarter is agreed in writing. Wild-Lake provides structural advice, critique, and grounding. Day-to-day management and creative sign-off remain with the artist and their team. Focused intervention One-to-two-day intensives take place in person or remotely, spaced across months or years according to the work and the artist's capacity. Each intervention is followed by independent execution and an agreed review. Pre-session intake. A structural honesty audit, somatic and editorial work, and an infrastructure audit. A post-session structural memo recording observations, decisions, next steps, and the evidence to review. Pricing Retainer and intensive fees are agreed individually. Rising artists Subsidized Stewardship Subscription Higher-frequency ongoing support for developing independent artists building foundational infrastructure. Established artist retainers underwrite the reserved capacity. Ongoing development Regular sessions on an agreed cadence, with independent execution between interventions. Optional Development Protocols selected with the artist. Full Operational Infrastructure deployment within the agreed scope: request gating, static edge sites, direct payment routing, custom domain feeds, and async calendar boundaries. Scope and participation Eligibility rests on artistic rigor and structural need, with financial capacity factored in. Subsidized engagements are full working partnerships with mutual accountability. Artist and studio agree the scope, participation, boundaries, and review points before beginning, then assess the work and revise interventions together. Pricing A sliding scale based on need and available capacity, with the rate agreed individually.
 
-Access is async-first within clear boundaries. Artists may pause, decline, or change direction. Touch and co-regulation require explicit ongoing consent. Artists retain ownership, creative control, and direct audience relationships. Wild-Lake takes no percentage of masters, publishing, or touring. No public fee amounts are listed. Begin by sharing the work, determining fit, rhythm, and scope, then agreeing retainer, subscription, or fixed-fee terms.
+### Fixed project fee & institutional commissions
+
+https://wildlakestudio.com/pricing/#fixed-project-fee
+
+Fixed project fee & institutional commissions Standalone Creative Infrastructure builds include single-file edge sites, request-gating architecture, and direct payment and publishing pipelines. Fixed commissions also cover critical framing essays and focused diagnostic audits for labels, galleries, or management rosters. Scope, deliverables, review criteria, and the flat fee are agreed in full before work starts.
+
+### Operational boundaries & access
+
+https://wildlakestudio.com/pricing/#engagement-access
+
+Operational boundaries & access Agreed response windows and written quarterly urgent-call caps define reserved access. Async-first communication protects studio execution, with focused interventions followed by uninterrupted absence. Programmatic request gating routes incoming professional inquiries through an agreed structured process. Consent remains ongoing. The artist can pause or exit any protocol and change direction within the agreed engagement terms. Any physical or co-regulation work requires explicit prior agreement and ongoing consent. Proximity and touch are optional.
+
+### Sovereign terms included in every engagement
+
+https://wildlakestudio.com/pricing/#engagement-included
+
+Sovereign terms included in every engagement The artist retains 100% ownership of their IP, masters, publishing, touring revenue, and direct audience lists, with full creative control. Wild-Lake takes zero backend points or commissions. Transparent upfront fee agreements specify the reserved capacity, scope, access boundaries, and review points. A dedicated fraction of every paid retainer is committed to freshwater ecosystem and public land conservation. Review the responsibility commitments.
+
+### How an engagement begins
+
+https://wildlakestudio.com/pricing/#engagement-process
+
+How an engagement begins Submit work and context. Diagnostic scoping via Universe API principles: identify the actual bottleneck, the assets available, and the intervention to test. Written agreement on retainer, subscription, or fixed fee, including scope, response windows, and review criteria. After the intervention, the artist executes independently. At the agreed review, artist and studio assess the result and refine the next scope. Send a message → Terms of Practice
+
+Review The Method: https://wildlakestudio.com/method/
+Development Protocols: https://wildlakestudio.com/development-protocols/
+Operational Infrastructure: https://wildlakestudio.com/development-protocols/#operational-infrastructure
+Universe API: https://argelysoriach.com/universe-api/
+Responsibility: https://wildlakestudio.com/responsibility/
+Terms of Practice: https://wildlakestudio.com/terms/
+Send a message: https://wildlakestudio.com/contact/#contact-intake
 
 ## Name & Number
 
