@@ -118,3 +118,12 @@ body{font-family:var(--font-sans);font-size:var(--text-base);line-height:var(--l
 /* The existing homepage first viewport is excluded from the type refactor. */
 body.reading-layout.home:has(#overview)>.hero-location{font-family:var(--font-mono);font-size:var(--home-location-size)!important;font-weight:400;line-height:var(--home-location-leading)!important;letter-spacing:var(--home-location-tracking)!important}
 body.reading-layout.home:has(#overview)>.cap{font-size:var(--home-cap-size);line-height:var(--home-cap-leading);letter-spacing:var(--home-cap-tracking)}
+
+/* Width system: layout rails frame sections; prose measures frame reading. */
+:root{--measure-layout:85rem;--measure-body:var(--measure,64ch);--measure-lead:55ch}
+body.reading-layout:not(.home){--reading-width:var(--measure-layout)}
+body.reading-layout main p.type-body,
+body.reading-layout.home>:is(.pillars,.who,.pitch,.contact,.practice-impact,.protocol-feature-home) p.type-body{max-width:min(100%,var(--measure-body))!important}
+body.reading-layout main p.type-lead,
+body.reading-layout.home>:is(.pillars,.who,.pitch,.contact,.practice-impact,.protocol-feature-home) p.type-lead{max-width:min(100%,var(--measure-lead))!important}
+body.reading-layout main :is(header,section,article)>.rule{width:100%;max-width:none;margin-inline:0}

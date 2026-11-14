@@ -9,7 +9,8 @@ python3 tools/check_typography.py
 python3 tools/check_navigation.py
 python3 tools/build_clients_css.py --check
 python3 tools/check_clients.py
-"${OPA_BIN:-opa}" eval --fail --format=pretty --data policy.rego --input build/clients-policy-input.json "data.wildlake.clients.allow == true"
+python3 tools/check_rules.py
+"${OPA_BIN:-opa}" eval --fail --format=pretty --data policy.rego --input build/clients-policy-input.json "data.wildlake.clients.allow = true"
 case "${1:-all}" in
   site) npx --yes wrangler@4.158.0 deploy --config deploy/site.wrangler.json ;;
   mirror) npx --yes wrangler@4.158.0 deploy --config deploy/mirror.wrangler.json ;;

@@ -1,0 +1,13 @@
+/* primitives.css: deterministic rule architecture */
+:root{--gutter:clamp(1rem,3vw,2.5rem);--measure:64ch;--stroke:1px solid #000000}
+hr{border:0;margin:0;height:0}
+.rule-datum{width:100%;border-top:var(--stroke);margin-block:1.5rem}
+.rule-measure{width:100%;max-width:var(--measure);border-top:var(--stroke);margin-block:1.25rem}
+.rule-inline{width:100%;border-top:var(--stroke);margin-block:.75rem}
+/* Theme integration: preserve the protected homepage frame. */
+body{--stroke:1px solid var(--rule-color,#FFFFFF)}
+body.home{--gutter:clamp(21px,5vw,55px)}
+hr:is(.rule-datum,.rule-measure,.rule-inline){height:0!important;background:none!important;border:0;border-top:var(--stroke);padding:0;margin-inline:0}
+hr.rule-datum{max-width:none!important;margin-block:1.5rem!important}
+hr.rule-measure{max-width:var(--measure)!important;margin-block:1.25rem!important}
+hr.rule-inline{max-width:none!important;margin-block:.75rem!important}
