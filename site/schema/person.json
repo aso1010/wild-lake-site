@@ -11,7 +11,7 @@
     "Founder",
     "Systems architect",
     "Performance artist",
-    "Artistic director",
+    "Artistic Director",
     "Actor",
     "Vocalist",
     "Writer",
@@ -55,7 +55,10 @@
     "Writing",
     "Alexander Technique",
     "Performance as method",
-    "Durational performance"
+    "Durational performance",
+    {
+      "@id": "https://argelysoriach.com/universe-api/#framework"
+    }
   ],
   "sameAs": [
     "https://www.linkedin.com/in/argelys-samuel-oriach/"
@@ -72,7 +75,7 @@
       "@type": "CreativeWork",
       "name": "Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz’s Afro-Caribbean literary imagination",
       "url": "https://digitalcollections.wesleyan.edu/Documents/Detail/breaking-the-circle-of-the-plantation-violence-affect-and-the-ephemeral-in-junot-diazs-afro-caribbean-literary-imagination/421352",
-      "genre": "Senior thesis",
+      "genre": "Senior honors thesis",
       "description": "The thesis positions The Brief Wondrous Life of Oscar Wao as an alternative archive of the diaspora. It examines Díaz's Afro-Caribbean literary imagination through queer theory, performance studies, affect studies, and critical race theory."
     }
   ],
