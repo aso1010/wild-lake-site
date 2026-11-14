@@ -162,7 +162,7 @@ svg.link-arrow{display:inline-block;width:1em;height:1em;vertical-align:-.12em;f
 
 .home .practice-impact{box-sizing:border-box;width:100%;max-width:none;margin:clamp(55px,7vw,89px) 0;padding:clamp(34px,6vw,89px) var(--gutter);background:#d7dfc6;color:#080a06;scroll-margin-top:80px}
 .home .practice-impact p{margin:0}
-.home .practice-impact .impact-label{font-size:var(--text-xs);font-weight:600;letter-spacing:var(--tracking-label);text-transform:uppercase;margin-bottom:34px}
+.home .practice-impact .impact-label{font-size:var(--text-xs);font-weight:600;letter-spacing:var(--tracking-label);text-transform:none;margin-bottom:34px}
 .home .practice-impact h2{max-width:22ch;margin:0 0 clamp(34px,5vw,64px);font-size:var(--text-3xl);line-height:var(--leading-display);letter-spacing:var(--tracking-tight);color:inherit}
 .home .impact-body{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(34px,6vw,89px);align-items:start}
 .home .practice-impact .impact-context{max-width:48ch;font-size:var(--text-md);line-height:var(--leading-body)}

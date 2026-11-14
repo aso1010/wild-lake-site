@@ -31,9 +31,9 @@ for p,parsed in pages.items():
   count+=1
 
 journey = {
- 'practice/index.html': ('/method/', 'Next: Read The Method'),
- 'method/index.html': ('/pricing/', 'Next: Engagements &amp; Pricing'),
- 'pricing/index.html': ('/contact/#contact-intake', 'Next: Begin an engagement'),
+ 'practice/index.html': ('/method/', 'Next: read the method'),
+ 'method/index.html': ('/pricing/', 'Next: engagements &amp; pricing'),
+ 'pricing/index.html': ('/contact/#contact-intake', 'Next: begin an engagement'),
 }
 for filename,(href,label) in journey.items():
  text=(root/filename).read_text()

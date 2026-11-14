@@ -59,7 +59,7 @@
       "url": "https://wildlakestudio.com/practice/#service-01-1",
       "itemOffered": {
         "@type": "Service",
-        "name": "Artist Development",
+        "name": "Artist development",
         "description": "We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
@@ -71,7 +71,7 @@
       "url": "https://wildlakestudio.com/practice/#service-01-2",
       "itemOffered": {
         "@type": "Service",
-        "name": "Creative Development",
+        "name": "Creative development",
         "description": "Traditional A&R reshapes the creator. We work with raw material in any form and at any stage, helping artists shape the work on their own terms.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
@@ -83,7 +83,7 @@
       "url": "https://wildlakestudio.com/practice/#service-01-3",
       "itemOffered": {
         "@type": "Service",
-        "name": "Creative Infrastructure",
+        "name": "Creative infrastructure",
         "description": "Audience development is asset building. We construct the physical, spatial, and digital channels for complex work.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
@@ -95,7 +95,7 @@
       "url": "https://wildlakestudio.com/practice/#service-02-1",
       "itemOffered": {
         "@type": "Service",
-        "name": "Existential Mechanics",
+        "name": "Existential mechanics",
         "description": "We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
@@ -107,7 +107,7 @@
       "url": "https://wildlakestudio.com/practice/#service-02-2",
       "itemOffered": {
         "@type": "Service",
-        "name": "Structural Stewardship",
+        "name": "Structural stewardship",
         "description": "Sustained operational support to manage the existential load of the artist over a ten-year horizon.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
@@ -119,7 +119,7 @@
       "url": "https://wildlakestudio.com/practice/#service-02-3",
       "itemOffered": {
         "@type": "Service",
-        "name": "Capacity & Boundary Audit",
+        "name": "Capacity & boundary audit",
         "description": "Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.",
         "provider": {
           "@id": "https://wildlakestudio.com/#organization"
@@ -159,7 +159,7 @@
             "url": "https://wildlakestudio.com/practice/#service-01-1",
             "itemOffered": {
               "@type": "Service",
-              "name": "Artist Development",
+              "name": "Artist development",
               "description": "We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice.",
               "provider": {
                 "@id": "https://wildlakestudio.com/#organization"
@@ -171,7 +171,7 @@
             "url": "https://wildlakestudio.com/practice/#service-01-2",
             "itemOffered": {
               "@type": "Service",
-              "name": "Creative Development",
+              "name": "Creative development",
               "description": "Traditional A&R reshapes the creator. We work with raw material in any form and at any stage, helping artists shape the work on their own terms.",
               "provider": {
                 "@id": "https://wildlakestudio.com/#organization"
@@ -183,7 +183,7 @@
             "url": "https://wildlakestudio.com/practice/#service-01-3",
             "itemOffered": {
               "@type": "Service",
-              "name": "Creative Infrastructure",
+              "name": "Creative infrastructure",
               "description": "Audience development is asset building. We construct the physical, spatial, and digital channels for complex work.",
               "provider": {
                 "@id": "https://wildlakestudio.com/#organization"
@@ -194,14 +194,14 @@
       },
       {
         "@type": "OfferCatalog",
-        "name": "Talent Architecture",
+        "name": "Talent architecture",
         "itemListElement": [
           {
             "@type": "Offer",
             "url": "https://wildlakestudio.com/practice/#service-02-1",
             "itemOffered": {
               "@type": "Service",
-              "name": "Existential Mechanics",
+              "name": "Existential mechanics",
               "description": "We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries.",
               "provider": {
                 "@id": "https://wildlakestudio.com/#organization"
@@ -213,7 +213,7 @@
             "url": "https://wildlakestudio.com/practice/#service-02-2",
             "itemOffered": {
               "@type": "Service",
-              "name": "Structural Stewardship",
+              "name": "Structural stewardship",
               "description": "Sustained operational support to manage the existential load of the artist over a ten-year horizon.",
               "provider": {
                 "@id": "https://wildlakestudio.com/#organization"
@@ -225,7 +225,7 @@
             "url": "https://wildlakestudio.com/practice/#service-02-3",
             "itemOffered": {
               "@type": "Service",
-              "name": "Capacity & Boundary Audit",
+              "name": "Capacity & boundary audit",
               "description": "Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.",
               "provider": {
                 "@id": "https://wildlakestudio.com/#organization"

@@ -103,11 +103,11 @@ body{font-family:var(--font-sans);font-size:var(--text-base);line-height:var(--l
 .type-h2{font-size:var(--text-xl)!important}
 .type-h3{font-size:var(--text-lg)!important}
 .type-h4{font-size:var(--text-md)!important}
-.type-h5{font-size:var(--text-base)!important;text-transform:uppercase!important;letter-spacing:var(--tracking-label)!important}
+.type-h5{font-size:var(--text-base)!important;text-transform:none!important;letter-spacing:var(--tracking-label)!important}
 :is(.type-h1,.type-h2,.type-h3,.type-h4,.type-h5){font-family:var(--font-sans)!important;font-weight:var(--weight-heading)!important;line-height:var(--leading-heading)!important;letter-spacing:var(--tracking-tight)}
 .type-body{font-family:var(--font-sans);font-size:var(--text-base)!important;line-height:var(--leading-body)!important}
 .type-lead{font-size:var(--text-md)!important;line-height:var(--leading-body)!important}
-:is(.type-eyebrow,.eyebrow,.vector-head,.page-outline-title){font-family:var(--font-mono)!important;font-size:var(--text-xs)!important;line-height:var(--leading-body)!important;letter-spacing:var(--tracking-label)!important;text-transform:uppercase!important;color:var(--muted-color,#d6d6d6);margin-bottom:var(--type-eyebrow-gap)}
+:is(.type-eyebrow,.eyebrow,.vector-head,.page-outline-title){font-family:var(--font-mono)!important;font-size:var(--text-xs)!important;line-height:var(--leading-body)!important;letter-spacing:var(--tracking-label)!important;text-transform:none!important;color:var(--muted-color,#d6d6d6);margin-bottom:var(--type-eyebrow-gap)}
 :is(.type-label,label,.engagement-label,dt){font-family:var(--font-sans);font-size:var(--text-sm)!important;font-weight:var(--weight-heading)!important;line-height:var(--leading-body)!important;letter-spacing:var(--tracking-normal)!important}
 .type-tag{display:inline-block;font-family:var(--font-mono)!important;font-size:var(--text-xs)!important;line-height:var(--leading-body)!important;letter-spacing:var(--tracking-normal)!important;border:var(--type-rule);border-radius:var(--type-corner)!important;padding:var(--type-tag-padding)}
 .type-index{font-family:var(--font-mono)!important;font-size:var(--text-xs)!important;font-variant-numeric:tabular-nums;line-height:var(--leading-body)!important;letter-spacing:var(--tracking-normal)!important}

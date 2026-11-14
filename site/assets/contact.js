@@ -1,7 +1,7 @@
 document.getElementById('intake-form').addEventListener('submit', function (event) {
   event.preventDefault();
   const fields = new FormData(event.currentTarget);
-  const formats = ['Retainer and intensive', 'Subsidized Stewardship Subscription', 'Fixed project commission', 'Institutional advisory'];
+  const formats = ['Retainer and intensive', 'Subsidized Stewardship subscription', 'Fixed project commission', 'Institutional advisory'];
   const selected = String(fields.get('format') || '').trim();
   const format = formats.includes(selected) ? selected : '';
   const prompts = [['message', 'Message'], ['work', 'Work'], ['name', 'Name']];
