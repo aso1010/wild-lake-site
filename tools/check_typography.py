@@ -7,23 +7,25 @@ root=Path(__file__).resolve().parents[1]/'site'
 canonical='/assets/css/fibonacci.css'
 errors=[]
 class Audit(HTMLParser):
- def __init__(self):super().__init__();self.headings=[];self.styles=[];self.block=None;self.copy=[]
+ def __init__(self):super().__init__();self.headings=[];self.styles=[];self.block=None;self.copy=[];self.in_footer=False
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
+  if tag=='footer':self.in_footer=True
   if tag in ('script','style','pre'):self.block=tag
-  if re.fullmatch(r'h[1-6]',tag):self.headings.append((int(tag[1]),a.get('class','').split()))
+  if re.fullmatch(r'h[1-6]',tag):self.headings.append((int(tag[1]),a.get('class','').split(),self.in_footer))
   if tag=='link' and a.get('rel')=='stylesheet':self.styles.append(a.get('href'))
  def handle_endtag(self,tag):
   if tag==self.block:self.block=None
+  if tag=='footer':self.in_footer=False
  def handle_data(self,text):
   if not self.block:self.copy.append(text)
 for path in root.rglob('*.html'):
  text=path.read_text();a=Audit();a.feed(text);name=str(path.relative_to(root))
- if sum(n==1 for n,_ in a.headings)!=1:errors.append(f'{name}: expected exactly one H1')
+ if sum(n==1 for n,_,_ in a.headings)!=1:errors.append(f'{name}: expected exactly one H1')
  previous=0
- for n,classes in a.headings:
+ for n,classes,in_footer in a.headings:
   if n>previous+1:errors.append(f'{name}: skipped H{previous} to H{n}')
-  role='type-display' if path==root/'index.html' and n==1 else f'type-h{n}'
+  role='type-label' if in_footer and n==2 else 'type-display' if path==root/'index.html' and n==1 else f'type-h{n}'
   if role not in classes:errors.append(f'{name}: missing {role}')
   previous=n
  if not a.styles or a.styles[-1]!=canonical or a.styles.count(canonical)!=1:errors.append(f'{name}: canonical type sheet must load once, last')

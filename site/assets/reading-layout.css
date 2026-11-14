@@ -25,7 +25,7 @@ body.reading-layout.roster .profile-grid{grid-template-columns:minmax(0,1fr)}
 body.reading-layout .founder-layout .founder-portrait{grid-column:auto;grid-row:auto;justify-self:start;align-self:start}
 body.reading-layout.roster .roster-visual{width:100%;max-width:360px;justify-self:start}
 body.reading-layout.roster .roster-jump{grid-template-columns:repeat(2,minmax(0,1fr))}
-body.reading-layout .footer-columns{grid-template-columns:minmax(0,1fr);gap:34px}
+
 body.reading-layout:not(:has(#overview))>.cap{box-sizing:border-box;width:100%;max-width:var(--reading-rail);padding-inline:var(--gutter,21px);margin-inline:auto}
 
 body.reading-layout:has(#overview)>.cap{width:100%;max-width:none;margin-inline:0}
@@ -47,7 +47,7 @@ body.reading-layout.roster>.page-outline a{white-space:nowrap}
  body.reading-layout .founder-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:55px}
  body.reading-layout .founder-layout .founder-portrait{grid-column:2;grid-row:1;justify-self:end}
  body.reading-layout.roster .roster-jump{grid-template-columns:repeat(3,minmax(0,1fr))}
- body.reading-layout .footer-columns{grid-template-columns:repeat(3,minmax(0,1fr))}
+ 
 }
 @media(min-width:1100px){
  body.reading-layout.home:has(#overview){--gutter:clamp(1.3125rem,5vw,5.5rem)}

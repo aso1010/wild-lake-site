@@ -21,9 +21,6 @@
 .manifesto-main h2{margin-bottom:var(--space-lg)}
 .manifesto-main section>p:last-child{margin-bottom:0}
 .contact-main .intake{margin-top:var(--space-xl);padding-top:var(--space-lg)}
-.footer-columns{gap:var(--space-lg)}
-.studio-footer .footer-mark{margin-bottom:var(--space-lg)}
-.footer-position{margin-top:var(--space-lg);padding-top:var(--space-lg)}
 
 :is(.entry-link,.blog-return,.magazine-links a,.app-feature-open) .link-arrow{transition:transform var(--motion-settle) var(--motion-ease)}
 .roster-jump a{transition:border-color var(--motion-settle) ease,transform var(--motion-settle) var(--motion-ease),background-color var(--motion-settle) ease}
