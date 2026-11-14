@@ -7,7 +7,7 @@ root=Path(__file__).resolve().parents[1]/'site'
 home_search_title='Wild Lake Studio | Sovereign A&R & Artist Development'
 home_social_title='Wild Lake Studio | Talent Architecture and Artist Development'
 home_description='Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film.'
-image='https://wildlakestudio.com/assets/social/wild-lake-round-globe-close-og.png'
+image='https://wildlakestudio.com/assets/social/wild-lake-classic-monolith-og.png'
 class Head(HTMLParser):
     def __init__(self):super().__init__();self.meta={};self.title='';self.in_title=False;self.canonical=''
     def handle_starttag(self,tag,attrs):
@@ -34,7 +34,7 @@ for p in root.rglob('*.html'):
     for key,value in {'title':h.title,'og:title':social_title,'twitter:title':social_title,'og:description':description,'twitter:description':description,'og:site_name':'Wild-Lake','og:type':'website','twitter:card':'summary_large_image','og:image':image,'og:image:secure_url':image,'twitter:image':image,'og:image:type':'image/png','og:image:width':'1200','og:image:height':'630','og:url':'https://wildlakestudio.com' if p==root/'index.html' else h.canonical}.items():require(key,value)
     for key in ['og:image:alt','twitter:image:alt']:
         if len(h.meta.get(key,[]))!=1 or not h.meta[key][0]:errors.append(f'{p.relative_to(root)}: image alt missing or duplicated')
-preview=root/'assets/social/wild-lake-round-globe-close-og.png'
+preview=root/'assets/social/wild-lake-classic-monolith-og.png'
 from PIL import Image
 if Image.open(preview).size!=(1200,630):errors.append('Preview is not 1200 × 630')
 org=json.loads((root/'schema/organization.json').read_text())
