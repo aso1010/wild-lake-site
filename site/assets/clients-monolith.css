@@ -102,3 +102,4 @@ body{font-family:var(--font-sans);font-size:var(--text-base);line-height:var(--l
 @media(max-width:610px){.page-outline{gap:13px;padding-block:13px}.page-outline ol{gap:13px}.roster-main{padding-top:34px}.site-topbar-logo{width:89px}}
 @media(prefers-reduced-motion:reduce){.header-globe video{display:none}}
 h1,h2,h3,p,figcaption{overflow-wrap:anywhere}.page-outline{overflow:hidden}.page-outline ol{flex:1}
+.studio-footer .footer-mark{display:block;width:89px}.studio-footer .footer-mark img{width:100%;height:auto}
