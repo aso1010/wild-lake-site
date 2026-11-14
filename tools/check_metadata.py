@@ -6,7 +6,7 @@ import json, struct
 root=Path(__file__).resolve().parents[1]/'site'
 home_search_title='Wild Lake Studio | Talent Architecture, A&R, Creative Infrastructure'
 home_social_title='Wild Lake Studio | Direction, Structure, Systems'
-home_description='Independent studio for creators across music, art, writing and film. Direction, structure, and systems for artists, labels, galleries, and agencies.'
+home_description='Independent studio for creators across music, art, writing and film. Sovereign A&R, talent architecture, creative infrastructure. We never take ownership.'
 image='https://wildlakestudio.com/assets/social/wild-lake-classic-edge-og.png'
 class Head(HTMLParser):
     def __init__(self):super().__init__();self.meta={};self.title='';self.in_title=False;self.canonical=''
