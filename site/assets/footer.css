@@ -21,7 +21,7 @@
 @media(min-width:900px){body.reading-layout .footer-columns{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(34px,4vw,55px)}}
 @media(max-width:899px){body.reading-layout .footer-columns{grid-template-columns:minmax(0,1fr);gap:34px}}
 @media(min-width:900px){
- .studio-footer .footer-columns>:first-child{text-align:left}
- .studio-footer .footer-columns>:nth-child(2){text-align:center}
- .studio-footer .footer-columns>:last-child{text-align:right}
+ .studio-footer .footer-columns>:first-child{justify-self:start;text-align:left}
+ .studio-footer .footer-columns>:nth-child(2){justify-self:center;text-align:left}
+ .studio-footer .footer-columns>:last-child{justify-self:end;text-align:left}
 }
