@@ -17,3 +17,22 @@
 /downloads/wild-lake-story-template.png
   Content-Disposition: attachment; filename="wild-lake-story-template.png"
   Content-Type: image/png
+
+/favicon.ico
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/favicon.svg
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/favicon-*.png
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/apple-touch-icon.png
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/icon-*.png
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/site.webmanifest
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
