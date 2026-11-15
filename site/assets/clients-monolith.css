@@ -105,6 +105,7 @@ h1,h2,h3,p,figcaption{overflow-wrap:anywhere}.page-outline{overflow:hidden}.page
 .studio-footer .footer-mark{display:block;width:89px}.studio-footer .footer-mark img{width:100%;height:auto}
 :root{--measure-layout:85rem;--measure-body:var(--measure,64ch);--measure-lead:55ch}
 .roster-main p.type-body{max-width:min(100%,var(--measure-body))!important}.roster-main p.type-lead{max-width:min(100%,var(--measure-lead))!important}
+.roster-involvement{margin-bottom:55px;scroll-margin-top:144px}.roster-involvement h2{margin-bottom:21px}
 
 
 :root{--gutter:clamp(1rem,3vw,2.5rem);--measure:64ch;--stroke:1px solid #000000}

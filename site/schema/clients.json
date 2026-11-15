@@ -106,7 +106,15 @@
       "abstract": "We work with developing and independent artists across music, visual art, literature, film, design, performance, and athletics. These profiles cover past and current engagements, viewed from Wild-Lake’s perspective.",
       "breadcrumb": {
         "@id": "https://wildlakestudio.com/clients/#breadcrumbs"
-      }
+      },
+      "hasPart": [
+        {
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/clients/#roster-involvement",
+          "name": "What our involvement means",
+          "text": "We have spent time with these artists and worked closely with their practices. Our involvement speaks to the seriousness we have encountered: commitment to the craft, care for the person sustaining it, and attention to the conditions that help the work endure and stay theirs."
+        }
+      ]
     },
     {
       "@type": "Person",
