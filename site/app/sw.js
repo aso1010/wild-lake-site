@@ -2,7 +2,7 @@
 // and FILES at compile. Everything is precached on install and served from cache, so the app
 // opens with no network at all. A new build installs beside the old one and waits until the
 // reader taps Update; a reading in progress is never reloaded out from under them.
-const VERSION = '0c0974b3f7e5';
+const VERSION = '86dbcf923000';
 const PREFIX = 'quiet-creek-tarot-';
 const CACHE = PREFIX + VERSION;
 const FILES = ["/assets/navigation.css","/assets/css/fibonacci.css","/mirror/assets/fonts/Archivo-Italic-Variable.1cb3e748.woff2","/assets/fonts/Archivo-VariableFont_wdth,wght.ttf","/mirror/assets/fonts/JetBrainsMono-Variable.98f8fe00.woff2","./","assets/fonts/Archivo-Variable.c2193589.woff2","assets/fonts/JetBrainsMono-Variable.98f8fe00.woff2","assets/icons/icon-180.8f990ede.png","assets/icons/icon-192.9a065b14.png","assets/icons/icon-512.3295d325.png","manifest.webmanifest"];

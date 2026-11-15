@@ -25,7 +25,7 @@ def render(path):
    links.append('<li><a href="'+href+'"'+active+'>'+html.escape(label)+'</a></li>')
   panel.append('<div class="site-menu-group" role="group" aria-labelledby="site-menu-group-'+str(i)+'"><p class="type-label" id="site-menu-group-'+str(i)+'">'+html.escape(group['label'])+'</p><ul>'+''.join(links)+'</ul></div>')
  menu='<details class="site-menu"><summary aria-controls="site-menu-panel" aria-label="Site menu"><svg class="site-menu-icon" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span class="site-menu-open-label">Menu</span><span class="site-menu-close-label">Close</span></summary><div class="site-menu-panel" id="site-menu-panel">'+''.join(panel)+'<a class="site-menu-begin" href="mailto:info@wildlakestudio.com">Begin '+arrow+'</a></div></details>'
- nav='<nav aria-label="Primary" class="site-nav"><div class="site-nav-primary">'+''.join(out)+'</div>'+menu+'</nav>'
+ nav='<nav aria-label="Primary" class="site-nav">'+menu+'<div class="site-nav-primary">'+''.join(out)+'</div></nav>'
  if current in ['/app/','/mirror/']:nav=re.sub(r'href="(/[^"]*)"',lambda m:'href="https://wildlakestudio.com'+m[1]+'"',nav)
  return nav
 def add_outline(path,text):
