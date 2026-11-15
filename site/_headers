@@ -36,3 +36,15 @@
 /site.webmanifest
   Cache-Control: no-cache, max-age=0, must-revalidate
 
+
+/faq
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  X-Wild-Lake-FAQ: single-render
+
+/faq/
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  X-Wild-Lake-FAQ: single-render
+
+/faq/index.html
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  X-Wild-Lake-FAQ: single-render

@@ -21,6 +21,9 @@ def schema_base(name,data):
 outputs={}
 for name,data in content.items():
  url='https://wildlakestudio.com/'+name;path=root/name/'index.html';h=head
+ if name=='faq':
+  revision=hashlib.sha256((json.dumps(data,ensure_ascii=True,sort_keys=True)+(root/'assets/faq.js').read_text()).encode()).hexdigest()[:12]
+  h+='\n<meta name="wild-lake-faq-build" content="'+revision+'"/>\n'
  h=h.replace('/assets/engagement-documents.css',asset('/assets/engagement-documents.css'))
  h=re.sub(r'<title>.*?</title>','<title>'+e(data['title'])+'</title>',h)
  h=re.sub(r'(<link rel="canonical" href=")[^"]+',lambda m:m[1]+url,h)
