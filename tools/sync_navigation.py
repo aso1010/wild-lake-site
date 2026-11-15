@@ -9,7 +9,7 @@ def route(path):
 def render(path):
  current=route(path);out=[]
  for item in routes:
-  href=item['href'];extra=' aria-current="page"' if href==current else ''
+  href=item['href'];extra=' aria-current="page"' if href.rstrip('/')==current.rstrip('/') else ''
   if href=='/tools/' and current in ['/mirror/','/app/','/numerology/']:extra=' aria-current="location"'
   if href=='/magazine/' and current.startswith('/magazine/') and current!='/magazine/':extra=' aria-current="location"'
   if href=='/method/' and current=='/development-protocols/':extra=' aria-current="location"'
@@ -23,4 +23,4 @@ if __name__=='__main__':
   else:s=re.sub(r'(<body\b[^>]*>)',lambda m:m[1]+'\n'+nav,s,count=1)
   if path != root/'clients/index.html' and '/assets/navigation.css' not in s:s=s.replace('<link rel="stylesheet" href="/assets/css/fibonacci.css"/>','<link rel="stylesheet" href="/assets/navigation.css"/>\n<link rel="stylesheet" href="/assets/css/fibonacci.css"/>')
   path.write_text(s)
- print('Synchronized primary navigation across 20 HTML pages.')
+ print('Synchronized primary navigation across all HTML builds.')

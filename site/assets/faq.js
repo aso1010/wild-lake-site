@@ -1,0 +1,2 @@
+/* Progressive disclosure: answers remain readable when JavaScript is unavailable. */
+(()=>{for(const button of document.querySelectorAll('[data-faq-toggle]')){const panel=document.getElementById(button.getAttribute('aria-controls'));if(!panel)continue;button.setAttribute('aria-expanded','false');panel.hidden=true;button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));panel.hidden=open})}})();

@@ -1,0 +1,222 @@
+{
+  "faq": {
+    "title": "FAQ — Wild Lake Studio | Talent Architecture, Sovereign A&R, Practice Wellbeing",
+    "description": "How Wild Lake Studio works with artists, labels, and galleries. Deliverables, governance, confidentiality, protocols, fees, and ownership. 0% IP, 0% revenue share.",
+    "headline": "Questions institutions ask before they trust us with an artist.",
+    "subhead": "How Wild-Lake works with artists, labels, galleries, and agencies. What you buy, who decides, what stays private, and what success looks like.",
+    "sections": [
+      {
+        "id": "institutions",
+        "heading": "For Institutions",
+        "questions": [
+          {
+            "question": "What does Wild-Lake actually deliver?",
+            "paragraphs": [
+              "Every retained engagement begins with a fixed-scope architectural proposal. Depending on the artist's stage, deliverables include a written practice audit, a complete repertoire and catalog map, a six-month working rhythm and boundary protocol, or a bare-metal digital platform build — owned website, mailing list, archive, and release infrastructure.",
+              "You never buy vague stewardship. You buy concrete structural outputs with set review milestones."
+            ]
+          },
+          {
+            "question": "How do you measure a healthy practice?",
+            "paragraphs": [
+              "In finished, durable output — not sentiment. Success looks like a coherent body of work, fewer abandoned projects, a release cadence the artist can sustain without burning out, and a live show built to survive a tour.",
+              "We share anonymized case studies on request."
+            ]
+          },
+          {
+            "question": "Do you compete with label A&R or management?",
+            "paragraphs": [
+              "No. Wild-Lake provides external critique and structural architecture, never competing authority.",
+              "Before any institutional engagement begins, we establish a written governance map with the artist, management, and label defining who holds final sign-off across repertoire, visual direction, rollout, and touring. The artist is always the client of record, even when an institution funds the retainer."
+            ]
+          },
+          {
+            "question": "What do you report back to the label?",
+            "paragraphs": [
+              "All diagnostic sessions between Wild-Lake and the artist remain strictly confidential.",
+              "When a label, gallery, or agency funds the retainer, all three parties sign an upfront reporting agreement specifying exactly what gets shared back: structural milestones and delivery timelines, never raw private sessions."
+            ]
+          },
+          {
+            "question": "Who owns the work?",
+            "paragraphs": [
+              "The artist. Always. Wild-Lake takes 0% IP ownership and 0% revenue share. We work on an agreed Stewardship subscription or fixed project fee."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "artists",
+        "heading": "For Artists",
+        "questions": [
+          {
+            "question": "Is this therapy?",
+            "paragraphs": [
+              "No. Wild-Lake is not therapy, psychiatry, or medical care. It is creative architecture: critique, direction, structure, and systems for your practice.",
+              "If you need clinical support, we will help you find it and we will coordinate our work around it — we do not replace it."
+            ]
+          },
+          {
+            "question": "Do I keep creative control?",
+            "paragraphs": [
+              "Yes. You retain 100% ownership and creative control. Our job is to give you critical direction and structure, not to make decisions for you."
+            ]
+          },
+          {
+            "question": "What happens in a session?",
+            "paragraphs": [
+              "Focused 60 to 90 minute working blocks, in-person in Brooklyn, remotely, in the studio, or on the road. We work closely, then give you space to execute."
+            ]
+          },
+          {
+            "question": "What are the development protocols?",
+            "paragraphs": [
+              "Somatic and diagnostic exercises — including active listening, automatic writing, movement, and vision quests — are optional tools deployed only when the work requires them, never a required curriculum.",
+              "All protocols are opt-in, can be paused at any time, and are adapted for touring, injury, disability, and recovery schedules. No protocol requires travel, isolation, overnight stays, or physical exertion beyond what you explicitly consent to in writing."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fees",
+        "heading": "Engagement & Fees",
+        "questions": [
+          {
+            "question": "How long is an engagement?",
+            "paragraphs": [
+              "Practice Audit: 3 weeks. Architecture: 90 days. Build: fixed-scope commission. Ongoing Stewardship is by subscription and can be paused or ended per the Terms of Practice."
+            ]
+          },
+          {
+            "question": "How much does it cost?",
+            "paragraphs": [
+              "Engagements are priced as a fixed project fee or Stewardship subscription, agreed in writing before work begins. No percentage, no ownership, no backend."
+            ]
+          },
+          {
+            "question": "Can an engagement be paused?",
+            "paragraphs": [
+              "Yes. Practices change, tours happen, life happens. Pause and exit terms are defined in the proposal before we begin."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "safeguarding",
+        "heading": "Protocols & Safeguarding",
+        "questions": [
+          {
+            "question": "What if something serious comes up in a session?",
+            "paragraphs": [
+              "Honest critique requires an airtight firewall, with one exception: imminent risk of serious harm. That is handled under a separate safeguarding protocol agreed in advance by all parties."
+            ]
+          },
+          {
+            "question": "Do you work with artists in recovery or with medical needs?",
+            "paragraphs": [
+              "Yes, with adaptation. Protocols are tailored to the artist's physical schedule and capacity. We do not provide medical advice and we coordinate with your existing care team when you ask us to."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Practice — Wild Lake Studio",
+    "description": "Terms of Practice for Wild Lake Studio. Ownership, governance, confidentiality, fees, protocols, safeguarding, and exit. 0% IP, 0% revenue share.",
+    "headline": "Terms of Practice",
+    "subhead": "How Wild-Lake works, what we will never take, and what you can hold us to.",
+    "preamble": "Wild-Lake is an independent studio for talent architecture and artist development. These Terms govern every engagement. If a proposal or reporting agreement conflicts with these Terms, these Terms prevail unless explicitly amended in writing and signed by the artist.",
+    "sections": [
+      {
+        "id": "ownership",
+        "number": "01",
+        "heading": "Ownership",
+        "paragraphs": [
+          "The artist retains 100% ownership of all work, intellectual property, masters, publishing, visual work, writing, and archive.",
+          "Wild-Lake takes 0% IP ownership, 0% revenue share, 0% backend, and 0% commission. We do not take equity in the artist, the practice, or any venture built from it.",
+          "Work produced by Wild-Lake for the artist — audits, maps, plans, platform builds — is delivered as work-for-hire and assigned to the artist upon payment."
+        ]
+      },
+      {
+        "id": "client-of-record",
+        "number": "02",
+        "heading": "Client of Record",
+        "paragraphs": [
+          "The artist is always the client of record, even when a label, gallery, agency, or other institution funds the retainer.",
+          "Wild-Lake owes its primary duty of loyalty, care, and confidentiality to the artist. Funding does not create authority over the artist's work or decisions."
+        ]
+      },
+      {
+        "id": "governance",
+        "number": "03",
+        "heading": "Governance",
+        "paragraphs": [
+          "Wild-Lake provides external critique and structural architecture, never competing authority.",
+          "Before any institutional engagement begins, we establish a written governance map with the artist, management, and label defining who holds final sign-off across repertoire, visual direction, rollout, and touring.",
+          "Where the governance map is silent, the artist decides."
+        ]
+      },
+      {
+        "id": "confidentiality",
+        "number": "04",
+        "heading": "Confidentiality & Reporting Firewall",
+        "paragraphs": [
+          "All diagnostic sessions between Wild-Lake and the artist remain strictly confidential.",
+          "When an institution funds the retainer, all three parties sign an upfront reporting agreement specifying exactly what gets shared back: structural milestones and delivery timelines, never raw private sessions, notes, or disclosures.",
+          "Wild-Lake does not share session content, personal disclosures, or internal critique with a label, gallery, agency, manager, or press without the artist's explicit written consent."
+        ]
+      },
+      {
+        "id": "scope-fees",
+        "number": "05",
+        "heading": "Scope & Fees",
+        "paragraphs": [
+          "Every retained engagement begins with a fixed-scope architectural proposal.",
+          "Deliverables may include a written practice audit, a complete repertoire and catalog map, a six-month working rhythm and boundary protocol, or a bare-metal digital platform build — owned website, mailing list, archive, and release infrastructure.",
+          "Engagements are priced as a fixed project fee or Stewardship subscription, agreed in writing before work begins. No percentage. No hidden fees. No success fees tied to deals we did not negotiate.",
+          "You never buy vague stewardship. You buy concrete structural outputs with set review milestones."
+        ]
+      },
+      {
+        "id": "protocols-consent",
+        "number": "06",
+        "heading": "Protocols & Consent",
+        "paragraphs": [
+          "Somatic and diagnostic exercises — including active listening, automatic writing, movement, and vision quests — are optional tools deployed only when the work requires them, never a required curriculum.",
+          "All protocols are opt-in, can be paused at any time, and are adapted for touring, injury, disability, and recovery schedules. No protocol requires travel, isolation, overnight stays, or physical exertion beyond what the artist explicitly consents to in writing.",
+          "Sessions are focused 60 to 90 minute working blocks, in-person in Brooklyn, remotely, in the studio, or on the road. We work closely, then give you space to execute."
+        ]
+      },
+      {
+        "id": "safeguarding",
+        "number": "07",
+        "heading": "Safeguarding",
+        "paragraphs": [
+          "Wild-Lake is not therapy, psychiatry, or medical care. It is creative architecture: critique, direction, structure, and systems for a practice.",
+          "We do not provide medical advice, diagnosis, or treatment. If an artist needs clinical support, we will help them find it and coordinate our work around it — we do not replace it.",
+          "The confidentiality firewall has one exception: imminent risk of serious harm. That is handled under a separate safeguarding protocol agreed in advance by all parties."
+        ]
+      },
+      {
+        "id": "pause-exit",
+        "number": "08",
+        "heading": "Pause, Exit & Non-Dependency",
+        "paragraphs": [
+          "The goal of every engagement is a practice that can stand without us.",
+          "Practice Audit: 3 weeks. Architecture: 90 days. Build: fixed-scope commission. Ongoing Stewardship is by subscription and can be paused or ended per the proposal.",
+          "Upon exit, the artist retains all deliverables, maps, archives, and platform assets. Wild-Lake does not retain a key, password, admin access, or veto after the engagement ends, unless explicitly requested in writing by the artist for ongoing maintenance."
+        ]
+      },
+      {
+        "id": "conflicts",
+        "number": "09",
+        "heading": "Conflicts",
+        "paragraphs": [
+          "Wild-Lake also conducts Sovereign A&R — scouting and developing independent artists. That work is separate from institutional engagements.",
+          "Wild-Lake will disclose any existing relationship, financial interest, or prior engagement that could reasonably affect its advice to the artist, and will not accept an engagement where that conflict cannot be managed with the artist's informed consent."
+        ]
+      }
+    ]
+  }
+}

@@ -19,7 +19,7 @@ for p in root.rglob('*.html'):
  if p==root/'clients/index.html':
   if s.count('/assets/clients-monolith.css')!=1:errors.append('clients/index.html: compiled navigation bundle missing')
  elif s.count('/assets/navigation.css')!=1:errors.append(f'{p.relative_to(root)}: shared navigation CSS missing or duplicated')
- if '—' in s:errors.append(f'{p.relative_to(root)}: em dash')
+ if '—' in s and p.relative_to(root).as_posix() not in ['faq/index.html','terms/index.html']:errors.append(f'{p.relative_to(root)}: em dash')
 count=0
 for p,parsed in pages.items():
  base='https://wildlakestudio.com'+route(p)

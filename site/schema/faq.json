@@ -1,0 +1,168 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://wildlakestudio.com/faq#webpage",
+  "url": "https://wildlakestudio.com/faq",
+  "name": "Questions institutions ask before they trust us with an artist.",
+  "description": "How Wild Lake Studio works with artists, labels, and galleries. Deliverables, governance, confidentiality, protocols, fees, and ownership. 0% IP, 0% revenue share.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@id": "https://wildlakestudio.com/#website"
+  },
+  "publisher": {
+    "@id": "https://wildlakestudio.com/#organization"
+  },
+  "about": [
+    {
+      "@id": "https://wildlakestudio.com/#organization"
+    },
+    {
+      "@id": "https://argelysoriach.com/universe-api/#framework"
+    }
+  ],
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wildlakestudio.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "FAQ",
+        "item": "https://wildlakestudio.com/faq"
+      }
+    ]
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-1",
+      "name": "What does Wild-Lake actually deliver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every retained engagement begins with a fixed-scope architectural proposal. Depending on the artist's stage, deliverables include a written practice audit, a complete repertoire and catalog map, a six-month working rhythm and boundary protocol, or a bare-metal digital platform build \u2014 owned website, mailing list, archive, and release infrastructure.\nYou never buy vague stewardship. You buy concrete structural outputs with set review milestones."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-2",
+      "name": "How do you measure a healthy practice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In finished, durable output \u2014 not sentiment. Success looks like a coherent body of work, fewer abandoned projects, a release cadence the artist can sustain without burning out, and a live show built to survive a tour.\nWe share anonymized case studies on request."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-3",
+      "name": "Do you compete with label A&R or management?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Wild-Lake provides external critique and structural architecture, never competing authority.\nBefore any institutional engagement begins, we establish a written governance map with the artist, management, and label defining who holds final sign-off across repertoire, visual direction, rollout, and touring. The artist is always the client of record, even when an institution funds the retainer."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-4",
+      "name": "What do you report back to the label?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All diagnostic sessions between Wild-Lake and the artist remain strictly confidential.\nWhen a label, gallery, or agency funds the retainer, all three parties sign an upfront reporting agreement specifying exactly what gets shared back: structural milestones and delivery timelines, never raw private sessions."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-5",
+      "name": "Who owns the work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The artist. Always. Wild-Lake takes 0% IP ownership and 0% revenue share. We work on an agreed Stewardship subscription or fixed project fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-6",
+      "name": "Is this therapy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Wild-Lake is not therapy, psychiatry, or medical care. It is creative architecture: critique, direction, structure, and systems for your practice.\nIf you need clinical support, we will help you find it and we will coordinate our work around it \u2014 we do not replace it."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-7",
+      "name": "Do I keep creative control?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You retain 100% ownership and creative control. Our job is to give you critical direction and structure, not to make decisions for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-8",
+      "name": "What happens in a session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Focused 60 to 90 minute working blocks, in-person in Brooklyn, remotely, in the studio, or on the road. We work closely, then give you space to execute."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-9",
+      "name": "What are the development protocols?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Somatic and diagnostic exercises \u2014 including active listening, automatic writing, movement, and vision quests \u2014 are optional tools deployed only when the work requires them, never a required curriculum.\nAll protocols are opt-in, can be paused at any time, and are adapted for touring, injury, disability, and recovery schedules. No protocol requires travel, isolation, overnight stays, or physical exertion beyond what you explicitly consent to in writing."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-10",
+      "name": "How long is an engagement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Practice Audit: 3 weeks. Architecture: 90 days. Build: fixed-scope commission. Ongoing Stewardship is by subscription and can be paused or ended per the Terms of Practice."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-11",
+      "name": "How much does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Engagements are priced as a fixed project fee or Stewardship subscription, agreed in writing before work begins. No percentage, no ownership, no backend."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-12",
+      "name": "Can an engagement be paused?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Practices change, tours happen, life happens. Pause and exit terms are defined in the proposal before we begin."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-13",
+      "name": "What if something serious comes up in a session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Honest critique requires an airtight firewall, with one exception: imminent risk of serious harm. That is handled under a separate safeguarding protocol agreed in advance by all parties."
+      }
+    },
+    {
+      "@type": "Question",
+      "@id": "https://wildlakestudio.com/faq#question-14",
+      "name": "Do you work with artists in recovery or with medical needs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with adaptation. Protocols are tailored to the artist's physical schedule and capacity. We do not provide medical advice and we coordinate with your existing care team when you ask us to."
+      }
+    }
+  ]
+}

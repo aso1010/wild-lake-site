@@ -1,12 +1,46 @@
 [
-  {"label":"Home","href":"/"},
-  {"label":"Clients","href":"/clients/"},
-  {"label":"Founder","href":"/about-founder/"},
-  {"label":"Offerings","href":"/practice/"},
-  {"label":"Method","href":"/method/"},
-  {"label":"Pricing","href":"/pricing/"},
-  {"label":"Tools","href":"/tools/"},
-  {"label":"Magazine","href":"/magazine/"},
-  {"label":"Contact","href":"/contact/"},
-  {"label":"Begin","href":"mailto:info@wildlakestudio.com"}
+  {
+    "label": "Home",
+    "href": "/"
+  },
+  {
+    "label": "Clients",
+    "href": "/clients/"
+  },
+  {
+    "label": "Founder",
+    "href": "/about-founder/"
+  },
+  {
+    "label": "Offerings",
+    "href": "/practice/"
+  },
+  {
+    "label": "Method",
+    "href": "/method/"
+  },
+  {
+    "label": "Pricing",
+    "href": "/pricing/"
+  },
+  {
+    "label": "Tools",
+    "href": "/tools/"
+  },
+  {
+    "label": "Magazine",
+    "href": "/magazine/"
+  },
+  {
+    "label": "Contact",
+    "href": "/contact/"
+  },
+  {
+    "label": "FAQ",
+    "href": "/faq"
+  },
+  {
+    "label": "Begin",
+    "href": "mailto:info@wildlakestudio.com"
+  }
 ]

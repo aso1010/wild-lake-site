@@ -644,28 +644,7 @@
       "description": "How the Wild Lake Studio contact form prepares an email and how to ask about information you share."
     },
     {
-      "@type": "WebPage",
-      "@id": "https://wildlakestudio.com/terms/#webpage",
-      "url": "https://wildlakestudio.com/terms/",
-      "isPartOf": {
-        "@id": "https://wildlakestudio.com/#website"
-      },
-      "name": "Terms of practice | Wild Lake Studio",
-      "description": "Engagement terms, retainer mechanics, intellectual property, confidentiality, and governance for Wild Lake Studio LLC.",
-      "hasPart": [
-        {
-          "@type": "WebPageElement",
-          "@id": "https://wildlakestudio.com/terms/#engagement",
-          "name": "Engagement & retainer mechanics",
-          "text": "1. Engagement & retainer mechanics Retainer Structure: Studio engagements operate on an upfront monthly Stewardship subscription (retainer) or fixed project fee basis. Work commences only upon receipt of cleared retainer funds. Carrying Capacity & Scope: The Stewardship subscription reserves studio availability and structural stewardship between client-triggered interventions. Response times, intervention scope, and reserved capacity are defined in the engagement agreement. Continuous daily deliverables and recurring meetings are included only where expressly agreed. Unused studio hours or advisory allocations do not roll over into subsequent billing cycles. Termination & Notice: Either party may terminate an ongoing retainer engagement with thirty (30) days written notice. Retainers paid prior to notice are non-refundable; all active deliverables in progress through the final date of notice will be completed and handed over. Scope & deliverables Every retained engagement begins with a fixed-scope architectural proposal. Depending on the artist's stage, deliverables include a written practice audit, a complete repertoire and catalog map, a six-month working rhythm and boundary protocol, or a bare-metal digital platform build (owned website, mailing list, archive, and release infrastructure; no rented audience). You never buy vague stewardship. You buy concrete structural outputs with set review milestones."
-        },
-        {
-          "@type": "WebPageElement",
-          "@id": "https://wildlakestudio.com/terms/#confidentiality",
-          "name": "Confidentiality & governance",
-          "text": "3. Confidentiality & governance Information Security: The Studio maintains strict confidentiality regarding unreleased works, strategic roadmaps, financial arrangements, and personal client data. No client material will be disclosed, showcased, or distributed without prior written consent. Portfolio & Archival Rights: Unless restricted by a signed Non-Disclosure Agreement (NDA), the Studio reserves the right to archive finished, publicly released projects and list the engagement within private studio credentials decks. Governance & RACI Wild-Lake provides external critique and structural architecture, never competing authority. Before any institutional engagement begins, we establish a written governance map with the artist, management, and label defining who holds final sign-off across repertoire, visual direction, rollout, and touring. Confidentiality & reporting firewall Honest critique requires an airtight firewall. All diagnostic sessions between Wild-Lake and the artist remain strictly confidential. When a label, gallery, or agency funds the retainer, all three parties sign an upfront reporting agreement specifying exactly what gets shared back to the institution: structural milestones and delivery timelines, never raw private sessions."
-        }
-      ]
+      "@id": "https://wildlakestudio.com/terms#webpage"
     },
     {
       "@type": "WebPage",
@@ -847,6 +826,9 @@
       "contributor": {
         "@id": "https://argelysoriach.com/#person"
       }
+    },
+    {
+      "@id": "https://wildlakestudio.com/faq#webpage"
     }
   ]
 }
