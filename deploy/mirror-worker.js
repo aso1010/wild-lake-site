@@ -5,7 +5,7 @@ export default {
       url.pathname = '/app/';
       return Response.redirect(url.href, 308);
     }
-    if (url.pathname.startsWith('/app/')) {
+    if (url.pathname.startsWith('/app/') || url.pathname.startsWith('/assets/')) {
       return env.ASSETS.fetch(request);
     }
     if (!url.pathname.startsWith('/mirror/')) {

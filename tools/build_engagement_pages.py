@@ -2,7 +2,7 @@
 """Deterministic FAQ/Terms renderer using the site's existing shared shell."""
 from pathlib import Path
 import json,re,html,sys,hashlib
-from sync_navigation import render
+from sync_navigation import render,add_outline
 repo=Path(__file__).resolve().parents[1];root=repo/'site';content=json.loads((repo/'tools/engagement-pages/content.json').read_text());e=html.escape
 def asset(url):return url+'?v='+hashlib.sha256((root/url.lstrip('/')).read_bytes()).hexdigest()[:12]
 source=(root/'practice/index.html').read_text()
@@ -61,6 +61,8 @@ for name,data in content.items():
   h+='\n<link rel="alternate" type="application/ld+json" href="/schema/faq.json" title="FAQ structured data"/>\n'
  h+='\n<script type="application/ld+json">\n'+json.dumps(page_schema,ensure_ascii=True,indent=2)+'\n</script>\n</head>'
  page=h+'\n<body class="home contact-page reading-layout">'+header+render(path)+main+'<div class="base"><hr class="rule rule-datum"/>'+footer+'</div><script src="/assets/header-globe.js" defer></script>'+('<script src="'+asset('/assets/faq.js')+'" defer></script>' if name=='faq' else '')+'</body></html>\n'
+ page=add_outline(path,page)
+ page=page.replace('</body>','<script src="/assets/navigation.js" defer></script><script src="/assets/page-outline.js" defer></script></body>')
  outputs[path]=page;outputs[root/'schema'/f'{name}.json']=json.dumps(schema,ensure_ascii=True,indent=2)+'\n'
 for path,text in outputs.items():
  if '--check' in sys.argv:

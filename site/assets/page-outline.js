@@ -7,7 +7,7 @@
   if (targets.some(function (target) { return !target; })) return;
   outline.classList.add('is-enhanced');
   var pending = false;
-  var strip = document.body.classList.contains('roster') ? outline.querySelector('ol') : null;
+  var strip = outline.querySelector('ol');
   var lastActive = -1;
   function update() {
     pending = false;
@@ -30,9 +30,11 @@
     if (strip && active !== lastActive) {
       var frame = strip.getBoundingClientRect();
       var name = links[active].getBoundingClientRect();
-      var nextLeft = strip.scrollLeft + name.left - frame.left - 12;
+      var nextLeft = strip.scrollLeft;
+      if (name.left < frame.left) nextLeft += name.left - frame.left - 8;
+      else if (name.right > frame.right) nextLeft += name.right - frame.right + 8;
       var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      strip.scrollTo({ left: Math.max(0, nextLeft), behavior: reduced || lastActive < 0 ? 'instant' : 'smooth' });
+      strip.scrollTo({ left: Math.max(0, nextLeft), behavior: reduced || lastActive < 0 ? 'auto' : 'smooth' });
       lastActive = active;
     }
     var footer = document.querySelector('.base');
