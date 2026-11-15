@@ -409,6 +409,6 @@ Terms of practice Your work stays yours. The artist retains ownership and creati
 
 [FAQ](https://wildlakestudio.com/faq): Deliverables, governance, artist control, confidentiality, fees, consent and safeguarding.
 
-[Terms of Practice](https://wildlakestudio.com/terms): The governing engagement document. Its nine numbered sections cover ownership, client of record, governance, confidentiality, scope and fees, consent, safeguarding, pause and exit, and conflicts.
+[Terms of practice](https://wildlakestudio.com/terms): The governing engagement document. Its nine numbered sections cover ownership, client of record, governance, confidentiality, scope and fees, consent, safeguarding, pause and exit, and conflicts.
 
 Canonical machine-readable documents: https://wildlakestudio.com/schema/faq.json and https://wildlakestudio.com/schema/terms.json

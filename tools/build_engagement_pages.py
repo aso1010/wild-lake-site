@@ -14,10 +14,10 @@ head=re.sub(r'<script type="application/ld\+json">.*?</script>','',head,flags=re
 head=head.replace('<link rel="stylesheet" href="/assets/site.css"/>','<link rel="stylesheet" href="/assets/site.css"/>\n<link rel="stylesheet" href="/assets/manifesto.css"/>')
 head=head.replace('<link rel="stylesheet" href="/assets/css/fibonacci.css"/>','<link rel="stylesheet" href="/assets/engagement-documents.css"/>\n<link rel="stylesheet" href="/assets/css/fibonacci.css"/>')
 def paras(lines):
- return ''.join('<p class="type-body">'+e(text).replace('Terms of Practice','<a href="/terms">Terms of Practice</a>')+'</p>' for text in lines)
+ return ''.join('<p class="type-body">'+e(text).replace('Terms of practice','<a href="/terms">Terms of practice</a>')+'</p>' for text in lines)
 def schema_base(name,data):
  url='https://wildlakestudio.com/'+name
- return {'@context':'https://schema.org','@type':'FAQPage' if name=='faq' else 'WebPage','@id':url+'#webpage','url':url,'name':data['headline'],'description':data['description'],'inLanguage':'en-US','isPartOf':{'@id':'https://wildlakestudio.com/#website'},'publisher':{'@id':'https://wildlakestudio.com/#organization'},'about':[{'@id':'https://wildlakestudio.com/#organization'},{'@id':'https://argelysoriach.com/universe-api/#framework'}],'breadcrumb':{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':'https://wildlakestudio.com/'},{'@type':'ListItem','position':2,'name':'FAQ' if name=='faq' else 'Terms of Practice','item':url}]}}
+ return {'@context':'https://schema.org','@type':'FAQPage' if name=='faq' else 'WebPage','@id':url+'#webpage','url':url,'name':data['headline'],'description':data['description'],'inLanguage':'en-US','isPartOf':{'@id':'https://wildlakestudio.com/#website'},'publisher':{'@id':'https://wildlakestudio.com/#organization'},'about':[{'@id':'https://wildlakestudio.com/#organization'},{'@id':'https://argelysoriach.com/universe-api/#framework'}],'breadcrumb':{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':'https://wildlakestudio.com/'},{'@type':'ListItem','position':2,'name':'FAQ' if name=='faq' else 'Terms of practice','item':url}]}}
 outputs={}
 for name,data in content.items():
  url='https://wildlakestudio.com/'+name;path=root/name/'index.html';h=head
@@ -41,7 +41,7 @@ for name,data in content.items():
     main+='<div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" itemid="'+url+'#'+id+'"><h3 class="type-h3"><button type="button" class="faq-toggle" id="'+id+'" data-faq-toggle aria-expanded="true" aria-controls="'+answer+'"><span itemprop="name">'+e(question['question'])+'</span><span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="'+answer+'" role="region" aria-labelledby="'+id+'" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><div itemprop="text">'+paras(question['paragraphs'])+'</div></div></div>'
     schema['mainEntity'].append({'@type':'Question','@id':url+'#'+id,'name':question['question'],'acceptedAnswer':{'@type':'Answer','text':'\n'.join(question['paragraphs'])}})
    main+='</section>'
-  main+='<section class="document-section document-cta" id="begin"><h2 class="type-h2">Tell us about the artist or practice.</h2><a class="studio-action" href="/contact/">Begin <span aria-hidden="true">→</span></a><p class="type-body"><a href="/terms">Read the full Terms of Practice <span aria-hidden="true">→</span></a></p></section>'
+  main+='<section class="document-section document-cta" id="begin"><h2 class="type-h2">Tell us about the artist or practice.</h2><a class="studio-action" href="/contact/">Begin <span aria-hidden="true">→</span></a><p class="type-body"><a href="/terms">Read the full Terms of practice <span aria-hidden="true">→</span></a></p></section>'
  else:
   main+=paras([data['preamble']]);schema['hasPart']=[]
   main+='<nav class="document-outline type-body" aria-label="Terms sections">'+''.join('<a href="#'+s['id']+'">'+s['number']+' '+e(s['heading'])+'</a>' for s in data['sections'])+'</nav>'

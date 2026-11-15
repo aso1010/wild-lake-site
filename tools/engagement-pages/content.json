@@ -1,13 +1,13 @@
 {
   "faq": {
-    "title": "FAQ — Wild Lake Studio | Talent Architecture, Sovereign A&R, Practice Wellbeing",
+    "title": "FAQ — Wild Lake Studio | Talent architecture, Sovereign A&R, practice wellbeing",
     "description": "How Wild Lake Studio works with artists, labels, and galleries. Deliverables, governance, confidentiality, protocols, fees, and ownership. 0% IP, 0% revenue share.",
     "headline": "Questions institutions ask before they trust us with an artist.",
     "subhead": "How Wild-Lake works with artists, labels, galleries, and agencies. What you buy, who decides, what stays private, and what success looks like.",
     "sections": [
       {
         "id": "institutions",
-        "heading": "For Institutions",
+        "heading": "For institutions",
         "questions": [
           {
             "question": "What does Wild-Lake actually deliver?",
@@ -47,7 +47,7 @@
       },
       {
         "id": "artists",
-        "heading": "For Artists",
+        "heading": "For artists",
         "questions": [
           {
             "question": "Is this therapy?",
@@ -79,12 +79,12 @@
       },
       {
         "id": "fees",
-        "heading": "Engagement & Fees",
+        "heading": "Engagement & fees",
         "questions": [
           {
             "question": "How long is an engagement?",
             "paragraphs": [
-              "Practice Audit: 3 weeks. Architecture: 90 days. Build: fixed-scope commission. Ongoing Stewardship is by subscription and can be paused or ended per the Terms of Practice."
+              "Practice Audit: 3 weeks. Architecture: 90 days. Build: fixed-scope commission. Ongoing Stewardship is by subscription and can be paused or ended per the Terms of practice."
             ]
           },
           {
@@ -103,7 +103,7 @@
       },
       {
         "id": "safeguarding",
-        "heading": "Protocols & Safeguarding",
+        "heading": "Protocols & safeguarding",
         "questions": [
           {
             "question": "What if something serious comes up in a session?",
@@ -122,9 +122,9 @@
     ]
   },
   "terms": {
-    "title": "Terms of Practice — Wild Lake Studio",
-    "description": "Terms of Practice for Wild Lake Studio. Ownership, governance, confidentiality, fees, protocols, safeguarding, and exit. 0% IP, 0% revenue share.",
-    "headline": "Terms of Practice",
+    "title": "Terms of practice — Wild Lake Studio",
+    "description": "Terms of practice for Wild Lake Studio. Ownership, governance, confidentiality, fees, protocols, safeguarding, and exit. 0% IP, 0% revenue share.",
+    "headline": "Terms of practice",
     "subhead": "How Wild-Lake works, what we will never take, and what you can hold us to.",
     "preamble": "Wild-Lake is an independent studio for talent architecture and artist development. These Terms govern every engagement. If a proposal or reporting agreement conflicts with these Terms, these Terms prevail unless explicitly amended in writing and signed by the artist.",
     "sections": [
@@ -141,7 +141,7 @@
       {
         "id": "client-of-record",
         "number": "02",
-        "heading": "Client of Record",
+        "heading": "Client of record",
         "paragraphs": [
           "The artist is always the client of record, even when a label, gallery, agency, or other institution funds the retainer.",
           "Wild-Lake owes its primary duty of loyalty, care, and confidentiality to the artist. Funding does not create authority over the artist's work or decisions."
@@ -160,7 +160,7 @@
       {
         "id": "confidentiality",
         "number": "04",
-        "heading": "Confidentiality & Reporting Firewall",
+        "heading": "Confidentiality & reporting firewall",
         "paragraphs": [
           "All diagnostic sessions between Wild-Lake and the artist remain strictly confidential.",
           "When an institution funds the retainer, all three parties sign an upfront reporting agreement specifying exactly what gets shared back: structural milestones and delivery timelines, never raw private sessions, notes, or disclosures.",
@@ -170,7 +170,7 @@
       {
         "id": "scope-fees",
         "number": "05",
-        "heading": "Scope & Fees",
+        "heading": "Scope & fees",
         "paragraphs": [
           "Every retained engagement begins with a fixed-scope architectural proposal.",
           "Deliverables may include a written practice audit, a complete repertoire and catalog map, a six-month working rhythm and boundary protocol, or a bare-metal digital platform build — owned website, mailing list, archive, and release infrastructure.",
@@ -181,7 +181,7 @@
       {
         "id": "protocols-consent",
         "number": "06",
-        "heading": "Protocols & Consent",
+        "heading": "Protocols & consent",
         "paragraphs": [
           "Somatic and diagnostic exercises — including active listening, automatic writing, movement, and vision quests — are optional tools deployed only when the work requires them, never a required curriculum.",
           "All protocols are opt-in, can be paused at any time, and are adapted for touring, injury, disability, and recovery schedules. No protocol requires travel, isolation, overnight stays, or physical exertion beyond what the artist explicitly consents to in writing.",
@@ -201,7 +201,7 @@
       {
         "id": "pause-exit",
         "number": "08",
-        "heading": "Pause, Exit & Non-Dependency",
+        "heading": "Pause, exit & non-dependency",
         "paragraphs": [
           "The goal of every engagement is a practice that can stand without us.",
           "Practice Audit: 3 weeks. Architecture: 90 days. Build: fixed-scope commission. Ongoing Stewardship is by subscription and can be paused or ended per the proposal.",
