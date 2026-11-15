@@ -14,3 +14,6 @@
 .terms-provisions{max-width:65ch;padding-left:1.25em;font-size:var(--text-md);line-height:var(--leading-body);color:var(--subtle-color)}
 .terms-provisions li{padding-left:8px;margin-bottom:21px}.terms-provisions strong{color:#fff;font-weight:600}
 .terms-main section{scroll-margin-top:89px}
+/* Preserve paragraph rhythm when the opening bridge follows the thesis section. */
+.manifesto-main section+.manifesto-opening{margin-block-start:var(--fib-34)}
+.manifesto-main section[aria-labelledby="manifesto-27-club"]>p{text-wrap:pretty}
