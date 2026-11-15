@@ -44,12 +44,12 @@
           "@id": "https://seveneightythree.com/#organization"
         }
       ],
-      "headline": "Wild Lake Studio is where generational creators are made.",
+      "headline": "Where generational creators are made.",
       "hasPart": [
         {
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#overview",
-          "name": "Wild Lake Studio is where generational creators are made.",
+          "name": "Where generational creators are made.",
           "text": "Wild-Lake is an independent A&R and talent architecture studio working across music, visual art, literature, and film. We give critical direction, shape complete bodies of work, and build the systems that carry a career for artists, labels, galleries, and agencies. We never take ownership or a percentage."
         },
         {
@@ -100,7 +100,7 @@
         "@type": "Organization",
         "@id": "https://wildlakestudio.com/#organization",
         "name": "Wild Lake Studio",
-        "slogan": "Wild Lake Studio is where generational creators are made."
+        "slogan": "Where generational creators are made."
       },
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
@@ -142,7 +142,7 @@
         "@type": "Organization",
         "@id": "https://wildlakestudio.com/#organization",
         "name": "Wild Lake Studio",
-        "slogan": "Wild Lake Studio is where generational creators are made."
+        "slogan": "Where generational creators are made."
       },
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
