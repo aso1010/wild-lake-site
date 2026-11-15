@@ -42,6 +42,16 @@ for name in ['faq','terms']:
   assert len(p.toggles)==len(questions)==14
   tree=Tree();tree.feed(text);main=next(n for n in descendants(tree.root) if n['tag']=='main')
   panels=[n for n in descendants(main) if 'faq-answer' in n['attrs'].get('class','').split()];assert len(panels)==14
+  assert main['attrs'].get('itemtype')=='https://schema.org/FAQPage'
+  question_nodes=[n for n in descendants(main) if n['attrs'].get('itemtype')=='https://schema.org/Question'];assert len(question_nodes)==14
+  for q,node in zip(questions,question_nodes):
+   names=[n for n in descendants(node) if n['attrs'].get('itemprop')=='name'];assert len(names)==1 and text_of(names[0])==q['question']
+   answers=[n for n in descendants(node) if n['attrs'].get('itemprop')=='acceptedAnswer'];assert len(answers)==1
+   texts=[n for n in descendants(answers[0]) if n['attrs'].get('itemprop')=='text'];assert len(texts)==1
+   assert normalize(text_of(texts[0]))==normalize(''.join(q['paragraphs']))
+  inline=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S)[1])
+  assert inline['@type']=='WebPage' and 'acceptedAnswer' not in json.dumps(inline),'Second inline answer payload'
+  assert 'href="/schema/faq.json"' in text
   rendered=[normalize(text_of(n)) for panel in panels for n in descendants(panel) if n['tag']=='p']
   approved=[normalize(line) for q in questions for line in q['paragraphs']]
   assert Counter(rendered)==Counter(approved),'Duplicate or missing answer paragraphs'

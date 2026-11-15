@@ -4,7 +4,7 @@ The static build now serves `/faq` and replaces the existing `/terms` page. Both
 
 ## Universe API and Moai
 
-The document publisher resolves to the studio Organization; `about` also references the canonical Universe API framework. FAQ questions and Terms sections have stable identifiers. FAQPage contains all fourteen Question/Answer pairs; Terms contains nine linkable WebPageElement sections. Their canonical JSON documents, HTML, sitemap and agent index are synchronized.
+The document publisher resolves to the studio Organization; `about` also references the canonical Universe API framework. FAQ questions and Terms sections have stable identifiers. The existing FAQ accordion carries all fourteen Question/Answer pairs as HTML microdata; the complete FAQPage JSON-LD remains at `/schema/faq.json`. Inline page metadata contains identity references, not a second answer-text payload. Terms contains nine linkable WebPageElement sections. Their canonical JSON documents, HTML, sitemap and agent index are synchronized.
 
 The source is `tools/engagement-pages/content.json`, transcribed verbatim from the supplied brief. `tools/build_engagement_pages.py` deterministically produces both HTML documents and their schemas using the site's existing shared shell. `--check` rejects drift. The new brief explicitly requires its legal/governance copy verbatim, including its em dashes; the punctuation exception is limited to these two pages, which are checked against the approved source. Existing punctuation rules continue elsewhere.
 
@@ -78,3 +78,7 @@ Run:
 - `tools/sync_navigation.py`
 - `tools/test_engagement_pages.cjs`
 - `tools/test_navigation.cjs`
+
+## Production-upload follow-up
+
+The uploaded saved production HTML contained the latest build marker and fourteen collapsed controls, plus a separate fourteen-answer JSON-LD payload. That inline answer payload has now been removed. FAQ microdata annotates the existing accordion text, and the full canonical JSON-LD remains a linked standalone resource. The validator rejects any reintroduced inline acceptedAnswer text payload and checks every HTML Question/name/Answer/text property against the approved copy.

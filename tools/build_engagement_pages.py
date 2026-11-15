@@ -22,7 +22,7 @@ outputs={}
 for name,data in content.items():
  url='https://wildlakestudio.com/'+name;path=root/name/'index.html';h=head
  if name=='faq':
-  revision=hashlib.sha256((json.dumps(data,ensure_ascii=True,sort_keys=True)+(root/'assets/faq.js').read_text()).encode()).hexdigest()[:12]
+  revision=hashlib.sha256((json.dumps(data,ensure_ascii=True,sort_keys=True)+(root/'assets/faq.js').read_text()+Path(__file__).read_text()).encode()).hexdigest()[:12]
   h+='\n<meta name="wild-lake-faq-build" content="'+revision+'"/>\n'
  h=h.replace('/assets/engagement-documents.css',asset('/assets/engagement-documents.css'))
  h=re.sub(r'<title>.*?</title>','<title>'+e(data['title'])+'</title>',h)
@@ -30,14 +30,15 @@ for name,data in content.items():
  for key,value in {'description':data['description'],'title':data['title'],'og:title':data['title'],'twitter:title':data['title'],'og:description':data['description'],'twitter:description':data['description'],'og:url':url}.items():
   h=re.sub(r'(<meta (?:name|property)="'+re.escape(key)+r'" content=")[^"]*',lambda m:m[1]+e(value,quote=True),h)
  schema=schema_base(name,data)
- main='<main class="manifesto-main engagement-document document-'+name+'" id="main"><article><header class="document-heading"><p class="eyebrow type-eyebrow">NEW YORK / TAMPA / SANTIAGO / WORLDWIDE</p><h1 class="type-h1">'+e(data['headline'])+'</h1><p class="type-body">'+e(data['subhead'])+'</p></header>'
+ faq_scope=(' itemscope itemtype="https://schema.org/FAQPage" itemid="'+url+'#webpage"') if name=='faq' else ''
+ main='<main'+faq_scope+' class="manifesto-main engagement-document document-'+name+'" id="main"><article><header class="document-heading"><p class="eyebrow type-eyebrow">NEW YORK / TAMPA / SANTIAGO / WORLDWIDE</p><h1 class="type-h1">'+e(data['headline'])+'</h1><p class="type-body">'+e(data['subhead'])+'</p></header>'
  if name=='faq':
   schema['mainEntity']=[];number=0
   for section in data['sections']:
    main+='<section class="document-section" id="'+section['id']+'" aria-labelledby="'+section['id']+'-heading"><h2 class="type-h2" id="'+section['id']+'-heading">'+e(section['heading'])+'</h2>'
    for question in section['questions']:
     number+=1;id='question-'+str(number);answer='answer-'+str(number)
-    main+='<div class="faq-item"><h3 class="type-h3"><button type="button" class="faq-toggle" id="'+id+'" data-faq-toggle aria-expanded="true" aria-controls="'+answer+'"><span>'+e(question['question'])+'</span><span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="'+answer+'" role="region" aria-labelledby="'+id+'">'+paras(question['paragraphs'])+'</div></div>'
+    main+='<div class="faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" itemid="'+url+'#'+id+'"><h3 class="type-h3"><button type="button" class="faq-toggle" id="'+id+'" data-faq-toggle aria-expanded="true" aria-controls="'+answer+'"><span itemprop="name">'+e(question['question'])+'</span><span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="'+answer+'" role="region" aria-labelledby="'+id+'" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><div itemprop="text">'+paras(question['paragraphs'])+'</div></div></div>'
     schema['mainEntity'].append({'@type':'Question','@id':url+'#'+id,'name':question['question'],'acceptedAnswer':{'@type':'Answer','text':'\n'.join(question['paragraphs'])}})
    main+='</section>'
   main+='<section class="document-section document-cta" id="begin"><h2 class="type-h2">Tell us about the artist or practice.</h2><a class="studio-action" href="/contact/">Begin <span aria-hidden="true">→</span></a><p class="type-body"><a href="/terms">Read the full Terms of Practice <span aria-hidden="true">→</span></a></p></section>'
@@ -51,7 +52,14 @@ for name,data in content.items():
    schema['hasPart'].append({'@type':'WebPageElement','@id':url+'#'+id,'name':title,'text':'\n'.join(section['paragraphs'])})
   main+='<section class="document-section document-cta" id="begin"><h2 class="type-h2">Questions?</h2><p class="type-body"><a href="/faq">Read the FAQ <span aria-hidden="true">→</span></a></p><a class="studio-action" href="/contact/">Begin an engagement <span aria-hidden="true">→</span></a></section>'
  main+='</article></main>'
- h+='\n<script type="application/ld+json">\n'+json.dumps(schema,ensure_ascii=True,indent=2)+'\n</script>\n</head>'
+ page_schema=schema
+ if name=='faq':
+  page_schema={k:v for k,v in schema.items() if k!='mainEntity'}
+  page_schema['@type']='WebPage'
+  page_schema['@id']=url+'#document'
+  page_schema['mainEntity']={'@id':url+'#webpage'}
+  h+='\n<link rel="alternate" type="application/ld+json" href="/schema/faq.json" title="FAQ structured data"/>\n'
+ h+='\n<script type="application/ld+json">\n'+json.dumps(page_schema,ensure_ascii=True,indent=2)+'\n</script>\n</head>'
  page=h+'\n<body class="home contact-page reading-layout">'+header+render(path)+main+'<div class="base"><hr class="rule rule-datum"/>'+footer+'</div><script src="/assets/header-globe.js" defer></script>'+('<script src="'+asset('/assets/faq.js')+'" defer></script>' if name=='faq' else '')+'</body></html>\n'
  outputs[path]=page;outputs[root/'schema'/f'{name}.json']=json.dumps(schema,ensure_ascii=True,indent=2)+'\n'
 for path,text in outputs.items():
