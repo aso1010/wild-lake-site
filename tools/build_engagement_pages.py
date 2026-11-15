@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Deterministic FAQ/Terms renderer using the site's existing shared shell."""
 from pathlib import Path
-import json,re,html,sys
+import json,re,html,sys,hashlib
 from sync_navigation import render
 repo=Path(__file__).resolve().parents[1];root=repo/'site';content=json.loads((repo/'tools/engagement-pages/content.json').read_text());e=html.escape
+def asset(url):return url+'?v='+hashlib.sha256((root/url.lstrip('/')).read_bytes()).hexdigest()[:12]
 source=(root/'practice/index.html').read_text()
 header=re.search(r'<header class="site-topbar">.*?</header>',source,re.S)[0]
 footer=re.search(r'<footer class="studio-footer".*?</footer>',source,re.S)[0]
@@ -20,6 +21,7 @@ def schema_base(name,data):
 outputs={}
 for name,data in content.items():
  url='https://wildlakestudio.com/'+name;path=root/name/'index.html';h=head
+ h=h.replace('/assets/engagement-documents.css',asset('/assets/engagement-documents.css'))
  h=re.sub(r'<title>.*?</title>','<title>'+e(data['title'])+'</title>',h)
  h=re.sub(r'(<link rel="canonical" href=")[^"]+',lambda m:m[1]+url,h)
  for key,value in {'description':data['description'],'title':data['title'],'og:title':data['title'],'twitter:title':data['title'],'og:description':data['description'],'twitter:description':data['description'],'og:url':url}.items():
@@ -32,7 +34,7 @@ for name,data in content.items():
    main+='<section class="document-section" id="'+section['id']+'" aria-labelledby="'+section['id']+'-heading"><h2 class="type-h2" id="'+section['id']+'-heading">'+e(section['heading'])+'</h2>'
    for question in section['questions']:
     number+=1;id='question-'+str(number);answer='answer-'+str(number)
-    main+='<section class="faq-item"><h3 class="type-h3"><button type="button" class="faq-toggle" id="'+id+'" data-faq-toggle aria-expanded="true" aria-controls="'+answer+'"><span>'+e(question['question'])+'</span><span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="'+answer+'" role="region" aria-labelledby="'+id+'">'+paras(question['paragraphs'])+'</div></section>'
+    main+='<div class="faq-item"><h3 class="type-h3"><button type="button" class="faq-toggle" id="'+id+'" data-faq-toggle aria-expanded="true" aria-controls="'+answer+'"><span>'+e(question['question'])+'</span><span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="'+answer+'" role="region" aria-labelledby="'+id+'">'+paras(question['paragraphs'])+'</div></div>'
     schema['mainEntity'].append({'@type':'Question','@id':url+'#'+id,'name':question['question'],'acceptedAnswer':{'@type':'Answer','text':'\n'.join(question['paragraphs'])}})
    main+='</section>'
   main+='<section class="document-section document-cta" id="begin"><h2 class="type-h2">Tell us about the artist or practice.</h2><a class="studio-action" href="/contact/">Begin <span aria-hidden="true">→</span></a><p class="type-body"><a href="/terms">Read the full Terms of Practice <span aria-hidden="true">→</span></a></p></section>'
@@ -47,7 +49,7 @@ for name,data in content.items():
   main+='<section class="document-section document-cta" id="begin"><h2 class="type-h2">Questions?</h2><p class="type-body"><a href="/faq">Read the FAQ <span aria-hidden="true">→</span></a></p><a class="studio-action" href="/contact/">Begin an engagement <span aria-hidden="true">→</span></a></section>'
  main+='</article></main>'
  h+='\n<script type="application/ld+json">\n'+json.dumps(schema,ensure_ascii=True,indent=2)+'\n</script>\n</head>'
- page=h+'\n<body class="home contact-page reading-layout">'+header+render(path)+main+'<div class="base"><hr class="rule rule-datum"/>'+footer+'</div><script src="/assets/header-globe.js" defer></script>'+('<script src="/assets/faq.js" defer></script>' if name=='faq' else '')+'</body></html>\n'
+ page=h+'\n<body class="home contact-page reading-layout">'+header+render(path)+main+'<div class="base"><hr class="rule rule-datum"/>'+footer+'</div><script src="/assets/header-globe.js" defer></script>'+('<script src="'+asset('/assets/faq.js')+'" defer></script>' if name=='faq' else '')+'</body></html>\n'
  outputs[path]=page;outputs[root/'schema'/f'{name}.json']=json.dumps(schema,ensure_ascii=True,indent=2)+'\n'
 for path,text in outputs.items():
  if '--check' in sys.argv:
