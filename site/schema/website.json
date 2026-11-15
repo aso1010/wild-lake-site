@@ -44,12 +44,12 @@
           "@id": "https://seveneightythree.com/#organization"
         }
       ],
-      "headline": "Point zero for starmaking.",
+      "headline": "Where generational creators are made.",
       "hasPart": [
         {
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#overview",
-          "name": "Point zero for starmaking.",
+          "name": "Where generational creators are made.",
           "text": "Wild-Lake is an independent studio engineering talent architecture and artist development across music, art, writing, and film. We partner with creators, labels, galleries, and agencies to give critical direction, shape the structure behind the work, and build the systems that carry a career. Wild-Lake pairs design-firm rigor with coaching-level care, working strictly on retainer with zero ownership or percentage of the artist's work."
         },
         {
@@ -100,7 +100,7 @@
         "@type": "Organization",
         "@id": "https://wildlakestudio.com/#organization",
         "name": "Wild Lake Studio",
-        "slogan": "Point zero for starmaking."
+        "slogan": "Where generational creators are made."
       },
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
@@ -142,7 +142,7 @@
         "@type": "Organization",
         "@id": "https://wildlakestudio.com/#organization",
         "name": "Wild Lake Studio",
-        "slogan": "Point zero for starmaking."
+        "slogan": "Where generational creators are made."
       },
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"

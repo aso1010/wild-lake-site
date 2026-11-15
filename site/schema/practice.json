@@ -9,7 +9,7 @@
     "@type": "Organization",
     "@id": "https://wildlakestudio.com/#organization",
     "name": "Wild Lake Studio",
-    "slogan": "Point zero for starmaking."
+    "slogan": "Where generational creators are made."
   },
   "isPartOf": {
     "@id": "https://wildlakestudio.com/#website"
