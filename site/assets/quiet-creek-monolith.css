@@ -4,3 +4,10 @@
 .quiet-creek-monolith .qc-water{display:block;width:100%;background:#000;color:#fff}
 .quiet-creek-monolith svg{display:block;width:100%;height:auto;overflow:visible;fill:#fff;shape-rendering:geometricPrecision}
 .qc-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.quiet-creek-monolith .qc-water{position:relative}
+.qc-water-canvas{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;background:transparent;border:0;outline:0}
+.qc-water.qc-ready>svg{visibility:hidden}
+.qc-water-toggle{position:absolute;inset:0;z-index:1;display:block;width:100%;height:100%;padding:0;border:0;border-radius:0;outline:0;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.qc-water-toggle:focus-visible{outline:2px solid #fff;outline-offset:8px}
+@media(prefers-reduced-motion:reduce){.qc-water-canvas,.qc-water-toggle{display:none}.qc-water.qc-ready>svg{visibility:visible}}

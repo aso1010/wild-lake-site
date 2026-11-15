@@ -23,3 +23,11 @@ HTML, local fonts and native browser code; their isolated CSPs remain unchanged.
 preconnects, CSS imports and initial iframe embeds. Deployment runs this check
 alongside `tools/validate.py`. Browser tests additionally exercise interactions
 with external requests blocked.
+
+## Quiet Creek water
+
+The magazine monolith uses the shared, locally hosted Paper Shaders Water GLSL. Its SVG outlines are rasterized into a transparent letter texture rather than using a remote photograph. Settings: gray back color, white highlights, highlights/layering/edges/caustic zero, waves 0.5, size 0.5, scale 0.4, contain fit, speed 0.25. Transparent texture padding prevents the ripples from clipping letter edges.
+
+Water starts moving by default. A transparent button covers the monolith: clicking, Enter or Space freezes the rendered water at its current time; a second activation resumes it. There is no separate visible pause control or persistent border. Reduced-motion preferences and unavailable WebGL retain the static SVG. Offscreen or hidden pages stop the render loop. The homepage renderer is unchanged.
+
+`node tools/test_quiet_creek_water.cjs` checks the actual uniforms, transparent corner pixels, frozen draw count, resume behavior, keyboard access, stable layout and reduced-motion fallback at mobile and desktop widths.
