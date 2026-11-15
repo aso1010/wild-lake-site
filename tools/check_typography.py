@@ -44,9 +44,9 @@ for path in root.rglob('*.css'):
   if '--' in comment:errors.append(f'{path.name}: double hyphen in comment')
  for prop,value in re.findall(r'(?<![-\w])(font-size|line-height|letter-spacing)\s*:\s*([^;{}]+)',text):
   if not re.match(r'(?:var\(|inherit|initial|unset|normal|revert)',value.strip()):errors.append(f'{path.name}: literal {prop}')
- if path not in [root/'assets/css/fibonacci.css',root/'assets/clients-monolith.css'] and re.search(r'--(?:text-(?:xs|sm|base|md|lg|xl|2xl|3xl)|leading-[\w-]+|tracking-[\w-]+|font-(?:sans|mono)|body-size|lead-size)\s*:',text):errors.append(f'{path.name}: competing type token definition')
+ if path not in [root/'assets/css/fibonacci.css',root/'assets/clients-monolith.css'] and re.search(r'--(?:text-(?:caption|xs|sm|base|md|lg|xl|2xl|3xl)|leading-[\w-]+|tracking-[\w-]+|font-(?:sans|mono)|body-size|lead-size)\s*:',text):errors.append(f'{path.name}: competing type token definition')
 css=(root/'assets/css/fibonacci.css').read_text()
-for token in ['xs','sm','base','md','lg','xl','2xl','3xl']:
+for token in ['caption','xs','sm','base','md','lg','xl','2xl','3xl']:
  if len(re.findall(r'--text-'+token+r'\s*:',css))!=1:errors.append(f'Duplicated or absent {token} scale')
 if errors:raise SystemExit('\n'.join(errors))
 print('Validated one canonical typography source, token-only declarations, heading ladders, and copy punctuation across all HTML pages.')
