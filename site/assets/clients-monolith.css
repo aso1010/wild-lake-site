@@ -14,7 +14,7 @@
   --text-3xl:var(--fib-89);
   --leading-solid:1;--leading-display:1.08;--leading-heading:1.15;--leading-body:1.55;
   --tracking-tight:-0.025em;--tracking-normal:0;--tracking-label:0.08em;
-  --home-location-size:clamp(11px,.35vw + 10px,15px);--home-location-leading:1.5;--home-location-tracking:0.06em;--home-cap-size:clamp(1.125rem,1.02rem + .3vw,1.375rem);--home-cap-leading:1.618;--home-cap-tracking:normal;
+  --home-location-size:clamp(9px,.15vw + 8.5px,11px);--home-ground-height:calc(clamp(11px,.35vw + 10px,15px) * 1.5);--home-location-leading:1.5;--home-location-tracking:0.06em;--home-cap-size:clamp(1.125rem,1.02rem + .3vw,1.375rem);--home-cap-leading:1.618;--home-cap-tracking:normal;
   --weight-body:400;--weight-heading:600;
   --type-rule:1px solid var(--rule-color,#3a3f35);--type-corner:0px;--type-tag-padding:2px 8px;--type-eyebrow-gap:0.5rem;
   --body-size:var(--text-base);--lead-size:var(--text-md);
