@@ -15,6 +15,9 @@ class Links(HTMLParser):
 for p in root.rglob('*.html'):
  s=p.read_text();parser=Links();parser.feed(s);pages[p.resolve()]=parser
  nav=re.findall(r'<nav\b[^>]*class="site-nav".*?</nav>',s,re.S)
+ if p==root/'field/index.html':
+  if nav or 'href="https://wildlakestudio.com/"' not in s:errors.append('Field must retain its native studio return link')
+  continue
  if nav!=[render(p)]:errors.append(f'{p.relative_to(root)}: navigation differs from canonical manifest')
  if p==root/'clients/index.html':
   if s.count('/assets/clients-monolith.css')!=1:errors.append('clients/index.html: compiled navigation bundle missing')

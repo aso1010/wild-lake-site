@@ -47,6 +47,7 @@ def add_outline(path,text):
 
 if __name__=='__main__':
  for path in root.rglob('*.html'):
+  if route(path)=='/field/':continue # Self-contained instrument retains its frame and return link.
   s=path.read_text();nav=render(path)
   if re.search(r'<nav\b[^>]*class="site-nav"',s):s=re.sub(r'<nav\b[^>]*class="site-nav".*?</nav>',lambda m:nav,s,count=1,flags=re.S)
   else:s=re.sub(r'(<body\b[^>]*>)',lambda m:m[1]+'\n'+nav,s,count=1)

@@ -1,7 +1,115 @@
 [
- {"label":"Studio","pages":[["Home","/"],["Clients","/clients/"],["Founder","/about-founder/"],["Method","/method/"],["Development protocols","/development-protocols/"],["Manifesto","/manifesto/"],["Responsibility","/responsibility/"]]},
- {"label":"Work together","pages":[["Offerings","/practice/"],["Pricing","/pricing/"],["Contact","/contact/"],["FAQ","/faq"],["Terms of practice","/terms"],["Privacy protocol","/privacy/"]]},
- {"label":"Tools","pages":[["Tools","/tools/"],["Name & number","/numerology/"],["Architectural mirror","/mirror/"],["Quiet Creek Tarot","/app/"]]},
- {"label":"Magazine","pages":[["Quiet Creek","/magazine/"],["Essay 001","/magazine/the-infrastructure-has-an-inner-life/"],["Ensayo 001","/magazine/the-infrastructure-has-an-inner-life/es/"]]},
- {"label":"Resources","pages":[["Schema","/schema/"]]}
+  {
+    "label": "Studio",
+    "pages": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Clients",
+        "/clients/"
+      ],
+      [
+        "Founder",
+        "/about-founder/"
+      ],
+      [
+        "Method",
+        "/method/"
+      ],
+      [
+        "Development protocols",
+        "/development-protocols/"
+      ],
+      [
+        "Manifesto",
+        "/manifesto/"
+      ],
+      [
+        "Responsibility",
+        "/responsibility/"
+      ]
+    ]
+  },
+  {
+    "label": "Work together",
+    "pages": [
+      [
+        "Offerings",
+        "/practice/"
+      ],
+      [
+        "Pricing",
+        "/pricing/"
+      ],
+      [
+        "Contact",
+        "/contact/"
+      ],
+      [
+        "FAQ",
+        "/faq"
+      ],
+      [
+        "Terms of practice",
+        "/terms"
+      ],
+      [
+        "Privacy protocol",
+        "/privacy/"
+      ]
+    ]
+  },
+  {
+    "label": "Tools",
+    "pages": [
+      [
+        "Tools",
+        "/tools/"
+      ],
+      [
+        "Name & number",
+        "/numerology/"
+      ],
+      [
+        "Architectural mirror",
+        "/mirror/"
+      ],
+      [
+        "Quiet Creek Tarot",
+        "/app/"
+      ],
+      [
+        "Come home to your body",
+        "/field/"
+      ]
+    ]
+  },
+  {
+    "label": "Magazine",
+    "pages": [
+      [
+        "Quiet Creek",
+        "/magazine/"
+      ],
+      [
+        "Essay 001",
+        "/magazine/the-infrastructure-has-an-inner-life/"
+      ],
+      [
+        "Ensayo 001",
+        "/magazine/the-infrastructure-has-an-inner-life/es/"
+      ]
+    ]
+  },
+  {
+    "label": "Resources",
+    "pages": [
+      [
+        "Schema",
+        "/schema/"
+      ]
+    ]
+  }
 ]

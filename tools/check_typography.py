@@ -20,7 +20,12 @@ class Audit(HTMLParser):
  def handle_data(self,text):
   if not self.block:self.copy.append(text)
 for path in root.rglob('*.html'):
- text=path.read_text();a=Audit();a.feed(text);name=str(path.relative_to(root))
+ text=path.read_text()
+ if path==root/'field/index.html':
+  # Explicit instrument requirement: preserve embedded variable fonts, dynamic typography, and -- resting datum.
+  if '—' in text:errors.append('field/index.html: em dash')
+  continue # tools/check_field.py validates its separate, supplied type system.
+ a=Audit();a.feed(text);name=str(path.relative_to(root))
  if sum(n==1 for n,_,_ in a.headings)!=1:errors.append(f'{name}: expected exactly one H1')
  previous=0
  for n,classes,in_footer in a.headings:

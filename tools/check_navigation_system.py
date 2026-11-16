@@ -13,7 +13,11 @@ for group in groups:
   found.append(path.resolve())
 assert len(found)==len(set(found)) and set(found)==expected,'Site menu must cover every static page exactly once'
 for path in expected:
- text=path.read_text();assert text.count('class="site-menu"')==1,path
+ text=path.read_text()
+ if path==root/'field/index.html':
+  assert 'href="https://wildlakestudio.com/"' in text and 'class="site-nav"' not in text,path
+  continue
+ assert text.count('class="site-menu"')==1,path
  assert text.count('class="site-nav-primary"')==1,path
  assert text.count('class="site-menu-panel"')==1,path
  assert 'sovereign A&amp;R practice.<br' not in text,path

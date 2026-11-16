@@ -621,7 +621,7 @@
         "@id": "https://wildlakestudio.com/#website"
       },
       "name": "Tools | Wild Lake Studio",
-      "description": "Reflective tools from Wild-Lake: Name & Number numerology, Architectural Mirror, and Quiet Creek Tarot."
+      "description": "Reflective tools from Wild-Lake: Name & Number numerology, Architectural Mirror, Quiet Creek Tarot, and Come home to your body."
     },
     {
       "@type": "WebPage",
@@ -855,6 +855,25 @@
     },
     {
       "@id": "https://wildlakestudio.com/faq#webpage"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/field/#webpage",
+      "url": "https://wildlakestudio.com/field/",
+      "name": "Come home to your body | Wild Lake Studio",
+      "description": "Wild-Lake somatic field. The phrase breathes down from a clenched 0.25 Hz to an unclenched 0.16 Hz baseline.",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://wildlakestudio.com/field/#app"
+      },
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      }
     }
   ]
 }
