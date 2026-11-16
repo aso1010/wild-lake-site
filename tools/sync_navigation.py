@@ -29,8 +29,16 @@ def render(path):
  if current in ['/app/','/mirror/']:nav=re.sub(r'href="(/[^"]*)"',lambda m:'href="https://wildlakestudio.com'+m[1]+'"',nav)
  return nav
 def add_outline(path,text):
- text=re.sub(r'<nav class="page-outline" data-page-outline="generated".*?</nav>','',text,flags=re.S)
- if 'class="page-outline"' in text:return text
+ # Read class tokens, not an exact class attribute: authored outlines may carry runtime classes.
+ def outline_nav(match):
+  attrs=re.match(r'<nav\b([^>]*)>',match[0])[1]
+  classes=re.search(r"\bclass=([\"'])(.*?)\1",attrs)
+  return bool(classes and 'page-outline' in classes[2].split())
+ navs=list(re.finditer(r'<nav\b[^>]*>.*?</nav>',text,re.S))
+ for match in reversed(navs):
+  if outline_nav(match) and re.search(r'data-page-outline=[\"\']generated[\"\']',match[0]):
+   text=text[:match.start()]+text[match.end():]
+ if any(outline_nav(m) for m in re.finditer(r'<nav\b[^>]*>.*?</nav>',text,re.S)):return text
  if route(path) in ['/app/','/mirror/']:return text
  main=re.search(r'<main\b[^>]*>.*?</main>',text,re.S)
  if not main:return text

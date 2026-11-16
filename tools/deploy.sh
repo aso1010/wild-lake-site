@@ -9,6 +9,7 @@ python3 tools/check_metadata.py
 python3 tools/check_typography.py
 python3 tools/check_navigation.py
 python3 tools/check_navigation_system.py
+python3 tools/test_outline_generation.py
 python3 tools/build_clients_css.py --check
 python3 tools/check_clients.py
 python3 tools/check_rules.py

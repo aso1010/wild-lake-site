@@ -24,7 +24,9 @@ for path in expected:
  if path.parent.name in ['app','mirror']:
   assert '/assets/navigation.js' not in text,'Native tool menus must not require CSP changes'
   assert "script-src 'self'" not in text,'Keep the existing tool CSP unchanged'
- if 'class="page-outline"' in text:
+ outlines=[m[0] for m in re.finditer(r'<nav\b[^>]*>.*?</nav>',text,re.S) if (lambda c:c and 'page-outline' in c[1].split())(re.search(r'class="([^"]*)"',m[0].split('>')[0]))]
+ assert len(outlines)<=1,(path,'Duplicate section navigation')
+ if outlines:
   assert ('/assets/page-outline.js' in text or path.parent.name=='clients'),path
-  for id in re.findall(r'<option value="([^"]+)"',re.search(r'<nav class="page-outline".*?</nav>',text,re.S)[0]):assert f'id="{id}"' in text,(path,id)
+  for id in re.findall(r'<option value="([^"]+)"',outlines[0]):assert f'id="{id}"' in text,(path,id)
 print(f'Validated one complete menu for {len(expected)} pages, local section navigation and the unbroken footer paragraph.')
