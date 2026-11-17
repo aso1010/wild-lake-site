@@ -39,7 +39,7 @@ def add_outline(path,text):
   if outline_nav(match) and re.search(r'data-page-outline=[\"\']generated[\"\']',match[0]):
    text=text[:match.start()]+text[match.end():]
  if any(outline_nav(m) for m in re.finditer(r'<nav\b[^>]*>.*?</nav>',text,re.S)):return text
- if route(path) in ['/app/','/mirror/']:return text
+ if route(path) in ['/','/app/','/mirror/']:return text
  main=re.search(r'<main\b[^>]*>.*?</main>',text,re.S)
  if not main:return text
  sections=[]
@@ -55,7 +55,7 @@ def add_outline(path,text):
 
 if __name__=='__main__':
  for path in root.rglob('*.html'):
-  if route(path)=='/field/':continue # Self-contained instrument retains its frame and return link.
+  if route(path) in ['/','/field/']:continue # Native landing and instrument retain their own navigation.
   s=path.read_text();nav=render(path)
   if re.search(r'<nav\b[^>]*class="site-nav"',s):s=re.sub(r'<nav\b[^>]*class="site-nav".*?</nav>',lambda m:nav,s,count=1,flags=re.S)
   else:s=re.sub(r'(<body\b[^>]*>)',lambda m:m[1]+'\n'+nav,s,count=1)

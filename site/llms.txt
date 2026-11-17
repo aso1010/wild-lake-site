@@ -2,9 +2,11 @@
 
 > Wild Lake Studio, known as Wild-Lake, is an independent talent architecture and artist development studio for creators across music, art, writing and film. Based across New York, Tampa, and Santiago; working worldwide.
 
-Where generational creators are made.
+Point zero for starmaking.
 
-Wild-Lake is an independent studio that develops artists and builds the structures careers run on, across music, art, writing, and film. We work directly with creators and with the labels, galleries, and agencies behind them, offering close creative direction, capacity audits, and fixed-scope infrastructure builds. We bring design-firm rigor and coaching-level care to every engagement. We never take ownership or a percentage of an artist's work.
+Sovereign A&R and structural advisory for artists, with 0% IP ownership, 0% revenue share, and fees agreed before the work begins. Priced by monthly Stewardship subscription or fixed project fee.
+
+Homepage: Work (#work), cross-subsidy ledger (#ledger), proof (#proof), and four-field mailto intake (#begin). Entry routes /li, /ig, and /fb redirect to the same homepage with source query parameters; no tracking scripts are used.
 
 ## Consideration journey
 

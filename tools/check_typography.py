@@ -34,7 +34,7 @@ for path in root.rglob('*.html'):
   if role not in classes:errors.append(f'{name}: missing {role}')
   previous=n
  expected='/assets/clients-monolith.css' if name=='clients/index.html' else canonical
- if not a.styles or a.styles[-1]!=expected or a.styles.count(expected)!=1:errors.append(f'{name}: canonical type sheet or compiled bundle must load once, last')
+ if path!=root/'index.html' and (not a.styles or a.styles[-1]!=expected or a.styles.count(expected)!=1):errors.append(f'{name}: canonical type sheet or compiled bundle must load once, last')
  if (('—' in text and name not in ['faq/index.html','terms/index.html']) or '--' in ''.join(a.copy)):errors.append(f'{name}: banned punctuation in copy')
  for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S):
   if '—' in json.dumps(json.loads(block),ensure_ascii=False) and name not in ['faq/index.html','terms/index.html']:errors.append(f'{name}: em dash in JSON-LD')

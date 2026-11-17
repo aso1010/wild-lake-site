@@ -14,6 +14,9 @@ for group in groups:
 assert len(found)==len(set(found)) and set(found)==expected,'Site menu must cover every static page exactly once'
 for path in expected:
  text=path.read_text()
+ if path==root/'index.html':
+  assert 'class="landing-header"' in text and 'class="site-nav"' not in text,path
+  continue
  if path==root/'field/index.html':
   assert 'href="https://wildlakestudio.com/"' in text and 'class="site-nav"' not in text,path
   continue
