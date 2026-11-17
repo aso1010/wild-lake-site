@@ -44,13 +44,13 @@
           "@id": "https://seveneightythree.com/#organization"
         }
       ],
-      "headline": "Point zero for starmaking.",
+      "headline": "Where generational creators are made.",
       "hasPart": [
         {
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#overview",
-          "name": "Point zero for starmaking.",
-          "text": "Independent studio Point zero for starmaking. Sovereign A&R and structural advisory for artists, with 0% IP ownership, 0% revenue share, and fees agreed before the work begins. Begin"
+          "name": "Where generational creators are made.",
+          "text": "Independent studio Where generational creators are made. Sovereign A&R and structural advisory for artists, with 0% IP ownership, 0% revenue share, and fees agreed before the work begins. Begin"
         },
         {
           "@type": "WebPageElement",
