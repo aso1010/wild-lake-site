@@ -21,6 +21,9 @@
       },
       "breadcrumb": {
         "@id": "https://wildlakestudio.com/clients/emily-wilson/#breadcrumbs"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://wildlakestudio.com/clients/emily-wilson/#portrait"
       }
     },
     {
@@ -72,7 +75,10 @@
           "name": "The terms",
           "text": "04 The terms Wild-Lake takes 0% IP ownership and 0% revenue share. The artist enters willingly and keeps creative control. Scope and fee are agreed before the work begins. Begin →"
         }
-      ]
+      ],
+      "image": {
+        "@id": "https://wildlakestudio.com/clients/emily-wilson/#portrait"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -97,6 +103,15 @@
           "item": "https://wildlakestudio.com/clients/emily-wilson/"
         }
       ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://wildlakestudio.com/clients/emily-wilson/#portrait",
+      "url": "https://wildlakestudio.com/assets/images/emily-wilson.jpg",
+      "contentUrl": "https://wildlakestudio.com/assets/images/emily-wilson.jpg",
+      "name": "Emily Wilson",
+      "width": 540,
+      "height": 814
     }
   ]
 }
