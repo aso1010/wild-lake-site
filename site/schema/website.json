@@ -50,31 +50,49 @@
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#overview",
           "name": "Where generational creators are made.",
-          "text": "Independent studio Where generational creators are made. Sovereign A&R and structural advisory for artists, with 0% IP ownership, 0% revenue share, and fees agreed before the work begins. Begin"
+          "text": "Wild-Lake is an independent studio that develops artists and builds the structures careers run on, across music, art, writing, and film. We work directly with creators and with the labels, galleries, and agencies behind them, offering close creative direction, capacity audits, and fixed-scope infrastructure builds. We bring design-firm rigor and coaching-level care to every engagement. We never take ownership or a percentage of an artist's work."
         },
         {
           "@type": "WebPageElement",
-          "@id": "https://wildlakestudio.com/#work",
-          "name": "Three doors",
-          "text": "Three doors Sovereign A&R Close study, revision, and release context across music, visual art, writing, and film. Explore the work Talent architecture Capacity and boundary audits that give an artist's practice a working frame and protect autonomy. Explore the practice Creative infrastructure Systems, platforms, and live production foundations built as fixed-scope commissions. Explore the structure"
+          "@id": "https://wildlakestudio.com/#emily-case",
+          "name": "Emily Wilson: client case",
+          "text": "Client case Emily Wilson From affiliate marketer to artist-writer on the food beat. A studio reading of a writer’s shift from affiliate gift guides to the people who grow, cook, serve, and carry the meal. Read the client case →"
         },
         {
           "@type": "WebPageElement",
-          "@id": "https://wildlakestudio.com/#ledger",
-          "name": "Cross-subsidy",
-          "text": "Cross-subsidy Established artists fund capacity for rising artists. Retainers also contribute to land conservation and freshwater ecosystem defense. Contribution fractions are not published."
+          "@id": "https://wildlakestudio.com/#focus",
+          "name": "Our focus",
+          "text": "The artist: Artist development. Support for the person behind the work and the capacity to keep making. The practice: Existential mechanics. Aligning the life an artist leads with the work they want to build. The venture: Sovereign A&R. We scout artists and develop their repertoire across music, visual art, literature, and film. The structure: Creative infrastructure. We help the world catch up to the artist, building lasting ways to encounter the work."
         },
         {
           "@type": "WebPageElement",
-          "@id": "https://wildlakestudio.com/#proof",
-          "name": "We read the work before we price it.",
-          "text": "We read the work before we price it. 0% IP ownership. 0% revenue share. Monthly Stewardship subscription or fixed project fee, stated upfront. Fifteen years of practice across 12 or more multidisciplinary artists. Quiet Creek: studio-written essays and close readings Read the roster"
+          "@id": "https://wildlakestudio.com/#practice",
+          "name": "How we work",
+          "text": "Nature is brutalist. Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle. We work closely with the artist, then give them space to execute. The method sets out our approach to critique, structural honesty, and the rhythm of an engagement."
         },
         {
           "@type": "WebPageElement",
-          "@id": "https://wildlakestudio.com/#begin",
-          "name": "Four fields",
-          "text": "Four fields Name Practice The condition Email Open email draft Opens your email app so you can review and send. You can also write directly to info@wildlakestudio.com . Privacy protocol ."
+          "@id": "https://wildlakestudio.com/#wellbeing",
+          "name": "Development protocols",
+          "text": "Explore the practices Argelys may guide during a retained engagement, including active listening, automatic writing, movement, and vision quests. The selection follows the artist and the work."
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#services",
+          "name": "Ways to work together",
+          "text": "The studio & venture Ways to work together The core offering is undivided attention. Close study of the artist, the work, and the conditions shaping both. Sovereign A&R Multidisciplinary Artist & Repertoire: scouting artists and developing complete bodies of work across music, visual art, literature, and film through critique, direction, and critical framing. The artist retains 100% ownership and creative control. Wild-Lake takes 0% IP ownership and 0% revenue share. Talent architecture Structural support for the person sustaining the practice, with boundaries and working conditions that make independence possible. Creative infrastructure Fixed-scope commissions that build the foundations of a practice: audience assets, platform setup, and live production architecture. Explore offerings"
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#model",
+          "name": "Your work stays yours.",
+          "text": "Terms of practice Your work stays yours. The artist retains ownership and creative control. We work on an agreed Stewardship subscription or fixed project fee. Scope & deliverables Every retained engagement begins with a fixed-scope architectural proposal. Depending on the artist's stage, deliverables include a written practice audit, a complete repertoire and catalog map, a six-month working rhythm and boundary protocol, or a bare-metal digital platform build (owned website, mailing list, archive, and release infrastructure; no rented audience). You never buy vague stewardship. You buy concrete structural outputs with set review milestones. Outcomes & proof A healthy creative practice is measured in finished, durable output, not sentiment. Success looks like a coherent body of work, fewer abandoned projects, a release cadence the artist can sustain without burning out, and a live show built to survive a tour. Governance & RACI Wild-Lake provides external critique and structural architecture, never competing authority. Before any institutional engagement begins, we establish a written governance map with the artist, management, and label defining who holds final sign-off across repertoire, visual direction, rollout, and touring. Protocol format & cadence Somatic and diagnostic exercises are optional tools deployed only when the work requires them, never a required curriculum. Protocols are tailored to the artist's physical schedule, conducted in-person in Brooklyn, remotely, in the studio, or on the road, in focused 60 to 90 minute working blocks. Confidentiality & reporting firewall Honest critique requires an airtight firewall. All diagnostic sessions between Wild-Lake and the artist remain strictly confidential. When a label, gallery, or agency funds the retainer, all three parties sign an upfront reporting agreement specifying exactly what gets shared back to the institution: structural milestones and delivery timelines, never raw private sessions. Engagement formats and fees · Terms of practice"
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#invitation",
+          "name": "Let’s begin.",
+          "text": "Tell us about your work, or the artists you work with, and what support is needed."
         }
       ]
     },
@@ -861,6 +879,28 @@
       },
       "author": {
         "@id": "https://argelysoriach.com/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/clients/emily-wilson/#webpage",
+      "url": "https://wildlakestudio.com/clients/emily-wilson/",
+      "name": "Emily Wilson: client case | Wild Lake Studio",
+      "description": "A Wild-Lake studio reading of Emily Wilson’s shift from affiliate marketing to artist-writing on the food beat.",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "about": {
+        "@id": "https://wildlakestudio.com/clients/#emily-wilson"
+      },
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://wildlakestudio.com/clients/emily-wilson/#article"
+      },
+      "breadcrumb": {
+        "@id": "https://wildlakestudio.com/clients/emily-wilson/#breadcrumbs"
       }
     }
   ]

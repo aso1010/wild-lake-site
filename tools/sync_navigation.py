@@ -12,6 +12,7 @@ def render(path):
  current=route(path);out=[]
  for item in routes:
   href=item['href'];extra=' aria-current="page"' if href.rstrip('/')==current.rstrip('/') else ''
+  if href=='/clients/' and current.startswith('/clients/') and current!='/clients/':extra=' aria-current="location"'
   if href=='/tools/' and current in ['/mirror/','/app/','/numerology/']:extra=' aria-current="location"'
   if href=='/magazine/' and current.startswith('/magazine/') and current!='/magazine/':extra=' aria-current="location"'
   if href=='/method/' and current=='/development-protocols/':extra=' aria-current="location"'

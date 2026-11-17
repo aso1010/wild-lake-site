@@ -278,7 +278,10 @@
           "@type": "CollegeOrUniversity",
           "name": "Wesleyan University"
         }
-      ]
+      ],
+      "subjectOf": {
+        "@id": "https://wildlakestudio.com/clients/emily-wilson/#webpage"
+      }
     },
     {
       "@type": "Person",

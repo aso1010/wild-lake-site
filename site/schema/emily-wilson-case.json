@@ -1,0 +1,102 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/clients/emily-wilson/#webpage",
+      "url": "https://wildlakestudio.com/clients/emily-wilson/",
+      "name": "Emily Wilson: client case | Wild Lake Studio",
+      "description": "A Wild-Lake studio reading of Emily Wilson’s shift from affiliate marketing to artist-writing on the food beat.",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "about": {
+        "@id": "https://wildlakestudio.com/clients/#emily-wilson"
+      },
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://wildlakestudio.com/clients/emily-wilson/#article"
+      },
+      "breadcrumb": {
+        "@id": "https://wildlakestudio.com/clients/emily-wilson/#breadcrumbs"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://wildlakestudio.com/clients/emily-wilson/#article",
+      "url": "https://wildlakestudio.com/clients/emily-wilson/",
+      "headline": "From affiliate marketer to artist-writer on the food beat.",
+      "description": "A Wild-Lake studio reading of Emily Wilson’s shift from affiliate marketing to artist-writing on the food beat.",
+      "about": {
+        "@id": "https://wildlakestudio.com/clients/#emily-wilson"
+      },
+      "author": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://wildlakestudio.com/clients/emily-wilson/#webpage"
+      },
+      "hasPart": [
+        {
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/clients/emily-wilson/#case-practice-heading",
+          "name": "The practice",
+          "text": "The practice Practice Food writing, photography Work The Angel, a newsletter about food, restaurants and the people who shape how we eat. Terms 0% IP. 0% revenue share. She keeps the work."
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/clients/emily-wilson/#case-condition",
+          "name": "The condition",
+          "text": "01 The condition Affiliate writing is paid by the purchase it produces. A gift guide has one job: move a reader toward a click. It does that job well. It also leaves no room for the people who grow, cook, serve and carry the meal. The prose was good and the market was clear. The whole form pointed one way."
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/clients/emily-wilson/#case-movement",
+          "name": "The movement",
+          "text": "02 The movement She changed the job. A marketer of objects became a writer with a subject: labor in food. Who is in the kitchen, who is in the field, who stands behind the counter. Her eye and her voice stayed. The question changed, and so did the reader, and so did her relationship to her own work."
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/clients/emily-wilson/#case-reading",
+          "name": "The reading",
+          "text": "03 The reading This is the studio's interpretation, not necessarily Emily's stated intention. A writer paid per purchase answers to the sale. A writer who reports on labor answers to the subject. We read the first as a format and the second as a practice. A practice can be an artist's own."
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/clients/emily-wilson/#case-terms",
+          "name": "The terms",
+          "text": "04 The terms Wild-Lake takes 0% IP ownership and 0% revenue share. The artist enters willingly and keeps creative control. Scope and fee are agreed before the work begins. Begin →"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://wildlakestudio.com/clients/emily-wilson/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://wildlakestudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Clients",
+          "item": "https://wildlakestudio.com/clients/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Emily Wilson",
+          "item": "https://wildlakestudio.com/clients/emily-wilson/"
+        }
+      ]
+    }
+  ]
+}
