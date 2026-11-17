@@ -15,9 +15,6 @@ class Links(HTMLParser):
 for p in root.rglob('*.html'):
  s=p.read_text();parser=Links();parser.feed(s);pages[p.resolve()]=parser
  nav=re.findall(r'<nav\b[^>]*class="site-nav".*?</nav>',s,re.S)
- if p==root/'index.html':
-  if nav or '/assets/navigation.js' in s:errors.append('Landing page must retain its native anchor navigation')
-  continue
  if p==root/'field/index.html':
   if nav or 'href="https://wildlakestudio.com/"' not in s:errors.append('Field must retain its native studio return link')
   continue

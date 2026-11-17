@@ -6,7 +6,7 @@ Point zero for starmaking.
 
 Sovereign A&R and structural advisory for artists, with 0% IP ownership, 0% revenue share, and fees agreed before the work begins. Priced by monthly Stewardship subscription or fixed project fee.
 
-Homepage: Work (#work), cross-subsidy ledger (#ledger), proof (#proof), and four-field mailto intake (#begin). Entry routes /li, /ig, and /fb redirect to the same homepage with source query parameters; no tracking scripts are used.
+Homepage: Work (#work), cross-subsidy ledger (#ledger), proof (#proof), and four-field mailto intake (#begin). Entry routes /li, /ig, and /fb redirect to the same homepage with source query parameters; no tracking scripts are used. The existing animated monolith, location caption, navigation, and studio visual system are preserved.
 
 ## Consideration journey
 

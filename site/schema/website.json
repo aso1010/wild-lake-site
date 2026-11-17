@@ -50,7 +50,7 @@
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#overview",
           "name": "Point zero for starmaking.",
-          "text": "Independent studio · New York / Tampa / Santiago / Worldwide Point zero for starmaking. Sovereign A&R and structural advisory for artists, with 0% IP ownership, 0% revenue share, and fees agreed before the work begins. Begin"
+          "text": "Independent studio Point zero for starmaking. Sovereign A&R and structural advisory for artists, with 0% IP ownership, 0% revenue share, and fees agreed before the work begins. Begin"
         },
         {
           "@type": "WebPageElement",
@@ -61,8 +61,8 @@
         {
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#ledger",
-          "name": "Ledger Cross-subsidy",
-          "text": "Ledger Cross-subsidy Established artists fund capacity for rising artists. Retainers also contribute to land conservation and freshwater ecosystem defense. Contribution fractions are not published."
+          "name": "Cross-subsidy",
+          "text": "Cross-subsidy Established artists fund capacity for rising artists. Retainers also contribute to land conservation and freshwater ecosystem defense. Contribution fractions are not published."
         },
         {
           "@type": "WebPageElement",
@@ -73,13 +73,10 @@
         {
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#begin",
-          "name": "Begin Four fields",
-          "text": "Begin Four fields Name Practice The condition Email Open email draft Opens your email app so you can review and send. You can also write directly to info@wildlakestudio.com . Privacy protocol ."
+          "name": "Four fields",
+          "text": "Four fields Name Practice The condition Email Open email draft Opens your email app so you can review and send. You can also write directly to info@wildlakestudio.com . Privacy protocol ."
         }
-      ],
-      "publisher": {
-        "@id": "https://wildlakestudio.com/#organization"
-      }
+      ]
     },
     {
       "@type": "WebPage",
