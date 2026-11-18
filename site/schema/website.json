@@ -68,25 +68,19 @@
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#focus",
           "name": "Who we work with",
-          "text": "Who we work with Emily Wilson: affiliate marketer to artist-writer on the food beat. Jessica Wilson: the first Quiet Creek essay, on infrastructure and the living world. All twelve artists and creators →"
+          "text": "Who we work with Emily Wilson Affiliate marketer to artist-writer on the food beat. Jessica Wilson The first Quiet Creek essay, on infrastructure and the living world. All twelve artists and creators →"
         },
         {
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#wellbeing",
           "name": "Start without us",
-          "text": "Start without us Quiet Creek , essays on artists and the structures under them. Architectural Mirror , a tarot mirror with no prescribed meanings. Come home to your body , a somatic field."
+          "text": "Start without us Quiet Creek Essays on artists and the structures under them. Architectural Mirror A tarot mirror with no prescribed meanings. Come home to your body A somatic field."
         },
         {
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#model",
-          "name": "Ownership",
-          "text": "Your work stays yours. Fixed fee or Stewardship subscription. Every term is in writing before work starts. Terms of practice →"
-        },
-        {
-          "@type": "WebPageElement",
-          "@id": "https://wildlakestudio.com/#invitation",
-          "name": "Begin a conversation",
-          "text": "Tell us about your work, or the artists you work with. Let’s begin. Send a message"
+          "name": "Your work stays yours.",
+          "text": "Your work stays yours. Fixed fee or Stewardship subscription. Every term is in writing before work starts. Terms of practice → Tell us about your work, or the artists you work with. Let’s begin. Send a message"
         }
       ]
     },
