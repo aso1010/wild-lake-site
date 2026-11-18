@@ -6,7 +6,7 @@
       "@id": "https://wildlakestudio.com/clients/emily-wilson/#webpage",
       "url": "https://wildlakestudio.com/clients/emily-wilson/",
       "name": "Emily Wilson: client case | Wild Lake Studio",
-      "description": "A Wild-Lake studio reading of Emily Wilson’s shift from affiliate marketing to artist-writing on the food beat.",
+      "description": "A Wild-Lake studio reading of Emily Wilson’s shift from content marketing to artist-writing on the food beat.",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
       },
@@ -30,8 +30,8 @@
       "@type": "Article",
       "@id": "https://wildlakestudio.com/clients/emily-wilson/#article",
       "url": "https://wildlakestudio.com/clients/emily-wilson/",
-      "headline": "From affiliate marketer to artist-writer on the food beat.",
-      "description": "A Wild-Lake studio reading of Emily Wilson’s shift from affiliate marketing to artist-writing on the food beat.",
+      "headline": "From content marketer to artist-writer on the food beat.",
+      "description": "A Wild-Lake studio reading of Emily Wilson’s shift from content marketing to artist-writing on the food beat.",
       "about": {
         "@id": "https://wildlakestudio.com/clients/#emily-wilson"
       },

@@ -68,7 +68,7 @@
           "@type": "WebPageElement",
           "@id": "https://wildlakestudio.com/#focus",
           "name": "Who we work with",
-          "text": "Who we work with Emily Wilson Affiliate marketer to artist-writer on the food beat. Jessica Wilson The first Quiet Creek essay, on infrastructure and the living world. All twelve artists and creators →"
+          "text": "Who we work with Emily Wilson Content marketer to artist-writer on the food beat. Jessica Wilson The first Quiet Creek essay, on infrastructure and the living world. All twelve artists and creators →"
         },
         {
           "@type": "WebPageElement",
@@ -874,7 +874,7 @@
       "@id": "https://wildlakestudio.com/clients/emily-wilson/#webpage",
       "url": "https://wildlakestudio.com/clients/emily-wilson/",
       "name": "Emily Wilson: client case | Wild Lake Studio",
-      "description": "A Wild-Lake studio reading of Emily Wilson’s shift from affiliate marketing to artist-writing on the food beat.",
+      "description": "A Wild-Lake studio reading of Emily Wilson’s shift from content marketing to artist-writing on the food beat.",
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
       },
