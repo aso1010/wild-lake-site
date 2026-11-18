@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'sha256-dG8de2Ufx/F/Or+hIfRFBA9c1kjbI/c4B4TxkxsIkFA='; script-src 'sha256-Lxu7ACFvFlhtAQ3xwmrpGE5L67eNGohTBTy5SS8548o='; font-src 'self'; img-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'sha256-UgaW8aaZV4U25N4RqNPC1X4GOtjADVtx14qz6UnWwuU='; script-src 'sha256-Lxu7ACFvFlhtAQ3xwmrpGE5L67eNGohTBTy5SS8548o='; font-src 'self'; img-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Architectural Mirror | Wild Lake Studio</title>
 
   <meta name="theme-color" content="#000000">
@@ -49,6 +49,9 @@
 }
 html,
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
   background-color: var(--void);
 }
 body {
@@ -119,7 +122,9 @@ body {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: minmax(0, 55fr) minmax(0, 45fr);
-  height: 100%;
+  flex: 1 1 0;
+  min-height: 0;
+  height: auto;
   width: 100%;
   border: 5px solid var(--color-primary);
 }
@@ -386,6 +391,11 @@ h2 {
 @media(prefers-reduced-motion:reduce){.shuffle-deck.is-shuffling svg{animation:none}}
 
 .mirror-byline{display:block;font-family:var(--font-sans);font-size:var(--text-xs);font-weight:400;line-height:var(--leading-body);letter-spacing:var(--tracking-normal);text-transform:none;margin-top:8px;color:var(--ink-2)}
+
+/* Keep navigation outside the app viewport so every frame edge remains reachable. */
+body>.site-nav{flex-shrink:0}
+@media(max-width:767px){.grid-fibonacci{flex:none}}
+@media(min-width:768px) and (max-height:610px){body{height:auto;overflow:auto}.grid-fibonacci{flex:none;height:610px}}
 </style>
   <script type="application/ld+json">
 {
