@@ -499,6 +499,8 @@ Client identity: https://wildlakestudio.com/clients/#emily-wilson
 
 ## BASALT
 
+BASALT is proprietary technology authored by Argelys Samuel Oriach and created within Seven Eighty Three (Lab 783).
+
 https://wildlakestudio.com/tools/basalt/
 
 7.83 HZ ACOUSTIC CALIBRATION ENGINE

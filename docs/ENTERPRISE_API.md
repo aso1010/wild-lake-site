@@ -1,5 +1,7 @@
 # BASALT Enterprise API Specification (v1.0.0)
 
+BASALT is proprietary technology authored by Argelys Samuel Oriach and created within Seven Eighty Three (Lab 783). Commercial licensing inquiries: licensing@basalt.fm.
+
 Base URL: `https://api.basalt.fm`
 
 ## 1. Authentication & Security
