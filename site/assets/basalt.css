@@ -4,3 +4,4 @@ body.reading-layout.tools-page .app-feature-art img.basalt-mark{box-sizing:borde
 .basalt-showcase .basalt-launch{display:inline-flex;align-items:center;justify-content:center;min-height:55px;padding:var(--space-sm) var(--space-md);border:1px solid var(--text-color);border-radius:0;background:var(--text-color);color:var(--bg-color);font-family:var(--font-sans);font-size:var(--text-base);line-height:var(--leading-body);text-decoration:none}
 .basalt-showcase .basalt-launch:hover{background:var(--bg-color);color:var(--text-color)}
 .basalt-showcase .basalt-launch:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+body.reading-layout.tools-page .app-feature-art img.basalt-preview{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;border-radius:0}
