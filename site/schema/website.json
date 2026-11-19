@@ -907,7 +907,7 @@
         "@id": "https://wildlakestudio.com/#organization"
       },
       "mainEntity": {
-        "@id": "https://basalt.fm/#app"
+        "@id": "https://basalt.fm/#webapp"
       },
       "breadcrumb": {
         "@id": "https://wildlakestudio.com/tools/basalt/#breadcrumbs"

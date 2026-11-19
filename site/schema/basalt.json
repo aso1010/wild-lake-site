@@ -14,19 +14,52 @@
         "@id": "https://wildlakestudio.com/#organization"
       },
       "mainEntity": {
-        "@id": "https://basalt.fm/#app"
+        "@id": "https://basalt.fm/#webapp"
       },
       "breadcrumb": {
         "@id": "https://wildlakestudio.com/tools/basalt/#breadcrumbs"
       }
     },
     {
-      "@type": "SoftwareApplication",
-      "@id": "https://basalt.fm/#app",
-      "name": "BASALT",
+      "@type": "WebApplication",
+      "@id": "https://basalt.fm/#webapp",
+      "name": "BASALT Acoustic Calibration Console",
       "url": "https://basalt.fm",
-      "description": "BASALT is a lossless PCM WAV calibration engine. Process a master track, compare the original and calibrated audio with sample-accurate spacebar A/B playback, and download the verified WAV file.",
-      "applicationCategory": "MultimediaApplication"
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires Web Audio API support",
+      "description": "Zero-dependency browser console for 7.83 Hz acoustic calibration, sample-accurate A/B audio comparison, and cryptographic mastering verification.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/OnlineOnly"
+      },
+      "isRelatedTo": {
+        "@id": "https://basalt.fm/#software"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://basalt.fm/#software",
+      "name": "BASALT DSP Engine",
+      "softwareVersion": "1.0.0",
+      "applicationCategory": "AudioMasteringSoftware",
+      "operatingSystem": "Linux, macOS, Windows",
+      "url": "https://api.basalt.fm",
+      "featureList": [
+        "7.83 Hz harmonic octave scaling",
+        "440 Hz concert pitch preservation mode",
+        "Sub-threshold binaural and isochronic entrainment",
+        "Micro-dynamic crest factor calibration",
+        "Deterministic SHA-256 JSON audit receipts"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "BASALT",
+        "url": "https://basalt.fm",
+        "email": "licensing@basalt.fm"
+      }
     },
     {
       "@type": "BreadcrumbList",
