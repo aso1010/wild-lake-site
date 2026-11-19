@@ -505,6 +505,29 @@ https://wildlakestudio.com/tools/basalt/
 
 BASALT is a lossless PCM WAV calibration engine. Process a master track, compare the original and calibrated audio with sample-accurate spacebar A/B playback, and download the verified WAV file.
 
-This is a static showcase. The interactive application and API run exclusively at https://basalt.fm.
+This is a static showcase. The interactive application runs at https://basalt.fm and the calibration API runs at https://api.basalt.fm.
 
 Schema: https://wildlakestudio.com/schema/basalt.json
+
+> Deterministic 7.83 Hz acoustic calibration and psychoacoustic mastering engine for lossless PCM audio.
+
+BASALT processes 16-bit and 24-bit PCM WAV masters through a three-stage server-side calibration pipeline: harmonic octave pitch scaling (or 440 Hz concert pitch preservation), sub-threshold binaural and isochronic entrainment, and micro-dynamic crest factor restoration. Every processed file outputs a cryptographic SHA-256 audit receipt verifying phase lock and parity.
+
+### Core endpoints & surfaces
+- Web Console: https://basalt.fm
+- Private Calibration API: https://api.basalt.fm/v1/calibrate
+- System Telemetry: https://api.basalt.fm/health
+
+### Technical specifications
+- Input Formats: Uncompressed 16-bit or 24-bit PCM WAV (44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz)
+- Maximum Payload: 100 MB per synchronous request (batch enterprise pipelines available)
+- Authentication: Header-based API key (`X-BASALT-KEY`)
+- Verification Output: Deterministic JSON receipt delivered via `X-BASALT-AUDIT` response header with input/output SHA-256 hashes
+
+### Pitch calibration modes
+- Harmonic Scale Mode (`preserve_pitch=false`): Aligns concert reference pitch to the 6th harmonic octave of 7.83 Hz.
+- Concert Preserve Mode (`preserve_pitch=true`): Retains original A4 = 440.00 Hz tuning while embedding phase-coherent sub-harmonic entrainment and dynamic envelope calibration.
+
+### Commercial & enterprise licensing
+- Enterprise API access, catalog back-catalog batch mastering, and dedicated single-tenant deployments are available under commercial license.
+- Licensing Inquiries: licensing@basalt.fm

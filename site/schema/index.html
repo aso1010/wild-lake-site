@@ -3115,7 +3115,7 @@
         <nav aria-label="Additional structured documents"><p class="type-body"><a href="clients.json">Past and current clients JSON</a> · <a href="method.json">Method JSON</a> · <a href="development-protocols.json">Development protocols JSON</a> · <a href="practice.json">Engagements JSON</a></p></nav>
 <h2 class="vector-label type-h2" id="section-llms-txt">llms.txt</h2>
         <p class="vector-body type-body">Plain-text summary and guidance for language models. <a href="../llms.txt">/llms.txt &rarr;</a></p>
-        <pre tabindex="0" data-src="../llms.txt"><code># Wild Lake Studio | Talent architecture and artist development
+        <pre tabindex="0" data-src="../llms.txt"># Wild Lake Studio | Talent architecture and artist development
 
 &gt; Wild Lake Studio, known as Wild-Lake, is an independent talent architecture and artist development studio for creators across music, art, writing and film. Based across New York, Tampa, and Santiago; working worldwide.
 
@@ -3622,10 +3622,33 @@ https://wildlakestudio.com/tools/basalt/
 
 BASALT is a lossless PCM WAV calibration engine. Process a master track, compare the original and calibrated audio with sample-accurate spacebar A/B playback, and download the verified WAV file.
 
-This is a static showcase. The interactive application and API run exclusively at https://basalt.fm.
+This is a static showcase. The interactive application runs at https://basalt.fm and the calibration API runs at https://api.basalt.fm.
 
 Schema: https://wildlakestudio.com/schema/basalt.json
-</code></pre>
+
+&gt; Deterministic 7.83 Hz acoustic calibration and psychoacoustic mastering engine for lossless PCM audio.
+
+BASALT processes 16-bit and 24-bit PCM WAV masters through a three-stage server-side calibration pipeline: harmonic octave pitch scaling (or 440 Hz concert pitch preservation), sub-threshold binaural and isochronic entrainment, and micro-dynamic crest factor restoration. Every processed file outputs a cryptographic SHA-256 audit receipt verifying phase lock and parity.
+
+### Core endpoints &amp; surfaces
+- Web Console: https://basalt.fm
+- Private Calibration API: https://api.basalt.fm/v1/calibrate
+- System Telemetry: https://api.basalt.fm/health
+
+### Technical specifications
+- Input Formats: Uncompressed 16-bit or 24-bit PCM WAV (44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz)
+- Maximum Payload: 100 MB per synchronous request (batch enterprise pipelines available)
+- Authentication: Header-based API key (`X-BASALT-KEY`)
+- Verification Output: Deterministic JSON receipt delivered via `X-BASALT-AUDIT` response header with input/output SHA-256 hashes
+
+### Pitch calibration modes
+- Harmonic Scale Mode (`preserve_pitch=false`): Aligns concert reference pitch to the 6th harmonic octave of 7.83 Hz.
+- Concert Preserve Mode (`preserve_pitch=true`): Retains original A4 = 440.00 Hz tuning while embedding phase-coherent sub-harmonic entrainment and dynamic envelope calibration.
+
+### Commercial &amp; enterprise licensing
+- Enterprise API access, catalog back-catalog batch mastering, and dedicated single-tenant deployments are available under commercial license.
+- Licensing Inquiries: licensing@basalt.fm
+</pre>
       </article>
     </section>
 
