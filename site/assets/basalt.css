@@ -1,0 +1,6 @@
+body.reading-layout.tools-page .app-feature-art img.basalt-mark{box-sizing:border-box;width:55px;height:55px;max-width:55px;max-height:55px;border:1px solid var(--text-color,#fff);border-radius:0;object-fit:contain;image-rendering:auto}
+.basalt-showcase .app-feature-copy{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-md)}
+.basalt-showcase h1,.basalt-showcase p{margin:0}
+.basalt-showcase .basalt-launch{display:inline-flex;align-items:center;justify-content:center;min-height:55px;padding:var(--space-sm) var(--space-md);border:1px solid var(--text-color);border-radius:0;background:var(--text-color);color:var(--bg-color);font-family:var(--font-sans);font-size:var(--text-base);line-height:var(--leading-body);text-decoration:none}
+.basalt-showcase .basalt-launch:hover{background:var(--bg-color);color:var(--text-color)}
+.basalt-showcase .basalt-launch:focus-visible{outline:2px solid currentColor;outline-offset:5px}

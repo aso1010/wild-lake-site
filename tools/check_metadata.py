@@ -30,6 +30,8 @@ for p in root.rglob('*.html'):
     elif p.relative_to(root).as_posix() in ['faq/index.html','terms/index.html']:
         expected=json.loads((root.parent/'tools/engagement-pages/content.json').read_text())[p.parent.name]['title']
         if h.title!=expected:errors.append(f'{p.relative_to(root)}: approved document title differs')
+    elif p==root/'tools/basalt/index.html':
+        if h.title!='BASALT':errors.append('BASALT must retain its explicitly requested title')
     elif not h.title.endswith(' | Wild Lake Studio'):errors.append(f'{p.relative_to(root)}: title pattern differs')
     description=h.meta.get('description',[''])[0]
     if not description:errors.append(f'{p.relative_to(root)}: description missing')

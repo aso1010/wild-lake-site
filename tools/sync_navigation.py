@@ -13,7 +13,7 @@ def render(path):
  for item in routes:
   href=item['href'];extra=' aria-current="page"' if href.rstrip('/')==current.rstrip('/') else ''
   if href=='/clients/' and current.startswith('/clients/') and current!='/clients/':extra=' aria-current="location"'
-  if href=='/tools/' and current in ['/mirror/','/app/','/numerology/']:extra=' aria-current="location"'
+  if href=='/tools/' and (current in ['/mirror/','/app/','/numerology/'] or (current.startswith('/tools/') and current!='/tools/')):extra=' aria-current="location"'
   if href=='/magazine/' and current.startswith('/magazine/') and current!='/magazine/':extra=' aria-current="location"'
   if href=='/method/' and current=='/development-protocols/':extra=' aria-current="location"'
   if item['label']=='Begin':out.append('<a href="'+href+'" class="begin-link">Begin '+arrow+'</a>')

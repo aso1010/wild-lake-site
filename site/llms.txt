@@ -255,7 +255,7 @@ Emily Wilson is also a photographer; she studied photography alongside a double 
 - [The Infrastructure Has an Inner Life | Wild Lake Studio](https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/): On Jessica Wilson’s work: a Wild Lake Studio reading of infrastructure, anxiety, capitalism, whiteness, and the living world.
 - [Architectural Mirror | Wild Lake Studio](https://wildlakestudio.com/mirror/): A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation.
 - [Our responsibility | Wild Lake Studio](https://wildlakestudio.com/responsibility/): A portion of every retainer fee goes directly toward protecting wild lakes, freshwater systems, and public lands.
-- [Tools | Wild Lake Studio](https://wildlakestudio.com/tools/): Reflective tools from Wild-Lake: Name & Number numerology, Architectural Mirror, Quiet Creek Tarot, and Come home to your body.
+- [Tools | Wild Lake Studio](https://wildlakestudio.com/tools/): Tools from Wild-Lake: Name & Number, Architectural Mirror, Quiet Creek Tarot, Come home to your body, and BASALT.
 - [The sovereign engine | Wild Lake Studio](https://wildlakestudio.com/manifesto/): The sovereign engine: Wild Lake Studio’s manifesto on controlled demolition, sovereign A&R, talent architecture, and retainer mechanics.
 
 ### 00.0 // The myth of the 27 Club
@@ -496,3 +496,15 @@ This is the studio’s interpretation, not necessarily Emily’s stated intentio
 
 Schema: https://wildlakestudio.com/schema/emily-wilson-case.json
 Client identity: https://wildlakestudio.com/clients/#emily-wilson
+
+## BASALT
+
+https://wildlakestudio.com/tools/basalt/
+
+7.83 HZ ACOUSTIC CALIBRATION ENGINE
+
+BASALT is a lossless PCM WAV calibration engine. Process a master track, compare the original and calibrated audio with sample-accurate spacebar A/B playback, and download the verified WAV file.
+
+This is a static showcase. The interactive application and API run exclusively at https://basalt.fm.
+
+Schema: https://wildlakestudio.com/schema/basalt.json

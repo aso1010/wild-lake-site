@@ -615,7 +615,7 @@
         "@id": "https://wildlakestudio.com/#website"
       },
       "name": "Tools | Wild Lake Studio",
-      "description": "Reflective tools from Wild-Lake: Name & Number numerology, Architectural Mirror, Quiet Creek Tarot, and Come home to your body."
+      "description": "Tools from Wild-Lake: Name & Number, Architectural Mirror, Quiet Creek Tarot, Come home to your body, and BASALT."
     },
     {
       "@type": "WebPage",
@@ -892,6 +892,25 @@
       },
       "primaryImageOfPage": {
         "@id": "https://wildlakestudio.com/clients/emily-wilson/#portrait"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/tools/basalt/#webpage",
+      "url": "https://wildlakestudio.com/tools/basalt/",
+      "name": "BASALT",
+      "description": "BASALT is a lossless PCM WAV calibration engine. Process a master track, compare the original and calibrated audio with sample-accurate spacebar A/B playback, and download the verified WAV file.",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://basalt.fm/#app"
+      },
+      "breadcrumb": {
+        "@id": "https://wildlakestudio.com/tools/basalt/#breadcrumbs"
       }
     }
   ]

@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/tools/basalt/#webpage",
+      "url": "https://wildlakestudio.com/tools/basalt/",
+      "name": "BASALT",
+      "description": "BASALT is a lossless PCM WAV calibration engine. Process a master track, compare the original and calibrated audio with sample-accurate spacebar A/B playback, and download the verified WAV file.",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
+      },
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://basalt.fm/#app"
+      },
+      "breadcrumb": {
+        "@id": "https://wildlakestudio.com/tools/basalt/#breadcrumbs"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://basalt.fm/#app",
+      "name": "BASALT",
+      "url": "https://basalt.fm",
+      "description": "BASALT is a lossless PCM WAV calibration engine. Process a master track, compare the original and calibrated audio with sample-accurate spacebar A/B playback, and download the verified WAV file.",
+      "applicationCategory": "MultimediaApplication"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://wildlakestudio.com/tools/basalt/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://wildlakestudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://wildlakestudio.com/tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "BASALT",
+          "item": "https://wildlakestudio.com/tools/basalt/"
+        }
+      ]
+    }
+  ]
+}
