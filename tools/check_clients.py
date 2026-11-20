@@ -38,7 +38,7 @@ def manifest():
   image=root/urlsplit(n.get('image','')).path.lstrip('/')
   if not image.is_file():errors.append('Missing image file: '+n['name'])
  if org['parentOrganization']['@id']!='https://seveneightythree.com/#organization':errors.append('Parent relationship differs')
- if org['founder']['@id']!='https://wildlakestudio.com/clients/#argelys-oriach':errors.append('Founder does not resolve to roster node')
+ if org['founder']['@id']!='https://argelysoriach.com/#person':errors.append('Founder does not resolve to canonical person')
  if errors:raise SystemExit('\n'.join(errors))
  return result
 if __name__=='__main__':

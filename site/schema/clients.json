@@ -607,18 +607,20 @@
       "@id": "https://wildlakestudio.com/#organization",
       "name": "Wild Lake Studio",
       "legalName": "Wild Lake Studio LLC",
-      "alternateName": "Wild-Lake",
+      "alternateName": [
+        "Wild-Lake",
+        "Wild Lake"
+      ],
       "url": "https://wildlakestudio.com",
-      "description": "Independent studio for creators across music, art, writing and film. Talent architecture and artist development.",
+      "description": "Solo talent architecture, A&R administration, and artist stewardship studio replacing predatory 360 deals with sovereign artist development.",
       "foundingDate": "2026",
       "founder": {
-        "@type": "Person",
-        "@id": "https://wildlakestudio.com/clients/#argelys-oriach",
+        "@id": "https://argelysoriach.com/#person",
         "name": "Argelys Samuel Oriach"
       },
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Crown Heights",
+        "addressLocality": "Brooklyn",
         "addressRegion": "NY",
         "addressCountry": "US"
       },
@@ -655,7 +657,11 @@
         "Institutional stewardship",
         {
           "@id": "https://argelysoriach.com/universe-api/#framework"
-        }
+        },
+        "A&R administration",
+        "Artist mentorship",
+        "Catalog stewardship",
+        "Independent music release strategy"
       ],
       "makesOffer": [
         {

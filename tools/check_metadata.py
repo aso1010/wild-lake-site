@@ -4,9 +4,9 @@ from pathlib import Path
 from html.parser import HTMLParser
 import json, struct
 root=Path(__file__).resolve().parents[1]/'site'
-home_search_title='Wild Lake Studio | Talent architecture, A&R, creative infrastructure'
-home_social_title='Wild Lake Studio | Direction, structure, systems'
-home_description='Independent studio for creators across music, art, writing and film. Sovereign A&R, talent architecture, creative infrastructure. We never take ownership.'
+home_search_title='Wild Lake Studio | Talent Architecture, A&R & Artist Mentorship'
+home_social_title=home_search_title
+home_description='Wild Lake Studio is a Brooklyn-based talent architecture, A&R administration, and artist stewardship practice led by Argelys Samuel Oriach within Seven Eighty Three.'
 image='https://wildlakestudio.com/assets/social/wild-lake-classic-edge-og.png'
 class Head(HTMLParser):
     def __init__(self):super().__init__();self.meta={};self.title='';self.in_title=False;self.canonical=''
@@ -36,14 +36,14 @@ for p in root.rglob('*.html'):
     description=h.meta.get('description',[''])[0]
     if not description:errors.append(f'{p.relative_to(root)}: description missing')
     social_title=home_social_title if p==root/'index.html' else h.title
-    for key,value in {'title':h.title,'og:title':social_title,'twitter:title':social_title,'og:description':description,'twitter:description':description,'og:site_name':'Wild-Lake','og:type':'website','twitter:card':'summary_large_image','og:image':image,'og:image:secure_url':image,'twitter:image':image,'og:image:type':'image/png','og:image:width':'1200','og:image:height':'630','og:url':'https://wildlakestudio.com' if p==root/'index.html' else h.canonical}.items():require(key,value)
+    for key,value in {'title':h.title,'og:title':social_title,'twitter:title':social_title,'og:description':description,'twitter:description':description,'og:site_name':'Wild-Lake','og:type':'website','twitter:card':'summary_large_image','og:image':image,'og:image:secure_url':image,'twitter:image':image,'og:image:type':'image/png','og:image:width':'1200','og:image:height':'630','og:url':'https://wildlakestudio.com/' if p==root/'index.html' else h.canonical}.items():require(key,value)
     for key in ['og:image:alt','twitter:image:alt']:
         if len(h.meta.get(key,[]))!=1 or not h.meta[key][0]:errors.append(f'{p.relative_to(root)}: image alt missing or duplicated')
 preview=root/'assets/social/wild-lake-classic-edge-og.png'
 from PIL import Image
 if Image.open(preview).size!=(1200,630):errors.append('Preview is not 1200 × 630')
 org=json.loads((root/'schema/organization.json').read_text())
-for key,value in {'@type':'Organization','name':'Wild Lake Studio','alternateName':'Wild-Lake','url':'https://wildlakestudio.com','email':'info@wildlakestudio.com','description':'Independent studio for creators across music, art, writing and film. Talent architecture and artist development.','areaServed':['New York','Tampa','Santiago','Worldwide']}.items():
+for key,value in {'@type':'Organization','name':'Wild Lake Studio','alternateName':['Wild-Lake','Wild Lake'],'url':'https://wildlakestudio.com','email':'info@wildlakestudio.com','description':'Solo talent architecture, A&R administration, and artist stewardship studio replacing predatory 360 deals with sovereign artist development.','areaServed':['New York','Tampa','Santiago','Worldwide']}.items():
     if org.get(key)!=value:errors.append(f'Organization {key} differs')
 if org.get('founder',{}).get('name')!='Argelys Samuel Oriach':errors.append('Founder name differs')
 if 'https://www.instagram.com/wildlake.studio' not in org.get('sameAs',[]):errors.append('Instagram identity differs')

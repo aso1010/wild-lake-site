@@ -3,8 +3,8 @@
   "@type": "WebSite",
   "@id": "https://wildlakestudio.com/#website",
   "url": "https://wildlakestudio.com/",
-  "name": "Wild Lake Studio | Talent architecture and artist development",
-  "description": "Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film.",
+  "name": "Wild Lake Studio",
+  "description": "Wild Lake Studio is a Brooklyn-based talent architecture, A&R administration, and artist stewardship practice led by Argelys Samuel Oriach within Seven Eighty Three.",
   "inLanguage": "en-US",
   "publisher": {
     "@id": "https://wildlakestudio.com/#organization"

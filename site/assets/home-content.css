@@ -4,7 +4,7 @@ body.home.reading-layout>.homepage-content>#overview.home-overview{padding-block
 body.home.reading-layout>.homepage-content>#overview.home-overview h1{margin:0 0 var(--space-lg);max-width:24ch}
 body.home.reading-layout>.homepage-content>#overview.home-overview .statement-text{margin:0;max-width:var(--measure-lead,55ch)}
 body.home.reading-layout>.homepage-content>#overview.home-overview .overview-terms-link{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-sm);margin:var(--space-lg) 0 0}
-body.home.reading-layout:has(#overview)>.homepage-content>:is(#manifesto-thesis,#services,#focus,#wellbeing,#model).home-content-section{display:block;margin-block:0;padding-block:0 var(--space-xl)}
+body.home.reading-layout:has(#overview)>.homepage-content>:is(#thesis,#practice,#focus,#publications,#inquiries).home-content-section{display:block;margin-block:0;padding-block:0 var(--space-xl)}
 body.home.reading-layout>.homepage-content>.home-content-section>.rule-datum{margin-block:0 var(--space-lg)!important}
 body.home.reading-layout>.homepage-content>.home-content-section .home-section-heading{margin:0 0 var(--space-lg)}
 body.home.reading-layout>.homepage-content>.home-content-section :is(h2,h3){margin:0;max-width:30ch}

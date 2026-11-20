@@ -3,6 +3,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 python3 tools/validate.py
 python3 tools/check_structured_lists.py
+python3 tools/check_home_semantics.py
 python3 tools/check_dependencies.py
 python3 tools/check_field.py
 python3 tools/check_copy_sync.py

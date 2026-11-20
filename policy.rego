@@ -45,7 +45,7 @@ deny contains "clients page must load one compiled stylesheet" if input.styleshe
 
 deny contains "organization parent differs" if input.organization.parentOrganization["@id"] != "https://seveneightythree.com/#organization"
 
-deny contains "founder does not resolve to roster person" if input.organization.founder["@id"] != "https://wildlakestudio.com/clients/#argelys-oriach"
+deny contains "founder does not resolve to canonical person" if input.organization.founder["@id"] != "https://argelysoriach.com/#person"
 
 deny contains "founder canonical identity missing" if {
  some person in input.persons
