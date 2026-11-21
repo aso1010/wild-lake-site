@@ -29,6 +29,12 @@
     },
     {
       "@type": "WebPageElement",
+      "@id": "https://wildlakestudio.com/pricing/#amphitheater-retainer",
+      "name": "Amphitheater stewardship retainer",
+      "text": "Amphitheater stewardship retainer The monthly retainer covers an agreed scope for building, running, and supporting your amphitheater on apsis.club. Fees, deliverables, review milestones, payout responsibilities, text response windows, and support boundaries are agreed in writing before work starts. Any apsis.club platform or payment processing fees are separate from Wild-Lake’s retainer. The artist retains ownership and creative control; Wild-Lake takes no ownership or revenue share. Explore amphitheater stewardship → · Scope an engagement →"
+    },
+    {
+      "@type": "WebPageElement",
       "@id": "https://wildlakestudio.com/pricing/#engagement-access",
       "name": "Operational boundaries & access",
       "text": "Operational boundaries & access Agreed response windows and written quarterly urgent-call caps define reserved access. Async-first communication protects studio execution, with focused interventions followed by uninterrupted absence. Programmatic request gating routes incoming professional inquiries through an agreed structured process. Consent remains ongoing. The artist can pause or exit any protocol and change direction within the agreed engagement terms. Any physical or co-regulation work requires explicit prior agreement and ongoing consent. Proximity and touch are optional."

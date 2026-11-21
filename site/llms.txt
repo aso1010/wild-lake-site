@@ -533,3 +533,17 @@ BASALT processes 16-bit and 24-bit PCM WAV masters through a three-stage server-
 ### Commercial & enterprise licensing
 - Enterprise API access, catalog back-catalog batch mastering, and dedicated single-tenant deployments are available under commercial license.
 - Licensing Inquiries: licensing@basalt.fm
+
+## Amphitheater stewardship
+
+https://wildlakestudio.com/practice/#amphitheater-stewardship
+
+We build, run, and support your amphitheater on apsis.club: onboarding, storefront design, release strategy, and payout operations, with agreed text access between sessions. A monthly retainer covers the scope, working rhythm, and support boundaries. Wild-Lake takes no ownership or revenue share.
+
+### Retainer scope and access
+
+https://wildlakestudio.com/pricing/#amphitheater-retainer
+
+The monthly retainer covers an agreed scope for building, running, and supporting your amphitheater on apsis.club. Fees, deliverables, review milestones, payout responsibilities, text response windows, and support boundaries are agreed in writing before work starts. Any apsis.club platform or payment processing fees are separate from Wild-Lake’s retainer. The artist retains ownership and creative control; Wild-Lake takes no ownership or revenue share.
+
+Schema: https://wildlakestudio.com/schema/amphitheater.json

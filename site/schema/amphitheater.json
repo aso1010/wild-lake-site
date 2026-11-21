@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://wildlakestudio.com/practice/#amphitheater-service",
+  "name": "Amphitheater stewardship",
+  "serviceType": "Creative infrastructure",
+  "description": "We build, run, and support your amphitheater on apsis.club: onboarding, storefront design, release strategy, and payout operations, with agreed text access between sessions. A monthly retainer covers the scope, working rhythm, and support boundaries. Wild-Lake takes no ownership or revenue share.",
+  "url": "https://wildlakestudio.com/practice/#amphitheater-stewardship",
+  "provider": {
+    "@id": "https://wildlakestudio.com/#organization"
+  },
+  "offers": {
+    "@type": "Offer",
+    "name": "Monthly amphitheater stewardship retainer",
+    "url": "https://wildlakestudio.com/pricing/#amphitheater-retainer",
+    "description": "The monthly retainer covers an agreed scope for building, running, and supporting your amphitheater on apsis.club. Fees, deliverables, review milestones, payout responsibilities, text response windows, and support boundaries are agreed in writing before work starts. Any apsis.club platform or payment processing fees are separate from Wild-Lake’s retainer. The artist retains ownership and creative control; Wild-Lake takes no ownership or revenue share.",
+    "seller": {
+      "@id": "https://wildlakestudio.com/#organization"
+    }
+  }
+}
