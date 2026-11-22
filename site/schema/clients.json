@@ -318,15 +318,16 @@
       "@type": "Person",
       "@id": "https://wildlakestudio.com/clients/#jimmy-andrew-okeeffe",
       "name": "Jimmy Andrew O’Keeffe",
-      "description": "Producer and filmmaker at North Six. His work includes projects for Nike and Frédéric Malle, and he produced The Sun Is In My Eyes (2024).",
+      "description": "Jimmy Andrew O’Keeffe is a filmmaker, director, and film producer. He produced The Sun Is In My Eyes (2024). He currently works as a producer at North Six, with projects for Nike and Frédéric Malle.",
       "url": "https://wildlakestudio.com/clients/#jimmy-andrew-okeeffe",
       "sameAs": [
         "https://www.jimmyokeeffe.com/"
       ],
       "image": "https://wildlakestudio.com/assets/images/jimmy-andrew-okeeffe.jpg",
       "jobTitle": [
-        "Producer",
-        "Filmmaker"
+        "Filmmaker",
+        "Film director",
+        "Film producer"
       ],
       "worksFor": {
         "@type": "Organization",
