@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 import json, struct
 root=Path(__file__).resolve().parents[1]/'site'
 home_search_title='Wild Lake Studio | Talent Architecture, A&R & Artist Mentorship'
-home_social_title=home_search_title
+home_social_title='Wild-Lake // Direction, structure, systems'
 home_description='Wild Lake Studio is a Brooklyn-based talent architecture, A&R administration, and artist stewardship practice led by Argelys Samuel Oriach within Seven Eighty Three.'
 image='https://wildlakestudio.com/assets/social/wild-lake-classic-edge-og.png'
 class Head(HTMLParser):
