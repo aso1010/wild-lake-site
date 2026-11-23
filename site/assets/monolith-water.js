@@ -1,4 +1,4 @@
-/* Native, sine-first renderer for Paper Shaders' Apache-2.0 Water GLSL.
+/* Native, water-first renderer for Paper Shaders' Apache-2.0 Water GLSL.
  * No React, packages, network services, or external runtime assets.
  * Water starts automatically; clicking switches to the double sine wave. */
 (async function () {
@@ -10,7 +10,7 @@
   const activate = document.createElement('button');
   activate.type = 'button';
   activate.className = 'monolith-water-activate';
-  activate.setAttribute('aria-label', 'Activate water effect on the Wild-Lake monolith');
+  activate.setAttribute('aria-label', 'Wild, dedicated to Kyle Roach. Loading water motion.');
   activate.setAttribute('aria-pressed', 'false');
   host.setAttribute('role', 'group');
   host.classList.add('is-water-interactive');
@@ -23,7 +23,7 @@
   const gl = canvas.getContext('webgl2', { alpha: true, antialias: false, powerPreference: 'low-power' });
   if (!gl) { activate.remove(); host.classList.remove('is-water-interactive'); return; }
   const waterSpeed = 0.4; // Slow, living ripples across a wind-touched lake.
-  let frame = 0, elapsed = 0, last = 0, visible = true, ready = false, revision = 0, waterActive = false;
+  let frame = 0, elapsed = 0, last = 0, visible = true, ready = false, revision = 0, waterActive = true;
   let program, texture, observer, resizeObserver;
   function fallback() {
     ready = false;
@@ -95,7 +95,8 @@
       const showing = ready && waterActive && !motion.matches;
       host.classList.toggle('has-water', showing);
       activate.setAttribute('aria-pressed', String(showing));
-      activate.setAttribute('aria-label', showing ? 'Switch to double sine wave' : 'Activate water effect on the Wild-Lake monolith');
+      activate.setAttribute('aria-label', showing ? 'Wild, dedicated to Kyle Roach. Switch to Lake, dedicated to Argelys Samuel Oriach.' : 'Lake, dedicated to Argelys Samuel Oriach. Switch to Wild, dedicated to Kyle Roach.');
+      activate.title = showing ? 'Wild · Dedicated to Kyle Roach. Click for Lake, dedicated to Argelys Samuel Oriach.' : 'Lake · Dedicated to Argelys Samuel Oriach. Click for Wild, dedicated to Kyle Roach.';
       activate.disabled = motion.matches;
     }
     activate.addEventListener('click', () => {
