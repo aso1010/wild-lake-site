@@ -1,25 +1,20 @@
 {
+  "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "https://argelysoriach.com/#person",
+  "@id": "https://gothamgay.com/#person",
   "name": "Argelys Samuel Oriach",
-  "alternateName": "Argelys Oriach",
+  "alternateName": [
+    "The Angel",
+    "Sam Oriach",
+    "Argelys Oriach"
+  ],
   "givenName": "Argelys",
   "additionalName": "Samuel",
   "familyName": "Oriach",
-  "url": "https://argelysoriach.com/",
-  "jobTitle": [
-    "Founder",
-    "Systems architect",
-    "Performance artist",
-    "Artistic director",
-    "Actor",
-    "Vocalist",
-    "Writer",
-    "Visual artist",
-    "Movement artist"
-  ],
+  "url": "https://gothamgay.com/",
+  "jobTitle": "Managing Principal",
   "worksFor": {
-    "@id": "https://wildlakestudio.com/#organization"
+    "@id": "https://theangel.biz/#organization"
   },
   "@reverse": {
     "founder": [
@@ -61,7 +56,7 @@
     "https://www.linkedin.com/in/argelys-samuel-oriach/"
   ],
   "affiliation": {
-    "@id": "https://seveneightythree.com/#organization"
+    "@id": "https://theangel.biz/#organization"
   },
   "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the founder and artistic director of Wild Lake Studio. He constructs systems and inhabits them. Performance governs his practice, and writing, voice, movement, design, and corporate roles are its forms. He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists.",
   "subjectOf": [
@@ -103,6 +98,5 @@
   "birthPlace": {
     "@type": "Country",
     "name": "Dominican Republic"
-  },
-  "@context": "https://schema.org"
+  }
 }

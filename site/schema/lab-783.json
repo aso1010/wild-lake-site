@@ -8,5 +8,11 @@
   "description": "An independent systems design practice.",
   "subOrganization": {
     "@id": "https://wildlakestudio.com/#organization"
+  },
+  "parentOrganization": {
+    "@id": "https://theangel.biz/#organization"
+  },
+  "funder": {
+    "@id": "https://theangel.biz/#organization"
   }
 }

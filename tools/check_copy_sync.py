@@ -30,7 +30,7 @@ for path in root.rglob('*'):
     if path.suffix in {'.html', '.json', '.txt', '.js', '.webmanifest'} and re.search(r'\bWild Lake\b(?! Studio\b)', path.read_text()):
         errors.append(f'{path.relative_to(root)}: use Wild-Lake for the editorial name')
 organization = json.loads((root / 'schema/organization.json').read_text())
-if organization.get('parentOrganization', {}).get('@id') != 'https://seveneightythree.com/#organization':
-    errors.append('Studio parentOrganization must be Seven Eighty Three (Lab 783)')
+if organization.get('parentOrganization', {}).get('@id') != 'https://theangel.biz/#organization':
+    errors.append('Studio parentOrganization must be Angel')
 if errors: raise SystemExit('\n'.join(errors))
 print('Validated canonical structured copy and schema document previews.')

@@ -26,9 +26,7 @@
       "description": "Independent studio for creators across music, art, writing and film. Talent architecture and artist development.",
       "foundingDate": "2026",
       "founder": {
-        "@type": "Person",
-        "@id": "https://argelysoriach.com/#person",
-        "name": "Argelys Samuel Oriach"
+        "@id": "https://gothamgay.com/#person"
       },
       "address": {
         "@type": "PostalAddress",
@@ -256,15 +254,10 @@
       },
       "slogan": "Wild-Lake is point zero for starmaking.",
       "parentOrganization": {
-        "@type": "Organization",
-        "@id": "https://seveneightythree.com/#organization",
-        "name": "Seven Eighty Three",
-        "alternateName": "Lab 783",
-        "url": "https://seveneightythree.com/",
-        "description": "An independent systems design practice.",
-        "subOrganization": {
-          "@id": "https://wildlakestudio.com/#organization"
-        }
+        "@id": "https://theangel.biz/#organization"
+      },
+      "funder": {
+        "@id": "https://theangel.biz/#organization"
       }
     },
     {
@@ -375,10 +368,10 @@
           "name": "About our founder | Wild Lake Studio",
           "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.",
           "mainEntity": {
-            "@id": "https://argelysoriach.com/#person"
+            "@id": "https://gothamgay.com/#person"
           },
           "about": {
-            "@id": "https://argelysoriach.com/#person"
+            "@id": "https://gothamgay.com/#person"
           },
           "isPartOf": {
             "@id": "https://wildlakestudio.com/#website"
@@ -941,26 +934,20 @@
     },
     {
       "@type": "Person",
-      "@id": "https://argelysoriach.com/#person",
+      "@id": "https://gothamgay.com/#person",
       "name": "Argelys Samuel Oriach",
-      "alternateName": "Argelys Oriach",
+      "alternateName": [
+        "The Angel",
+        "Sam Oriach",
+        "Argelys Oriach"
+      ],
       "givenName": "Argelys",
       "additionalName": "Samuel",
       "familyName": "Oriach",
-      "url": "https://argelysoriach.com/",
-      "jobTitle": [
-        "Founder",
-        "Systems architect",
-        "Performance artist",
-        "Artistic director",
-        "Actor",
-        "Vocalist",
-        "Writer",
-        "Visual artist",
-        "Movement artist"
-      ],
+      "url": "https://gothamgay.com/",
+      "jobTitle": "Managing Principal",
       "worksFor": {
-        "@id": "https://wildlakestudio.com/#organization"
+        "@id": "https://theangel.biz/#organization"
       },
       "@reverse": {
         "founder": [
@@ -1002,7 +989,7 @@
         "https://www.linkedin.com/in/argelys-samuel-oriach/"
       ],
       "affiliation": {
-        "@id": "https://seveneightythree.com/#organization"
+        "@id": "https://theangel.biz/#organization"
       },
       "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the founder and artistic director of Wild Lake Studio. He constructs systems and inhabits them. Performance governs his practice, and writing, voice, movement, design, and corporate roles are its forms. He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists.",
       "subjectOf": [
@@ -1069,7 +1056,7 @@
       "url": "https://argelysoriach.com/universe-api/",
       "description": "A macro-systems design framework grounded in first-principles engineering and sovereign logic, emphasizing closed-loop systems, asset-based leverage, organic growth, and infrastructure that compounds rather than extracts.",
       "author": {
-        "@id": "https://argelysoriach.com/#person"
+        "@id": "https://gothamgay.com/#person"
       },
       "about": [
         "First-principles engineering",
@@ -1087,6 +1074,12 @@
       "description": "An independent systems design practice.",
       "subOrganization": {
         "@id": "https://wildlakestudio.com/#organization"
+      },
+      "parentOrganization": {
+        "@id": "https://theangel.biz/#organization"
+      },
+      "funder": {
+        "@id": "https://theangel.biz/#organization"
       }
     },
     {
@@ -1164,6 +1157,26 @@
         "@id": "https://wildlakestudio.com/#organization"
       },
       "isAccessibleForFree": true
+    },
+    {
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://theangel.biz/#organization",
+      "name": "Angel",
+      "legalName": "Angel Ventures",
+      "alternateName": [
+        "Angel Ventures",
+        "The Angel",
+        "theangel.biz"
+      ],
+      "url": "https://theangel.biz/",
+      "email": "hi@theangel.biz",
+      "founder": {
+        "@id": "https://gothamgay.com/#person"
+      },
+      "disambiguatingDescription": "Angel (short for Angel Ventures) is an independent angel investment firm and holding vehicle based in New York City (theangel.biz), founded and managed by Argelys Samuel Oriach (The Angel). Unaffiliated with theangel.la."
     }
   ]
 }
@@ -1229,6 +1242,11 @@
 <meta name="twitter:description" content="Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film."/>
 <meta name="twitter:image" content="https://wildlakestudio.com/assets/social/wild-lake-water-preview.png"/>
 <meta name="twitter:image:alt" content="Wild-Lake monolith with gentle water ripples, white on black."/>
+<link rel="me" href="https://theangel.biz/">
+<style>
+.holding-attribution{font:400 11px/1.5 monospace;letter-spacing:.06em;margin:21px 0;padding-left:13px;border-left:1px solid #D9381E;text-transform:uppercase}.holding-attribution a{color:inherit}
+</style>
+<script>Object.defineProperty(window,"UNIVERSE_NODE",{value:Object.freeze({"holding_entity":"Angel","holding_url":"https://theangel.biz/","principal":"Argelys Samuel Oriach","principal_role":"Managing Principal, Angel","resonance_hz":7.83,"canonical_entity":"https://wildlakestudio.com/#organization","datum_accent":"#D9381E"}),writable:false,configurable:false});</script>
 </head>
 <body class="home reading-layout">
 
@@ -1248,6 +1266,7 @@
 <ol><li><a href="#overview">Overview</a></li><li><a href="#focus">Our focus</a></li><li><a href="#practice">How we work</a></li><li><a href="#wellbeing">Artist wellbeing</a></li><li><a href="#services">Ways to work together</a></li><li><a href="#model">Ownership</a></li><li><a href="#invitation">Begin a conversation</a></li></ol></nav>
 <section id="overview" aria-labelledby="overview-heading" class="statement-block">
 <h1 id="overview-heading">Wild-Lake is point zero for starmaking.</h1>
+<p class="statement-text">An operating laboratory within <a href="https://theangel.biz/" rel="noopener">Angel</a>, the capital vehicle of Argelys Samuel Oriach.</p>
 <p class="statement-text">Wild-Lake is an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage.</p>
 <p class="statement-text">A studio pairing design-firm rigor with coaching-level care. On retainer. No ownership or percentage of the artist’s work.</p>
 <p class="overview-terms-link"><a href="/terms/">Terms of Practice <span aria-hidden="true">→</span></a></p>
@@ -1274,6 +1293,7 @@
 <nav aria-label="Legal and governance"><h2>LEGAL &amp; GOVERNANCE</h2><p>© 2026 Wild Lake Studio. All rights reserved.</p><ul><li><a href="/terms/">Terms of Practice</a></li><li><a href="/privacy/">Privacy Protocol</a></li><li><a href="/terms/#sovereign-ip">Sovereign IP Policy</a></li></ul></nav>
 </div>
 <div class="footer-position"><p>Wild Lake Studio, known as Wild-Lake, is an independent talent architecture and sovereign A&amp;R practice.<br/>Wild-Lake commits a fraction of every studio retainer toward public land conservation and freshwater ecosystem defense.</p><nav aria-label="Further information"><a href="/manifesto/">Manifesto</a><a href="/development-protocols/">Artist wellbeing</a><a href="/responsibility/">Responsibility</a><a href="/about-founder/">Founder</a><a href="/method/">Method</a><a href="/schema/">Schema</a><a href="https://www.linkedin.com/company/wild-lake/" aria-label="Wild Lake Studio on LinkedIn">LinkedIn</a></nav></div>
+<p class="holding-attribution">OPERATING WITHIN <a href="https://theangel.biz/" rel="noopener">ANGEL</a> // MANAGING PRINCIPAL: <a href="https://gothamgay.com/" rel="noopener">ARGELYS SAMUEL ORIACH</a></p>
 </footer>
 </div>
 

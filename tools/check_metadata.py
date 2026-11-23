@@ -39,7 +39,7 @@ if struct.unpack('>II',preview.read_bytes()[16:24])!=(1200,630):errors.append('P
 org=json.loads((root/'schema/organization.json').read_text())
 for key,value in {'@type':'Organization','name':'Wild Lake Studio','alternateName':'Wild-Lake','url':'https://wildlakestudio.com','email':'info@wildlakestudio.com','description':'Independent studio for creators across music, art, writing and film. Talent architecture and artist development.','areaServed':['New York','Tampa','Santiago','Worldwide']}.items():
     if org.get(key)!=value:errors.append(f'Organization {key} differs')
-if org.get('founder',{}).get('name')!='Argelys Samuel Oriach':errors.append('Founder name differs')
+if org.get('founder',{}).get('@id')!='https://gothamgay.com/#person':errors.append('Founder identity differs')
 if 'https://www.instagram.com/wildlake.studio' not in org.get('sameAs',[]):errors.append('Instagram identity differs')
 if errors:raise SystemExit('\n'.join(errors))
 print(f'Validated titles, descriptions, social tags and water preview across {count} pages, plus organization identity.')

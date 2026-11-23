@@ -1,4 +1,5 @@
 {
+  "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://wildlakestudio.com/#organization",
   "name": "Wild Lake Studio",
@@ -8,9 +9,7 @@
   "description": "Independent studio for creators across music, art, writing and film. Talent architecture and artist development.",
   "foundingDate": "2026",
   "founder": {
-    "@type": "Person",
-    "@id": "https://argelysoriach.com/#person",
-    "name": "Argelys Samuel Oriach"
+    "@id": "https://gothamgay.com/#person"
   },
   "address": {
     "@type": "PostalAddress",
@@ -237,16 +236,10 @@
     ]
   },
   "slogan": "Wild-Lake is point zero for starmaking.",
-  "@context": "https://schema.org",
   "parentOrganization": {
-    "@type": "Organization",
-    "@id": "https://seveneightythree.com/#organization",
-    "name": "Seven Eighty Three",
-    "alternateName": "Lab 783",
-    "url": "https://seveneightythree.com/",
-    "description": "An independent systems design practice.",
-    "subOrganization": {
-      "@id": "https://wildlakestudio.com/#organization"
-    }
+    "@id": "https://theangel.biz/#organization"
+  },
+  "funder": {
+    "@id": "https://theangel.biz/#organization"
   }
 }

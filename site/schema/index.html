@@ -20,9 +20,7 @@
       "description": "Independent studio for creators across music, art, writing and film. Talent architecture and artist development.",
       "foundingDate": "2026",
       "founder": {
-        "@type": "Person",
-        "@id": "https://argelysoriach.com/#person",
-        "name": "Argelys Samuel Oriach"
+        "@id": "https://gothamgay.com/#person"
       },
       "address": {
         "@type": "PostalAddress",
@@ -250,15 +248,10 @@
       },
       "slogan": "Wild-Lake is point zero for starmaking.",
       "parentOrganization": {
-        "@type": "Organization",
-        "@id": "https://seveneightythree.com/#organization",
-        "name": "Seven Eighty Three",
-        "alternateName": "Lab 783",
-        "url": "https://seveneightythree.com/",
-        "description": "An independent systems design practice.",
-        "subOrganization": {
-          "@id": "https://wildlakestudio.com/#organization"
-        }
+        "@id": "https://theangel.biz/#organization"
+      },
+      "funder": {
+        "@id": "https://theangel.biz/#organization"
       }
     },
     {
@@ -369,10 +362,10 @@
           "name": "About our founder | Wild Lake Studio",
           "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.",
           "mainEntity": {
-            "@id": "https://argelysoriach.com/#person"
+            "@id": "https://gothamgay.com/#person"
           },
           "about": {
-            "@id": "https://argelysoriach.com/#person"
+            "@id": "https://gothamgay.com/#person"
           },
           "isPartOf": {
             "@id": "https://wildlakestudio.com/#website"
@@ -935,26 +928,20 @@
     },
     {
       "@type": "Person",
-      "@id": "https://argelysoriach.com/#person",
+      "@id": "https://gothamgay.com/#person",
       "name": "Argelys Samuel Oriach",
-      "alternateName": "Argelys Oriach",
+      "alternateName": [
+        "The Angel",
+        "Sam Oriach",
+        "Argelys Oriach"
+      ],
       "givenName": "Argelys",
       "additionalName": "Samuel",
       "familyName": "Oriach",
-      "url": "https://argelysoriach.com/",
-      "jobTitle": [
-        "Founder",
-        "Systems architect",
-        "Performance artist",
-        "Artistic director",
-        "Actor",
-        "Vocalist",
-        "Writer",
-        "Visual artist",
-        "Movement artist"
-      ],
+      "url": "https://gothamgay.com/",
+      "jobTitle": "Managing Principal",
       "worksFor": {
-        "@id": "https://wildlakestudio.com/#organization"
+        "@id": "https://theangel.biz/#organization"
       },
       "@reverse": {
         "founder": [
@@ -996,7 +983,7 @@
         "https://www.linkedin.com/in/argelys-samuel-oriach/"
       ],
       "affiliation": {
-        "@id": "https://seveneightythree.com/#organization"
+        "@id": "https://theangel.biz/#organization"
       },
       "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the founder and artistic director of Wild Lake Studio. He constructs systems and inhabits them. Performance governs his practice, and writing, voice, movement, design, and corporate roles are its forms. He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists.",
       "subjectOf": [
@@ -1063,7 +1050,7 @@
       "url": "https://argelysoriach.com/universe-api/",
       "description": "A macro-systems design framework grounded in first-principles engineering and sovereign logic, emphasizing closed-loop systems, asset-based leverage, organic growth, and infrastructure that compounds rather than extracts.",
       "author": {
-        "@id": "https://argelysoriach.com/#person"
+        "@id": "https://gothamgay.com/#person"
       },
       "about": [
         "First-principles engineering",
@@ -1081,6 +1068,12 @@
       "description": "An independent systems design practice.",
       "subOrganization": {
         "@id": "https://wildlakestudio.com/#organization"
+      },
+      "parentOrganization": {
+        "@id": "https://theangel.biz/#organization"
+      },
+      "funder": {
+        "@id": "https://theangel.biz/#organization"
       }
     },
     {
@@ -1143,6 +1136,26 @@
         "inLanguage": "es",
         "headline": "La infraestructura tiene una vida interior"
       }
+    },
+    {
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://theangel.biz/#organization",
+      "name": "Angel",
+      "legalName": "Angel Ventures",
+      "alternateName": [
+        "Angel Ventures",
+        "The Angel",
+        "theangel.biz"
+      ],
+      "url": "https://theangel.biz/",
+      "email": "hi@theangel.biz",
+      "founder": {
+        "@id": "https://gothamgay.com/#person"
+      },
+      "disambiguatingDescription": "Angel (short for Angel Ventures) is an independent angel investment firm and holding vehicle based in New York City (theangel.biz), founded and managed by Argelys Samuel Oriach (The Angel). Unaffiliated with theangel.la."
     }
   ]
 }
@@ -1489,6 +1502,10 @@
 <meta name="twitter:description" content="The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt."/>
 <meta name="twitter:image" content="https://wildlakestudio.com/assets/social/wild-lake-water-preview.png"/>
 <meta name="twitter:image:alt" content="Wild-Lake monolith with gentle water ripples, white on black."/>
+<link rel="me" href="https://theangel.biz/">
+<style>
+.holding-attribution{font:400 11px/1.5 monospace;letter-spacing:.06em;margin:21px 0;padding-left:13px;border-left:1px solid #D9381E;text-transform:uppercase}.holding-attribution a{color:inherit}
+</style>
 </head>
 <body class="reading-layout">
 
@@ -1518,236 +1535,235 @@
         <p class="vector-body">The entity: name, legal name, locations, founder, and current offerings. <a href="organization.json">organization.json &rarr;</a></p>
         <p>Quiet Creek magazine: <a href="quiet-creek.json">Publication JSON-LD</a> · <a href="quiet-creek-first-essay.json">First essay JSON-LD</a> · <a href="/magazine/">Read the magazine</a></p>
 <pre tabindex="0" data-src="organization.json"><code>{
-  &quot;@type&quot;: &quot;Organization&quot;,
-  &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;,
-  &quot;name&quot;: &quot;Wild Lake Studio&quot;,
-  &quot;legalName&quot;: &quot;Wild Lake Studio LLC&quot;,
-  &quot;alternateName&quot;: &quot;Wild-Lake&quot;,
-  &quot;url&quot;: &quot;https://wildlakestudio.com&quot;,
-  &quot;description&quot;: &quot;Independent studio for creators across music, art, writing and film. Talent architecture and artist development.&quot;,
-  &quot;foundingDate&quot;: &quot;2026&quot;,
-  &quot;founder&quot;: {
-    &quot;@type&quot;: &quot;Person&quot;,
-    &quot;@id&quot;: &quot;https://argelysoriach.com/#person&quot;,
-    &quot;name&quot;: &quot;Argelys Samuel Oriach&quot;
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://wildlakestudio.com/#organization",
+  "name": "Wild Lake Studio",
+  "legalName": "Wild Lake Studio LLC",
+  "alternateName": "Wild-Lake",
+  "url": "https://wildlakestudio.com",
+  "description": "Independent studio for creators across music, art, writing and film. Talent architecture and artist development.",
+  "foundingDate": "2026",
+  "founder": {
+    "@id": "https://gothamgay.com/#person"
   },
-  &quot;address&quot;: {
-    &quot;@type&quot;: &quot;PostalAddress&quot;,
-    &quot;addressLocality&quot;: &quot;Crown Heights&quot;,
-    &quot;addressRegion&quot;: &quot;NY&quot;,
-    &quot;addressCountry&quot;: &quot;US&quot;
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Crown Heights",
+    "addressRegion": "NY",
+    "addressCountry": "US"
   },
-  &quot;location&quot;: [
+  "location": [
     {
-      &quot;@type&quot;: &quot;Place&quot;,
-      &quot;name&quot;: &quot;New York, USA&quot;
+      "@type": "Place",
+      "name": "New York, USA"
     },
     {
-      &quot;@type&quot;: &quot;Place&quot;,
-      &quot;name&quot;: &quot;Tampa, Florida, USA&quot;
+      "@type": "Place",
+      "name": "Tampa, Florida, USA"
     },
     {
-      &quot;@type&quot;: &quot;Place&quot;,
-      &quot;name&quot;: &quot;Santiago, Dominican Republic&quot;
+      "@type": "Place",
+      "name": "Santiago, Dominican Republic"
     }
   ],
-  &quot;areaServed&quot;: [
-    &quot;New York&quot;,
-    &quot;Tampa&quot;,
-    &quot;Santiago&quot;,
-    &quot;Worldwide&quot;
+  "areaServed": [
+    "New York",
+    "Tampa",
+    "Santiago",
+    "Worldwide"
   ],
-  &quot;knowsAbout&quot;: [
-    &quot;Existential mechanics&quot;,
-    &quot;Artist development&quot;,
-    &quot;Artists and repertoire (A&amp;R)&quot;,
-    &quot;Talent architecture&quot;,
-    &quot;Creative infrastructure&quot;,
-    &quot;Audience development&quot;,
-    &quot;Structural stewardship&quot;,
-    &quot;Artist wellbeing&quot;,
-    &quot;Structural honesty&quot;,
-    &quot;Institutional stewardship&quot;,
+  "knowsAbout": [
+    "Existential mechanics",
+    "Artist development",
+    "Artists and repertoire (A&amp;R)",
+    "Talent architecture",
+    "Creative infrastructure",
+    "Audience development",
+    "Structural stewardship",
+    "Artist wellbeing",
+    "Structural honesty",
+    "Institutional stewardship",
     {
-      &quot;@id&quot;: &quot;https://argelysoriach.com/universe-api/#framework&quot;
+      "@id": "https://argelysoriach.com/universe-api/#framework"
     }
   ],
-  &quot;makesOffer&quot;: [
+  "makesOffer": [
     {
-      &quot;@type&quot;: &quot;Offer&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-01-1&quot;,
-      &quot;itemOffered&quot;: {
-        &quot;@type&quot;: &quot;Service&quot;,
-        &quot;name&quot;: &quot;Artist Development&quot;,
-        &quot;description&quot;: &quot;We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice.&quot;,
-        &quot;provider&quot;: {
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "@type": "Offer",
+      "url": "https://wildlakestudio.com/practice/#service-01-1",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Artist Development",
+        "description": "We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice.",
+        "provider": {
+          "@id": "https://wildlakestudio.com/#organization"
         }
       }
     },
     {
-      &quot;@type&quot;: &quot;Offer&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-01-2&quot;,
-      &quot;itemOffered&quot;: {
-        &quot;@type&quot;: &quot;Service&quot;,
-        &quot;name&quot;: &quot;Creative Development&quot;,
-        &quot;description&quot;: &quot;Traditional A&amp;R reshapes the creator. We work with raw material in any form and at any stage, helping artists shape the work on their own terms.&quot;,
-        &quot;provider&quot;: {
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "@type": "Offer",
+      "url": "https://wildlakestudio.com/practice/#service-01-2",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Creative Development",
+        "description": "Traditional A&amp;R reshapes the creator. We work with raw material in any form and at any stage, helping artists shape the work on their own terms.",
+        "provider": {
+          "@id": "https://wildlakestudio.com/#organization"
         }
       }
     },
     {
-      &quot;@type&quot;: &quot;Offer&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-01-3&quot;,
-      &quot;itemOffered&quot;: {
-        &quot;@type&quot;: &quot;Service&quot;,
-        &quot;name&quot;: &quot;Creative Infrastructure&quot;,
-        &quot;description&quot;: &quot;Audience development is asset building. We construct the physical, spatial, and digital channels for complex work.&quot;,
-        &quot;provider&quot;: {
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "@type": "Offer",
+      "url": "https://wildlakestudio.com/practice/#service-01-3",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Creative Infrastructure",
+        "description": "Audience development is asset building. We construct the physical, spatial, and digital channels for complex work.",
+        "provider": {
+          "@id": "https://wildlakestudio.com/#organization"
         }
       }
     },
     {
-      &quot;@type&quot;: &quot;Offer&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-02-1&quot;,
-      &quot;itemOffered&quot;: {
-        &quot;@type&quot;: &quot;Service&quot;,
-        &quot;name&quot;: &quot;Existential Mechanics&quot;,
-        &quot;description&quot;: &quot;We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries.&quot;,
-        &quot;provider&quot;: {
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "@type": "Offer",
+      "url": "https://wildlakestudio.com/practice/#service-02-1",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Existential Mechanics",
+        "description": "We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries.",
+        "provider": {
+          "@id": "https://wildlakestudio.com/#organization"
         }
       }
     },
     {
-      &quot;@type&quot;: &quot;Offer&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-02-2&quot;,
-      &quot;itemOffered&quot;: {
-        &quot;@type&quot;: &quot;Service&quot;,
-        &quot;name&quot;: &quot;Structural Stewardship&quot;,
-        &quot;description&quot;: &quot;Sustained operational support to manage the existential load of the artist over a ten-year horizon.&quot;,
-        &quot;provider&quot;: {
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "@type": "Offer",
+      "url": "https://wildlakestudio.com/practice/#service-02-2",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Structural Stewardship",
+        "description": "Sustained operational support to manage the existential load of the artist over a ten-year horizon.",
+        "provider": {
+          "@id": "https://wildlakestudio.com/#organization"
         }
       }
     },
     {
-      &quot;@type&quot;: &quot;Offer&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-02-3&quot;,
-      &quot;itemOffered&quot;: {
-        &quot;@type&quot;: &quot;Service&quot;,
-        &quot;name&quot;: &quot;Capacity &amp; Boundary Audit&quot;,
-        &quot;description&quot;: &quot;Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.&quot;,
-        &quot;provider&quot;: {
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "@type": "Offer",
+      "url": "https://wildlakestudio.com/practice/#service-02-3",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Capacity &amp; Boundary Audit",
+        "description": "Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.",
+        "provider": {
+          "@id": "https://wildlakestudio.com/#organization"
         }
       }
     }
   ],
-  &quot;sameAs&quot;: [
-    &quot;https://www.instagram.com/wildlake.studio&quot;,
-    &quot;https://www.linkedin.com/company/wild-lake/&quot;
+  "sameAs": [
+    "https://www.instagram.com/wildlake.studio",
+    "https://www.linkedin.com/company/wild-lake/"
   ],
-  &quot;mainEntityOfPage&quot;: {
-    &quot;@id&quot;: &quot;https://wildlakestudio.com/#home&quot;
+  "mainEntityOfPage": {
+    "@id": "https://wildlakestudio.com/#home"
   },
-  &quot;disambiguatingDescription&quot;: &quot;Wild Lake Studio is known as Wild-Lake. We scout talent and work with artists directly, or partner with record labels, galleries, and booking agencies. In either case, the artist enters the engagement willingly, on their own initiative or through a representative.&quot;,
-  &quot;logo&quot;: &quot;https://wildlakestudio.com/assets/images/wild-lake-mark.png?v=caf21f9cf6&quot;,
-  &quot;subjectOf&quot;: [
+  "disambiguatingDescription": "Wild Lake Studio is known as Wild-Lake. We scout talent and work with artists directly, or partner with record labels, galleries, and booking agencies. In either case, the artist enters the engagement willingly, on their own initiative or through a representative.",
+  "logo": "https://wildlakestudio.com/assets/images/wild-lake-mark.png?v=caf21f9cf6",
+  "subjectOf": [
     {
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/magazine/#magazine&quot;,
-      &quot;@type&quot;: &quot;Periodical&quot;,
-      &quot;name&quot;: &quot;Quiet Creek&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/magazine/&quot;
+      "@id": "https://wildlakestudio.com/magazine/#magazine",
+      "@type": "Periodical",
+      "name": "Quiet Creek",
+      "url": "https://wildlakestudio.com/magazine/"
     }
   ],
-  &quot;email&quot;: &quot;info@wildlakestudio.com&quot;,
-  &quot;hasOfferCatalog&quot;: {
-    &quot;@type&quot;: &quot;OfferCatalog&quot;,
-    &quot;name&quot;: &quot;Ways to work together&quot;,
-    &quot;url&quot;: &quot;https://wildlakestudio.com/practice/&quot;,
-    &quot;itemListElement&quot;: [
+  "email": "info@wildlakestudio.com",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Ways to work together",
+    "url": "https://wildlakestudio.com/practice/",
+    "itemListElement": [
       {
-        &quot;@type&quot;: &quot;OfferCatalog&quot;,
-        &quot;name&quot;: &quot;Sovereign A&amp;R&quot;,
-        &quot;itemListElement&quot;: [
+        "@type": "OfferCatalog",
+        "name": "Sovereign A&amp;R",
+        "itemListElement": [
           {
-            &quot;@type&quot;: &quot;Offer&quot;,
-            &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-01-1&quot;,
-            &quot;itemOffered&quot;: {
-              &quot;@type&quot;: &quot;Service&quot;,
-              &quot;name&quot;: &quot;Artist Development&quot;,
-              &quot;description&quot;: &quot;We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice.&quot;,
-              &quot;provider&quot;: {
-                &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+            "@type": "Offer",
+            "url": "https://wildlakestudio.com/practice/#service-01-1",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Artist Development",
+              "description": "We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice.",
+              "provider": {
+                "@id": "https://wildlakestudio.com/#organization"
               }
             }
           },
           {
-            &quot;@type&quot;: &quot;Offer&quot;,
-            &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-01-2&quot;,
-            &quot;itemOffered&quot;: {
-              &quot;@type&quot;: &quot;Service&quot;,
-              &quot;name&quot;: &quot;Creative Development&quot;,
-              &quot;description&quot;: &quot;Traditional A&amp;R reshapes the creator. We work with raw material in any form and at any stage, helping artists shape the work on their own terms.&quot;,
-              &quot;provider&quot;: {
-                &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+            "@type": "Offer",
+            "url": "https://wildlakestudio.com/practice/#service-01-2",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Creative Development",
+              "description": "Traditional A&amp;R reshapes the creator. We work with raw material in any form and at any stage, helping artists shape the work on their own terms.",
+              "provider": {
+                "@id": "https://wildlakestudio.com/#organization"
               }
             }
           },
           {
-            &quot;@type&quot;: &quot;Offer&quot;,
-            &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-01-3&quot;,
-            &quot;itemOffered&quot;: {
-              &quot;@type&quot;: &quot;Service&quot;,
-              &quot;name&quot;: &quot;Creative Infrastructure&quot;,
-              &quot;description&quot;: &quot;Audience development is asset building. We construct the physical, spatial, and digital channels for complex work.&quot;,
-              &quot;provider&quot;: {
-                &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+            "@type": "Offer",
+            "url": "https://wildlakestudio.com/practice/#service-01-3",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Creative Infrastructure",
+              "description": "Audience development is asset building. We construct the physical, spatial, and digital channels for complex work.",
+              "provider": {
+                "@id": "https://wildlakestudio.com/#organization"
               }
             }
           }
         ]
       },
       {
-        &quot;@type&quot;: &quot;OfferCatalog&quot;,
-        &quot;name&quot;: &quot;Talent Architecture&quot;,
-        &quot;itemListElement&quot;: [
+        "@type": "OfferCatalog",
+        "name": "Talent Architecture",
+        "itemListElement": [
           {
-            &quot;@type&quot;: &quot;Offer&quot;,
-            &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-02-1&quot;,
-            &quot;itemOffered&quot;: {
-              &quot;@type&quot;: &quot;Service&quot;,
-              &quot;name&quot;: &quot;Existential Mechanics&quot;,
-              &quot;description&quot;: &quot;We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries.&quot;,
-              &quot;provider&quot;: {
-                &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+            "@type": "Offer",
+            "url": "https://wildlakestudio.com/practice/#service-02-1",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Existential Mechanics",
+              "description": "We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries.",
+              "provider": {
+                "@id": "https://wildlakestudio.com/#organization"
               }
             }
           },
           {
-            &quot;@type&quot;: &quot;Offer&quot;,
-            &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-02-2&quot;,
-            &quot;itemOffered&quot;: {
-              &quot;@type&quot;: &quot;Service&quot;,
-              &quot;name&quot;: &quot;Structural Stewardship&quot;,
-              &quot;description&quot;: &quot;Sustained operational support to manage the existential load of the artist over a ten-year horizon.&quot;,
-              &quot;provider&quot;: {
-                &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+            "@type": "Offer",
+            "url": "https://wildlakestudio.com/practice/#service-02-2",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Structural Stewardship",
+              "description": "Sustained operational support to manage the existential load of the artist over a ten-year horizon.",
+              "provider": {
+                "@id": "https://wildlakestudio.com/#organization"
               }
             }
           },
           {
-            &quot;@type&quot;: &quot;Offer&quot;,
-            &quot;url&quot;: &quot;https://wildlakestudio.com/practice/#service-02-3&quot;,
-            &quot;itemOffered&quot;: {
-              &quot;@type&quot;: &quot;Service&quot;,
-              &quot;name&quot;: &quot;Capacity &amp; Boundary Audit&quot;,
-              &quot;description&quot;: &quot;Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.&quot;,
-              &quot;provider&quot;: {
-                &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+            "@type": "Offer",
+            "url": "https://wildlakestudio.com/practice/#service-02-3",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Capacity &amp; Boundary Audit",
+              "description": "Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.",
+              "provider": {
+                "@id": "https://wildlakestudio.com/#organization"
               }
             }
           }
@@ -1755,18 +1771,12 @@
       }
     ]
   },
-  &quot;slogan&quot;: &quot;Wild-Lake is point zero for starmaking.&quot;,
-  &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;parentOrganization&quot;: {
-    &quot;@type&quot;: &quot;Organization&quot;,
-    &quot;@id&quot;: &quot;https://seveneightythree.com/#organization&quot;,
-    &quot;name&quot;: &quot;Seven Eighty Three&quot;,
-    &quot;alternateName&quot;: &quot;Lab 783&quot;,
-    &quot;url&quot;: &quot;https://seveneightythree.com/&quot;,
-    &quot;description&quot;: &quot;An independent systems design practice.&quot;,
-    &quot;subOrganization&quot;: {
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
-    }
+  "slogan": "Wild-Lake is point zero for starmaking.",
+  "parentOrganization": {
+    "@id": "https://theangel.biz/#organization"
+  },
+  "funder": {
+    "@id": "https://theangel.biz/#organization"
   }
 }
 </code></pre>
@@ -1777,673 +1787,673 @@
         <h2 class="vector-label">Website</h2>
         <p class="vector-body">The site and its pages, and who publishes them. <a href="website.json">website.json &rarr;</a></p>
         <pre tabindex="0" data-src="website.json"><code>{
-  &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;@type&quot;: &quot;WebSite&quot;,
-  &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;,
-  &quot;url&quot;: &quot;https://wildlakestudio.com/&quot;,
-  &quot;name&quot;: &quot;Wild Lake Studio | Talent Architecture and Artist Development&quot;,
-  &quot;description&quot;: &quot;Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film.&quot;,
-  &quot;inLanguage&quot;: &quot;en-US&quot;,
-  &quot;publisher&quot;: {
-    &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://wildlakestudio.com/#website",
+  "url": "https://wildlakestudio.com/",
+  "name": "Wild Lake Studio | Talent Architecture and Artist Development",
+  "description": "Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film.",
+  "inLanguage": "en-US",
+  "publisher": {
+    "@id": "https://wildlakestudio.com/#organization"
   },
-  &quot;copyrightHolder&quot;: {
-    &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+  "copyrightHolder": {
+    "@id": "https://wildlakestudio.com/#organization"
   },
-  &quot;copyrightYear&quot;: 2026,
-  &quot;about&quot;: {
-    &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+  "copyrightYear": 2026,
+  "about": {
+    "@id": "https://wildlakestudio.com/#organization"
   },
-  &quot;hasPart&quot;: [
+  "hasPart": [
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/#home&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/&quot;,
-      &quot;name&quot;: &quot;Wild Lake Studio | Talent Architecture and Artist Development&quot;,
-      &quot;description&quot;: &quot;Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film.&quot;,
-      &quot;inLanguage&quot;: &quot;en-US&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/#home",
+      "url": "https://wildlakestudio.com/",
+      "name": "Wild Lake Studio | Talent Architecture and Artist Development",
+      "description": "Wild Lake Studio is an independent talent architecture and artist development studio for creators across music, art, writing and film.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;about&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "about": {
+        "@id": "https://wildlakestudio.com/#organization"
       },
-      &quot;mainEntity&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "mainEntity": {
+        "@id": "https://wildlakestudio.com/#organization"
       },
-      &quot;mentions&quot;: [
+      "mentions": [
         {
-          &quot;@id&quot;: &quot;https://argelysoriach.com/universe-api/#framework&quot;
+          "@id": "https://argelysoriach.com/universe-api/#framework"
         },
         {
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#talent-architect&quot;
+          "@id": "https://wildlakestudio.com/#talent-architect"
         },
         {
-          &quot;@id&quot;: &quot;https://seveneightythree.com/#organization&quot;
+          "@id": "https://seveneightythree.com/#organization"
         }
       ],
-      &quot;headline&quot;: &quot;Wild-Lake is point zero for starmaking.&quot;,
-      &quot;hasPart&quot;: [
+      "headline": "Wild-Lake is point zero for starmaking.",
+      "hasPart": [
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#overview&quot;,
-          &quot;name&quot;: &quot;Wild-Lake is point zero for starmaking.&quot;,
-          &quot;text&quot;: &quot;Wild-Lake is an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#overview",
+          "name": "Wild-Lake is point zero for starmaking.",
+          "text": "Wild-Lake is an independent studio for artists, labels, galleries and agencies. We give critical direction, fix the structure behind the work, and build the systems that carry a career. We never take ownership or a percentage."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#focus&quot;,
-          &quot;name&quot;: &quot;Our focus&quot;,
-          &quot;text&quot;: &quot;The artist: Artist Development. Support for the person behind the work and the capacity to keep making. The practice: Existential Mechanics. Aligning the life an artist leads with the work they want to build. The venture: Sovereign A&amp;R. Sustained attention to raw material, in any form and at any stage. The structure: Creative Infrastructure. We help the world catch up to the artist, building lasting ways to encounter the work.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#focus",
+          "name": "Our focus",
+          "text": "The artist: Artist Development. Support for the person behind the work and the capacity to keep making. The practice: Existential Mechanics. Aligning the life an artist leads with the work they want to build. The venture: Sovereign A&amp;R. Sustained attention to raw material, in any form and at any stage. The structure: Creative Infrastructure. We help the world catch up to the artist, building lasting ways to encounter the work."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#practice&quot;,
-          &quot;name&quot;: &quot;How we work&quot;,
-          &quot;text&quot;: &quot;Nature is brutalist. Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle. We work closely with the artist, then give them space to execute. The Method sets out our approach to critique, structural honesty, and the rhythm of an engagement.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#practice",
+          "name": "How we work",
+          "text": "Nature is brutalist. Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle. We work closely with the artist, then give them space to execute. The Method sets out our approach to critique, structural honesty, and the rhythm of an engagement."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#wellbeing&quot;,
-          &quot;name&quot;: &quot;Development Protocols&quot;,
-          &quot;text&quot;: &quot;Explore the practices Argelys may guide during a retained engagement, including active listening, automatic writing, movement, and vision quests. The selection follows the artist and the work.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#wellbeing",
+          "name": "Development Protocols",
+          "text": "Explore the practices Argelys may guide during a retained engagement, including active listening, automatic writing, movement, and vision quests. The selection follows the artist and the work."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#services&quot;,
-          &quot;name&quot;: &quot;Ways to work together&quot;,
-          &quot;text&quot;: &quot;The core offering is undivided attention. Close study of the artist, the work, and the conditions shaping both. Sovereign A&amp;R: Focused creative attention to raw material, artistic direction, and the context through which work reaches an audience. Talent Architecture: Structural support for the person sustaining the practice, with boundaries and working conditions that make independence possible. Creative Infrastructure: Fixed-scope commissions that build the foundations of a practice: audience assets, platform setup, and live production architecture.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#services",
+          "name": "Ways to work together",
+          "text": "The core offering is undivided attention. Close study of the artist, the work, and the conditions shaping both. Sovereign A&amp;R: Focused creative attention to raw material, artistic direction, and the context through which work reaches an audience. Talent Architecture: Structural support for the person sustaining the practice, with boundaries and working conditions that make independence possible. Creative Infrastructure: Fixed-scope commissions that build the foundations of a practice: audience assets, platform setup, and live production architecture."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#model&quot;,
-          &quot;name&quot;: &quot;Your work stays yours.&quot;,
-          &quot;text&quot;: &quot;The artist retains ownership and creative control. We work on an agreed Stewardship Subscription or fixed project fee.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#model",
+          "name": "Your work stays yours.",
+          "text": "The artist retains ownership and creative control. We work on an agreed Stewardship Subscription or fixed project fee."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#invitation&quot;,
-          &quot;name&quot;: &quot;Let’s begin.&quot;,
-          &quot;text&quot;: &quot;Tell us about your work, or the artists you work with, and what support is needed.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/#invitation",
+          "name": "Let’s begin.",
+          "text": "Tell us about your work, or the artists you work with, and what support is needed."
         }
       ]
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/clients/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/clients/&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/clients/#webpage",
+      "url": "https://wildlakestudio.com/clients/",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;name&quot;: &quot;Clients | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;Wild Lake Studio past and current clients: Aissa Rose Gueye, Argelys Samuel Oriach, Drew Rutland, Emily Wilson, Jessica Wilson, Jimmy Andrew O’Keeffe, Jordy Oriach, Kyle Roach, Patrick Schlotterback, Sophia Jennings, Timo Sassen, and Zachary Reed Kantor. Individuals first. Explore their work and distinct trajectories.&quot;
+      "name": "Clients | Wild Lake Studio",
+      "description": "Wild Lake Studio past and current clients: Aissa Rose Gueye, Argelys Samuel Oriach, Drew Rutland, Emily Wilson, Jessica Wilson, Jimmy Andrew O’Keeffe, Jordy Oriach, Kyle Roach, Patrick Schlotterback, Sophia Jennings, Timo Sassen, and Zachary Reed Kantor. Individuals first. Explore their work and distinct trajectories."
     },
     {
-      &quot;@type&quot;: &quot;AboutPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#page&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/about-founder/&quot;,
-      &quot;name&quot;: &quot;About our founder | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.&quot;,
-      &quot;mainEntity&quot;: {
-        &quot;@id&quot;: &quot;https://argelysoriach.com/#person&quot;
+      "@type": "AboutPage",
+      "@id": "https://wildlakestudio.com/about-founder/#page",
+      "url": "https://wildlakestudio.com/about-founder/",
+      "name": "About our founder | Wild Lake Studio",
+      "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.",
+      "mainEntity": {
+        "@id": "https://gothamgay.com/#person"
       },
-      &quot;about&quot;: {
-        &quot;@id&quot;: &quot;https://argelysoriach.com/#person&quot;
+      "about": {
+        "@id": "https://gothamgay.com/#person"
       },
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;primaryImageOfPage&quot;: {
-        &quot;@type&quot;: &quot;ImageObject&quot;,
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#portrait&quot;,
-        &quot;contentUrl&quot;: &quot;https://wildlakestudio.com/assets/images/argelys-founder-crop.png&quot;,
-        &quot;url&quot;: &quot;https://wildlakestudio.com/assets/images/argelys-founder-crop.png&quot;,
-        &quot;width&quot;: 1024,
-        &quot;height&quot;: 1024,
-        &quot;caption&quot;: &quot;Argelys Samuel Oriach, founder of Wild-Lake.&quot;
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://wildlakestudio.com/about-founder/#portrait",
+        "contentUrl": "https://wildlakestudio.com/assets/images/argelys-founder-crop.png",
+        "url": "https://wildlakestudio.com/assets/images/argelys-founder-crop.png",
+        "width": 1024,
+        "height": 1024,
+        "caption": "Argelys Samuel Oriach, founder of Wild-Lake."
       },
-      &quot;headline&quot;: &quot;Investigation. Experimentation. Invitation.&quot;,
-      &quot;hasPart&quot;: [
+      "headline": "Investigation. Experimentation. Invitation.",
+      "hasPart": [
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#founder-overview&quot;,
-          &quot;name&quot;: &quot;About our founder&quot;,
-          &quot;text&quot;: &quot;Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the founder and artistic director of Wild Lake Studio. He constructs systems and inhabits them. Performance governs his practice, and writing, voice, movement, design, and corporate roles are its forms.\n\nHe operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists. The studio operates from New York, Tampa, and Santiago, and works worldwide.\n\nWild Lake Studio formalizes Argelys&#x27;s fifteen-year independent practice. It began in his freshman year at Wesleyan University, when he was initiated into the Eclectic Society and started producing live shows, organizing cultural space, and working alongside artists. Over those fifteen years he has guided twelve or more developing and independent multidisciplinary artists, providing structural stewardship, physical carrying capacity, and live production architecture.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/about-founder/#founder-overview",
+          "name": "About our founder",
+          "text": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the founder and artistic director of Wild Lake Studio. He constructs systems and inhabits them. Performance governs his practice, and writing, voice, movement, design, and corporate roles are its forms.\n\nHe operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists. The studio operates from New York, Tampa, and Santiago, and works worldwide.\n\nWild Lake Studio formalizes Argelys's fifteen-year independent practice. It began in his freshman year at Wesleyan University, when he was initiated into the Eclectic Society and started producing live shows, organizing cultural space, and working alongside artists. Over those fifteen years he has guided twelve or more developing and independent multidisciplinary artists, providing structural stewardship, physical carrying capacity, and live production architecture."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#founder-work&quot;,
-          &quot;name&quot;: &quot;The Person and the Work&quot;,
-          &quot;text&quot;: &quot;Argelys builds infrastructure for artists on the same principles he applies to technical architecture: nothing decorative, and everything carries weight.\n\nHe was born in the Dominican Republic to a mother who is a housekeeper and writer and a father who is a facility maintainer and musician. His structural impulse surfaced at eleven, when he taught himself 3D design software to draft his parents&#x27; dream home. An architect later used that file for construction. After the 2008 financial crash, he applied to Phillips Academy Andover to design the conditions of his own life on purpose.\n\nA method actor trained in the Alexander Technique, he spent the next sixteen years treating his body, voice, and daily life as a single structural instrument. In 2010 he attended Northwestern University&#x27;s National High School Institute (Cherubs) theatre program and played Nick in a stage adaptation of The Handmaid&#x27;s Tale. From there he studied somatic weight, posture, and human attention by inhabiting roles across institutions, physical staging, and corporate infrastructure.\n\nThat foundation fueled a twelve-year trajectory building organic growth systems. He served as Cynthia Nixon&#x27;s social media manager for her 2018 campaign for governor of New York, then moved to architecting sovereign digital frameworks from first principles. He went on to build brand infrastructure at VinePair, direct brand marketing at Kickstarter, and lead organic growth at CookUnity. He approached these corporate roles as an undercover durational performance: a calculated effort to build his life out of poverty while auditing how complex systems scale from the inside out. That cycle recently closed with an intentional return to his body, breath, and voice.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/about-founder/#founder-work",
+          "name": "The Person and the Work",
+          "text": "Argelys builds infrastructure for artists on the same principles he applies to technical architecture: nothing decorative, and everything carries weight.\n\nHe was born in the Dominican Republic to a mother who is a housekeeper and writer and a father who is a facility maintainer and musician. His structural impulse surfaced at eleven, when he taught himself 3D design software to draft his parents' dream home. An architect later used that file for construction. After the 2008 financial crash, he applied to Phillips Academy Andover to design the conditions of his own life on purpose.\n\nA method actor trained in the Alexander Technique, he spent the next sixteen years treating his body, voice, and daily life as a single structural instrument. In 2010 he attended Northwestern University's National High School Institute (Cherubs) theatre program and played Nick in a stage adaptation of The Handmaid's Tale. From there he studied somatic weight, posture, and human attention by inhabiting roles across institutions, physical staging, and corporate infrastructure.\n\nThat foundation fueled a twelve-year trajectory building organic growth systems. He served as Cynthia Nixon's social media manager for her 2018 campaign for governor of New York, then moved to architecting sovereign digital frameworks from first principles. He went on to build brand infrastructure at VinePair, direct brand marketing at Kickstarter, and lead organic growth at CookUnity. He approached these corporate roles as an undercover durational performance: a calculated effort to build his life out of poverty while auditing how complex systems scale from the inside out. That cycle recently closed with an intentional return to his body, breath, and voice."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#founder-method&quot;,
-          &quot;name&quot;: &quot;The Method&quot;,
-          &quot;text&quot;: &quot;Wild-Lake&#x27;s method grew through the lived practice described here. The manual sets out how critique, structural honesty, artist wellbeing, and focused interventions operate within an engagement.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/about-founder/#founder-method",
+          "name": "The Method",
+          "text": "Wild-Lake's method grew through the lived practice described here. The manual sets out how critique, structural honesty, artist wellbeing, and focused interventions operate within an engagement."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#founder-creative&quot;,
-          &quot;name&quot;: &quot;The Creative Practice&quot;,
-          &quot;text&quot;: &quot;Performance governs how he works across writing, voice, movement, visual art, design, and acting for stage and screen. “Multidisciplinary” describes the range of media. “Performance artist” describes how he inhabits them.\n\nAt Wesleyan he sang with Ebony Singers, studying African-American religious music through performance, including traditional and contemporary gospel, spirituals, and hymns. He also took African drumming courses.\n\nAs a writer, he applies the same somatic and structural rigor to narrative in a maximalist, automatic, lyrical, stream-of-consciousness style. His focus remains the physical and digital mechanics beneath every medium.\n- This Is Not a Love Story (Yankees): a digital short, published at thisisnotalovestory.net. It is a screenplay written in prose form.\n- Graduation: a debut autofiction novel (in progress).\n- Untitled One-Act Play (in progress).\n- Untitled Pilot (in progress).&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/about-founder/#founder-creative",
+          "name": "The Creative Practice",
+          "text": "Performance governs how he works across writing, voice, movement, visual art, design, and acting for stage and screen. “Multidisciplinary” describes the range of media. “Performance artist” describes how he inhabits them.\n\nAt Wesleyan he sang with Ebony Singers, studying African-American religious music through performance, including traditional and contemporary gospel, spirituals, and hymns. He also took African drumming courses.\n\nAs a writer, he applies the same somatic and structural rigor to narrative in a maximalist, automatic, lyrical, stream-of-consciousness style. His focus remains the physical and digital mechanics beneath every medium.\n- This Is Not a Love Story (Yankees): a digital short, published at thisisnotalovestory.net. It is a screenplay written in prose form.\n- Graduation: a debut autofiction novel (in progress).\n- Untitled One-Act Play (in progress).\n- Untitled Pilot (in progress)."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#founder-education&quot;,
-          &quot;name&quot;: &quot;Education&quot;,
-          &quot;text&quot;: &quot;He majored in English at Wesleyan University, where he took extensive coursework in studio art and critical theory. His senior thesis was Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz&#x27;s Afro-Caribbean literary imagination.\n\nThe thesis positions The Brief Wondrous Life of Oscar Wao as an alternative archive of the diaspora. It examines Díaz&#x27;s Afro-Caribbean literary imagination through queer theory, performance studies, affect studies, and critical race theory.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/about-founder/#founder-education",
+          "name": "Education",
+          "text": "He majored in English at Wesleyan University, where he took extensive coursework in studio art and critical theory. His senior thesis was Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz's Afro-Caribbean literary imagination.\n\nThe thesis positions The Brief Wondrous Life of Oscar Wao as an alternative archive of the diaspora. It examines Díaz's Afro-Caribbean literary imagination through queer theory, performance studies, affect studies, and critical race theory."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#founder-personal&quot;,
-          &quot;name&quot;: &quot;A personal framework&quot;,
-          &quot;text&quot;: &quot;Argelys understands his approach through the architect and shaman archetypes. The architect gives the practice structure. The shaman attends to meaning, transition, and the artist&#x27;s relationship to their work. Together they make him an alchemist, transforming raw material and lived experience into artistic form. These archetypes inform how he shapes the conditions around an artist while staying close to what the work means to them.\n\nHe reflects on his approach through four terms.\n\nInvestigation Understanding the foundations before proposing a structure. Asking what is present, what matters, and what the work needs.\n\nExperimentation Learning through making and lived experience. Letting what happens in practice inform the next decision.\n\nEmotional clarity Allowing time to understand a response rather than treating urgency as direction.\n\nInvitation Entering a creative relationship by mutual recognition and consent. Guidance is offered within a relationship the artist chooses.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/about-founder/#founder-personal",
+          "name": "A personal framework",
+          "text": "Argelys understands his approach through the architect and shaman archetypes. The architect gives the practice structure. The shaman attends to meaning, transition, and the artist's relationship to their work. Together they make him an alchemist, transforming raw material and lived experience into artistic form. These archetypes inform how he shapes the conditions around an artist while staying close to what the work means to them.\n\nHe reflects on his approach through four terms.\n\nInvestigation Understanding the foundations before proposing a structure. Asking what is present, what matters, and what the work needs.\n\nExperimentation Learning through making and lived experience. Letting what happens in practice inform the next decision.\n\nEmotional clarity Allowing time to understand a response rather than treating urgency as direction.\n\nInvitation Entering a creative relationship by mutual recognition and consent. Guidance is offered within a relationship the artist chooses."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#founder-invitation&quot;,
-          &quot;name&quot;: &quot;The invitation&quot;,
-          &quot;text&quot;: &quot;Begin with your work and what you need help with.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/about-founder/#founder-invitation",
+          "name": "The invitation",
+          "text": "Begin with your work and what you need help with."
         }
       ]
     },
     {
-      &quot;@type&quot;: &quot;ContactPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/contact/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/contact/&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "ContactPage",
+      "@id": "https://wildlakestudio.com/contact/#webpage",
+      "url": "https://wildlakestudio.com/contact/",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;name&quot;: &quot;Contact | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;Tell Wild-Lake about your work and the support you need. Optional prompts for artists, labels, galleries, agencies and institutions.&quot;,
-      &quot;headline&quot;: &quot;Let’s begin.&quot;,
-      &quot;hasPart&quot;: [
+      "name": "Contact | Wild Lake Studio",
+      "description": "Tell Wild-Lake about your work and the support you need. Optional prompts for artists, labels, galleries, agencies and institutions.",
+      "headline": "Let’s begin.",
+      "hasPart": [
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/contact/#contact-overview&quot;,
-          &quot;name&quot;: &quot;Let’s begin.&quot;,
-          &quot;text&quot;: &quot;NEW YORK / TAMPA / SANTIAGO / WORLDWIDE. Tell us about your work, or the artists you work with, and the support you are looking for. info@wildlakestudio.com&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/contact/#contact-overview",
+          "name": "Let’s begin.",
+          "text": "NEW YORK / TAMPA / SANTIAGO / WORLDWIDE. Tell us about your work, or the artists you work with, and the support you are looking for. info@wildlakestudio.com"
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/contact/#contact-intake&quot;,
-          &quot;name&quot;: &quot;A place to start&quot;,
-          &quot;text&quot;: &quot;These prompts are optional. Answer the ones that help, skip the rest. If you are an artist: What are you making, and where is it now? Where does the work meet friction? What would the next year look like if it went well? If you represent a label, gallery, agency or institution: Which artist or program is this about? What is the situation, and what is the timeline? What do you want the studio to do? Include if you can: A link to the work. Your name. This form opens an email draft for you to review and send. You can also write to us directly at info@wildlakestudio.com. Your work stays yours. We never take ownership or a percentage.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/contact/#contact-intake",
+          "name": "A place to start",
+          "text": "These prompts are optional. Answer the ones that help, skip the rest. If you are an artist: What are you making, and where is it now? Where does the work meet friction? What would the next year look like if it went well? If you represent a label, gallery, agency or institution: Which artist or program is this about? What is the situation, and what is the timeline? What do you want the studio to do? Include if you can: A link to the work. Your name. This form opens an email draft for you to review and send. You can also write to us directly at info@wildlakestudio.com. Your work stays yours. We never take ownership or a percentage."
         }
       ]
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/schema/#page&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/schema/&quot;,
-      &quot;name&quot;: &quot;Schema | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt.&quot;,
-      &quot;inLanguage&quot;: &quot;en-US&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/schema/#page",
+      "url": "https://wildlakestudio.com/schema/",
+      "name": "Schema | Wild Lake Studio",
+      "description": "The machine-readable description of Wild Lake Studio: organization, website, and founder data, plus llms.txt.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;about&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "about": {
+        "@id": "https://wildlakestudio.com/#organization"
       }
     },
     {
-      &quot;@type&quot;: &quot;CollectionPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/magazine/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/magazine/&quot;,
-      &quot;name&quot;: &quot;Quiet Creek Magazine | Wild Lake Studio&quot;,
-      &quot;mainEntity&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/magazine/#magazine&quot;
+      "@type": "CollectionPage",
+      "@id": "https://wildlakestudio.com/magazine/#webpage",
+      "url": "https://wildlakestudio.com/magazine/",
+      "name": "Quiet Creek Magazine | Wild Lake Studio",
+      "mainEntity": {
+        "@id": "https://wildlakestudio.com/magazine/#magazine"
       },
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;publisher&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
       },
-      &quot;inLanguage&quot;: &quot;en-US&quot;,
-      &quot;description&quot;: &quot;Notes from Wild Lake Studio on artists, creative work, and the structures that support an independent practice.&quot;
+      "inLanguage": "en-US",
+      "description": "Notes from Wild Lake Studio on artists, creative work, and the structures that support an independent practice."
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/#webpage",
+      "url": "https://wildlakestudio.com/magazine/the-infrastructure-has-an-inner-life/",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;name&quot;: &quot;The Infrastructure Has an Inner Life | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;On Jessica Wilson’s work: a Wild Lake Studio reading of infrastructure, anxiety, capitalism, whiteness, and the living world.&quot;
+      "name": "The Infrastructure Has an Inner Life | Wild Lake Studio",
+      "description": "On Jessica Wilson’s work: a Wild Lake Studio reading of infrastructure, anxiety, capitalism, whiteness, and the living world."
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/mirror/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/mirror/&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/mirror/#webpage",
+      "url": "https://wildlakestudio.com/mirror/",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;name&quot;: &quot;Architectural Mirror | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation.&quot;
+      "name": "Architectural Mirror | Wild Lake Studio",
+      "description": "A tarot mirror for artists and creators. Choose one to four cards, breathe, hold a question, then shuffle, stop and deal. Read the images. Write your own interpretation."
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/responsibility/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/responsibility/&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/responsibility/#webpage",
+      "url": "https://wildlakestudio.com/responsibility/",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;name&quot;: &quot;Our responsibility | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;A portion of every retainer fee goes directly toward protecting wild lakes, freshwater systems, and public lands.&quot;
+      "name": "Our responsibility | Wild Lake Studio",
+      "description": "A portion of every retainer fee goes directly toward protecting wild lakes, freshwater systems, and public lands."
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/tools/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/tools/&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/tools/#webpage",
+      "url": "https://wildlakestudio.com/tools/",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;name&quot;: &quot;Tools | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;Reflective tools from Wild-Lake: Name &amp; Number numerology, Architectural Mirror, and Quiet Creek Tarot.&quot;
+      "name": "Tools | Wild Lake Studio",
+      "description": "Reflective tools from Wild-Lake: Name &amp; Number numerology, Architectural Mirror, and Quiet Creek Tarot."
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/manifesto/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/manifesto/&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/manifesto/#webpage",
+      "url": "https://wildlakestudio.com/manifesto/",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;name&quot;: &quot;The Sovereign Engine | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;The Sovereign Engine: Wild Lake Studio’s manifesto on controlled demolition, sovereign A&amp;R, talent architecture, and retainer mechanics.&quot;
+      "name": "The Sovereign Engine | Wild Lake Studio",
+      "description": "The Sovereign Engine: Wild Lake Studio’s manifesto on controlled demolition, sovereign A&amp;R, talent architecture, and retainer mechanics."
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/privacy/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/privacy/&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/privacy/#webpage",
+      "url": "https://wildlakestudio.com/privacy/",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;name&quot;: &quot;Privacy Protocol | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;How the Wild Lake Studio contact form prepares an email and how to ask about information you share.&quot;
+      "name": "Privacy Protocol | Wild Lake Studio",
+      "description": "How the Wild Lake Studio contact form prepares an email and how to ask about information you share."
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/terms/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/terms/&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/terms/#webpage",
+      "url": "https://wildlakestudio.com/terms/",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;name&quot;: &quot;Terms of Practice | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;Engagement terms, retainer mechanics, intellectual property, confidentiality, and governance for Wild Lake Studio LLC.&quot;
+      "name": "Terms of Practice | Wild Lake Studio",
+      "description": "Engagement terms, retainer mechanics, intellectual property, confidentiality, and governance for Wild Lake Studio LLC."
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/development-protocols/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/development-protocols/&quot;,
-      &quot;name&quot;: &quot;Development Protocols | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;Artist wellbeing within a retained engagement: optional practices in reflection, study, grounding, movement, and expression guided by Argelys Samuel Oriach.&quot;,
-      &quot;about&quot;: [
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/development-protocols/#webpage",
+      "url": "https://wildlakestudio.com/development-protocols/",
+      "name": "Development Protocols | Wild Lake Studio",
+      "description": "Artist wellbeing within a retained engagement: optional practices in reflection, study, grounding, movement, and expression guided by Argelys Samuel Oriach.",
+      "about": [
         {
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+          "@id": "https://wildlakestudio.com/#organization"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Artist wellbeing&quot;
+          "@type": "Thing",
+          "name": "Artist wellbeing"
         }
       ],
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;publisher&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
       },
-      &quot;inLanguage&quot;: &quot;en-US&quot;,
-      &quot;hasPart&quot;: [
+      "inLanguage": "en-US",
+      "hasPart": [
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/development-protocols/#reflection&quot;,
-          &quot;name&quot;: &quot;Reflection &amp; Study&quot;,
-          &quot;text&quot;: &quot;We give the artist space to say what they have been holding, at their own pace. Our attention follows what they choose to share, allowing room for expression before interpretation or revision begins. We expose the load-bearing reality of the artist’s situation, examining what the practice can carry and where its limits are being exceeded. We call this conversational brutalism: applying the architectural principle of exposed structure to information. The conversation makes the conditions visible so the artist can decide what to change and where support is needed. Selected texts give us language for the questions emerging in the practice. Writing continuously lets associations, images, and questions emerge before editing begins. We return to the material afterward to see what it holds. Open conversation generates ideas, associations, and possible directions before we evaluate them. We return to what emerges to identify what the artist wants to explore. Articulating the future the artist wants to build, connecting intention with the choices, resources, and daily conditions that can support it. Gathering images, words, and references into a visual map of creative direction. The board becomes a shared point of reference for priorities and next steps. Images and archetypes provide prompts for interpretation, helping the artist articulate associations, tensions, and possible choices. Attentive listening becomes a study of rhythm, feeling, memory, and how a work holds attention.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/development-protocols/#reflection",
+          "name": "Reflection &amp; Study",
+          "text": "We give the artist space to say what they have been holding, at their own pace. Our attention follows what they choose to share, allowing room for expression before interpretation or revision begins. We expose the load-bearing reality of the artist’s situation, examining what the practice can carry and where its limits are being exceeded. We call this conversational brutalism: applying the architectural principle of exposed structure to information. The conversation makes the conditions visible so the artist can decide what to change and where support is needed. Selected texts give us language for the questions emerging in the practice. Writing continuously lets associations, images, and questions emerge before editing begins. We return to the material afterward to see what it holds. Open conversation generates ideas, associations, and possible directions before we evaluate them. We return to what emerges to identify what the artist wants to explore. Articulating the future the artist wants to build, connecting intention with the choices, resources, and daily conditions that can support it. Gathering images, words, and references into a visual map of creative direction. The board becomes a shared point of reference for priorities and next steps. Images and archetypes provide prompts for interpretation, helping the artist articulate associations, tensions, and possible choices. Attentive listening becomes a study of rhythm, feeling, memory, and how a work holds attention."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/development-protocols/#grounding&quot;,
-          &quot;name&quot;: &quot;Attention &amp; Grounding&quot;,
-          &quot;text&quot;: &quot;Steady presence, active listening, and shared attention can support nervous system settling within the working relationship. We agree together on pace, proximity, and boundaries; touch is optional and requires explicit consent. Consent remains ongoing, and the artist can pause, decline, or change direction at any time. Time to notice thoughts, sensations, and the conditions surrounding the work. Gentle attention to breathing and its relationship to movement, voice, and concentration. Self-directed contact can provide a point of physical attention. Any guided touch is discussed and agreed beforehand.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/development-protocols/#grounding",
+          "name": "Attention &amp; Grounding",
+          "text": "Steady presence, active listening, and shared attention can support nervous system settling within the working relationship. We agree together on pace, proximity, and boundaries; touch is optional and requires explicit consent. Consent remains ongoing, and the artist can pause, decline, or change direction at any time. Time to notice thoughts, sensations, and the conditions surrounding the work. Gentle attention to breathing and its relationship to movement, voice, and concentration. Self-directed contact can provide a point of physical attention. Any guided touch is discussed and agreed beforehand."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/development-protocols/#movement&quot;,
-          &quot;name&quot;: &quot;Movement &amp; Expression&quot;,
-          &quot;text&quot;: &quot;A change of surroundings can challenge familiar assumptions. Visits may range from a local park or the Blue Ridge Mountains to Santiago and the surrounding campo , where Argelys’s family is rooted. His experience of rural life and poverty grounds conversations about labor, access, and the conditions that sustain a creative practice. The setting and purpose are agreed with the artist. Movement offers a way to explore rhythm, impulse, pleasure, and physical expression. Voluntary movement provides another way to notice and respond to held tension. Emotion can have room without becoming an assignment. Tears, sound, or silence may emerge; none is required as evidence of progress.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/development-protocols/#movement",
+          "name": "Movement &amp; Expression",
+          "text": "A change of surroundings can challenge familiar assumptions. Visits may range from a local park or the Blue Ridge Mountains to Santiago and the surrounding campo , where Argelys’s family is rooted. His experience of rural life and poverty grounds conversations about labor, access, and the conditions that sustain a creative practice. The setting and purpose are agreed with the artist. Movement offers a way to explore rhythm, impulse, pleasure, and physical expression. Voluntary movement provides another way to notice and respond to held tension. Emotion can have room without becoming an assignment. Tears, sound, or silence may emerge; none is required as evidence of progress."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/development-protocols/#operational-infrastructure&quot;,
-          &quot;name&quot;: &quot;Operational Infrastructure&quot;,
-          &quot;text&quot;: &quot;We build systems that protect the artist’s attention, income, and direct audience relationships. The tools and boundaries follow the artist’s needs and agreed scope. Route professional inquiries through a structured form on the artist’s domain, using a tool such as Tally or Typeform. Require project scope, a stated budget that meets the artist’s minimum, and acknowledgment of engagement terms before an inquiry reaches the inbox. Close DMs to professional requests and direct cold contacts to the form through saved replies or email autoresponders. Build lightweight sites from portable HTML and CSS, deployed directly to an edge host such as Cloudflare Pages on the artist’s own domain. A simple static site can run without a database, framework, or build pipeline, reducing dependencies and making the work easier to maintain and move between hosts. Replace open calendar booking with an agreed request process. Require a specific agenda at least 48 hours before a proposed call, including the decision needed and relevant material. Book the meeting once its purpose is clear, protecting the artist’s time for independent work. Use payment links such as Stripe Payment Links connected to the artist’s own account, with payouts to their bank account. Send links directly to buyers or place them on the artist’s site, reducing reliance on marketplace commissions. Payment processing fees and the provider’s data handling still apply; the artist controls the offer and customer relationship. Connect a newsletter service such as Buttondown to the artist’s own domain with the required DNS records, alongside an RSS feed on their static site. Build direct subscriber relationships and retain exportable mailing lists and publishing archives, giving audiences ways to follow the work beyond platform algorithms.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/development-protocols/#operational-infrastructure",
+          "name": "Operational Infrastructure",
+          "text": "We build systems that protect the artist’s attention, income, and direct audience relationships. The tools and boundaries follow the artist’s needs and agreed scope. Route professional inquiries through a structured form on the artist’s domain, using a tool such as Tally or Typeform. Require project scope, a stated budget that meets the artist’s minimum, and acknowledgment of engagement terms before an inquiry reaches the inbox. Close DMs to professional requests and direct cold contacts to the form through saved replies or email autoresponders. Build lightweight sites from portable HTML and CSS, deployed directly to an edge host such as Cloudflare Pages on the artist’s own domain. A simple static site can run without a database, framework, or build pipeline, reducing dependencies and making the work easier to maintain and move between hosts. Replace open calendar booking with an agreed request process. Require a specific agenda at least 48 hours before a proposed call, including the decision needed and relevant material. Book the meeting once its purpose is clear, protecting the artist’s time for independent work. Use payment links such as Stripe Payment Links connected to the artist’s own account, with payouts to their bank account. Send links directly to buyers or place them on the artist’s site, reducing reliance on marketplace commissions. Payment processing fees and the provider’s data handling still apply; the artist controls the offer and customer relationship. Connect a newsletter service such as Buttondown to the artist’s own domain with the required DNS records, alongside an RSS feed on their static site. Build direct subscriber relationships and retain exportable mailing lists and publishing archives, giving audiences ways to follow the work beyond platform algorithms."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/development-protocols/#engagement&quot;,
-          &quot;name&quot;: &quot;Within an Engagement&quot;,
-          &quot;text&quot;: &quot;These practices support the artist’s work within an agreed scope. Participation is voluntary, and the artist can pause, decline, or change direction. Each practice returns to a concrete question: what helps this person sustain the work they want to make? Discuss an engagement · The Method&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/development-protocols/#engagement",
+          "name": "Within an Engagement",
+          "text": "These practices support the artist’s work within an agreed scope. Participation is voluntary, and the artist can pause, decline, or change direction. Each practice returns to a concrete question: what helps this person sustain the work they want to make? Discuss an engagement · The Method"
         }
       ],
-      &quot;mentions&quot;: [
+      "mentions": [
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Active listening&quot;
+          "@type": "Thing",
+          "name": "Active listening"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Structural honesty&quot;
+          "@type": "Thing",
+          "name": "Structural honesty"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Reading assignments&quot;
+          "@type": "Thing",
+          "name": "Reading assignments"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Automatic writing&quot;
+          "@type": "Thing",
+          "name": "Automatic writing"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Tarot readings&quot;
+          "@type": "Thing",
+          "name": "Tarot readings"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Listening to music&quot;
+          "@type": "Thing",
+          "name": "Listening to music"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Meditation&quot;
+          "@type": "Thing",
+          "name": "Meditation"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Breathwork&quot;
+          "@type": "Thing",
+          "name": "Breathwork"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Placement of hands&quot;
+          "@type": "Thing",
+          "name": "Placement of hands"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Vision quests&quot;
+          "@type": "Thing",
+          "name": "Vision quests"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Dancing&quot;
+          "@type": "Thing",
+          "name": "Dancing"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Shaking the body&quot;
+          "@type": "Thing",
+          "name": "Shaking the body"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Crying and vocal expression&quot;
+          "@type": "Thing",
+          "name": "Crying and vocal expression"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Consensual co-regulation&quot;,
-          &quot;description&quot;: &quot;Nervous system support through steady presence, active listening, and shared attention, with ongoing consent and agreed boundaries.&quot;
+          "@type": "Thing",
+          "name": "Consensual co-regulation",
+          "description": "Nervous system support through steady presence, active listening, and shared attention, with ongoing consent and agreed boundaries."
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Brainstorming&quot;
+          "@type": "Thing",
+          "name": "Brainstorming"
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Manifestation&quot;,
-          &quot;description&quot;: &quot;Articulating creative intentions and the practical conditions that support them.&quot;,
-          &quot;hasPart&quot;: {
-            &quot;@type&quot;: &quot;CreativeWork&quot;,
-            &quot;name&quot;: &quot;Vision boarding&quot;,
-            &quot;description&quot;: &quot;Gathering images, words, and references into a visual map of creative direction.&quot;
+          "@type": "Thing",
+          "name": "Manifestation",
+          "description": "Articulating creative intentions and the practical conditions that support them.",
+          "hasPart": {
+            "@type": "CreativeWork",
+            "name": "Vision boarding",
+            "description": "Gathering images, words, and references into a visual map of creative direction."
           }
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Programmatic request gating&quot;,
-          &quot;description&quot;: &quot;Route professional inquiries through a structured form on the artist’s domain, using a tool such as Tally or Typeform. Require project scope, a stated budget that meets the artist’s minimum, and acknowledgment of engagement terms before an inquiry reaches the inbox. Close DMs to professional requests and direct cold contacts to the form through saved replies or email autoresponders.&quot;
+          "@type": "Thing",
+          "name": "Programmatic request gating",
+          "description": "Route professional inquiries through a structured form on the artist’s domain, using a tool such as Tally or Typeform. Require project scope, a stated budget that meets the artist’s minimum, and acknowledgment of engagement terms before an inquiry reaches the inbox. Close DMs to professional requests and direct cold contacts to the form through saved replies or email autoresponders."
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Single-file edge deployments&quot;,
-          &quot;description&quot;: &quot;Build lightweight sites from portable HTML and CSS, deployed directly to an edge host such as Cloudflare Pages on the artist’s own domain. A simple static site can run without a database, framework, or build pipeline, reducing dependencies and making the work easier to maintain and move between hosts.&quot;
+          "@type": "Thing",
+          "name": "Single-file edge deployments",
+          "description": "Build lightweight sites from portable HTML and CSS, deployed directly to an edge host such as Cloudflare Pages on the artist’s own domain. A simple static site can run without a database, framework, or build pipeline, reducing dependencies and making the work easier to maintain and move between hosts."
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Async communication boundaries&quot;,
-          &quot;description&quot;: &quot;Replace open calendar booking with an agreed request process. Require a specific agenda at least 48 hours before a proposed call, including the decision needed and relevant material. Book the meeting once its purpose is clear, protecting the artist’s time for independent work.&quot;
+          "@type": "Thing",
+          "name": "Async communication boundaries",
+          "description": "Replace open calendar booking with an agreed request process. Require a specific agenda at least 48 hours before a proposed call, including the decision needed and relevant material. Book the meeting once its purpose is clear, protecting the artist’s time for independent work."
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Direct payment routing&quot;,
-          &quot;description&quot;: &quot;Use payment links such as Stripe Payment Links connected to the artist’s own account, with payouts to their bank account. Send links directly to buyers or place them on the artist’s site, reducing reliance on marketplace commissions. Payment processing fees and the provider’s data handling still apply; the artist controls the offer and customer relationship.&quot;
+          "@type": "Thing",
+          "name": "Direct payment routing",
+          "description": "Use payment links such as Stripe Payment Links connected to the artist’s own account, with payouts to their bank account. Send links directly to buyers or place them on the artist’s site, reducing reliance on marketplace commissions. Payment processing fees and the provider’s data handling still apply; the artist controls the offer and customer relationship."
         },
         {
-          &quot;@type&quot;: &quot;Thing&quot;,
-          &quot;name&quot;: &quot;Custom domain syndicate feeds&quot;,
-          &quot;description&quot;: &quot;Connect a newsletter service such as Buttondown to the artist’s own domain with the required DNS records, alongside an RSS feed on their static site. Build direct subscriber relationships and retain exportable mailing lists and publishing archives, giving audiences ways to follow the work beyond platform algorithms.&quot;
+          "@type": "Thing",
+          "name": "Custom domain syndicate feeds",
+          "description": "Connect a newsletter service such as Buttondown to the artist’s own domain with the required DNS records, alongside an RSS feed on their static site. Build direct subscriber relationships and retain exportable mailing lists and publishing archives, giving audiences ways to follow the work beyond platform algorithms."
         }
       ]
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/method/&quot;,
-      &quot;name&quot;: &quot;The Method | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;Wild-Lake’s operating manual: critique, structural honesty, artist wellbeing, sovereign ownership, and an intermittent engagement rhythm.&quot;,
-      &quot;about&quot;: {
-        &quot;@type&quot;: &quot;Organization&quot;,
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;,
-        &quot;name&quot;: &quot;Wild Lake Studio&quot;,
-        &quot;slogan&quot;: &quot;Wild-Lake is point zero for starmaking.&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/method/#webpage",
+      "url": "https://wildlakestudio.com/method/",
+      "name": "The Method | Wild Lake Studio",
+      "description": "Wild-Lake’s operating manual: critique, structural honesty, artist wellbeing, sovereign ownership, and an intermittent engagement rhythm.",
+      "about": {
+        "@type": "Organization",
+        "@id": "https://wildlakestudio.com/#organization",
+        "name": "Wild Lake Studio",
+        "slogan": "Wild-Lake is point zero for starmaking."
       },
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;publisher&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
       },
-      &quot;inLanguage&quot;: &quot;en-US&quot;,
-      &quot;hasPart&quot;: [
+      "inLanguage": "en-US",
+      "hasPart": [
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-talent-architecture&quot;,
-          &quot;name&quot;: &quot;Your practice is the asset. We find where it is breaking.&quot;,
-          &quot;text&quot;: &quot;Talent Architecture Your practice is the asset. We find where it is breaking. Talent Architecture is a capacity and boundary audit for creators whose workload has outgrown them. We dismantle the habits that drain you, build an operating framework that protects your autonomy, and step back. You keep your IP, your income, and your decisions.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-talent-architecture",
+          "name": "Your practice is the asset. We find where it is breaking.",
+          "text": "Talent Architecture Your practice is the asset. We find where it is breaking. Talent Architecture is a capacity and boundary audit for creators whose workload has outgrown them. We dismantle the habits that drain you, build an operating framework that protects your autonomy, and step back. You keep your IP, your income, and your decisions."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-terms&quot;,
-          &quot;name&quot;: &quot;Terms of the practice&quot;,
-          &quot;text&quot;: &quot;Terms of the practice The conditions, the person, and the work. Structural Design How we organize the conditions around the work (time, space, resources, habits, and boundaries) so the practice can sustain what the artist wants to make. Talent Architecture How we develop and support the person carrying the work: their judgment, capacity, autonomy, and relationships. Sovereign A&amp;R How we scout talent and develop creative material through critique, direction, and critical framing. The artist retains ownership and creative control.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-terms",
+          "name": "Terms of the practice",
+          "text": "Terms of the practice The conditions, the person, and the work. Structural Design How we organize the conditions around the work (time, space, resources, habits, and boundaries) so the practice can sustain what the artist wants to make. Talent Architecture How we develop and support the person carrying the work: their judgment, capacity, autonomy, and relationships. Sovereign A&amp;R How we scout talent and develop creative material through critique, direction, and critical framing. The artist retains ownership and creative control."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-foundation&quot;,
-          &quot;name&quot;: &quot;The structural principle&quot;,
-          &quot;text&quot;: &quot;The structural principle Nature is brutalist. Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle. Clients come to Wild-Lake to build a practice, or when the way they work has become unsustainable. The engagement is a controlled demolition, undertaken with the artist. We take the practice down to its studs, remove the habits and brittle systems that can no longer carry the work, and rebuild around what the artist needs to operate with clarity. We dismantle the architecture of extraction. The artist leaves the loop intact.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-foundation",
+          "name": "The structural principle",
+          "text": "The structural principle Nature is brutalist. Nothing in it is decorative, and everything carries weight. We build infrastructure for artists under that same principle. Clients come to Wild-Lake to build a practice, or when the way they work has become unsustainable. The engagement is a controlled demolition, undertaken with the artist. We take the practice down to its studs, remove the habits and brittle systems that can no longer carry the work, and rebuild around what the artist needs to operate with clarity. We dismantle the architecture of extraction. The artist leaves the loop intact."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-practice&quot;,
-          &quot;name&quot;: &quot;Critique &amp; revision&quot;,
-          &quot;text&quot;: &quot;Critique &amp; revision Development requires close study of the material and direct revision with the artist. Critique is the primary mechanism of care. We examine the work closely enough to offer an interpretation the artist can use as scaffolding or tear down. Sustaining the work also means managing the creator&#x27;s own internal engine. The practice confronts the ego patterns and self-referential loops that drain creative stamina. We help the artist stop depending on outside validation and build grounded autonomy. That protects the person and, through the person, the work. Stewardship spans mediums: visual art, sculpture, installation, short stories, plays, scripts, essays, songs, films, and performance. It also covers the macro-systems that keep those practices standing over the long term. Audience development is part of that infrastructure. We build publishing channels and lasting relationships with the people who encounter the work, and the creator sets the terms of engagement.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-practice",
+          "name": "Critique &amp; revision",
+          "text": "Critique &amp; revision Development requires close study of the material and direct revision with the artist. Critique is the primary mechanism of care. We examine the work closely enough to offer an interpretation the artist can use as scaffolding or tear down. Sustaining the work also means managing the creator's own internal engine. The practice confronts the ego patterns and self-referential loops that drain creative stamina. We help the artist stop depending on outside validation and build grounded autonomy. That protects the person and, through the person, the work. Stewardship spans mediums: visual art, sculpture, installation, short stories, plays, scripts, essays, songs, films, and performance. It also covers the macro-systems that keep those practices standing over the long term. Audience development is part of that infrastructure. We build publishing channels and lasting relationships with the people who encounter the work, and the creator sets the terms of engagement."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-honesty&quot;,
-          &quot;name&quot;: &quot;Structural honesty&quot;,
-          &quot;text&quot;: &quot;Structural honesty We expose the load-bearing reality of the artist&#x27;s situation: what the practice can carry, and where its limits are exceeded. We call this conversational brutalism, the architectural principle of exposed structure applied to information. The conversation makes the conditions visible so the artist can decide what to change and where support is needed.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-honesty",
+          "name": "Structural honesty",
+          "text": "Structural honesty We expose the load-bearing reality of the artist's situation: what the practice can carry, and where its limits are exceeded. We call this conversational brutalism, the architectural principle of exposed structure applied to information. The conversation makes the conditions visible so the artist can decide what to change and where support is needed."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-cadence&quot;,
-          &quot;name&quot;: &quot;Observation &amp; absence&quot;,
-          &quot;text&quot;: &quot;Observation &amp; absence We come close only to observe and edit, and to bring clarity to the raw material. Then we depart. The response, the execution, and the timeline remain the artist&#x27;s. We build for asynchronous stamina. Engagements alternate between high-density structural interventions and extended absence, which gives the artist the isolation to execute without surveillance.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-cadence",
+          "name": "Observation &amp; absence",
+          "text": "Observation &amp; absence We come close only to observe and edit, and to bring clarity to the raw material. Then we depart. The response, the execution, and the timeline remain the artist's. We build for asynchronous stamina. Engagements alternate between high-density structural interventions and extended absence, which gives the artist the isolation to execute without surveillance."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-wellbeing&quot;,
-          &quot;name&quot;: &quot;Artist wellbeing&quot;,
-          &quot;text&quot;: &quot;Artist wellbeing During a retained engagement, Argelys may guide practices that bring attention to the artist&#x27;s habits, physical experience, and creative direction. We support artists healing from narcissistic abuse, examining narcissistic patterns within themselves, or both. The work centers on rebuilding self-trust, recognizing harmful relational patterns, and setting boundaries that protect creative autonomy. Building a sustainable practice can include healing from trauma and seeing how past experience shapes the conditions of making. We make room for that history when setting the pace, boundaries, and expectations of an engagement. The artist decides what to share. Our role is to support the practice, with room for care beyond the studio. Explore the practices Development Protocols Active listening, structural honesty, automatic writing, grounding, movement, and vision quests, alongside operational systems for inquiries, communication, payments, and direct publishing. Each practice is optional. The artist can pause, decline, or change direction. Explore the protocols →&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-wellbeing",
+          "name": "Artist wellbeing",
+          "text": "Artist wellbeing During a retained engagement, Argelys may guide practices that bring attention to the artist's habits, physical experience, and creative direction. We support artists healing from narcissistic abuse, examining narcissistic patterns within themselves, or both. The work centers on rebuilding self-trust, recognizing harmful relational patterns, and setting boundaries that protect creative autonomy. Building a sustainable practice can include healing from trauma and seeing how past experience shapes the conditions of making. We make room for that history when setting the pace, boundaries, and expectations of an engagement. The artist decides what to share. Our role is to support the practice, with room for care beyond the studio. Explore the practices Development Protocols Active listening, structural honesty, automatic writing, grounding, movement, and vision quests, alongside operational systems for inquiries, communication, payments, and direct publishing. Each practice is optional. The artist can pause, decline, or change direction. Explore the protocols →"
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-institutional&quot;,
-          &quot;name&quot;: &quot;Institutional stewardship&quot;,
-          &quot;text&quot;: &quot;Institutional stewardship We work with curators as a buffer between the artist and institutional demands. Together we examine what an engagement asks of the artist, set boundaries around access and output, and address pressures that could exhaust the person sustaining the work. As artist developers, our role is to make those boundaries hold.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-institutional",
+          "name": "Institutional stewardship",
+          "text": "Institutional stewardship We work with curators as a buffer between the artist and institutional demands. Together we examine what an engagement asks of the artist, set boundaries around access and output, and address pressures that could exhaust the person sustaining the work. As artist developers, our role is to make those boundaries hold."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-sovereignty&quot;,
-          &quot;name&quot;: &quot;Ownership &amp; engagement&quot;,
-          &quot;text&quot;: &quot;Ownership &amp; engagement The artist retains ownership and creative control. We scout talent and work with artists directly, or partner with record labels, galleries, and booking agencies. Either way, the artist enters the engagement willingly, on their own initiative or through a representative. The Stewardship Subscription reserves availability between client-triggered interventions. Response times, scope, and capacity are agreed in advance. Fixed project commissions and focused advisory engagements are also available. Engagement formats and fees · Terms of Practice&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-sovereignty",
+          "name": "Ownership &amp; engagement",
+          "text": "Ownership &amp; engagement The artist retains ownership and creative control. We scout talent and work with artists directly, or partner with record labels, galleries, and booking agencies. Either way, the artist enters the engagement willingly, on their own initiative or through a representative. The Stewardship Subscription reserves availability between client-triggered interventions. Response times, scope, and capacity are agreed in advance. Fixed project commissions and focused advisory engagements are also available. Engagement formats and fees · Terms of Practice"
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-framework&quot;,
-          &quot;name&quot;: &quot;Spirit and engineering&quot;,
-          &quot;text&quot;: &quot;Spirit and engineering Universe API is Argelys&#x27;s systems design framework. It identifies what the work needs. Changes are tested with the artist and revised through use.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-framework",
+          "name": "Spirit and engineering",
+          "text": "Spirit and engineering Universe API is Argelys's systems design framework. It identifies what the work needs. Changes are tested with the artist and revised through use."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-invitation&quot;,
-          &quot;name&quot;: &quot;Begin an engagement&quot;,
-          &quot;text&quot;: &quot;Begin an engagement Start with your work and what you need help with. Contact the studio&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/method/#method-invitation",
+          "name": "Begin an engagement",
+          "text": "Begin an engagement Start with your work and what you need help with. Contact the studio"
         }
       ],
-      &quot;mainEntity&quot;: {
-        &quot;@type&quot;: &quot;DefinedTermSet&quot;,
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-terms&quot;,
-        &quot;name&quot;: &quot;Terms of the practice&quot;,
-        &quot;url&quot;: &quot;https://wildlakestudio.com/method/#method-terms&quot;,
-        &quot;hasDefinedTerm&quot;: [
+      "mainEntity": {
+        "@type": "DefinedTermSet",
+        "@id": "https://wildlakestudio.com/method/#method-terms",
+        "name": "Terms of the practice",
+        "url": "https://wildlakestudio.com/method/#method-terms",
+        "hasDefinedTerm": [
           {
-            &quot;@type&quot;: &quot;DefinedTerm&quot;,
-            &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#term-structural-design&quot;,
-            &quot;name&quot;: &quot;Structural Design&quot;,
-            &quot;description&quot;: &quot;How we organize the conditions around the work (time, space, resources, habits, and boundaries) so the practice can sustain what the artist wants to make.&quot;,
-            &quot;url&quot;: &quot;https://wildlakestudio.com/method/#term-structural-design&quot;,
-            &quot;inDefinedTermSet&quot;: {
-              &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-terms&quot;
+            "@type": "DefinedTerm",
+            "@id": "https://wildlakestudio.com/method/#term-structural-design",
+            "name": "Structural Design",
+            "description": "How we organize the conditions around the work (time, space, resources, habits, and boundaries) so the practice can sustain what the artist wants to make.",
+            "url": "https://wildlakestudio.com/method/#term-structural-design",
+            "inDefinedTermSet": {
+              "@id": "https://wildlakestudio.com/method/#method-terms"
             }
           },
           {
-            &quot;@type&quot;: &quot;DefinedTerm&quot;,
-            &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#term-talent-architecture&quot;,
-            &quot;name&quot;: &quot;Talent Architecture&quot;,
-            &quot;description&quot;: &quot;How we develop and support the person carrying the work: their judgment, capacity, autonomy, and relationships.&quot;,
-            &quot;url&quot;: &quot;https://wildlakestudio.com/method/#term-talent-architecture&quot;,
-            &quot;inDefinedTermSet&quot;: {
-              &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-terms&quot;
+            "@type": "DefinedTerm",
+            "@id": "https://wildlakestudio.com/method/#term-talent-architecture",
+            "name": "Talent Architecture",
+            "description": "How we develop and support the person carrying the work: their judgment, capacity, autonomy, and relationships.",
+            "url": "https://wildlakestudio.com/method/#term-talent-architecture",
+            "inDefinedTermSet": {
+              "@id": "https://wildlakestudio.com/method/#method-terms"
             }
           },
           {
-            &quot;@type&quot;: &quot;DefinedTerm&quot;,
-            &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#term-sovereign-ar&quot;,
-            &quot;name&quot;: &quot;Sovereign A&amp;R&quot;,
-            &quot;description&quot;: &quot;How we scout talent and develop creative material through critique, direction, and critical framing. The artist retains ownership and creative control.&quot;,
-            &quot;url&quot;: &quot;https://wildlakestudio.com/method/#term-sovereign-ar&quot;,
-            &quot;inDefinedTermSet&quot;: {
-              &quot;@id&quot;: &quot;https://wildlakestudio.com/method/#method-terms&quot;
+            "@type": "DefinedTerm",
+            "@id": "https://wildlakestudio.com/method/#term-sovereign-ar",
+            "name": "Sovereign A&amp;R",
+            "description": "How we scout talent and develop creative material through critique, direction, and critical framing. The artist retains ownership and creative control.",
+            "url": "https://wildlakestudio.com/method/#term-sovereign-ar",
+            "inDefinedTermSet": {
+              "@id": "https://wildlakestudio.com/method/#method-terms"
             }
           }
         ]
       }
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/practice/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/practice/&quot;,
-      &quot;name&quot;: &quot;Ways to Work Together | Wild Lake Studio&quot;,
-      &quot;description&quot;: &quot;Sovereign A&amp;R, talent architecture, stewardship subscriptions, project commissions, and advisory engagements at Wild Lake Studio.&quot;,
-      &quot;about&quot;: {
-        &quot;@type&quot;: &quot;Organization&quot;,
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;,
-        &quot;name&quot;: &quot;Wild Lake Studio&quot;,
-        &quot;slogan&quot;: &quot;Wild-Lake is point zero for starmaking.&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/practice/#webpage",
+      "url": "https://wildlakestudio.com/practice/",
+      "name": "Ways to Work Together | Wild Lake Studio",
+      "description": "Sovereign A&amp;R, talent architecture, stewardship subscriptions, project commissions, and advisory engagements at Wild Lake Studio.",
+      "about": {
+        "@type": "Organization",
+        "@id": "https://wildlakestudio.com/#organization",
+        "name": "Wild Lake Studio",
+        "slogan": "Wild-Lake is point zero for starmaking."
       },
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;publisher&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
       },
-      &quot;inLanguage&quot;: &quot;en-US&quot;,
-      &quot;hasPart&quot;: [
+      "inLanguage": "en-US",
+      "hasPart": [
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/practice/#services&quot;,
-          &quot;name&quot;: &quot;Areas of practice.&quot;,
-          &quot;text&quot;: &quot;The core offering is undivided attention. Close study of the artist, the work, and the conditions shaping both. We observe, listen, and stay with the material long enough to offer a precise response. We scout talent and work with artists directly, or partner with record labels, galleries, and booking agencies. In either case, the artist enters the engagement willingly, on their own initiative or through a representative. Every engagement begins with an agreed scope and an upfront monthly Stewardship Subscription or fixed project fee. 01.0 // We develop raw material across mediums through focused critique, creative direction, and critical writing. The artist retains ownership and shapes how the work reaches others. 01.1 // We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice. Explore artist wellbeing. 01.2 // Traditional A&amp;R reshapes the creator. We work with raw material in any form and at any stage, helping artists shape the work on their own terms. 01.3 // Audience development is asset building. We construct the physical, spatial, and digital channels for complex work. 02.0 // A controlled demolition of unsustainable habits and brittle systems, followed by a rebuild with the artist. Focused interventions create the conditions for an independent practice. 02.1 // We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries. 02.2 // Sustained operational support to manage the existential load of the artist over a ten-year horizon. 02.3 // Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/practice/#services",
+          "name": "Areas of practice.",
+          "text": "The core offering is undivided attention. Close study of the artist, the work, and the conditions shaping both. We observe, listen, and stay with the material long enough to offer a precise response. We scout talent and work with artists directly, or partner with record labels, galleries, and booking agencies. In either case, the artist enters the engagement willingly, on their own initiative or through a representative. Every engagement begins with an agreed scope and an upfront monthly Stewardship Subscription or fixed project fee. 01.0 // We develop raw material across mediums through focused critique, creative direction, and critical writing. The artist retains ownership and shapes how the work reaches others. 01.1 // We build the creator behind the work. Working across mediums, we help artists strip away external friction and sustain a long-term practice. Explore artist wellbeing. 01.2 // Traditional A&amp;R reshapes the creator. We work with raw material in any form and at any stage, helping artists shape the work on their own terms. 01.3 // Audience development is asset building. We construct the physical, spatial, and digital channels for complex work. 02.0 // A controlled demolition of unsustainable habits and brittle systems, followed by a rebuild with the artist. Focused interventions create the conditions for an independent practice. 02.1 // We audit the structural alignment between how a creator lives and what they build. We restructure physical capacity and operational boundaries. 02.2 // Sustained operational support to manage the existential load of the artist over a ten-year horizon. 02.3 // Establishing internal clarity, sovereign boundaries, and focus mechanics under high-stakes execution."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/practice/#model&quot;,
-          &quot;name&quot;: &quot;Retainer terms.&quot;,
-          &quot;text&quot;: &quot;Focused intervention. Space to execute. The monthly Stewardship Subscription keeps studio capacity available between interventions. We come close to observe and edit, then step away while the artist executes on their own timeline. Wild-Lake takes no percentage of artist earnings or ownership of their intellectual property. The client retains ownership of their work. The Studio retains its proprietary frameworks and licenses delivered framework materials for the client’s practice. Public-facing writing transfers to the client upon final settlement. The client triggers an intervention when it is needed. We agree response times, reserved capacity, and the scope of each intervention in advance. Periods of absence are part of the engagement, giving the artist room to work independently. Their consent and creative control remain explicit throughout. The subscription is paid monthly in advance for reserved availability across the agreed cadence. Project commissions carry a fixed fee. We agree additional scope before work begins. Read the full Terms of Practice © 2026 Wild Lake Studio LLC. All rights reserved. Wild-Lake™ and associated mark systems are trademarks of Wild Lake Studio. All intellectual property, client frameworks, and editorial work remain under sovereign ownership agreements.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/practice/#model",
+          "name": "Retainer terms.",
+          "text": "Focused intervention. Space to execute. The monthly Stewardship Subscription keeps studio capacity available between interventions. We come close to observe and edit, then step away while the artist executes on their own timeline. Wild-Lake takes no percentage of artist earnings or ownership of their intellectual property. The client retains ownership of their work. The Studio retains its proprietary frameworks and licenses delivered framework materials for the client’s practice. Public-facing writing transfers to the client upon final settlement. The client triggers an intervention when it is needed. We agree response times, reserved capacity, and the scope of each intervention in advance. Periods of absence are part of the engagement, giving the artist room to work independently. Their consent and creative control remain explicit throughout. The subscription is paid monthly in advance for reserved availability across the agreed cadence. Project commissions carry a fixed fee. We agree additional scope before work begins. Read the full Terms of Practice © 2026 Wild Lake Studio LLC. All rights reserved. Wild-Lake™ and associated mark systems are trademarks of Wild Lake Studio. All intellectual property, client frameworks, and editorial work remain under sovereign ownership agreements."
         }
       ]
     },
     {
-      &quot;@type&quot;: &quot;WebPage&quot;,
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/pricing/#webpage&quot;,
-      &quot;url&quot;: &quot;https://wildlakestudio.com/pricing/&quot;,
-      &quot;name&quot;: &quot;Engagements &amp; Pricing | Wild Lake Studio&quot;,
-      &quot;headline&quot;: &quot;Engagements &amp; Pricing&quot;,
-      &quot;description&quot;: &quot;Retainers, intensives, subsidized Stewardship Subscriptions, and fixed project fees. Engagements protect the artist and sustain the practice. Fees agreed individually.&quot;,
-      &quot;abstract&quot;: &quot;Wild-Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.&quot;,
-      &quot;isPartOf&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#website&quot;
+      "@type": "WebPage",
+      "@id": "https://wildlakestudio.com/pricing/#webpage",
+      "url": "https://wildlakestudio.com/pricing/",
+      "name": "Engagements &amp; Pricing | Wild Lake Studio",
+      "headline": "Engagements &amp; Pricing",
+      "description": "Retainers, intensives, subsidized Stewardship Subscriptions, and fixed project fees. Engagements protect the artist and sustain the practice. Fees agreed individually.",
+      "abstract": "Wild-Lake works on a cross-subsidy model. Established artists fund capacity for rising artists, and that funding creates no claim on the work of the artist it supports. Every artist retains ownership and creative control.",
+      "isPartOf": {
+        "@id": "https://wildlakestudio.com/#website"
       },
-      &quot;publisher&quot;: {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+      "publisher": {
+        "@id": "https://wildlakestudio.com/#organization"
       },
-      &quot;inLanguage&quot;: &quot;en-US&quot;,
-      &quot;hasPart&quot;: [
+      "inLanguage": "en-US",
+      "hasPart": [
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/pricing/#engagement-rhythms&quot;,
-          &quot;name&quot;: &quot;Two rhythms, one practice&quot;,
-          &quot;text&quot;: &quot;Two rhythms, one practice Choose the rhythm that fits the demands of the practice: reserved availability with occasional intensive work, or more frequent support while building a foundation. Established artists Retainer + intensive For established artists across disciplines, including those navigating touring, album cycles, exhibitions, productions, and large teams. Reserved availability The retainer keeps Argelys, the founder, available for text and voice-note access between sessions. Responses arrive within an agreed window. A limited number of urgent calls per quarter is agreed in advance. Access provides structural advice and grounding. Management and creative approval sit outside it. Focused intervention A deep intensive, in person or remotely, on a cadence set by the artist’s needs, from several months to several years apart. Pre-session intake. One to two days of deep work: a structural honesty audit, movement, writing, listening, and an infrastructure check. A post-session structural memo with next steps. Pricing Retainer and intensive fees are agreed individually. Rising artists Subsidized Stewardship Subscription For rising and developing independent artists building their foundation. Established artist retainers fund higher-frequency, ongoing support at a subsidized rate. Ongoing development Regular sessions, on a cadence agreed together. Development Protocols , including active listening, automatic writing, movement, and vision quests. Operational infrastructure setup: request gating, direct payment routing, custom domain feeds, and async communication boundaries. Scope and participation Eligibility rests on the artist’s practice and need, and inability to pay is one factor among them. Scope, expectations, and participation are agreed together. Subsidized does not mean charity. This is a real engagement. Pricing A sliding scale based on need and available capacity, with the rate agreed individually.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/pricing/#engagement-rhythms",
+          "name": "Two rhythms, one practice",
+          "text": "Two rhythms, one practice Choose the rhythm that fits the demands of the practice: reserved availability with occasional intensive work, or more frequent support while building a foundation. Established artists Retainer + intensive For established artists across disciplines, including those navigating touring, album cycles, exhibitions, productions, and large teams. Reserved availability The retainer keeps Argelys, the founder, available for text and voice-note access between sessions. Responses arrive within an agreed window. A limited number of urgent calls per quarter is agreed in advance. Access provides structural advice and grounding. Management and creative approval sit outside it. Focused intervention A deep intensive, in person or remotely, on a cadence set by the artist’s needs, from several months to several years apart. Pre-session intake. One to two days of deep work: a structural honesty audit, movement, writing, listening, and an infrastructure check. A post-session structural memo with next steps. Pricing Retainer and intensive fees are agreed individually. Rising artists Subsidized Stewardship Subscription For rising and developing independent artists building their foundation. Established artist retainers fund higher-frequency, ongoing support at a subsidized rate. Ongoing development Regular sessions, on a cadence agreed together. Development Protocols , including active listening, automatic writing, movement, and vision quests. Operational infrastructure setup: request gating, direct payment routing, custom domain feeds, and async communication boundaries. Scope and participation Eligibility rests on the artist’s practice and need, and inability to pay is one factor among them. Scope, expectations, and participation are agreed together. Subsidized does not mean charity. This is a real engagement. Pricing A sliding scale based on need and available capacity, with the rate agreed individually."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/pricing/#established-artists&quot;,
-          &quot;name&quot;: &quot;Established artists&quot;,
-          &quot;text&quot;: &quot;Established artists Retainer + intensive For established artists across disciplines, including those navigating touring, album cycles, exhibitions, productions, and large teams. Reserved availability The retainer keeps Argelys, the founder, available for text and voice-note access between sessions. Responses arrive within an agreed window. A limited number of urgent calls per quarter is agreed in advance. Access provides structural advice and grounding. Management and creative approval sit outside it. Focused intervention A deep intensive, in person or remotely, on a cadence set by the artist’s needs, from several months to several years apart. Pre-session intake. One to two days of deep work: a structural honesty audit, movement, writing, listening, and an infrastructure check. A post-session structural memo with next steps. Pricing Retainer and intensive fees are agreed individually.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/pricing/#established-artists",
+          "name": "Established artists",
+          "text": "Established artists Retainer + intensive For established artists across disciplines, including those navigating touring, album cycles, exhibitions, productions, and large teams. Reserved availability The retainer keeps Argelys, the founder, available for text and voice-note access between sessions. Responses arrive within an agreed window. A limited number of urgent calls per quarter is agreed in advance. Access provides structural advice and grounding. Management and creative approval sit outside it. Focused intervention A deep intensive, in person or remotely, on a cadence set by the artist’s needs, from several months to several years apart. Pre-session intake. One to two days of deep work: a structural honesty audit, movement, writing, listening, and an infrastructure check. A post-session structural memo with next steps. Pricing Retainer and intensive fees are agreed individually."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/pricing/#rising-artists&quot;,
-          &quot;name&quot;: &quot;Rising artists&quot;,
-          &quot;text&quot;: &quot;Rising artists Subsidized Stewardship Subscription For rising and developing independent artists building their foundation. Established artist retainers fund higher-frequency, ongoing support at a subsidized rate. Ongoing development Regular sessions, on a cadence agreed together. Development Protocols , including active listening, automatic writing, movement, and vision quests. Operational infrastructure setup: request gating, direct payment routing, custom domain feeds, and async communication boundaries. Scope and participation Eligibility rests on the artist’s practice and need, and inability to pay is one factor among them. Scope, expectations, and participation are agreed together. Subsidized does not mean charity. This is a real engagement. Pricing A sliding scale based on need and available capacity, with the rate agreed individually.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/pricing/#rising-artists",
+          "name": "Rising artists",
+          "text": "Rising artists Subsidized Stewardship Subscription For rising and developing independent artists building their foundation. Established artist retainers fund higher-frequency, ongoing support at a subsidized rate. Ongoing development Regular sessions, on a cadence agreed together. Development Protocols , including active listening, automatic writing, movement, and vision quests. Operational infrastructure setup: request gating, direct payment routing, custom domain feeds, and async communication boundaries. Scope and participation Eligibility rests on the artist’s practice and need, and inability to pay is one factor among them. Scope, expectations, and participation are agreed together. Subsidized does not mean charity. This is a real engagement. Pricing A sliding scale based on need and available capacity, with the rate agreed individually."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/pricing/#fixed-project-fee&quot;,
-          &quot;name&quot;: &quot;Fixed project fee&quot;,
-          &quot;text&quot;: &quot;Fixed project fee For Creative Infrastructure commissions and defined editorial work. Scope and fee are agreed before work begins.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/pricing/#fixed-project-fee",
+          "name": "Fixed project fee",
+          "text": "Fixed project fee For Creative Infrastructure commissions and defined editorial work. Scope and fee are agreed before work begins."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/pricing/#engagement-access&quot;,
-          &quot;name&quot;: &quot;What access means&quot;,
-          &quot;text&quot;: &quot;What access means Reserved attention works within clear boundaries. An engagement does not create continuous, around-the-clock availability. Agreed response windows, including the scope and limits of urgent access. Async-first communication, with time for independent execution. Request gating for professional inquiries. The artist can pause, decline, or change direction at any time. Touch and co-regulation practices are optional and require explicit, ongoing consent.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/pricing/#engagement-access",
+          "name": "What access means",
+          "text": "What access means Reserved attention works within clear boundaries. An engagement does not create continuous, around-the-clock availability. Agreed response windows, including the scope and limits of urgent access. Async-first communication, with time for independent execution. Request gating for professional inquiries. The artist can pause, decline, or change direction at any time. Touch and co-regulation practices are optional and require explicit, ongoing consent."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/pricing/#engagement-included&quot;,
-          &quot;name&quot;: &quot;Included in every engagement&quot;,
-          &quot;text&quot;: &quot;Included in every engagement The artist retains ownership and creative control, including direct audience relationships. Wild-Lake takes no percentage of masters, publishing, or touring. The fee structure is agreed in advance, as a retainer, a Stewardship Subscription, or a fixed project fee.&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/pricing/#engagement-included",
+          "name": "Included in every engagement",
+          "text": "Included in every engagement The artist retains ownership and creative control, including direct audience relationships. Wild-Lake takes no percentage of masters, publishing, or touring. The fee structure is agreed in advance, as a retainer, a Stewardship Subscription, or a fixed project fee."
         },
         {
-          &quot;@type&quot;: &quot;WebPageElement&quot;,
-          &quot;@id&quot;: &quot;https://wildlakestudio.com/pricing/#engagement-process&quot;,
-          &quot;name&quot;: &quot;How it works&quot;,
-          &quot;text&quot;: &quot;How it works Tell us about your work. We determine fit, rhythm, and scope. Agree terms: retainer, subscription, or fixed fee. Send a message →&quot;
+          "@type": "WebPageElement",
+          "@id": "https://wildlakestudio.com/pricing/#engagement-process",
+          "name": "How it works",
+          "text": "How it works Tell us about your work. We determine fit, rhythm, and scope. Agree terms: retainer, subscription, or fixed fee. Send a message →"
         }
       ]
     }
@@ -2457,112 +2467,106 @@
         <h2 class="vector-label">Founder</h2>
         <p class="vector-body">The founder and chief executive officer. <a href="person.json">person.json &rarr;</a></p>
         <pre tabindex="0" data-src="person.json"><code>{
-  &quot;@type&quot;: &quot;Person&quot;,
-  &quot;@id&quot;: &quot;https://argelysoriach.com/#person&quot;,
-  &quot;name&quot;: &quot;Argelys Samuel Oriach&quot;,
-  &quot;alternateName&quot;: &quot;Argelys Oriach&quot;,
-  &quot;givenName&quot;: &quot;Argelys&quot;,
-  &quot;additionalName&quot;: &quot;Samuel&quot;,
-  &quot;familyName&quot;: &quot;Oriach&quot;,
-  &quot;url&quot;: &quot;https://argelysoriach.com/&quot;,
-  &quot;jobTitle&quot;: [
-    &quot;Founder&quot;,
-    &quot;Systems architect&quot;,
-    &quot;Performance artist&quot;,
-    &quot;Artistic director&quot;,
-    &quot;Actor&quot;,
-    &quot;Vocalist&quot;,
-    &quot;Writer&quot;,
-    &quot;Visual artist&quot;,
-    &quot;Movement artist&quot;
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://gothamgay.com/#person",
+  "name": "Argelys Samuel Oriach",
+  "alternateName": [
+    "The Angel",
+    "Sam Oriach",
+    "Argelys Oriach"
   ],
-  &quot;worksFor&quot;: {
-    &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+  "givenName": "Argelys",
+  "additionalName": "Samuel",
+  "familyName": "Oriach",
+  "url": "https://gothamgay.com/",
+  "jobTitle": "Managing Principal",
+  "worksFor": {
+    "@id": "https://theangel.biz/#organization"
   },
-  &quot;@reverse&quot;: {
-    &quot;founder&quot;: [
+  "@reverse": {
+    "founder": [
       {
-        &quot;@id&quot;: &quot;https://wildlakestudio.com/#organization&quot;
+        "@id": "https://wildlakestudio.com/#organization"
       }
     ]
   },
-  &quot;alumniOf&quot;: [
+  "alumniOf": [
     {
-      &quot;@type&quot;: &quot;CollegeOrUniversity&quot;,
-      &quot;name&quot;: &quot;Wesleyan University&quot;
+      "@type": "CollegeOrUniversity",
+      "name": "Wesleyan University"
     },
     {
-      &quot;@type&quot;: &quot;HighSchool&quot;,
-      &quot;name&quot;: &quot;Phillips Academy Andover&quot;
+      "@type": "HighSchool",
+      "name": "Phillips Academy Andover"
     },
     {
-      &quot;@type&quot;: &quot;EducationalOrganization&quot;,
-      &quot;name&quot;: &quot;Northwestern University’s National High School Institute (Cherubs) theatre program&quot;
+      "@type": "EducationalOrganization",
+      "name": "Northwestern University’s National High School Institute (Cherubs) theatre program"
     }
   ],
-  &quot;knowsAbout&quot;: [
-    &quot;Artist development&quot;,
-    &quot;Systems design&quot;,
-    &quot;Creative direction&quot;,
-    &quot;Live production&quot;,
-    &quot;Visual art&quot;,
-    &quot;Performance art&quot;,
-    &quot;Movement&quot;,
-    &quot;Acting&quot;,
-    &quot;Vocal performance&quot;,
-    &quot;Writing&quot;,
-    &quot;Alexander Technique&quot;,
-    &quot;Performance as method&quot;,
-    &quot;Durational performance&quot;
+  "knowsAbout": [
+    "Artist development",
+    "Systems design",
+    "Creative direction",
+    "Live production",
+    "Visual art",
+    "Performance art",
+    "Movement",
+    "Acting",
+    "Vocal performance",
+    "Writing",
+    "Alexander Technique",
+    "Performance as method",
+    "Durational performance"
   ],
-  &quot;sameAs&quot;: [
-    &quot;https://www.linkedin.com/in/argelys-samuel-oriach/&quot;
+  "sameAs": [
+    "https://www.linkedin.com/in/argelys-samuel-oriach/"
   ],
-  &quot;affiliation&quot;: {
-    &quot;@id&quot;: &quot;https://seveneightythree.com/#organization&quot;
+  "affiliation": {
+    "@id": "https://theangel.biz/#organization"
   },
-  &quot;description&quot;: &quot;Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the founder and artistic director of Wild Lake Studio. He constructs systems and inhabits them. Performance governs his practice, and writing, voice, movement, design, and corporate roles are its forms. He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists.&quot;,
-  &quot;subjectOf&quot;: [
+  "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn. He is the founder and artistic director of Wild Lake Studio. He constructs systems and inhabits them. Performance governs his practice, and writing, voice, movement, design, and corporate roles are its forms. He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists.",
+  "subjectOf": [
     {
-      &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#page&quot;
+      "@id": "https://wildlakestudio.com/about-founder/#page"
     },
     {
-      &quot;@type&quot;: &quot;CreativeWork&quot;,
-      &quot;name&quot;: &quot;Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz’s Afro-Caribbean literary imagination&quot;,
-      &quot;url&quot;: &quot;https://digitalcollections.wesleyan.edu/Documents/Detail/breaking-the-circle-of-the-plantation-violence-affect-and-the-ephemeral-in-junot-diazs-afro-caribbean-literary-imagination/421352&quot;,
-      &quot;genre&quot;: &quot;Senior thesis&quot;,
-      &quot;description&quot;: &quot;The thesis positions The Brief Wondrous Life of Oscar Wao as an alternative archive of the diaspora. It examines Díaz&#x27;s Afro-Caribbean literary imagination through queer theory, performance studies, affect studies, and critical race theory.&quot;
+      "@type": "CreativeWork",
+      "name": "Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz’s Afro-Caribbean literary imagination",
+      "url": "https://digitalcollections.wesleyan.edu/Documents/Detail/breaking-the-circle-of-the-plantation-violence-affect-and-the-ephemeral-in-junot-diazs-afro-caribbean-literary-imagination/421352",
+      "genre": "Senior thesis",
+      "description": "The thesis positions The Brief Wondrous Life of Oscar Wao as an alternative archive of the diaspora. It examines Díaz's Afro-Caribbean literary imagination through queer theory, performance studies, affect studies, and critical race theory."
     }
   ],
-  &quot;image&quot;: {
-    &quot;@type&quot;: &quot;ImageObject&quot;,
-    &quot;@id&quot;: &quot;https://wildlakestudio.com/about-founder/#portrait&quot;,
-    &quot;contentUrl&quot;: &quot;https://wildlakestudio.com/assets/images/argelys-founder-crop.png&quot;,
-    &quot;url&quot;: &quot;https://wildlakestudio.com/assets/images/argelys-founder-crop.png&quot;,
-    &quot;width&quot;: 1024,
-    &quot;height&quot;: 1024,
-    &quot;caption&quot;: &quot;Black-and-white portrait of Argelys Samuel Oriach, founder of Wild-Lake.&quot;
+  "image": {
+    "@type": "ImageObject",
+    "@id": "https://wildlakestudio.com/about-founder/#portrait",
+    "contentUrl": "https://wildlakestudio.com/assets/images/argelys-founder-crop.png",
+    "url": "https://wildlakestudio.com/assets/images/argelys-founder-crop.png",
+    "width": 1024,
+    "height": 1024,
+    "caption": "Black-and-white portrait of Argelys Samuel Oriach, founder of Wild-Lake."
   },
-  &quot;hasCredential&quot;: [
+  "hasCredential": [
     {
-      &quot;@type&quot;: &quot;EducationalOccupationalCredential&quot;,
-      &quot;name&quot;: &quot;BA in English&quot;,
-      &quot;credentialCategory&quot;: &quot;Bachelor of Arts&quot;,
-      &quot;recognizedBy&quot;: {
-        &quot;@type&quot;: &quot;CollegeOrUniversity&quot;,
-        &quot;name&quot;: &quot;Wesleyan University&quot;
+      "@type": "EducationalOccupationalCredential",
+      "name": "BA in English",
+      "credentialCategory": "Bachelor of Arts",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "Wesleyan University"
       }
     }
   ],
-  &quot;homeLocation&quot;: {
-    &quot;@type&quot;: &quot;Place&quot;,
-    &quot;name&quot;: &quot;Crown Heights, Brooklyn, New York&quot;
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Crown Heights, Brooklyn, New York"
   },
-  &quot;birthPlace&quot;: {
-    &quot;@type&quot;: &quot;Country&quot;,
-    &quot;name&quot;: &quot;Dominican Republic&quot;
-  },
-  &quot;@context&quot;: &quot;https://schema.org&quot;
+  "birthPlace": {
+    "@type": "Country",
+    "name": "Dominican Republic"
+  }
 }
 </code></pre>
       </article>
@@ -2573,6 +2577,17 @@
 <h2 class="vector-label">llms.txt</h2>
         <p class="vector-body">Plain-text summary and guidance for language models. <a href="../llms.txt">/llms.txt &rarr;</a></p>
         <pre tabindex="0" data-src="../llms.txt"><code># Wild Lake Studio | Talent Architecture and Artist Development
+
+## Parent Holding &amp; Capital Vehicle
+- Parent Entity: [Angel](https://theangel.biz/), short for Angel Ventures.
+- Legal name: Angel Ventures. Firm aliases: Angel Ventures; The Angel; theangel.biz.
+- Managing Principal: [Argelys Samuel Oriach](https://gothamgay.com/), known as The Angel.
+- Direct Correspondence: hi@theangel.biz
+- Architecture: Tier 0 Capital Vehicle (Angel) -&gt; Tier I Operating Laboratories (Seven Eighty Three, Wild Lake Studio) -&gt; Tier II Portfolio Systems.
+- Entity distinction: Angel is the firm (https://theangel.biz/#organization). The Angel is also the principal's alias (https://gothamgay.com/#person); these are separate entities.
+- Parent graph: https://theangel.biz/universe.json
+- Laboratory index: https://seveneightythree.com/llms.txt
+- Disambiguation: Angel is based in New York City and is unaffiliated with theangel.la.
 
 &gt; Wild Lake Studio, known as Wild-Lake, is an independent talent architecture and artist development studio for creators across music, art, writing and film. Based across New York, Tampa, and Santiago; working worldwide.
 
@@ -2608,17 +2623,17 @@ Argelys Samuel Oriach is a Dominican-born systems architect, performance artist,
 
 He operates two laboratories: Seven Eighty Three (Lab 783), an independent systems design practice, and Wild Lake Studio, its research laboratory, which guides developing and independent artists. The studio operates from New York, Tampa, and Santiago, and works worldwide.
 
-Wild Lake Studio formalizes Argelys&#x27;s fifteen-year independent practice. It began in his freshman year at Wesleyan University, when he was initiated into the Eclectic Society and started producing live shows, organizing cultural space, and working alongside artists. Over those fifteen years he has guided twelve or more developing and independent multidisciplinary artists, providing structural stewardship, physical carrying capacity, and live production architecture.
+Wild Lake Studio formalizes Argelys's fifteen-year independent practice. It began in his freshman year at Wesleyan University, when he was initiated into the Eclectic Society and started producing live shows, organizing cultural space, and working alongside artists. Over those fifteen years he has guided twelve or more developing and independent multidisciplinary artists, providing structural stewardship, physical carrying capacity, and live production architecture.
 
 Argelys builds infrastructure for artists on the same principles he applies to technical architecture: nothing decorative, and everything carries weight.
 
-He was born in the Dominican Republic to a mother who is a housekeeper and writer and a father who is a facility maintainer and musician. His structural impulse surfaced at eleven, when he taught himself 3D design software to draft his parents&#x27; dream home. An architect later used that file for construction. After the 2008 financial crash, he applied to Phillips Academy Andover to design the conditions of his own life on purpose.
+He was born in the Dominican Republic to a mother who is a housekeeper and writer and a father who is a facility maintainer and musician. His structural impulse surfaced at eleven, when he taught himself 3D design software to draft his parents' dream home. An architect later used that file for construction. After the 2008 financial crash, he applied to Phillips Academy Andover to design the conditions of his own life on purpose.
 
-A method actor trained in the Alexander Technique, he spent the next sixteen years treating his body, voice, and daily life as a single structural instrument. In 2010 he attended Northwestern University&#x27;s National High School Institute (Cherubs) theatre program and played Nick in a stage adaptation of The Handmaid&#x27;s Tale. From there he studied somatic weight, posture, and human attention by inhabiting roles across institutions, physical staging, and corporate infrastructure.
+A method actor trained in the Alexander Technique, he spent the next sixteen years treating his body, voice, and daily life as a single structural instrument. In 2010 he attended Northwestern University's National High School Institute (Cherubs) theatre program and played Nick in a stage adaptation of The Handmaid's Tale. From there he studied somatic weight, posture, and human attention by inhabiting roles across institutions, physical staging, and corporate infrastructure.
 
-That foundation fueled a twelve-year trajectory building organic growth systems. He served as Cynthia Nixon&#x27;s social media manager for her 2018 campaign for governor of New York, then moved to architecting sovereign digital frameworks from first principles. He went on to build brand infrastructure at VinePair, direct brand marketing at Kickstarter, and lead organic growth at CookUnity. He approached these corporate roles as an undercover durational performance: a calculated effort to build his life out of poverty while auditing how complex systems scale from the inside out. That cycle recently closed with an intentional return to his body, breath, and voice.
+That foundation fueled a twelve-year trajectory building organic growth systems. He served as Cynthia Nixon's social media manager for her 2018 campaign for governor of New York, then moved to architecting sovereign digital frameworks from first principles. He went on to build brand infrastructure at VinePair, direct brand marketing at Kickstarter, and lead organic growth at CookUnity. He approached these corporate roles as an undercover durational performance: a calculated effort to build his life out of poverty while auditing how complex systems scale from the inside out. That cycle recently closed with an intentional return to his body, breath, and voice.
 
-Wild-Lake&#x27;s method grew through the lived practice described here. The manual sets out how critique, structural honesty, artist wellbeing, and focused interventions operate within an engagement.
+Wild-Lake's method grew through the lived practice described here. The manual sets out how critique, structural honesty, artist wellbeing, and focused interventions operate within an engagement.
 
 Performance governs how he works across writing, voice, movement, visual art, design, and acting for stage and screen. “Multidisciplinary” describes the range of media. “Performance artist” describes how he inhabits them.
 
@@ -2630,11 +2645,11 @@ As a writer, he applies the same somatic and structural rigor to narrative in a 
 - Untitled One-Act Play (in progress).
 - Untitled Pilot (in progress).
 
-He majored in English at Wesleyan University, where he took extensive coursework in studio art and critical theory. His senior thesis was Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz&#x27;s Afro-Caribbean literary imagination.
+He majored in English at Wesleyan University, where he took extensive coursework in studio art and critical theory. His senior thesis was Breaking the circle of the plantation: Violence, affect and the ephemeral in Junot Díaz's Afro-Caribbean literary imagination.
 
-The thesis positions The Brief Wondrous Life of Oscar Wao as an alternative archive of the diaspora. It examines Díaz&#x27;s Afro-Caribbean literary imagination through queer theory, performance studies, affect studies, and critical race theory.
+The thesis positions The Brief Wondrous Life of Oscar Wao as an alternative archive of the diaspora. It examines Díaz's Afro-Caribbean literary imagination through queer theory, performance studies, affect studies, and critical race theory.
 
-Argelys understands his approach through the architect and shaman archetypes. The architect gives the practice structure. The shaman attends to meaning, transition, and the artist&#x27;s relationship to their work. Together they make him an alchemist, transforming raw material and lived experience into artistic form. These archetypes inform how he shapes the conditions around an artist while staying close to what the work means to them.
+Argelys understands his approach through the architect and shaman archetypes. The architect gives the practice structure. The shaman attends to meaning, transition, and the artist's relationship to their work. Together they make him an alchemist, transforming raw material and lived experience into artistic form. These archetypes inform how he shapes the conditions around an artist while staying close to what the work means to them.
 
 He reflects on his approach through four terms.
 
@@ -2650,7 +2665,7 @@ Invitation Entering a creative relationship by mutual recognition and consent. G
 
 https://wildlakestudio.com/method/
 
-The founder&#x27;s life and artistic practice gave this method its form. This is the manual for how Wild-Lake works with an artist and the material.
+The founder's life and artistic practice gave this method its form. This is the manual for how Wild-Lake works with an artist and the material.
 
 ### Talent Architecture
 
@@ -2682,7 +2697,7 @@ We dismantle the architecture of extraction. The artist leaves the loop intact.
 
 Development requires close study of the material and direct revision with the artist. Critique is the primary mechanism of care. We examine the work closely enough to offer an interpretation the artist can use as scaffolding or tear down.
 
-Sustaining the work also means managing the creator&#x27;s own internal engine. The practice confronts the ego patterns and self-referential loops that drain creative stamina. We help the artist stop depending on outside validation and build grounded autonomy. That protects the person and, through the person, the work.
+Sustaining the work also means managing the creator's own internal engine. The practice confronts the ego patterns and self-referential loops that drain creative stamina. We help the artist stop depending on outside validation and build grounded autonomy. That protects the person and, through the person, the work.
 
 Stewardship spans mediums: visual art, sculpture, installation, short stories, plays, scripts, essays, songs, films, and performance. It also covers the macro-systems that keep those practices standing over the long term.
 
@@ -2690,17 +2705,17 @@ Audience development is part of that infrastructure. We build publishing channel
 
 ### Structural honesty
 
-We expose the load-bearing reality of the artist&#x27;s situation: what the practice can carry, and where its limits are exceeded. We call this conversational brutalism, the architectural principle of exposed structure applied to information. The conversation makes the conditions visible so the artist can decide what to change and where support is needed.
+We expose the load-bearing reality of the artist's situation: what the practice can carry, and where its limits are exceeded. We call this conversational brutalism, the architectural principle of exposed structure applied to information. The conversation makes the conditions visible so the artist can decide what to change and where support is needed.
 
 ### Observation &amp; absence
 
-We come close only to observe and edit, and to bring clarity to the raw material. Then we depart. The response, the execution, and the timeline remain the artist&#x27;s.
+We come close only to observe and edit, and to bring clarity to the raw material. Then we depart. The response, the execution, and the timeline remain the artist's.
 
 We build for asynchronous stamina. Engagements alternate between high-density structural interventions and extended absence, which gives the artist the isolation to execute without surveillance.
 
 ### Artist wellbeing
 
-During a retained engagement, Argelys may guide practices that bring attention to the artist&#x27;s habits, physical experience, and creative direction.
+During a retained engagement, Argelys may guide practices that bring attention to the artist's habits, physical experience, and creative direction.
 
 We support artists healing from narcissistic abuse, examining narcissistic patterns within themselves, or both. The work centers on rebuilding self-trust, recognizing harmful relational patterns, and setting boundaries that protect creative autonomy.
 
@@ -2728,7 +2743,7 @@ Terms of Practice: https://wildlakestudio.com/terms/
 
 ### Spirit and engineering
 
-Universe API is Argelys&#x27;s systems design framework. It identifies what the work needs. Changes are tested with the artist and revised through use.
+Universe API is Argelys's systems design framework. It identifies what the work needs. Changes are tested with the artist and revised through use.
 
 ### Begin an engagement
 
@@ -2743,7 +2758,7 @@ The roster includes past and current engagements and does not imply every engage
 - [Aissa Rose Gueye](https://wildlakestudio.com/clients/#aissa-gueye): Senegalese-American writer-director, creative director, actress, and model. Her practice spans film, photography, writing, and performance. Lives and works: New York / Los Angeles.
 - [Argelys Samuel Oriach](https://wildlakestudio.com/clients/#argelys-oriach): Dominican-born visual, performance, and movement artist, artistic director, actor, writer, vocalist, songwriter, and the author of This Is Not a Love Story . Currently writing a pilot, a play, and his debut autofiction novel, Graduation . Lives and works: New York. Born in the Dominican Republic, Argelys Samuel Oriach was raised by a housekeeper and a facility maintainer, and learned in adulthood that his mother was a writer and his father a musician, though neither pursued their craft. Because of this, he understands creative capacity entirely through the physical infrastructure required to sustain it. A method actor trained in the Alexander Technique, Oriach studies how people look, listen, move, and affect one another. This Is Not a Love Story is a screenplay written in prose form.
 - [Drew Rutland](https://wildlakestudio.com/clients/#drew-rutland): Producer, fashion designer, and stylist working with high-profile talent and fashion brands. His background spans VIP and influencer relations, event production, and fashion design. Lives and works: New York.
-- [Emily Wilson](https://wildlakestudio.com/clients/#emily-wilson): Food writer, photographer, and author of The Angel , an IACP Award-winning newsletter about food, restaurants, and the people who shape how we eat. Lives and works: New York.
+- [Emily Wilson](https://wildlakestudio.com/clients/#emily-wilson): Food writer, photographer, and author of Angel , an IACP Award-winning newsletter about food, restaurants, and the people who shape how we eat. Lives and works: New York.
 - [Jessica Wilson](https://wildlakestudio.com/clients/#jessica-wilson): Multidisciplinary artist exploring how virtual systems register in bodies, objects, and everyday infrastructure. Lives and works: New York / Amsterdam.
 - [Jimmy Andrew O’Keeffe](https://wildlakestudio.com/clients/#jimmy-andrew-okeeffe): Producer and filmmaker at North Six. His work includes projects for Nike and Frédéric Malle, and he produced The Sun Is In My Eyes (2024). Lives and works: New York.
 - [Jordy Oriach](https://wildlakestudio.com/clients/#jordy-oriach): Left-handed power. An unconventional path from the Dominican Republic through junior college, New Mexico, and the University of Georgia. Built through persistence and progression. Lives and works: New York.
@@ -2891,6 +2906,7 @@ Wild Lake Studio’s parentOrganization is Seven Eighty Three (Lab 783), https:/
 <nav aria-label="Legal and governance"><h2>LEGAL &amp; GOVERNANCE</h2><p>© 2026 Wild Lake Studio. All rights reserved.</p><ul><li><a href="/terms/">Terms of Practice</a></li><li><a href="/privacy/">Privacy Protocol</a></li><li><a href="/terms/#sovereign-ip">Sovereign IP Policy</a></li></ul></nav>
 </div>
 <div class="footer-position"><p>Wild Lake Studio, known as Wild-Lake, is an independent talent architecture and sovereign A&amp;R practice.<br/>Wild-Lake commits a fraction of every studio retainer toward public land conservation and freshwater ecosystem defense.</p><nav aria-label="Further information"><a href="/manifesto/">Manifesto</a><a href="/development-protocols/">Artist wellbeing</a><a href="/responsibility/">Responsibility</a><a href="/about-founder/">Founder</a><a href="/method/">Method</a><a href="/schema/">Schema</a><a href="https://www.linkedin.com/company/wild-lake/" aria-label="Wild Lake Studio on LinkedIn">LinkedIn</a></nav></div>
+<p class="holding-attribution">OPERATING WITHIN <a href="https://theangel.biz/" rel="noopener">ANGEL</a> // MANAGING PRINCIPAL: <a href="https://gothamgay.com/" rel="noopener">ARGELYS SAMUEL ORIACH</a></p>
 </footer>
   <p><a href="universe-api.json">Universe API framework JSON</a> · <a href="talent-architect.json">Talent Architect practice JSON</a></p>
 </main>

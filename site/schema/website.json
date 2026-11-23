@@ -107,10 +107,10 @@
       "name": "About our founder | Wild Lake Studio",
       "description": "Argelys Samuel Oriach is a Dominican-born systems architect, performance artist, and artistic director based in Crown Heights, Brooklyn.",
       "mainEntity": {
-        "@id": "https://argelysoriach.com/#person"
+        "@id": "https://gothamgay.com/#person"
       },
       "about": {
-        "@id": "https://argelysoriach.com/#person"
+        "@id": "https://gothamgay.com/#person"
       },
       "isPartOf": {
         "@id": "https://wildlakestudio.com/#website"
