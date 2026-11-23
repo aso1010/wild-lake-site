@@ -1,5 +1,5 @@
 /* Quiet Creek uses the shared Paper Shaders Water GLSL with a letter-only mask.
- * Local assets only. Clicking freezes or resumes water at speed 0.125. */
+ * Local assets only. Clicking freezes or resumes water at speed 0.04. */
 (async function () {
   const host = document.querySelector('.quiet-creek-monolith .qc-water');
   const lines = host && host.querySelector('svg');
@@ -20,7 +20,7 @@
   canvas.setAttribute('aria-hidden', 'true');
   const gl = canvas.getContext('webgl2', { alpha: true, antialias: false, powerPreference: 'low-power' });
   if (!gl) { activate.remove(); host.classList.remove('qc-interactive'); return; }
-  const waterSpeed = 0.125;
+  const waterSpeed = 0.04;
   let frame = 0, elapsed = 0, last = 0, visible = true, ready = false, revision = 0, waterActive = true;
   let program, texture, observer, resizeObserver;
   function fallback() {
